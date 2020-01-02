@@ -155,7 +155,7 @@ public:
         return vctRes[n-1];
     }
 
-    TreeNode* addTreevalue(int m, TreeNode* treeNode) {
+    TreeNode* addTreeValue(int m, TreeNode* treeNode) {
         TreeNode* pRes = NULL;
         if (NULL != treeNode) {
             pRes = new TreeNode(treeNode->val + m);
