@@ -14,12 +14,12 @@ struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+    explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
 class Solution {
 public:
-    void Sort(vector<int>& nums) {
+    static void Sort(vector<int>& nums) {
         if (nums.size() == 1)
             return;
         int end = int(nums.size() - 1);
@@ -36,7 +36,7 @@ public:
         }
     }
     
-    vector<int> FastSort(vector<int>& nums) {
+    static vector<int> FastSort(vector<int>& nums) {
         if (nums.size() <= 1) {
             return nums;
         }
@@ -57,7 +57,7 @@ public:
         return sorted_less;
     }
     
-    int findContentChildren(vector<int>& g, vector<int>& s) {
+    static int findContentChildren(vector<int>& g, vector<int>& s) {
 //        Sort(g);
 //        Sort(s);
         g = FastSort(g);
@@ -77,7 +77,7 @@ public:
     }
     
     // 不同搜索二叉树|
-    int numTrees(int n) {
+    static int numTrees(int n) {
         vector<int> vctRes;
         int j = 0;
         int k = 0;
@@ -106,15 +106,15 @@ public:
     }
     
     // 不同搜索二叉树||
-    vector<TreeNode*> generateTrees(int n) {
+    static vector<TreeNode*> generateTrees(int n) {
         vector<vector<TreeNode*> > vctRes;
         vector<TreeNode*> vctTmpRes;
         if (n == 1) {
-            TreeNode* pNode = new TreeNode(1);
+            auto* pNode = new TreeNode(1);
             vctTmpRes.push_back(pNode);
             return vctTmpRes;
         }
-        TreeNode* pNode = NULL;
+        TreeNode* pNode = nullptr;
         for (int i = 0; i < n; i++) {
             if (!vctTmpRes.empty())
                 vctTmpRes.clear();
@@ -127,14 +127,14 @@ public:
                     if (j == 1) {
                         for (int k = 0; k < vctRes[i-j].size(); k++) {
                             pNode = new TreeNode(j);
-                            pNode->right = addTreevalue(j, vctRes[i-j][k]);
+                            pNode->right = addTreeValue(j, vctRes[i-j][k]);
                             vctTmpRes.push_back(pNode);
                         }
                     }
                     else if (j == i+1) {
-                        for (int k = 0; k < vctRes[i-1].size(); k++) {
+                        for (auto & k : vctRes[i-1]) {
                             pNode = new TreeNode(j);
-                            pNode->left = addTreevalue(0, vctRes[i-1][k]);
+                            pNode->left = addTreeValue(0, k);
                             vctTmpRes.push_back(pNode);
                         }
                     }
@@ -142,8 +142,8 @@ public:
                         for (int k = 0; k < vctRes[j-1-1].size(); k++) {
                             for (int m = 0; m < vctRes[i-j].size(); m++) {
                                 pNode = new TreeNode(j);
-                                pNode->left = addTreevalue(0, vctRes[j-1-1][k]);
-                                pNode->right = addTreevalue(j, vctRes[i-j][m]);
+                                pNode->left = addTreeValue(0, vctRes[j-1-1][k]);
+                                pNode->right = addTreeValue(j, vctRes[i-j][m]);
                                 vctTmpRes.push_back(pNode);
                             }
                         }
@@ -155,14 +155,14 @@ public:
         return vctRes[n-1];
     }
 
-    TreeNode* addTreeValue(int m, TreeNode* treeNode) {
-        TreeNode* pRes = NULL;
-        if (NULL != treeNode) {
+    static TreeNode* addTreeValue(int m, TreeNode* treeNode) {
+        TreeNode* pRes = nullptr;
+        if (nullptr != treeNode) {
             pRes = new TreeNode(treeNode->val + m);
             if (treeNode->left)
-                pRes->left = addTreevalue(m, treeNode->left);
+                pRes->left = addTreeValue(m, treeNode->left);
             if (treeNode->right)
-                pRes->right = addTreevalue(m, treeNode->right);
+                pRes->right = addTreeValue(m, treeNode->right);
         }
         return pRes;
     }
@@ -172,11 +172,10 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     vector<int> g = {10, 9, 8, 7};
     vector<int> s = {5, 6, 7, 8};
-    Solution slt;
 //    int result = slt.findContentChildren(g, s);
 //    int result = slt.numTrees(3);
-    vector<TreeNode*> result = slt.generateTrees(3);
+    vector<TreeNode*> result = Solution::generateTrees(3);
     
-//    std::cout << "Content children number is: " << result << endl;
+    std::cout << "finished: " << endl;
     return 0;
 }
