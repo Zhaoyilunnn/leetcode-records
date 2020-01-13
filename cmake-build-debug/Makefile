@@ -150,6 +150,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+minimumTotal.o: minimumTotal.cpp.o
+
+.PHONY : minimumTotal.o
+
+# target to build an object file
+minimumTotal.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o
+.PHONY : minimumTotal.cpp.o
+
+minimumTotal.i: minimumTotal.cpp.i
+
+.PHONY : minimumTotal.i
+
+# target to preprocess a source file
+minimumTotal.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.i
+.PHONY : minimumTotal.cpp.i
+
+minimumTotal.s: minimumTotal.cpp.s
+
+.PHONY : minimumTotal.s
+
+# target to generate assembly for a file
+minimumTotal.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.s
+.PHONY : minimumTotal.cpp.s
+
+numTrees.o: numTrees.cpp.o
+
+.PHONY : numTrees.o
+
+# target to build an object file
+numTrees.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.o
+.PHONY : numTrees.cpp.o
+
+numTrees.i: numTrees.cpp.i
+
+.PHONY : numTrees.i
+
+# target to preprocess a source file
+numTrees.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.i
+.PHONY : numTrees.cpp.i
+
+numTrees.s: numTrees.cpp.s
+
+.PHONY : numTrees.s
+
+# target to generate assembly for a file
+numTrees.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
+.PHONY : numTrees.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... minimumTotal.o"
+	@echo "... minimumTotal.i"
+	@echo "... minimumTotal.s"
+	@echo "... numTrees.o"
+	@echo "... numTrees.i"
+	@echo "... numTrees.s"
 .PHONY : help
 
 
