@@ -4,48 +4,31 @@
 
 #include "function_defs.h"
 
-pair<int, set<int>> minTemp(vector<int>& Vec, set<int>& Index) {
-    set<int> temp;
-    int val = Vec[*Index.begin()];
-    set<int>::iterator it;
-    pair<int, set<int>> result;
-    for (it = Index.begin(); it != Index.end(); it++) {
-        if (Vec[*it] < val) {
-            val = Vec[*it];
-            if (!temp.empty())
-                temp.clear();
-            temp.insert(*it);
-            temp.insert(*it+1);
-        }
-        else if (Vec[*it] == val) {
-            temp.insert(*it);
-            temp.insert(*it+1);
-        }
-    }
-    result = make_pair(val, temp);
-    return result;
-}
-
 int Solution::minimumTotal(vector<vector<int>>& triangle) {
-    pair<int, set<int>> TempInfo;
-    set<int> temp;
-    vector<pair<int, set<int>>> result;
-    int res = 0;
-    for (int i = 0; i < triangle.size(); i++) {
-        if (i == 0) {
-            temp.insert(0);
-            temp.insert(1);
-            TempInfo = make_pair(triangle[0][0], temp);
-            result.push_back(TempInfo);
-        }
-        else {
-            TempInfo = minTemp(triangle[i], result[i-1].second);
-            result.push_back(TempInfo);
-        }
-    }
-    for (auto & i : result) {
-        res += i.first;
-    }
-    return res;
+   vector<vector<int>> results;
+   vector<int> temp;
+   int length = triangle.size();
+   if (length == 1)
+       return triangle[0][0];
+   for (int i = 0; i < length-1; i++) {
+       if (!temp.empty())
+           temp.clear();
+       for (int j = 0; j < length-1-i; j++) {
+           if (i == 0) {
+               if (triangle[length-1-i][j] < triangle[length-1-i][j+1])
+                   temp.push_back(triangle[length-1-i][j] + triangle[length-2-i][j]);
+               else
+                   temp.push_back(triangle[length-1-i][j+1] + triangle[length-2-i][j]);
+           }
+           else {
+               if (results[i - 1][j] < results[i - 1][j + 1])
+                   temp.push_back(results[i - 1][j] + triangle[length - 2 - i][j]);
+               else
+                   temp.push_back(results[i - 1][j + 1] + triangle[length - 2 - i][j]);
+           }
+       }
+       results.push_back(temp);
+   }
+   return results[length-2][0];
 }
 

@@ -34,6 +34,7 @@ public:
 
     TreeNode* addTreeValue(int m, TreeNode* treeNode);
 
+    // 三角形最小路径和
     int minimumTotal(vector<vector<int>>& triangle);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H
