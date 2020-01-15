@@ -123,6 +123,87 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
+climbStairs.o: climbStairs.cpp.o
+
+.PHONY : climbStairs.o
+
+# target to build an object file
+climbStairs.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.o
+.PHONY : climbStairs.cpp.o
+
+climbStairs.i: climbStairs.cpp.i
+
+.PHONY : climbStairs.i
+
+# target to preprocess a source file
+climbStairs.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.i
+.PHONY : climbStairs.cpp.i
+
+climbStairs.s: climbStairs.cpp.s
+
+.PHONY : climbStairs.s
+
+# target to generate assembly for a file
+climbStairs.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.s
+.PHONY : climbStairs.cpp.s
+
+findContentChildren.o: findContentChildren.cpp.o
+
+.PHONY : findContentChildren.o
+
+# target to build an object file
+findContentChildren.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o
+.PHONY : findContentChildren.cpp.o
+
+findContentChildren.i: findContentChildren.cpp.i
+
+.PHONY : findContentChildren.i
+
+# target to preprocess a source file
+findContentChildren.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContentChildren.cpp.i
+.PHONY : findContentChildren.cpp.i
+
+findContentChildren.s: findContentChildren.cpp.s
+
+.PHONY : findContentChildren.s
+
+# target to generate assembly for a file
+findContentChildren.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContentChildren.cpp.s
+.PHONY : findContentChildren.cpp.s
+
+longestPalindrome.o: longestPalindrome.cpp.o
+
+.PHONY : longestPalindrome.o
+
+# target to build an object file
+longestPalindrome.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o
+.PHONY : longestPalindrome.cpp.o
+
+longestPalindrome.i: longestPalindrome.cpp.i
+
+.PHONY : longestPalindrome.i
+
+# target to preprocess a source file
+longestPalindrome.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.i
+.PHONY : longestPalindrome.cpp.i
+
+longestPalindrome.s: longestPalindrome.cpp.s
+
+.PHONY : longestPalindrome.s
+
+# target to generate assembly for a file
+longestPalindrome.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.s
+.PHONY : longestPalindrome.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +230,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+maxSubArray.o: maxSubArray.cpp.o
+
+.PHONY : maxSubArray.o
+
+# target to build an object file
+maxSubArray.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.o
+.PHONY : maxSubArray.cpp.o
+
+maxSubArray.i: maxSubArray.cpp.i
+
+.PHONY : maxSubArray.i
+
+# target to preprocess a source file
+maxSubArray.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.i
+.PHONY : maxSubArray.cpp.i
+
+maxSubArray.s: maxSubArray.cpp.s
+
+.PHONY : maxSubArray.s
+
+# target to generate assembly for a file
+maxSubArray.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.s
+.PHONY : maxSubArray.cpp.s
 
 minimumTotal.o: minimumTotal.cpp.o
 
@@ -204,6 +312,60 @@ numTrees.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
 .PHONY : numTrees.cpp.s
 
+rob.o: rob.cpp.o
+
+.PHONY : rob.o
+
+# target to build an object file
+rob.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.o
+.PHONY : rob.cpp.o
+
+rob.i: rob.cpp.i
+
+.PHONY : rob.i
+
+# target to preprocess a source file
+rob.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.i
+.PHONY : rob.cpp.i
+
+rob.s: rob.cpp.s
+
+.PHONY : rob.s
+
+# target to generate assembly for a file
+rob.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.s
+.PHONY : rob.cpp.s
+
+uniquePaths.o: uniquePaths.cpp.o
+
+.PHONY : uniquePaths.o
+
+# target to build an object file
+uniquePaths.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o
+.PHONY : uniquePaths.cpp.o
+
+uniquePaths.i: uniquePaths.cpp.i
+
+.PHONY : uniquePaths.i
+
+# target to preprocess a source file
+uniquePaths.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.i
+.PHONY : uniquePaths.cpp.i
+
+uniquePaths.s: uniquePaths.cpp.s
+
+.PHONY : uniquePaths.s
+
+# target to generate assembly for a file
+uniquePaths.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.s
+.PHONY : uniquePaths.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +375,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
+	@echo "... climbStairs.o"
+	@echo "... climbStairs.i"
+	@echo "... climbStairs.s"
+	@echo "... findContentChildren.o"
+	@echo "... findContentChildren.i"
+	@echo "... findContentChildren.s"
+	@echo "... longestPalindrome.o"
+	@echo "... longestPalindrome.i"
+	@echo "... longestPalindrome.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... maxSubArray.o"
+	@echo "... maxSubArray.i"
+	@echo "... maxSubArray.s"
 	@echo "... minimumTotal.o"
 	@echo "... minimumTotal.i"
 	@echo "... minimumTotal.s"
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"
+	@echo "... rob.o"
+	@echo "... rob.i"
+	@echo "... rob.s"
+	@echo "... uniquePaths.o"
+	@echo "... uniquePaths.i"
+	@echo "... uniquePaths.s"
 .PHONY : help
 
 
