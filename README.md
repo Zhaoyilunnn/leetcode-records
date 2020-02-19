@@ -1,2 +1,2 @@
 # leetcode_record
-Some records when solving problems in leetcode
+Some selected problems in leetcode
