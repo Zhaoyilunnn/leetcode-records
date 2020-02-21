@@ -123,6 +123,33 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
+buildTree.o: buildTree.cpp.o
+
+.PHONY : buildTree.o
+
+# target to build an object file
+buildTree.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.o
+.PHONY : buildTree.cpp.o
+
+buildTree.i: buildTree.cpp.i
+
+.PHONY : buildTree.i
+
+# target to preprocess a source file
+buildTree.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.i
+.PHONY : buildTree.cpp.i
+
+buildTree.s: buildTree.cpp.s
+
+.PHONY : buildTree.s
+
+# target to generate assembly for a file
+buildTree.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.s
+.PHONY : buildTree.cpp.s
+
 climbStairs.o: climbStairs.cpp.o
 
 .PHONY : climbStairs.o
@@ -375,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
+	@echo "... buildTree.o"
+	@echo "... buildTree.i"
+	@echo "... buildTree.s"
 	@echo "... climbStairs.o"
 	@echo "... climbStairs.i"
 	@echo "... climbStairs.s"

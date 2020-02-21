@@ -50,5 +50,8 @@ public:
 
     // 打家劫舍
     int rob(vector<int>& nums);
+
+    // 从中序与后序遍历序列构造二叉树
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H
