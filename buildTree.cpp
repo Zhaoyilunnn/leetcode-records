@@ -13,10 +13,8 @@ TreeNode* Solution::buildTree(vector<int>& inOrder, vector<int>& postOrder) {
     for (int i = 0; i < inOrder.size(); i++) {
         if (inOrder[i] == postOrder[postOrder.size() - 1]) {
             if (i > 0) {
-                for (int k = 0; k < i; k++) {
-                    new_inOrder.push_back(inOrder[k]);
-                    new_postOrder.push_back(postOrder[k]);
-                }
+                new_inOrder.assign(inOrder.begin(), inOrder.begin()+i);
+                new_postOrder.assign(postOrder.begin(), postOrder.begin()+i);
                 root->left = buildTree(new_inOrder, new_postOrder);
             }
             if (!new_inOrder.empty())
@@ -24,10 +22,8 @@ TreeNode* Solution::buildTree(vector<int>& inOrder, vector<int>& postOrder) {
             if (!new_postOrder.empty())
                 new_postOrder.clear();
             if (i < postOrder.size()-1) {
-                for (int k = i; k < postOrder.size()-1; k++) {
-                    new_inOrder.push_back(inOrder[k+1]);
-                    new_postOrder.push_back(postOrder[k]);
-                }
+                new_inOrder.assign(inOrder.begin()+i+1, inOrder.end());
+                new_postOrder.assign(postOrder.begin()+i, postOrder.end()-1);
                 root->right = buildTree(new_inOrder, new_postOrder);
             }
         }
