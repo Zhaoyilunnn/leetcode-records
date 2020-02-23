@@ -6,10 +6,14 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    vector<int> g = {9, 3, 15, 20, 7};
-    vector<int> s = {9, 15, 7, 20, 3};
+    TreeNode* root = new TreeNode(3);
+    root->left = new TreeNode(9);
+    root->right = new TreeNode(20);
+    root->right->left = new TreeNode(15);
+    root->right->right = new TreeNode(7);
+    vector<vector<int>> result;
     Solution solution;
-    TreeNode* res = solution.buildTree(g, s);
+    result = solution.zigzagLevelOrder(root);
 
     cout << "finished: " << endl;
     return 0;

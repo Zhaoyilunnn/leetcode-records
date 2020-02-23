@@ -53,5 +53,8 @@ public:
 
     // 从中序与后序遍历序列构造二叉树
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder);
+
+    // 二叉树的锯齿型层次遍历
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

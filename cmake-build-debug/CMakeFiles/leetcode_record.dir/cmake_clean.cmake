@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/numTrees.cpp.o"
   "CMakeFiles/leetcode_record.dir/rob.cpp.o"
   "CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o"
+  "CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o"
   "leetcode_record.exe"
   "leetcode_record.pdb"
   "libleetcode_record.dll.a"

@@ -393,6 +393,33 @@ uniquePaths.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.s
 .PHONY : uniquePaths.cpp.s
 
+zigzagLevelOrder.o: zigzagLevelOrder.cpp.o
+
+.PHONY : zigzagLevelOrder.o
+
+# target to build an object file
+zigzagLevelOrder.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o
+.PHONY : zigzagLevelOrder.cpp.o
+
+zigzagLevelOrder.i: zigzagLevelOrder.cpp.i
+
+.PHONY : zigzagLevelOrder.i
+
+# target to preprocess a source file
+zigzagLevelOrder.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.i
+.PHONY : zigzagLevelOrder.cpp.i
+
+zigzagLevelOrder.s: zigzagLevelOrder.cpp.s
+
+.PHONY : zigzagLevelOrder.s
+
+# target to generate assembly for a file
+zigzagLevelOrder.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.s
+.PHONY : zigzagLevelOrder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -432,6 +459,9 @@ help:
 	@echo "... uniquePaths.o"
 	@echo "... uniquePaths.i"
 	@echo "... uniquePaths.s"
+	@echo "... zigzagLevelOrder.o"
+	@echo "... zigzagLevelOrder.i"
+	@echo "... zigzagLevelOrder.s"
 .PHONY : help
 
 

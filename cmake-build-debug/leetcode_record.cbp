@@ -113,6 +113,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/uniquePaths.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/zigzagLevelOrder.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
