@@ -6,15 +6,12 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    TreeNode* root = new TreeNode(3);
-    root->left = new TreeNode(9);
-    root->right = new TreeNode(20);
-    root->right->left = new TreeNode(15);
-    root->right->right = new TreeNode(7);
-    vector<vector<int>> result;
+    TreeNode* root1 = new TreeNode(1);
+    root1->right = new TreeNode(8);
+    TreeNode* root2 = new TreeNode(8);
+    root2->left = new TreeNode(1);
     Solution solution;
-    result = solution.zigzagLevelOrder(root);
-
+    vector<int> vctRes = solution.getAllElements(root1, root2);
     cout << "finished: " << endl;
     return 0;
 }

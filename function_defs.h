@@ -56,5 +56,8 @@ public:
 
     // 二叉树的锯齿型层次遍历
     vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+
+    // 两颗二叉搜索树中的所有元素
+    vector<int> getAllElements(TreeNode* root1, TreeNode* root2);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

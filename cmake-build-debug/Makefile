@@ -204,6 +204,33 @@ findContentChildren.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContentChildren.cpp.s
 .PHONY : findContentChildren.cpp.s
 
+getAllElements.o: getAllElements.cpp.o
+
+.PHONY : getAllElements.o
+
+# target to build an object file
+getAllElements.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.o
+.PHONY : getAllElements.cpp.o
+
+getAllElements.i: getAllElements.cpp.i
+
+.PHONY : getAllElements.i
+
+# target to preprocess a source file
+getAllElements.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.i
+.PHONY : getAllElements.cpp.i
+
+getAllElements.s: getAllElements.cpp.s
+
+.PHONY : getAllElements.s
+
+# target to generate assembly for a file
+getAllElements.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.s
+.PHONY : getAllElements.cpp.s
+
 longestPalindrome.o: longestPalindrome.cpp.o
 
 .PHONY : longestPalindrome.o
@@ -438,6 +465,9 @@ help:
 	@echo "... findContentChildren.o"
 	@echo "... findContentChildren.i"
 	@echo "... findContentChildren.s"
+	@echo "... getAllElements.o"
+	@echo "... getAllElements.i"
+	@echo "... getAllElements.s"
 	@echo "... longestPalindrome.o"
 	@echo "... longestPalindrome.i"
 	@echo "... longestPalindrome.s"

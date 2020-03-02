@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+vector
+-
+string
+-
+set
+-
+
+/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp
+function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+

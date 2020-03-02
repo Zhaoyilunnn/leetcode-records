@@ -10,6 +10,9 @@ CMakeFiles/leetcode_record.dir/climbStairs.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../findContentChildren.cpp
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../getAllElements.cpp
+
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../longestPalindrome.cpp
 
@@ -30,4 +33,7 @@ CMakeFiles/leetcode_record.dir/rob.cpp.o: ../rob.cpp
 
 CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o: ../uniquePaths.cpp
+
+CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o: ../zigzagLevelOrder.cpp
 
