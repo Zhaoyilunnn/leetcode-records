@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/maxSubArray.cpp.o"
   "CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o"
   "CMakeFiles/leetcode_record.dir/numTrees.cpp.o"
+  "CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o"
   "CMakeFiles/leetcode_record.dir/rob.cpp.o"
   "CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o"
   "CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o"

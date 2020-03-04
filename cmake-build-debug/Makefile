@@ -366,6 +366,33 @@ numTrees.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
 .PHONY : numTrees.cpp.s
 
+orangesRotting.o: orangesRotting.cpp.o
+
+.PHONY : orangesRotting.o
+
+# target to build an object file
+orangesRotting.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o
+.PHONY : orangesRotting.cpp.o
+
+orangesRotting.i: orangesRotting.cpp.i
+
+.PHONY : orangesRotting.i
+
+# target to preprocess a source file
+orangesRotting.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.i
+.PHONY : orangesRotting.cpp.i
+
+orangesRotting.s: orangesRotting.cpp.s
+
+.PHONY : orangesRotting.s
+
+# target to generate assembly for a file
+orangesRotting.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.s
+.PHONY : orangesRotting.cpp.s
+
 rob.o: rob.cpp.o
 
 .PHONY : rob.o
@@ -483,6 +510,9 @@ help:
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"
+	@echo "... orangesRotting.o"
+	@echo "... orangesRotting.i"
+	@echo "... orangesRotting.s"
 	@echo "... rob.o"
 	@echo "... rob.i"
 	@echo "... rob.s"

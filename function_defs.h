@@ -59,5 +59,8 @@ public:
 
     // 两颗二叉搜索树中的所有元素
     vector<int> getAllElements(TreeNode* root1, TreeNode* root2);
+
+    // 腐烂的橘子
+    int orangesRotting(vector<vector<int>>& grid);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H
