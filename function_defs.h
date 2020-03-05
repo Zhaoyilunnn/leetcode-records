@@ -62,5 +62,11 @@ public:
 
     // 腐烂的橘子
     int orangesRotting(vector<vector<int>>& grid);
+
+    // 分发糖果||
+    vector<int> distributeCandies(int candies, int num_people);
+
+    // 删除排序数组中的重复项
+    int removeDuplicates(vector<int>& nums);
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

@@ -7,6 +7,9 @@ CMakeFiles/leetcode_record.dir/buildTree.cpp.o
 CMakeFiles/leetcode_record.dir/climbStairs.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/climbStairs.cpp
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/distributeCandies.cpp
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/findContentChildren.cpp
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
@@ -28,6 +31,12 @@ CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/numTrees.cpp
+CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/orangesRotting.cpp
+CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp
 CMakeFiles/leetcode_record.dir/rob.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/rob.cpp

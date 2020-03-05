@@ -3,5 +3,20 @@ project(leetcode_record)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(.)
+
 add_executable(leetcode_record
-        numTrees.cpp function_defs.h main.cpp minimumTotal.cpp longestPalindrome.cpp maxSubArray.cpp uniquePaths.cpp climbStairs.cpp rob.cpp findContentChildren.cpp buildTree.cpp zigzagLevelOrder.cpp getAllElements.cpp orangesRotting.cpp)
+        buildTree.cpp
+        climbStairs.cpp
+        findContentChildren.cpp
+        function_defs.h
+        getAllElements.cpp
+        longestPalindrome.cpp
+        main.cpp
+        maxSubArray.cpp
+        minimumTotal.cpp
+        numTrees.cpp
+        orangesRotting.cpp
+        rob.cpp
+        uniquePaths.cpp
+        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp)

@@ -7,6 +7,9 @@ CMakeFiles/leetcode_record.dir/buildTree.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/climbStairs.cpp.o: ../climbStairs.cpp
 CMakeFiles/leetcode_record.dir/climbStairs.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o: ../distributeCandies.cpp
+CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o: ../function_defs.h
+
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../findContentChildren.cpp
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../function_defs.h
 
@@ -27,6 +30,12 @@ CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../minimumTotal.cpp
 
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../numTrees.cpp
+
+CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../orangesRotting.cpp
+
+CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../removeDuplicates.cpp
 
 CMakeFiles/leetcode_record.dir/rob.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/rob.cpp.o: ../rob.cpp

@@ -177,6 +177,33 @@ climbStairs.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.s
 .PHONY : climbStairs.cpp.s
 
+distributeCandies.o: distributeCandies.cpp.o
+
+.PHONY : distributeCandies.o
+
+# target to build an object file
+distributeCandies.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o
+.PHONY : distributeCandies.cpp.o
+
+distributeCandies.i: distributeCandies.cpp.i
+
+.PHONY : distributeCandies.i
+
+# target to preprocess a source file
+distributeCandies.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/distributeCandies.cpp.i
+.PHONY : distributeCandies.cpp.i
+
+distributeCandies.s: distributeCandies.cpp.s
+
+.PHONY : distributeCandies.s
+
+# target to generate assembly for a file
+distributeCandies.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/distributeCandies.cpp.s
+.PHONY : distributeCandies.cpp.s
+
 findContentChildren.o: findContentChildren.cpp.o
 
 .PHONY : findContentChildren.o
@@ -393,6 +420,33 @@ orangesRotting.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.s
 .PHONY : orangesRotting.cpp.s
 
+removeDuplicates.o: removeDuplicates.cpp.o
+
+.PHONY : removeDuplicates.o
+
+# target to build an object file
+removeDuplicates.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o
+.PHONY : removeDuplicates.cpp.o
+
+removeDuplicates.i: removeDuplicates.cpp.i
+
+.PHONY : removeDuplicates.i
+
+# target to preprocess a source file
+removeDuplicates.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.i
+.PHONY : removeDuplicates.cpp.i
+
+removeDuplicates.s: removeDuplicates.cpp.s
+
+.PHONY : removeDuplicates.s
+
+# target to generate assembly for a file
+removeDuplicates.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
+.PHONY : removeDuplicates.cpp.s
+
 rob.o: rob.cpp.o
 
 .PHONY : rob.o
@@ -489,6 +543,9 @@ help:
 	@echo "... climbStairs.o"
 	@echo "... climbStairs.i"
 	@echo "... climbStairs.s"
+	@echo "... distributeCandies.o"
+	@echo "... distributeCandies.i"
+	@echo "... distributeCandies.s"
 	@echo "... findContentChildren.o"
 	@echo "... findContentChildren.i"
 	@echo "... findContentChildren.s"
@@ -513,6 +570,9 @@ help:
 	@echo "... orangesRotting.o"
 	@echo "... orangesRotting.i"
 	@echo "... orangesRotting.s"
+	@echo "... removeDuplicates.o"
+	@echo "... removeDuplicates.i"
+	@echo "... removeDuplicates.s"
 	@echo "... rob.o"
 	@echo "... rob.i"
 	@echo "... rob.s"

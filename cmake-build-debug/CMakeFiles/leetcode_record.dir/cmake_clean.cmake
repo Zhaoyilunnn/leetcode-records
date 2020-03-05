@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/buildTree.cpp.o"
   "CMakeFiles/leetcode_record.dir/climbStairs.cpp.o"
+  "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
   "CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o"
@@ -9,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o"
   "CMakeFiles/leetcode_record.dir/numTrees.cpp.o"
   "CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o"
+  "CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o"
   "CMakeFiles/leetcode_record.dir/rob.cpp.o"
   "CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o"
   "CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o"
