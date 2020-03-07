@@ -13,6 +13,9 @@ CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../findContentChildren.cpp
 CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../findContinuousSequence.cpp
+CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../function_defs.h
+
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../getAllElements.cpp
 

@@ -19,4 +19,4 @@ add_executable(leetcode_record
         orangesRotting.cpp
         rob.cpp
         uniquePaths.cpp
-        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp)
+        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp findContinuousSequence.cpp)

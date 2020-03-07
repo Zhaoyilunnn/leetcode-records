@@ -231,6 +231,33 @@ findContentChildren.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContentChildren.cpp.s
 .PHONY : findContentChildren.cpp.s
 
+findContinuousSequence.o: findContinuousSequence.cpp.o
+
+.PHONY : findContinuousSequence.o
+
+# target to build an object file
+findContinuousSequence.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o
+.PHONY : findContinuousSequence.cpp.o
+
+findContinuousSequence.i: findContinuousSequence.cpp.i
+
+.PHONY : findContinuousSequence.i
+
+# target to preprocess a source file
+findContinuousSequence.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.i
+.PHONY : findContinuousSequence.cpp.i
+
+findContinuousSequence.s: findContinuousSequence.cpp.s
+
+.PHONY : findContinuousSequence.s
+
+# target to generate assembly for a file
+findContinuousSequence.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s
+.PHONY : findContinuousSequence.cpp.s
+
 getAllElements.o: getAllElements.cpp.o
 
 .PHONY : getAllElements.o
@@ -549,6 +576,9 @@ help:
 	@echo "... findContentChildren.o"
 	@echo "... findContentChildren.i"
 	@echo "... findContentChildren.s"
+	@echo "... findContinuousSequence.o"
+	@echo "... findContinuousSequence.i"
+	@echo "... findContinuousSequence.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"

@@ -68,5 +68,63 @@ public:
 
     // 删除排序数组中的重复项
     int removeDuplicates(vector<int>& nums);
+
+    // 和为s的连续正数序列
+    vector<vector<int>> findContinuousSequence(int target);
+};
+
+// 队列的最大值
+class MaxQueue {
+public:
+    vector<int> queue;
+    vector<pair<int, int>> queue_max;  // first store value, second store push
+    int push = 0;
+    int pop = 0;
+
+    MaxQueue() {
+
+    }
+
+    int max_value() {
+        if (queue.empty())
+            return -1;
+        return queue_max[0].first;
+    }
+
+    void push_back(int value) {
+        pair<int, int> temp;
+        if (queue.empty()) {
+            queue.push_back(value);
+            push++;
+            temp = make_pair(value, push);
+            queue_max.push_back(temp);
+            return;
+        }
+        queue.push_back(value);
+        push++;
+        for (int i = 0; i < queue_max.size(); i++) {
+            if (value >= queue_max[i].first) {
+                temp = make_pair(value, push);
+                queue_max.erase(queue_max.begin()+i, queue_max.end());
+                queue_max.push_back(temp);
+                break;
+            }
+            else if (i == queue_max.size()-1) {
+                temp = make_pair(value, push);
+                queue_max.push_back(temp);
+            }
+        }
+    }
+
+    int pop_front() {
+        if (queue.empty())
+            return -1;
+        int res = queue[0];
+        queue.erase(queue.begin());
+        pop++;
+        if (pop >= queue_max[0].second)
+            queue_max.erase(queue_max.begin());
+        return res;
+    }
 };
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

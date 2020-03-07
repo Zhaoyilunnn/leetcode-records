@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/Program_Cpp/leetcode_record/climbStairs.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/climbStairs.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/distributeCandies.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/findContentChildren.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
+  "/cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/longestPalindrome.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/main.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/main.cpp.o"

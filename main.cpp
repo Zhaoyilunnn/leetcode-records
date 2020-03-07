@@ -9,8 +9,8 @@ int main(int argc, const char * argv[]) {
     Solution solution;
 //    vector<vector<int>> vctTest;
 //    vector<int> vct_1 = {2, 1, 1};
-//    vector<int> vct_2 = {0, 1, 1};
-//    vector<int> vct_3 = {1, 0, 1};
+//    vector<int> vct_2 = {1, 0, 1};
+//    vector<int> vct_3 = {0, 1, 1};
 //    vector<int> vct_4 = {2, 2};
 //    vector<int> vct_5 = {1, 0};
 //    vector<int> vct_6 = {1, 1};
@@ -29,7 +29,7 @@ int main(int argc, const char * argv[]) {
 //    vctTest.push_back(vct_9);
 //    vctTest.push_back(vct_10);
 //    int res = solution.orangesRotting(vctTest);
-    vector<int> vctTest = {1, 1, 2};
-    int res = solution.removeDuplicates(vctTest);
+//    int res = solution.orangesRotting(vctTest);
+    vector<vector<int>> res = solution.findContinuousSequence(9);
     return 0;
 }

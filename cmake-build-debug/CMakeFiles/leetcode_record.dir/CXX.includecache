@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp
+function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+
 /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 vector
 -
@@ -13,8 +17,4 @@ string
 -
 set
 -
-
-/cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp
-function_defs.h
-/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 
