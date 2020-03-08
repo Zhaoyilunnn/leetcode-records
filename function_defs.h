@@ -5,6 +5,7 @@
 #ifndef LEETCODE_RECORD_FUNCTION_DEFS_H
 #define LEETCODE_RECORD_FUNCTION_DEFS_H
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <set>
@@ -71,6 +72,9 @@ public:
 
     // 和为s的连续正数序列
     vector<vector<int>> findContinuousSequence(int target);
+
+    // 零钱兑换
+    int coinChange(vector<int>& coins, int amount);
 };
 
 // 队列的最大值

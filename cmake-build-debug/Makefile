@@ -177,6 +177,33 @@ climbStairs.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.s
 .PHONY : climbStairs.cpp.s
 
+coinChange.o: coinChange.cpp.o
+
+.PHONY : coinChange.o
+
+# target to build an object file
+coinChange.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.o
+.PHONY : coinChange.cpp.o
+
+coinChange.i: coinChange.cpp.i
+
+.PHONY : coinChange.i
+
+# target to preprocess a source file
+coinChange.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.i
+.PHONY : coinChange.cpp.i
+
+coinChange.s: coinChange.cpp.s
+
+.PHONY : coinChange.s
+
+# target to generate assembly for a file
+coinChange.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.s
+.PHONY : coinChange.cpp.s
+
 distributeCandies.o: distributeCandies.cpp.o
 
 .PHONY : distributeCandies.o
@@ -570,6 +597,9 @@ help:
 	@echo "... climbStairs.o"
 	@echo "... climbStairs.i"
 	@echo "... climbStairs.s"
+	@echo "... coinChange.o"
+	@echo "... coinChange.i"
+	@echo "... coinChange.s"
 	@echo "... distributeCandies.o"
 	@echo "... distributeCandies.i"
 	@echo "... distributeCandies.s"
