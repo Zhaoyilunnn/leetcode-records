@@ -7,6 +7,9 @@ CMakeFiles/leetcode_record.dir/buildTree.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/climbStairs.cpp.o: ../climbStairs.cpp
 CMakeFiles/leetcode_record.dir/climbStairs.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/coinChange.cpp.o: ../coinChange.cpp
+CMakeFiles/leetcode_record.dir/coinChange.cpp.o: ../function_defs.h
+
 CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o: ../distributeCandies.cpp
 CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o: ../function_defs.h
 
