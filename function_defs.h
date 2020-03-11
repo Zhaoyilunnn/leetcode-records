@@ -75,6 +75,12 @@ public:
 
     // 零钱兑换
     int coinChange(vector<int>& coins, int amount);
+
+    // Diameter of Binary Tree
+    int diameterOfBinaryTree(TreeNode* root);
+
+    // Partition Array Into Three Parts With Equal Sum
+    bool canThreePartsEqualSum(vector<int>& A);
 };
 
 // 队列的最大值

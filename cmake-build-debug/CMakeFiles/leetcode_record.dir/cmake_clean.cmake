@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/buildTree.cpp.o"
+  "CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o"
   "CMakeFiles/leetcode_record.dir/climbStairs.cpp.o"
   "CMakeFiles/leetcode_record.dir/coinChange.cpp.o"
+  "CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o"
   "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"

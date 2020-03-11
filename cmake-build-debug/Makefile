@@ -150,6 +150,33 @@ buildTree.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.s
 .PHONY : buildTree.cpp.s
 
+canThreePartsEqualSum.o: canThreePartsEqualSum.cpp.o
+
+.PHONY : canThreePartsEqualSum.o
+
+# target to build an object file
+canThreePartsEqualSum.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o
+.PHONY : canThreePartsEqualSum.cpp.o
+
+canThreePartsEqualSum.i: canThreePartsEqualSum.cpp.i
+
+.PHONY : canThreePartsEqualSum.i
+
+# target to preprocess a source file
+canThreePartsEqualSum.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.i
+.PHONY : canThreePartsEqualSum.cpp.i
+
+canThreePartsEqualSum.s: canThreePartsEqualSum.cpp.s
+
+.PHONY : canThreePartsEqualSum.s
+
+# target to generate assembly for a file
+canThreePartsEqualSum.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s
+.PHONY : canThreePartsEqualSum.cpp.s
+
 climbStairs.o: climbStairs.cpp.o
 
 .PHONY : climbStairs.o
@@ -203,6 +230,33 @@ coinChange.s: coinChange.cpp.s
 coinChange.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.s
 .PHONY : coinChange.cpp.s
+
+diameterOfBinaryTree.o: diameterOfBinaryTree.cpp.o
+
+.PHONY : diameterOfBinaryTree.o
+
+# target to build an object file
+diameterOfBinaryTree.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o
+.PHONY : diameterOfBinaryTree.cpp.o
+
+diameterOfBinaryTree.i: diameterOfBinaryTree.cpp.i
+
+.PHONY : diameterOfBinaryTree.i
+
+# target to preprocess a source file
+diameterOfBinaryTree.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.i
+.PHONY : diameterOfBinaryTree.cpp.i
+
+diameterOfBinaryTree.s: diameterOfBinaryTree.cpp.s
+
+.PHONY : diameterOfBinaryTree.s
+
+# target to generate assembly for a file
+diameterOfBinaryTree.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.s
+.PHONY : diameterOfBinaryTree.cpp.s
 
 distributeCandies.o: distributeCandies.cpp.o
 
@@ -594,12 +648,18 @@ help:
 	@echo "... buildTree.o"
 	@echo "... buildTree.i"
 	@echo "... buildTree.s"
+	@echo "... canThreePartsEqualSum.o"
+	@echo "... canThreePartsEqualSum.i"
+	@echo "... canThreePartsEqualSum.s"
 	@echo "... climbStairs.o"
 	@echo "... climbStairs.i"
 	@echo "... climbStairs.s"
 	@echo "... coinChange.o"
 	@echo "... coinChange.i"
 	@echo "... coinChange.s"
+	@echo "... diameterOfBinaryTree.o"
+	@echo "... diameterOfBinaryTree.i"
+	@echo "... diameterOfBinaryTree.s"
 	@echo "... distributeCandies.o"
 	@echo "... distributeCandies.i"
 	@echo "... distributeCandies.s"

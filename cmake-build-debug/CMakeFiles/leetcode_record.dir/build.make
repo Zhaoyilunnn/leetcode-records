@@ -278,6 +278,32 @@ CMakeFiles/leetcode_record.dir/coinChange.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/coinChange.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/coinChange.cpp -o CMakeFiles/leetcode_record.dir/coinChange.cpp.s
 
+CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o: ../diameterOfBinaryTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/diameterOfBinaryTree.cpp
+
+CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/diameterOfBinaryTree.cpp > CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.i
+
+CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/diameterOfBinaryTree.cpp -o CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.s
+
+CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: ../canThreePartsEqualSum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp
+
+CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp > CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.i
+
+CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp -o CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s
+
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/buildTree.cpp.o" \
@@ -296,7 +322,9 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o" \
 "CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o" \
 "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o" \
-"CMakeFiles/leetcode_record.dir/coinChange.cpp.o"
+"CMakeFiles/leetcode_record.dir/coinChange.cpp.o" \
+"CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o" \
+"CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -318,9 +346,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/coinChange.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
