@@ -4,7 +4,6 @@
 
 #include "function_defs.h"
 
-// need to optimize, dp?, recursive?
 vector<vector<int>> Solution::findContinuousSequence(int target) {
     vector<vector<int>> result;
     int m = 0;  // m should be larger than n;

@@ -81,6 +81,9 @@ public:
 
     // Partition Array Into Three Parts With Equal Sum
     bool canThreePartsEqualSum(vector<int>& A);
+
+    // Greatest Common Divisor of Strings
+    string gcdOfStrings(string str1, string str2);
 };
 
 // 队列的最大值

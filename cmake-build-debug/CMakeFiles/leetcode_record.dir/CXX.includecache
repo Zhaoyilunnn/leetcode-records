@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp
-function_defs.h
-/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
-
 /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 iostream
 -
@@ -19,4 +15,8 @@ string
 -
 set
 -
+
+/cygdrive/d/Program_Cpp/leetcode_record/main.cpp
+function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 

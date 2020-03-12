@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"
+  "CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o"
   "CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o"
   "CMakeFiles/leetcode_record.dir/main.cpp.o"

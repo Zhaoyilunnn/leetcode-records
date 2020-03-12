@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
     // -------------------------- test orangeRotting end ---------------------------
 
     // -------------------------- test FindContinuousSequence ------------------------
-    vector<vector<int>> res = solution.findContinuousSequence(9);
+//    vector<vector<int>> res = solution.findContinuousSequence(9);
     // -------------------------- test FindContinuousSequence end ---------------------
 
     // -------------------------- test coinChange -------------------------------------
@@ -55,6 +55,10 @@ int main(int argc, const char * argv[]) {
 //    vector<int> vctTest = {0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1};
 //    bool res = solution.canThreePartsEqualSum(vctTest);
     //-------------------------------- test canThreePartsEqualSum -----------
+
+    // -------------------------------- test gcdOfStrings -----------------------
+    string res = solution.gcdOfStrings("ABCABC", "ABC");
+    // -------------------------------- test gcdOfStrings -----------------------
 
     return 0;
 }
