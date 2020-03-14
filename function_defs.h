@@ -9,6 +9,7 @@
 #include <vector>
 #include <string>
 #include <set>
+#include <queue>
 
 using namespace std;
 
@@ -84,6 +85,12 @@ public:
 
     // Greatest Common Divisor of Strings
     string gcdOfStrings(string str1, string str2);
+
+    // Open the lock
+    int openLock(vector<string>& deadends, string target);
+
+    // Longest Increasing Subsequence
+    int lengthOfLIS(vector<int>& nums);
 };
 
 // 队列的最大值

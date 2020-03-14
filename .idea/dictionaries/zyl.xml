@@ -2,9 +2,14 @@
   <dictionary name="zyl">
     <words>
       <w>cout</w>
+      <w>deadend</w>
+      <w>deadends</w>
+      <w>downint</w>
       <w>endl</w>
+      <w>isvisit</w>
       <w>leetcode</w>
       <w>postorder</w>
+      <w>upint</w>
     </words>
   </dictionary>
 </component>

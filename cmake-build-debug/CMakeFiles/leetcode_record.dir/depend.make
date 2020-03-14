@@ -25,8 +25,14 @@ CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../findContinuousSequence.cpp
 CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../gcdOfStrings.cpp
+
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../getAllElements.cpp
+
+CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o: ../lengthOfLIS.cpp
 
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../longestPalindrome.cpp
@@ -42,6 +48,9 @@ CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../minimumTotal.cpp
 
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../numTrees.cpp
+
+CMakeFiles/leetcode_record.dir/openLock.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/openLock.cpp.o: ../openLock.cpp
 
 CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../orangesRotting.cpp

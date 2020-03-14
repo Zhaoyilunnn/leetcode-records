@@ -393,6 +393,33 @@ getAllElements.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.s
 .PHONY : getAllElements.cpp.s
 
+lengthOfLIS.o: lengthOfLIS.cpp.o
+
+.PHONY : lengthOfLIS.o
+
+# target to build an object file
+lengthOfLIS.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o
+.PHONY : lengthOfLIS.cpp.o
+
+lengthOfLIS.i: lengthOfLIS.cpp.i
+
+.PHONY : lengthOfLIS.i
+
+# target to preprocess a source file
+lengthOfLIS.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.i
+.PHONY : lengthOfLIS.cpp.i
+
+lengthOfLIS.s: lengthOfLIS.cpp.s
+
+.PHONY : lengthOfLIS.s
+
+# target to generate assembly for a file
+lengthOfLIS.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.s
+.PHONY : lengthOfLIS.cpp.s
+
 longestPalindrome.o: longestPalindrome.cpp.o
 
 .PHONY : longestPalindrome.o
@@ -527,6 +554,33 @@ numTrees.s: numTrees.cpp.s
 numTrees.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
 .PHONY : numTrees.cpp.s
+
+openLock.o: openLock.cpp.o
+
+.PHONY : openLock.o
+
+# target to build an object file
+openLock.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.o
+.PHONY : openLock.cpp.o
+
+openLock.i: openLock.cpp.i
+
+.PHONY : openLock.i
+
+# target to preprocess a source file
+openLock.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.i
+.PHONY : openLock.cpp.i
+
+openLock.s: openLock.cpp.s
+
+.PHONY : openLock.s
+
+# target to generate assembly for a file
+openLock.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.s
+.PHONY : openLock.cpp.s
 
 orangesRotting.o: orangesRotting.cpp.o
 
@@ -702,6 +756,9 @@ help:
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
+	@echo "... lengthOfLIS.o"
+	@echo "... lengthOfLIS.i"
+	@echo "... lengthOfLIS.s"
 	@echo "... longestPalindrome.o"
 	@echo "... longestPalindrome.i"
 	@echo "... longestPalindrome.s"
@@ -717,6 +774,9 @@ help:
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"
+	@echo "... openLock.o"
+	@echo "... openLock.i"
+	@echo "... openLock.s"
 	@echo "... orangesRotting.o"
 	@echo "... orangesRotting.i"
 	@echo "... orangesRotting.s"

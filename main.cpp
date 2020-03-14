@@ -57,8 +57,21 @@ int main(int argc, const char * argv[]) {
     //-------------------------------- test canThreePartsEqualSum -----------
 
     // -------------------------------- test gcdOfStrings -----------------------
-    string res = solution.gcdOfStrings("ABCABC", "ABC");
+//    string res = solution.gcdOfStrings("ABCABC", "ABC");
     // -------------------------------- test gcdOfStrings -----------------------
+
+    // -------------------------------- test openLock ---------------------------
+//    vector<string> deadends = {"0201","0101","0102","1212","2002"};
+//    string target = "0202";
+//    string t = "0009";
+//    t[3]--;
+//    int res = solution.openLock(deadends, target);
+    // -------------------------------- test openLock ---------------------------
+
+    // --------------------------------- test lengthOfLIS --------------------------
+    vector<int> nums = {3,5,6,2,5,4,19,5,6,7,12};
+    int res = solution.lengthOfLIS(nums);
+    // --------------------------------- test lengthOfLIS --------------------------
 
     return 0;
 }
