@@ -528,6 +528,33 @@ minimumTotal.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.s
 .PHONY : minimumTotal.cpp.s
 
+numIsLand.o: numIsLand.cpp.o
+
+.PHONY : numIsLand.o
+
+# target to build an object file
+numIsLand.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.o
+.PHONY : numIsLand.cpp.o
+
+numIsLand.i: numIsLand.cpp.i
+
+.PHONY : numIsLand.i
+
+# target to preprocess a source file
+numIsLand.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.i
+.PHONY : numIsLand.cpp.i
+
+numIsLand.s: numIsLand.cpp.s
+
+.PHONY : numIsLand.s
+
+# target to generate assembly for a file
+numIsLand.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.s
+.PHONY : numIsLand.cpp.s
+
 numTrees.o: numTrees.cpp.o
 
 .PHONY : numTrees.o
@@ -771,6 +798,9 @@ help:
 	@echo "... minimumTotal.o"
 	@echo "... minimumTotal.i"
 	@echo "... minimumTotal.s"
+	@echo "... numIsLand.o"
+	@echo "... numIsLand.i"
+	@echo "... numIsLand.s"
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"

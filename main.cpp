@@ -69,9 +69,17 @@ int main(int argc, const char * argv[]) {
     // -------------------------------- test openLock ---------------------------
 
     // --------------------------------- test lengthOfLIS --------------------------
-    vector<int> nums = {3,5,6,2,5,4,19,5,6,7,12};
-    int res = solution.lengthOfLIS(nums);
+//    vector<int> nums = {3,5,6,2,5,4,19,5,6,7,12};
+//    int res = solution.lengthOfLIS(nums);
     // --------------------------------- test lengthOfLIS --------------------------
 
+    // --------------------------------- test numIsLand ---------------------------
+    vector<vector<char> > grid =
+            {{'1', '1', '0', '0', '0'},
+             {'1', '1', '0', '0', '0'},
+             {'0', '0', '1', '0', '0'},
+             {'0', '0', '0', '1', '1'}};
+    int res = solution.numIsLands(grid);
+    // --------------------------------- test numIsLand ---------------------------
     return 0;
 }

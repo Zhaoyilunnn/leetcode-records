@@ -91,6 +91,9 @@ public:
 
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
+
+    // 岛屿数量
+    int numIsLands(vector<vector<char>>& grid);
 };
 
 // 队列的最大值
