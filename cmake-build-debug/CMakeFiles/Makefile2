@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/leetcode_record.dir/all:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/depend
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target leetcode_record"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target leetcode_record"
 .PHONY : CMakeFiles/leetcode_record.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/leetcode_record.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leetcode_record.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/leetcode_record.dir/rule

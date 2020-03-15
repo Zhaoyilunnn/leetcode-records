@@ -366,6 +366,33 @@ gcdOfStrings.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s
 .PHONY : gcdOfStrings.cpp.s
 
+generalBFSProblems.o: generalBFSProblems.cpp.o
+
+.PHONY : generalBFSProblems.o
+
+# target to build an object file
+generalBFSProblems.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.o
+.PHONY : generalBFSProblems.cpp.o
+
+generalBFSProblems.i: generalBFSProblems.cpp.i
+
+.PHONY : generalBFSProblems.i
+
+# target to preprocess a source file
+generalBFSProblems.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.i
+.PHONY : generalBFSProblems.cpp.i
+
+generalBFSProblems.s: generalBFSProblems.cpp.s
+
+.PHONY : generalBFSProblems.s
+
+# target to generate assembly for a file
+generalBFSProblems.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.s
+.PHONY : generalBFSProblems.cpp.s
+
 getAllElements.o: getAllElements.cpp.o
 
 .PHONY : getAllElements.o
@@ -501,33 +528,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-maxAreaOfIsland.o: maxAreaOfIsland.cpp.o
-
-.PHONY : maxAreaOfIsland.o
-
-# target to build an object file
-maxAreaOfIsland.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o
-.PHONY : maxAreaOfIsland.cpp.o
-
-maxAreaOfIsland.i: maxAreaOfIsland.cpp.i
-
-.PHONY : maxAreaOfIsland.i
-
-# target to preprocess a source file
-maxAreaOfIsland.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.i
-.PHONY : maxAreaOfIsland.cpp.i
-
-maxAreaOfIsland.s: maxAreaOfIsland.cpp.s
-
-.PHONY : maxAreaOfIsland.s
-
-# target to generate assembly for a file
-maxAreaOfIsland.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.s
-.PHONY : maxAreaOfIsland.cpp.s
-
 maxSubArray.o: maxSubArray.cpp.o
 
 .PHONY : maxSubArray.o
@@ -582,33 +582,6 @@ minimumTotal.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.s
 .PHONY : minimumTotal.cpp.s
 
-numIsLand.o: numIsLand.cpp.o
-
-.PHONY : numIsLand.o
-
-# target to build an object file
-numIsLand.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.o
-.PHONY : numIsLand.cpp.o
-
-numIsLand.i: numIsLand.cpp.i
-
-.PHONY : numIsLand.i
-
-# target to preprocess a source file
-numIsLand.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.i
-.PHONY : numIsLand.cpp.i
-
-numIsLand.s: numIsLand.cpp.s
-
-.PHONY : numIsLand.s
-
-# target to generate assembly for a file
-numIsLand.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numIsLand.cpp.s
-.PHONY : numIsLand.cpp.s
-
 numTrees.o: numTrees.cpp.o
 
 .PHONY : numTrees.o
@@ -662,33 +635,6 @@ openLock.s: openLock.cpp.s
 openLock.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.s
 .PHONY : openLock.cpp.s
-
-orangesRotting.o: orangesRotting.cpp.o
-
-.PHONY : orangesRotting.o
-
-# target to build an object file
-orangesRotting.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o
-.PHONY : orangesRotting.cpp.o
-
-orangesRotting.i: orangesRotting.cpp.i
-
-.PHONY : orangesRotting.i
-
-# target to preprocess a source file
-orangesRotting.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.i
-.PHONY : orangesRotting.cpp.i
-
-orangesRotting.s: orangesRotting.cpp.s
-
-.PHONY : orangesRotting.s
-
-# target to generate assembly for a file
-orangesRotting.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/orangesRotting.cpp.s
-.PHONY : orangesRotting.cpp.s
 
 removeDuplicates.o: removeDuplicates.cpp.o
 
@@ -834,6 +780,9 @@ help:
 	@echo "... gcdOfStrings.o"
 	@echo "... gcdOfStrings.i"
 	@echo "... gcdOfStrings.s"
+	@echo "... generalBFSProblems.o"
+	@echo "... generalBFSProblems.i"
+	@echo "... generalBFSProblems.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
@@ -849,27 +798,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... maxAreaOfIsland.o"
-	@echo "... maxAreaOfIsland.i"
-	@echo "... maxAreaOfIsland.s"
 	@echo "... maxSubArray.o"
 	@echo "... maxSubArray.i"
 	@echo "... maxSubArray.s"
 	@echo "... minimumTotal.o"
 	@echo "... minimumTotal.i"
 	@echo "... minimumTotal.s"
-	@echo "... numIsLand.o"
-	@echo "... numIsLand.i"
-	@echo "... numIsLand.s"
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"
 	@echo "... openLock.o"
 	@echo "... openLock.i"
 	@echo "... openLock.s"
-	@echo "... orangesRotting.o"
-	@echo "... orangesRotting.i"
-	@echo "... orangesRotting.s"
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"

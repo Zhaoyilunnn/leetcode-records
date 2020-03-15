@@ -28,6 +28,9 @@ CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../gcdOfStrings.cpp
 
+CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.o: ../generalBFSProblems.cpp
+
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../getAllElements.cpp
 
@@ -36,6 +39,9 @@ CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o: ../lengthOfLIS.cpp
 
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o: ../longestPalindrome.cpp
+
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
 
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../main.cpp
@@ -46,17 +52,11 @@ CMakeFiles/leetcode_record.dir/maxSubArray.cpp.o: ../maxSubArray.cpp
 CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../minimumTotal.cpp
 
-CMakeFiles/leetcode_record.dir/numIsLand.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/numIsLand.cpp.o: ../numIsLand.cpp
-
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../numTrees.cpp
 
 CMakeFiles/leetcode_record.dir/openLock.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/openLock.cpp.o: ../openLock.cpp
-
-CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/orangesRotting.cpp.o: ../orangesRotting.cpp
 
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../removeDuplicates.cpp

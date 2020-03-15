@@ -16,7 +16,16 @@ add_executable(leetcode_record
         maxSubArray.cpp
         minimumTotal.cpp
         numTrees.cpp
-        orangesRotting.cpp
         rob.cpp
         uniquePaths.cpp
-        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp findContinuousSequence.cpp coinChange.cpp diameterOfBinaryTree.cpp canThreePartsEqualSum.cpp gcdOfStrings.cpp openLock.cpp lengthOfLIS.cpp generalBFSProblems.cpp luckyNumbers.cpp maxAreaOfIsland.cpp)
+        zigzagLevelOrder.cpp
+        distributeCandies.cpp
+        removeDuplicates.cpp
+        findContinuousSequence.cpp
+        coinChange.cpp
+        diameterOfBinaryTree.cpp
+        canThreePartsEqualSum.cpp
+        gcdOfStrings.cpp
+        lengthOfLIS.cpp
+        generalBFSAndDFSProblems.cpp
+        luckyNumbers.cpp)

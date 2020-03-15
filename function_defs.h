@@ -83,14 +83,10 @@ public:
     // Greatest Common Divisor of Strings
     string gcdOfStrings(string str1, string str2);
 
-    // Open the lock
-    int openLock(vector<string>& deadends, string target);
-
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
 
-    /*The following problems are BFS-based
-     *  The key point of these problems is to find a continuous block of numbers (4 directionally connected)*/
+    /*The following problems are general BFS or DFS based*/
     // 岛屿数量
     int numIsLands(vector<vector<char>>& grid);
     // Max Area of Island
@@ -99,6 +95,9 @@ public:
     int islandPerimeter(vector<vector<int>>& grid);
     // 腐烂的橘子
     int orangesRotting(vector<vector<int>>& grid);
+    // Open the lock
+    int openLock(vector<string>& deadends, string target);
+
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
