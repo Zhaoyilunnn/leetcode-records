@@ -447,6 +447,33 @@ longestPalindrome.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.s
 .PHONY : longestPalindrome.cpp.s
 
+luckyNumbers.o: luckyNumbers.cpp.o
+
+.PHONY : luckyNumbers.o
+
+# target to build an object file
+luckyNumbers.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o
+.PHONY : luckyNumbers.cpp.o
+
+luckyNumbers.i: luckyNumbers.cpp.i
+
+.PHONY : luckyNumbers.i
+
+# target to preprocess a source file
+luckyNumbers.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.i
+.PHONY : luckyNumbers.cpp.i
+
+luckyNumbers.s: luckyNumbers.cpp.s
+
+.PHONY : luckyNumbers.s
+
+# target to generate assembly for a file
+luckyNumbers.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s
+.PHONY : luckyNumbers.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -473,6 +500,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+maxAreaOfIsland.o: maxAreaOfIsland.cpp.o
+
+.PHONY : maxAreaOfIsland.o
+
+# target to build an object file
+maxAreaOfIsland.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o
+.PHONY : maxAreaOfIsland.cpp.o
+
+maxAreaOfIsland.i: maxAreaOfIsland.cpp.i
+
+.PHONY : maxAreaOfIsland.i
+
+# target to preprocess a source file
+maxAreaOfIsland.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.i
+.PHONY : maxAreaOfIsland.cpp.i
+
+maxAreaOfIsland.s: maxAreaOfIsland.cpp.s
+
+.PHONY : maxAreaOfIsland.s
+
+# target to generate assembly for a file
+maxAreaOfIsland.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.s
+.PHONY : maxAreaOfIsland.cpp.s
 
 maxSubArray.o: maxSubArray.cpp.o
 
@@ -789,9 +843,15 @@ help:
 	@echo "... longestPalindrome.o"
 	@echo "... longestPalindrome.i"
 	@echo "... longestPalindrome.s"
+	@echo "... luckyNumbers.o"
+	@echo "... luckyNumbers.i"
+	@echo "... luckyNumbers.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... maxAreaOfIsland.o"
+	@echo "... maxAreaOfIsland.i"
+	@echo "... maxAreaOfIsland.s"
 	@echo "... maxSubArray.o"
 	@echo "... maxSubArray.i"
 	@echo "... maxSubArray.s"

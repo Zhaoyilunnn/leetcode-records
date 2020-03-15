@@ -19,4 +19,4 @@ add_executable(leetcode_record
         orangesRotting.cpp
         rob.cpp
         uniquePaths.cpp
-        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp findContinuousSequence.cpp coinChange.cpp diameterOfBinaryTree.cpp canThreePartsEqualSum.cpp gcdOfStrings.cpp openLock.cpp lengthOfLIS.cpp numIsLand.cpp)
+        zigzagLevelOrder.cpp distributeCandies.cpp removeDuplicates.cpp findContinuousSequence.cpp coinChange.cpp diameterOfBinaryTree.cpp canThreePartsEqualSum.cpp gcdOfStrings.cpp openLock.cpp lengthOfLIS.cpp generalBFSProblems.cpp luckyNumbers.cpp maxAreaOfIsland.cpp)

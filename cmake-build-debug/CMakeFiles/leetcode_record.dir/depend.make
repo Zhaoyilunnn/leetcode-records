@@ -46,6 +46,9 @@ CMakeFiles/leetcode_record.dir/maxSubArray.cpp.o: ../maxSubArray.cpp
 CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o: ../minimumTotal.cpp
 
+CMakeFiles/leetcode_record.dir/numIsLand.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/numIsLand.cpp.o: ../numIsLand.cpp
+
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numTrees.cpp.o: ../numTrees.cpp
 

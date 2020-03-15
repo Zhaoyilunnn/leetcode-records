@@ -356,6 +356,32 @@ CMakeFiles/leetcode_record.dir/numIsLand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/numIsLand.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/numIsLand.cpp -o CMakeFiles/leetcode_record.dir/numIsLand.cpp.s
 
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp
+
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp > CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.i
+
+CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp -o CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s
+
+CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o: ../maxAreaOfIsland.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/maxAreaOfIsland.cpp
+
+CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/maxAreaOfIsland.cpp > CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.i
+
+CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/maxAreaOfIsland.cpp -o CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.s
+
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/buildTree.cpp.o" \
@@ -380,7 +406,9 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o" \
 "CMakeFiles/leetcode_record.dir/openLock.cpp.o" \
 "CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o" \
-"CMakeFiles/leetcode_record.dir/numIsLand.cpp.o"
+"CMakeFiles/leetcode_record.dir/numIsLand.cpp.o" \
+"CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o" \
+"CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -408,9 +436,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/openLock.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/numIsLand.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/maxAreaOfIsland.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

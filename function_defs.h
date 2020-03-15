@@ -62,9 +62,6 @@ public:
     // 两颗二叉搜索树中的所有元素
     vector<int> getAllElements(TreeNode* root1, TreeNode* root2);
 
-    // 腐烂的橘子
-    int orangesRotting(vector<vector<int>>& grid);
-
     // 分发糖果||
     vector<int> distributeCandies(int candies, int num_people);
 
@@ -92,8 +89,19 @@ public:
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
 
+    /*The following problems are BFS-based
+     *  The key point of these problems is to find a continuous block of numbers (4 directionally connected)*/
     // 岛屿数量
     int numIsLands(vector<vector<char>>& grid);
+    // Max Area of Island
+    int maxAreaOfIsland(vector<vector<int>> &grid);
+    // Island Perimeter
+    int islandPerimeter(vector<vector<int>>& grid);
+    // 腐烂的橘子
+    int orangesRotting(vector<vector<int>>& grid);
+
+    // 矩阵中的幸运数
+    vector<int> luckyNumbers(vector<vector<int>>& matrix);
 };
 
 // 队列的最大值
