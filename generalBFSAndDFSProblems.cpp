@@ -5,7 +5,6 @@
 #include "function_defs.h"
 
 bool findNewNode(vector<vector<char> > &grid, vector<vector<int> > &visited, pair<int, int> &p) {
-    pair<int, int> result;
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
             if (grid[i][j] == '1' && visited[i][j] == 0) {
@@ -77,7 +76,6 @@ int Solution::numIsLands(vector<vector<char> > &grid) {
 
 
 bool findNewNodePro(vector<vector<int> > &grid, vector<vector<int> > &visited, pair<int, int> &p) {
-    pair<int, int> result;
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
             if (grid[i][j] == 1 && visited[i][j] == 0) {

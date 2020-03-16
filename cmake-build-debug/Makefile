@@ -231,6 +231,33 @@ coinChange.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.s
 .PHONY : coinChange.cpp.s
 
+compressString.o: compressString.cpp.o
+
+.PHONY : compressString.o
+
+# target to build an object file
+compressString.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.o
+.PHONY : compressString.cpp.o
+
+compressString.i: compressString.cpp.i
+
+.PHONY : compressString.i
+
+# target to preprocess a source file
+compressString.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.i
+.PHONY : compressString.cpp.i
+
+compressString.s: compressString.cpp.s
+
+.PHONY : compressString.s
+
+# target to generate assembly for a file
+compressString.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.s
+.PHONY : compressString.cpp.s
+
 diameterOfBinaryTree.o: diameterOfBinaryTree.cpp.o
 
 .PHONY : diameterOfBinaryTree.o
@@ -366,32 +393,32 @@ gcdOfStrings.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s
 .PHONY : gcdOfStrings.cpp.s
 
-generalBFSProblems.o: generalBFSProblems.cpp.o
+generalBFSAndDFSProblems.o: generalBFSAndDFSProblems.cpp.o
 
-.PHONY : generalBFSProblems.o
+.PHONY : generalBFSAndDFSProblems.o
 
 # target to build an object file
-generalBFSProblems.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.o
-.PHONY : generalBFSProblems.cpp.o
+generalBFSAndDFSProblems.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o
+.PHONY : generalBFSAndDFSProblems.cpp.o
 
-generalBFSProblems.i: generalBFSProblems.cpp.i
+generalBFSAndDFSProblems.i: generalBFSAndDFSProblems.cpp.i
 
-.PHONY : generalBFSProblems.i
+.PHONY : generalBFSAndDFSProblems.i
 
 # target to preprocess a source file
-generalBFSProblems.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.i
-.PHONY : generalBFSProblems.cpp.i
+generalBFSAndDFSProblems.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.i
+.PHONY : generalBFSAndDFSProblems.cpp.i
 
-generalBFSProblems.s: generalBFSProblems.cpp.s
+generalBFSAndDFSProblems.s: generalBFSAndDFSProblems.cpp.s
 
-.PHONY : generalBFSProblems.s
+.PHONY : generalBFSAndDFSProblems.s
 
 # target to generate assembly for a file
-generalBFSProblems.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSProblems.cpp.s
-.PHONY : generalBFSProblems.cpp.s
+generalBFSAndDFSProblems.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.s
+.PHONY : generalBFSAndDFSProblems.cpp.s
 
 getAllElements.o: getAllElements.cpp.o
 
@@ -609,33 +636,6 @@ numTrees.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
 .PHONY : numTrees.cpp.s
 
-openLock.o: openLock.cpp.o
-
-.PHONY : openLock.o
-
-# target to build an object file
-openLock.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.o
-.PHONY : openLock.cpp.o
-
-openLock.i: openLock.cpp.i
-
-.PHONY : openLock.i
-
-# target to preprocess a source file
-openLock.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.i
-.PHONY : openLock.cpp.i
-
-openLock.s: openLock.cpp.s
-
-.PHONY : openLock.s
-
-# target to generate assembly for a file
-openLock.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/openLock.cpp.s
-.PHONY : openLock.cpp.s
-
 removeDuplicates.o: removeDuplicates.cpp.o
 
 .PHONY : removeDuplicates.o
@@ -765,6 +765,9 @@ help:
 	@echo "... coinChange.o"
 	@echo "... coinChange.i"
 	@echo "... coinChange.s"
+	@echo "... compressString.o"
+	@echo "... compressString.i"
+	@echo "... compressString.s"
 	@echo "... diameterOfBinaryTree.o"
 	@echo "... diameterOfBinaryTree.i"
 	@echo "... diameterOfBinaryTree.s"
@@ -780,9 +783,9 @@ help:
 	@echo "... gcdOfStrings.o"
 	@echo "... gcdOfStrings.i"
 	@echo "... gcdOfStrings.s"
-	@echo "... generalBFSProblems.o"
-	@echo "... generalBFSProblems.i"
-	@echo "... generalBFSProblems.s"
+	@echo "... generalBFSAndDFSProblems.o"
+	@echo "... generalBFSAndDFSProblems.i"
+	@echo "... generalBFSAndDFSProblems.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
@@ -807,9 +810,6 @@ help:
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"
-	@echo "... openLock.o"
-	@echo "... openLock.i"
-	@echo "... openLock.s"
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"

@@ -97,7 +97,10 @@ public:
     int orangesRotting(vector<vector<int>>& grid);
     // Open the lock
     int openLock(vector<string>& deadends, string target);
+    /**/
 
+    // Compress String LCCI
+    string compressString(string S);
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
