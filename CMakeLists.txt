@@ -28,4 +28,4 @@ add_executable(leetcode_record
         gcdOfStrings.cpp
         lengthOfLIS.cpp
         generalBFSAndDFSProblems.cpp
-        luckyNumbers.cpp compressString.cpp)
+        luckyNumbers.cpp generalStringProblems.cpp)

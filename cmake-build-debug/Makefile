@@ -231,33 +231,6 @@ coinChange.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.s
 .PHONY : coinChange.cpp.s
 
-compressString.o: compressString.cpp.o
-
-.PHONY : compressString.o
-
-# target to build an object file
-compressString.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.o
-.PHONY : compressString.cpp.o
-
-compressString.i: compressString.cpp.i
-
-.PHONY : compressString.i
-
-# target to preprocess a source file
-compressString.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.i
-.PHONY : compressString.cpp.i
-
-compressString.s: compressString.cpp.s
-
-.PHONY : compressString.s
-
-# target to generate assembly for a file
-compressString.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/compressString.cpp.s
-.PHONY : compressString.cpp.s
-
 diameterOfBinaryTree.o: diameterOfBinaryTree.cpp.o
 
 .PHONY : diameterOfBinaryTree.o
@@ -419,6 +392,33 @@ generalBFSAndDFSProblems.s: generalBFSAndDFSProblems.cpp.s
 generalBFSAndDFSProblems.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.s
 .PHONY : generalBFSAndDFSProblems.cpp.s
+
+generalStringProblems.o: generalStringProblems.cpp.o
+
+.PHONY : generalStringProblems.o
+
+# target to build an object file
+generalStringProblems.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o
+.PHONY : generalStringProblems.cpp.o
+
+generalStringProblems.i: generalStringProblems.cpp.i
+
+.PHONY : generalStringProblems.i
+
+# target to preprocess a source file
+generalStringProblems.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.i
+.PHONY : generalStringProblems.cpp.i
+
+generalStringProblems.s: generalStringProblems.cpp.s
+
+.PHONY : generalStringProblems.s
+
+# target to generate assembly for a file
+generalStringProblems.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.s
+.PHONY : generalStringProblems.cpp.s
 
 getAllElements.o: getAllElements.cpp.o
 
@@ -765,9 +765,6 @@ help:
 	@echo "... coinChange.o"
 	@echo "... coinChange.i"
 	@echo "... coinChange.s"
-	@echo "... compressString.o"
-	@echo "... compressString.i"
-	@echo "... compressString.s"
 	@echo "... diameterOfBinaryTree.o"
 	@echo "... diameterOfBinaryTree.i"
 	@echo "... diameterOfBinaryTree.s"
@@ -786,6 +783,9 @@ help:
 	@echo "... generalBFSAndDFSProblems.o"
 	@echo "... generalBFSAndDFSProblems.i"
 	@echo "... generalBFSAndDFSProblems.s"
+	@echo "... generalStringProblems.o"
+	@echo "... generalStringProblems.i"
+	@echo "... generalStringProblems.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"

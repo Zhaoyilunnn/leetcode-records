@@ -10,6 +10,7 @@
 #include <string>
 #include <set>
 #include <queue>
+#include <map>
 
 using namespace std;
 
@@ -99,8 +100,12 @@ public:
     int openLock(vector<string>& deadends, string target);
     /**/
 
+    /*String problems*/
     // Compress String LCCI
     string compressString(string S);
+    // Find Words That Can Be Formed by Characters
+    int countCharacters(vector<string>& words, string chars);
+    /**/
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
