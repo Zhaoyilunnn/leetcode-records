@@ -80,25 +80,21 @@ string Solution::longestPalindrome(string s) {
  *           one character with odd number */
 /*****************************************************/
 int Solution::longestPalindromeII(string s) {
-    map<char, int> char_num;
-    vector<char> chars;
+    vector<int> chars(52, 0);
     for (char & i : s) {
-        pair<char, int> p_char_num;
-        auto it = char_num.find(i);
-        if (it == char_num.end()) {
-            p_char_num = make_pair(i, 1);
-            char_num.insert(p_char_num);
-            chars.push_back(i);
-        } else
-            it->second++;
+        if (i-'a' >= 0)
+            chars[i-'a']++;
+        else
+            chars[i-'A']++;
     }
     int res = 0;
-    for (auto ch : chars) {
-        int num_ch = char_num.find(ch)->second;
-        if (num_ch % 2 == 0)
-            res += num_ch;
+    for (auto num : chars) {
+        if (num <= 0)
+            continue;
+        if (num % 2 == 0)
+            res += num;
         else
-            res += --num_ch;
+            res += --num;
     }
     if (res < s.size())
         res++;

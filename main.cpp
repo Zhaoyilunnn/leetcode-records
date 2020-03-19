@@ -97,9 +97,13 @@ int main(int argc, const char * argv[]) {
 */
 
     /*test isRectangleOverlap*/
+/*
     vector<int> rect1 = {0, 0, 1, 1};
     vector<int> rect2 = {1, 0, 2, 1};
     bool res = solution.isRectangleOverlap(rect1, rect2);
+*/
 
+    /*test longestPalindrome*/
+    int res = solution.longestPalindromeII("abccccdd");
     return 0;
 }
