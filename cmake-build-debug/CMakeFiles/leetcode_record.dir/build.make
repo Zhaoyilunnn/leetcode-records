@@ -343,18 +343,31 @@ CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp -o CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s
 
-CMakeFiles/leetcode_record.dir/compressString.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/compressString.cpp.o: ../compressString.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/compressString.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/compressString.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/compressString.cpp
+CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o: ../generalStringProblems.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/generalStringProblems.cpp
 
-CMakeFiles/leetcode_record.dir/compressString.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/compressString.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/compressString.cpp > CMakeFiles/leetcode_record.dir/compressString.cpp.i
+CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/generalStringProblems.cpp > CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.i
 
-CMakeFiles/leetcode_record.dir/compressString.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/compressString.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/compressString.cpp -o CMakeFiles/leetcode_record.dir/compressString.cpp.s
+CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/generalStringProblems.cpp -o CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.s
+
+CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../isRectangleOverlap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp
+
+CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp > CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.i
+
+CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp -o CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s
 
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
@@ -380,7 +393,8 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o" \
 "CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o" \
 "CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o" \
-"CMakeFiles/leetcode_record.dir/compressString.cpp.o"
+"CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o" \
+"CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -407,10 +421,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/compressString.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

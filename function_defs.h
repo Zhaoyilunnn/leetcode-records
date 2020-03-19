@@ -109,6 +109,9 @@ public:
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
+
+    // Rectangle Overlap
+    bool isRectangleOverlap(vector<int>& rect1, vector<int>& rect2);
 };
 
 // 队列的最大值

@@ -30,11 +30,11 @@ string Solution::compressString(string S) {
         return result;
 }
 
-/*********************************************************/
-/****************** Solution: ****************************/
-/******* Use a map to store the char in chars and its count --need optimize ****************/
-/******* Use a vector to store and then find it directly because they are all a-z -- optimization 03//17/2020
- * ****************/
+/********************************************************************************************************************/
+/****************************************************** Solution: ***************************************************/
+/* Solution 1: Use a map to store the char in chars and its count --need optimize                                   */
+/* Solution 2: Use a vector to store and then find it directly because they are all a-z -- optimization 03//17/2020 */
+/********************************************************************************************************************/
 int Solution::countCharacters(vector<string> &words, string chars) {
    vector<int> char_num(26, 0);
    for (auto ch: chars)
