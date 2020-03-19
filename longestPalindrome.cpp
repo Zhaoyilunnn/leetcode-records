@@ -70,3 +70,37 @@ string Solution::longestPalindrome(string s) {
     }
     return res[res.size()-1];
 }
+
+/*****************************************************/
+/* Solution: count the number of each character
+ *           if even number, add to result
+ *           if odd number, add number-1 to result
+ *           if the result is less than the string
+ *           length, result++, since we could have
+ *           one character with odd number */
+/*****************************************************/
+int Solution::longestPalindromeII(string s) {
+    map<char, int> char_num;
+    vector<char> chars;
+    for (char & i : s) {
+        pair<char, int> p_char_num;
+        auto it = char_num.find(i);
+        if (it == char_num.end()) {
+            p_char_num = make_pair(i, 1);
+            char_num.insert(p_char_num);
+            chars.push_back(i);
+        } else
+            it->second++;
+    }
+    int res = 0;
+    for (auto ch : chars) {
+        int num_ch = char_num.find(ch)->second;
+        if (num_ch % 2 == 0)
+            res += num_ch;
+        else
+            res += --num_ch;
+    }
+    if (res < s.size())
+        res++;
+    return res;
+}

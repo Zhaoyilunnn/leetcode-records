@@ -38,6 +38,8 @@ public:
 
     // 最长回文子串
     string longestPalindrome(string s);
+    // Longest Palindrome
+    int longestPalindromeII(string s);
 
     // 最大子序和
     int maxSubArray(vector<int>& nums);
@@ -112,6 +114,7 @@ public:
 
     // Rectangle Overlap
     bool isRectangleOverlap(vector<int>& rect1, vector<int>& rect2);
+
 };
 
 // 队列的最大值
