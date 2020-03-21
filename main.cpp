@@ -104,6 +104,13 @@ int main(int argc, const char * argv[]) {
 */
 
     /*test longestPalindrome*/
-    int res = solution.longestPalindromeII("abccccdd");
+    /*int res = solution.longestPalindromeII("abccccdd");
+    */
+
+    /*test getLeastNumbers*/
+    /*vector<int> test = {0,0,2,3,3,5,6,0,3,4,4,4,3,0,9,14,4,17,6,4,10,18,21,13,8,4,12,6,19,11,8,12,14,7,16,34,19,18,15,14,22,41,32,23,27,37,2,30,14,12,23,41,39,2,21,32,22,1,12,25,6,46,7,61,13,64,54,56,29,41,51,2,9,65,17,28,34,41,1,62,23,14,60,14,22,17,67,86,81,45,78,9,27,17,30,54,35,42,72,94};
+    vector<int> res = solution.getLeastNumbers(test, 21);
+*/
+    bool res = solution.canMeasureWater(104681, 104683, 54);
     return 0;
 }

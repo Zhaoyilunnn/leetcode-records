@@ -4,29 +4,22 @@
 
 #include "function_defs.h"
 
-void fastSort(vector<int>& coins) {
-    if (coins.size() == 1 || coins.empty())
-        return;
-    vector<int> large;
-    vector<int> small;
-    int ref = coins[0];
-    for (int i = 1; i < coins.size(); i++) {
-        if (coins[i] >= ref)
-            large.push_back(coins[i]);
-        else
-            small.push_back(coins[i]);
-    }
-    fastSort(large);
-    fastSort(small);
-    small.push_back(ref);
-    small.insert(small.end(), large.begin(), large.end());
-    coins = small;
-}
-
+/********************************************************************/
+/* Solution: Keys --> the result must be the one of the
+ *                    results[amount-i], i belongs to coins, add 1
+ *           Sub problem --> compute the results of coinChange(coins, amount-i)
+ *           Steps
+ *              for amount_sub = 1 : amount;
+ *                  for coin : coins;
+ *                      temp = find minimum results[i-coin]
+ *                      results[i] = temp + 1
+ *                  end for
+ *              end for
+ *                                                                  */
+/********************************************************************/
 int Solution::coinChange(vector<int>& coins, int amount) {
     if (coins.empty())
         return -1;
-    fastSort(coins);
     vector<int> results;
     int result = 0;
     int temp = 0;

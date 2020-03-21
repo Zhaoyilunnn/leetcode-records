@@ -115,6 +115,12 @@ public:
     // Rectangle Overlap
     bool isRectangleOverlap(vector<int>& rect1, vector<int>& rect2);
 
+    // Minimum K number
+    vector<int> getLeastNumbers(vector<int>& arr, int k);
+
+    // Water and Jug Problem
+    bool canMeasureWater(int x, int y, int z);
+
 };
 
 // 队列的最大值

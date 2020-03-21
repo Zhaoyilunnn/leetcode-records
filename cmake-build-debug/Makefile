@@ -150,6 +150,33 @@ buildTree.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.s
 .PHONY : buildTree.cpp.s
 
+canMeasureWater.o: canMeasureWater.cpp.o
+
+.PHONY : canMeasureWater.o
+
+# target to build an object file
+canMeasureWater.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o
+.PHONY : canMeasureWater.cpp.o
+
+canMeasureWater.i: canMeasureWater.cpp.i
+
+.PHONY : canMeasureWater.i
+
+# target to preprocess a source file
+canMeasureWater.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.i
+.PHONY : canMeasureWater.cpp.i
+
+canMeasureWater.s: canMeasureWater.cpp.s
+
+.PHONY : canMeasureWater.s
+
+# target to generate assembly for a file
+canMeasureWater.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.s
+.PHONY : canMeasureWater.cpp.s
+
 canThreePartsEqualSum.o: canThreePartsEqualSum.cpp.o
 
 .PHONY : canThreePartsEqualSum.o
@@ -446,6 +473,33 @@ getAllElements.s: getAllElements.cpp.s
 getAllElements.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.s
 .PHONY : getAllElements.cpp.s
+
+getLeastNumbers.o: getLeastNumbers.cpp.o
+
+.PHONY : getLeastNumbers.o
+
+# target to build an object file
+getLeastNumbers.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o
+.PHONY : getLeastNumbers.cpp.o
+
+getLeastNumbers.i: getLeastNumbers.cpp.i
+
+.PHONY : getLeastNumbers.i
+
+# target to preprocess a source file
+getLeastNumbers.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.i
+.PHONY : getLeastNumbers.cpp.i
+
+getLeastNumbers.s: getLeastNumbers.cpp.s
+
+.PHONY : getLeastNumbers.s
+
+# target to generate assembly for a file
+getLeastNumbers.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s
+.PHONY : getLeastNumbers.cpp.s
 
 isRectangleOverlap.o: isRectangleOverlap.cpp.o
 
@@ -783,6 +837,9 @@ help:
 	@echo "... buildTree.o"
 	@echo "... buildTree.i"
 	@echo "... buildTree.s"
+	@echo "... canMeasureWater.o"
+	@echo "... canMeasureWater.i"
+	@echo "... canMeasureWater.s"
 	@echo "... canThreePartsEqualSum.o"
 	@echo "... canThreePartsEqualSum.i"
 	@echo "... canThreePartsEqualSum.s"
@@ -816,6 +873,9 @@ help:
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
+	@echo "... getLeastNumbers.o"
+	@echo "... getLeastNumbers.i"
+	@echo "... getLeastNumbers.s"
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"

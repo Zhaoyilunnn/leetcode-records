@@ -4,6 +4,9 @@
 CMakeFiles/leetcode_record.dir/buildTree.cpp.o: ../buildTree.cpp
 CMakeFiles/leetcode_record.dir/buildTree.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o: ../canMeasureWater.cpp
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o: ../function_defs.h
+
 CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: ../canThreePartsEqualSum.cpp
 CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: ../function_defs.h
 
@@ -36,6 +39,9 @@ CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o: ../generalStringProb
 
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/getAllElements.cpp.o: ../getAllElements.cpp
+
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: ../getLeastNumbers.cpp
 
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../isRectangleOverlap.cpp

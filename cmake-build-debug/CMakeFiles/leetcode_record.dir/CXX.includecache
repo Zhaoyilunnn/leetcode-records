@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/d/Program_Cpp/leetcode_record/canMeasureWater.cpp
+function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+
 /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 iostream
 -
@@ -19,8 +23,4 @@ queue
 -
 map
 -
-
-/cygdrive/d/Program_Cpp/leetcode_record/longestPalindrome.cpp
-function_defs.h
-/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 

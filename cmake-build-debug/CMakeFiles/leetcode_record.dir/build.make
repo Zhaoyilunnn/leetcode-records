@@ -369,6 +369,32 @@ CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp -o CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s
 
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: ../getLeastNumbers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp
+
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp > CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.i
+
+CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp -o CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s
+
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o: ../canMeasureWater.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/canMeasureWater.cpp
+
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/canMeasureWater.cpp > CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.i
+
+CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/canMeasureWater.cpp -o CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.s
+
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/buildTree.cpp.o" \
@@ -394,7 +420,9 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o" \
 "CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o" \
 "CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o" \
-"CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
+"CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o" \
+"CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o" \
+"CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -423,9 +451,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/buildTree.cpp.o"
+  "CMakeFiles/leetcode_record.dir/canMeasureWater.cpp.o"
   "CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o"
   "CMakeFiles/leetcode_record.dir/climbStairs.cpp.o"
   "CMakeFiles/leetcode_record.dir/coinChange.cpp.o"
@@ -11,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o"
   "CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o"
   "CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
+  "CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
   "CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
   "CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o"
   "CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o"

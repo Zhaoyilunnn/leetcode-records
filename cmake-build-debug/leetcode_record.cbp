@@ -85,6 +85,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/buildTree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/canMeasureWater.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -119,6 +122,9 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp">
