@@ -312,7 +312,7 @@ int Solution::openLock(vector<string> &deadends, string target) {
 
 
 /**************************************************************************************/
-/* Current solution: BFS
+/* First solution:   BFS
  *                   1. Process special situation
  *                   2. Use a vector to store cases, cases[0] and cases[sum] is 1
  *                      Other is 2
@@ -320,17 +320,15 @@ int Solution::openLock(vector<string> &deadends, string target) {
  *                      pair<int, int> that store current case
  *                   4. The branches of BFS search including several different
  *                      situations
- * To do: Further optimize, current solution only surpass 10% users*/
+ * Optimization:     solve a solution: a*x + b*y = z, in which a and b are integers and
+ *                   a*x and b*y are less than common multiple of x,y*/
 /**************************************************************************************/
 bool Solution::canMeasureWater(int x, int y, int z) {
-    if (z == 0)
-        return true;
     if (z > x+y)
         return false;
-    if (x == y)
-        return z == x;
     int large = 0;
     int small = 0;
+    int b = 0;
     if (x > y) {
         large = x;
         small = y;
@@ -338,72 +336,10 @@ bool Solution::canMeasureWater(int x, int y, int z) {
         large = y;
         small = x;
     }
-    vector<int> store(large+small+1, 2);
-    store[store.size()-1] = 1;
-    store[0] = 1;
-    queue<pair<int, int>> q;
-    q.push(make_pair(0, 0));
-    int large_curr = 0;
-    int small_curr = 0;
-    while (!q.empty()) {
-        int size = q.size();
-        pair<int, int> p;
-        for (int i = 0; i < size; i++) {
-            large_curr = q.front().first;
-            small_curr = q.front().second;
-            int curr_res = large_curr + small_curr;
-            if (curr_res == z)
-                return true;
-            if (large_curr < large) {
-                p = make_pair(large, small_curr);
-                curr_res = large + small_curr;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            if (small_curr < small) {
-                p = make_pair(large_curr, small);
-                curr_res = large_curr + small;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            if (large - large_curr <= small_curr) {
-                p = make_pair(large, small_curr-large+large_curr);
-                curr_res = large + small_curr-large+large_curr;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            if (large_curr+small_curr <= large) {
-                p = make_pair(large_curr+small_curr, 0);
-                curr_res = large_curr + small_curr;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            if (large_curr > 0) {
-                p = make_pair(0, small_curr);
-                curr_res = small_curr;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            if (small_curr > 0) {
-                p = make_pair(large_curr, 0);
-                curr_res = large_curr;
-                if (store[curr_res] > 0) {
-                    store[curr_res]--;
-                    q.push(p);
-                }
-            }
-            q.pop();
-        }
+    while ((b*large-z) % small != 0) {
+        b++;
+        if (b*large % small == 0)
+            return false;
     }
-    return false;
+    return true;
 }

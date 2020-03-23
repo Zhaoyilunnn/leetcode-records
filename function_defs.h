@@ -121,6 +121,9 @@ public:
     // Water and Jug Problem
     bool canMeasureWater(int x, int y, int z);
 
+    // Minimum Increment to Make Array Unique
+    int minIncrementForUnique(vector<int>& A);
+
 };
 
 // 队列的最大值
