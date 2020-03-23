@@ -115,6 +115,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalBFSAndDFSProblems.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalListProblems.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalStringProblems.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>

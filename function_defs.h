@@ -21,6 +21,12 @@ struct TreeNode {
     explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
 
 class Solution {
 public:
@@ -89,6 +95,7 @@ public:
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
 
+    /************************************************************/
     /*The following problems are general BFS or DFS based*/
     // 岛屿数量
     int numIsLands(vector<vector<char>>& grid);
@@ -100,14 +107,17 @@ public:
     int orangesRotting(vector<vector<int>>& grid);
     // Open the lock
     int openLock(vector<string>& deadends, string target);
-    /**/
+    /************************************************************/
 
+
+    /************************************************************/
     /*String problems*/
     // Compress String LCCI
     string compressString(string S);
     // Find Words That Can Be Formed by Characters
     int countCharacters(vector<string>& words, string chars);
-    /**/
+    /************************************************************/
+
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
@@ -123,6 +133,15 @@ public:
 
     // Minimum Increment to Make Array Unique
     int minIncrementForUnique(vector<int>& A);
+
+
+    /******************************************************/
+    /* General List problems */
+    // Middle of the linked list
+    ListNode* middleNode(ListNode* head);
+    // Swap Nodes in Pairs
+    ListNode* swapPairs(ListNode* head);
+    /******************************************************/
 
 };
 

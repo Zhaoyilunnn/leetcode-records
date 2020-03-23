@@ -393,6 +393,33 @@ generalBFSAndDFSProblems.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.s
 .PHONY : generalBFSAndDFSProblems.cpp.s
 
+generalListProblems.o: generalListProblems.cpp.o
+
+.PHONY : generalListProblems.o
+
+# target to build an object file
+generalListProblems.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.o
+.PHONY : generalListProblems.cpp.o
+
+generalListProblems.i: generalListProblems.cpp.i
+
+.PHONY : generalListProblems.i
+
+# target to preprocess a source file
+generalListProblems.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.i
+.PHONY : generalListProblems.cpp.i
+
+generalListProblems.s: generalListProblems.cpp.s
+
+.PHONY : generalListProblems.s
+
+# target to generate assembly for a file
+generalListProblems.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.s
+.PHONY : generalListProblems.cpp.s
+
 generalStringProblems.o: generalStringProblems.cpp.o
 
 .PHONY : generalStringProblems.o
@@ -864,6 +891,9 @@ help:
 	@echo "... generalBFSAndDFSProblems.o"
 	@echo "... generalBFSAndDFSProblems.i"
 	@echo "... generalBFSAndDFSProblems.s"
+	@echo "... generalListProblems.o"
+	@echo "... generalListProblems.i"
+	@echo "... generalListProblems.s"
 	@echo "... generalStringProblems.o"
 	@echo "... generalStringProblems.i"
 	@echo "... generalStringProblems.s"

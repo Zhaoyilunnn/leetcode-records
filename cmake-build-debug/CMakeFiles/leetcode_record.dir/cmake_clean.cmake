@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"
   "CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o"
   "CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o"
+  "CMakeFiles/leetcode_record.dir/generalListProblems.cpp.o"
   "CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o"
   "CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"

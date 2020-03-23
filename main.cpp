@@ -117,8 +117,17 @@ int main(int argc, const char * argv[]) {
     return 0;*/
 
     /*test minIncrementForUnique*/
-    vector<int> test = {7,2,7,2,1,4,3,1,4,8};
+    /*vector<int> test = {7,2,7,2,1,4,3,1,4,8};
     int res = solution.minIncrementForUnique(test);
+    */
+
+    /*test swapList*/
+    ListNode* head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+//    head->next->next->next = new ListNode(4);
+    ListNode* new_head = solution.swapPairs(head);
+
 
     return 0;
 }
