@@ -82,16 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_DFS_BFS.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_DP.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_List.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_String.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/buildTree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/climbStairs.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/coinChange.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/diameterOfBinaryTree.cpp">
@@ -110,15 +116,6 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/gcdOfStrings.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalBFSAndDFSProblems.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalListProblems.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/generalStringProblems.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp">
@@ -142,12 +139,6 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/main.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/massage.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/maxSubArray.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -160,7 +151,7 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/rob.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/surfaceArea.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/uniquePaths.cpp">

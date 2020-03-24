@@ -137,6 +137,8 @@ public:
     // Minimum Increment to Make Array Unique
     int minIncrementForUnique(vector<int>& A);
 
+    // Surface Area of 3D Shapes
+    int surfaceArea(vector<vector<int>>& grid);
 
     /******************************************************/
     /* General List problems */

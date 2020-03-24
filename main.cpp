@@ -122,12 +122,15 @@ int main(int argc, const char * argv[]) {
     */
 
     /*test swapList*/
-    ListNode* head = new ListNode(1);
+    /*ListNode* head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
-//    head->next->next->next = new ListNode(4);
+    head->next->next->next = new ListNode(4);
     ListNode* new_head = solution.swapPairs(head);
+*/
 
+    vector<vector<int>> test = {{1, 2}, {3, 4}};
+    int res = solution.surfaceArea(test);
 
     return 0;
 }

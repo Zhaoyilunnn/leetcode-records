@@ -123,6 +123,114 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
+Problems_DFS_BFS.o: Problems_DFS_BFS.cpp.o
+
+.PHONY : Problems_DFS_BFS.o
+
+# target to build an object file
+Problems_DFS_BFS.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o
+.PHONY : Problems_DFS_BFS.cpp.o
+
+Problems_DFS_BFS.i: Problems_DFS_BFS.cpp.i
+
+.PHONY : Problems_DFS_BFS.i
+
+# target to preprocess a source file
+Problems_DFS_BFS.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.i
+.PHONY : Problems_DFS_BFS.cpp.i
+
+Problems_DFS_BFS.s: Problems_DFS_BFS.cpp.s
+
+.PHONY : Problems_DFS_BFS.s
+
+# target to generate assembly for a file
+Problems_DFS_BFS.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.s
+.PHONY : Problems_DFS_BFS.cpp.s
+
+Problems_DP.o: Problems_DP.cpp.o
+
+.PHONY : Problems_DP.o
+
+# target to build an object file
+Problems_DP.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.o
+.PHONY : Problems_DP.cpp.o
+
+Problems_DP.i: Problems_DP.cpp.i
+
+.PHONY : Problems_DP.i
+
+# target to preprocess a source file
+Problems_DP.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.i
+.PHONY : Problems_DP.cpp.i
+
+Problems_DP.s: Problems_DP.cpp.s
+
+.PHONY : Problems_DP.s
+
+# target to generate assembly for a file
+Problems_DP.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.s
+.PHONY : Problems_DP.cpp.s
+
+Problems_List.o: Problems_List.cpp.o
+
+.PHONY : Problems_List.o
+
+# target to build an object file
+Problems_List.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.o
+.PHONY : Problems_List.cpp.o
+
+Problems_List.i: Problems_List.cpp.i
+
+.PHONY : Problems_List.i
+
+# target to preprocess a source file
+Problems_List.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.i
+.PHONY : Problems_List.cpp.i
+
+Problems_List.s: Problems_List.cpp.s
+
+.PHONY : Problems_List.s
+
+# target to generate assembly for a file
+Problems_List.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.s
+.PHONY : Problems_List.cpp.s
+
+Problems_String.o: Problems_String.cpp.o
+
+.PHONY : Problems_String.o
+
+# target to build an object file
+Problems_String.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.o
+.PHONY : Problems_String.cpp.o
+
+Problems_String.i: Problems_String.cpp.i
+
+.PHONY : Problems_String.i
+
+# target to preprocess a source file
+Problems_String.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.i
+.PHONY : Problems_String.cpp.i
+
+Problems_String.s: Problems_String.cpp.s
+
+.PHONY : Problems_String.s
+
+# target to generate assembly for a file
+Problems_String.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.s
+.PHONY : Problems_String.cpp.s
+
 buildTree.o: buildTree.cpp.o
 
 .PHONY : buildTree.o
@@ -176,60 +284,6 @@ canThreePartsEqualSum.s: canThreePartsEqualSum.cpp.s
 canThreePartsEqualSum.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s
 .PHONY : canThreePartsEqualSum.cpp.s
-
-climbStairs.o: climbStairs.cpp.o
-
-.PHONY : climbStairs.o
-
-# target to build an object file
-climbStairs.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.o
-.PHONY : climbStairs.cpp.o
-
-climbStairs.i: climbStairs.cpp.i
-
-.PHONY : climbStairs.i
-
-# target to preprocess a source file
-climbStairs.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.i
-.PHONY : climbStairs.cpp.i
-
-climbStairs.s: climbStairs.cpp.s
-
-.PHONY : climbStairs.s
-
-# target to generate assembly for a file
-climbStairs.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/climbStairs.cpp.s
-.PHONY : climbStairs.cpp.s
-
-coinChange.o: coinChange.cpp.o
-
-.PHONY : coinChange.o
-
-# target to build an object file
-coinChange.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.o
-.PHONY : coinChange.cpp.o
-
-coinChange.i: coinChange.cpp.i
-
-.PHONY : coinChange.i
-
-# target to preprocess a source file
-coinChange.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.i
-.PHONY : coinChange.cpp.i
-
-coinChange.s: coinChange.cpp.s
-
-.PHONY : coinChange.s
-
-# target to generate assembly for a file
-coinChange.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/coinChange.cpp.s
-.PHONY : coinChange.cpp.s
 
 diameterOfBinaryTree.o: diameterOfBinaryTree.cpp.o
 
@@ -365,87 +419,6 @@ gcdOfStrings.s: gcdOfStrings.cpp.s
 gcdOfStrings.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s
 .PHONY : gcdOfStrings.cpp.s
-
-generalBFSAndDFSProblems.o: generalBFSAndDFSProblems.cpp.o
-
-.PHONY : generalBFSAndDFSProblems.o
-
-# target to build an object file
-generalBFSAndDFSProblems.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o
-.PHONY : generalBFSAndDFSProblems.cpp.o
-
-generalBFSAndDFSProblems.i: generalBFSAndDFSProblems.cpp.i
-
-.PHONY : generalBFSAndDFSProblems.i
-
-# target to preprocess a source file
-generalBFSAndDFSProblems.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.i
-.PHONY : generalBFSAndDFSProblems.cpp.i
-
-generalBFSAndDFSProblems.s: generalBFSAndDFSProblems.cpp.s
-
-.PHONY : generalBFSAndDFSProblems.s
-
-# target to generate assembly for a file
-generalBFSAndDFSProblems.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.s
-.PHONY : generalBFSAndDFSProblems.cpp.s
-
-generalListProblems.o: generalListProblems.cpp.o
-
-.PHONY : generalListProblems.o
-
-# target to build an object file
-generalListProblems.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.o
-.PHONY : generalListProblems.cpp.o
-
-generalListProblems.i: generalListProblems.cpp.i
-
-.PHONY : generalListProblems.i
-
-# target to preprocess a source file
-generalListProblems.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.i
-.PHONY : generalListProblems.cpp.i
-
-generalListProblems.s: generalListProblems.cpp.s
-
-.PHONY : generalListProblems.s
-
-# target to generate assembly for a file
-generalListProblems.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalListProblems.cpp.s
-.PHONY : generalListProblems.cpp.s
-
-generalStringProblems.o: generalStringProblems.cpp.o
-
-.PHONY : generalStringProblems.o
-
-# target to build an object file
-generalStringProblems.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o
-.PHONY : generalStringProblems.cpp.o
-
-generalStringProblems.i: generalStringProblems.cpp.i
-
-.PHONY : generalStringProblems.i
-
-# target to preprocess a source file
-generalStringProblems.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.i
-.PHONY : generalStringProblems.cpp.i
-
-generalStringProblems.s: generalStringProblems.cpp.s
-
-.PHONY : generalStringProblems.s
-
-# target to generate assembly for a file
-generalStringProblems.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.s
-.PHONY : generalStringProblems.cpp.s
 
 getAllElements.o: getAllElements.cpp.o
 
@@ -636,60 +609,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-massage.o: massage.cpp.o
-
-.PHONY : massage.o
-
-# target to build an object file
-massage.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.o
-.PHONY : massage.cpp.o
-
-massage.i: massage.cpp.i
-
-.PHONY : massage.i
-
-# target to preprocess a source file
-massage.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.i
-.PHONY : massage.cpp.i
-
-massage.s: massage.cpp.s
-
-.PHONY : massage.s
-
-# target to generate assembly for a file
-massage.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.s
-.PHONY : massage.cpp.s
-
-maxSubArray.o: maxSubArray.cpp.o
-
-.PHONY : maxSubArray.o
-
-# target to build an object file
-maxSubArray.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.o
-.PHONY : maxSubArray.cpp.o
-
-maxSubArray.i: maxSubArray.cpp.i
-
-.PHONY : maxSubArray.i
-
-# target to preprocess a source file
-maxSubArray.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.i
-.PHONY : maxSubArray.cpp.i
-
-maxSubArray.s: maxSubArray.cpp.s
-
-.PHONY : maxSubArray.s
-
-# target to generate assembly for a file
-maxSubArray.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxSubArray.cpp.s
-.PHONY : maxSubArray.cpp.s
-
 minIncrementForUnique.o: minIncrementForUnique.cpp.o
 
 .PHONY : minIncrementForUnique.o
@@ -798,32 +717,32 @@ removeDuplicates.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
 .PHONY : removeDuplicates.cpp.s
 
-rob.o: rob.cpp.o
+surfaceArea.o: surfaceArea.cpp.o
 
-.PHONY : rob.o
+.PHONY : surfaceArea.o
 
 # target to build an object file
-rob.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.o
-.PHONY : rob.cpp.o
+surfaceArea.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o
+.PHONY : surfaceArea.cpp.o
 
-rob.i: rob.cpp.i
+surfaceArea.i: surfaceArea.cpp.i
 
-.PHONY : rob.i
+.PHONY : surfaceArea.i
 
 # target to preprocess a source file
-rob.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.i
-.PHONY : rob.cpp.i
+surfaceArea.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.i
+.PHONY : surfaceArea.cpp.i
 
-rob.s: rob.cpp.s
+surfaceArea.s: surfaceArea.cpp.s
 
-.PHONY : rob.s
+.PHONY : surfaceArea.s
 
 # target to generate assembly for a file
-rob.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rob.cpp.s
-.PHONY : rob.cpp.s
+surfaceArea.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s
+.PHONY : surfaceArea.cpp.s
 
 uniquePaths.o: uniquePaths.cpp.o
 
@@ -888,18 +807,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
+	@echo "... Problems_DFS_BFS.o"
+	@echo "... Problems_DFS_BFS.i"
+	@echo "... Problems_DFS_BFS.s"
+	@echo "... Problems_DP.o"
+	@echo "... Problems_DP.i"
+	@echo "... Problems_DP.s"
+	@echo "... Problems_List.o"
+	@echo "... Problems_List.i"
+	@echo "... Problems_List.s"
+	@echo "... Problems_String.o"
+	@echo "... Problems_String.i"
+	@echo "... Problems_String.s"
 	@echo "... buildTree.o"
 	@echo "... buildTree.i"
 	@echo "... buildTree.s"
 	@echo "... canThreePartsEqualSum.o"
 	@echo "... canThreePartsEqualSum.i"
 	@echo "... canThreePartsEqualSum.s"
-	@echo "... climbStairs.o"
-	@echo "... climbStairs.i"
-	@echo "... climbStairs.s"
-	@echo "... coinChange.o"
-	@echo "... coinChange.i"
-	@echo "... coinChange.s"
 	@echo "... diameterOfBinaryTree.o"
 	@echo "... diameterOfBinaryTree.i"
 	@echo "... diameterOfBinaryTree.s"
@@ -915,15 +840,6 @@ help:
 	@echo "... gcdOfStrings.o"
 	@echo "... gcdOfStrings.i"
 	@echo "... gcdOfStrings.s"
-	@echo "... generalBFSAndDFSProblems.o"
-	@echo "... generalBFSAndDFSProblems.i"
-	@echo "... generalBFSAndDFSProblems.s"
-	@echo "... generalListProblems.o"
-	@echo "... generalListProblems.i"
-	@echo "... generalListProblems.s"
-	@echo "... generalStringProblems.o"
-	@echo "... generalStringProblems.i"
-	@echo "... generalStringProblems.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
@@ -945,12 +861,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... massage.o"
-	@echo "... massage.i"
-	@echo "... massage.s"
-	@echo "... maxSubArray.o"
-	@echo "... maxSubArray.i"
-	@echo "... maxSubArray.s"
 	@echo "... minIncrementForUnique.o"
 	@echo "... minIncrementForUnique.i"
 	@echo "... minIncrementForUnique.s"
@@ -963,9 +873,9 @@ help:
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
-	@echo "... rob.o"
-	@echo "... rob.i"
-	@echo "... rob.s"
+	@echo "... surfaceArea.o"
+	@echo "... surfaceArea.i"
+	@echo "... surfaceArea.s"
 	@echo "... uniquePaths.o"
 	@echo "... uniquePaths.i"
 	@echo "... uniquePaths.s"
