@@ -47,20 +47,11 @@ public:
     // Longest Palindrome
     int longestPalindromeII(string s);
 
-    // 最大子序和
-    int maxSubArray(vector<int>& nums);
-
     // 不同路径
     int uniquePaths(int m, int n);
 
     // 不同路径||
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
-
-    // 爬楼梯
-    int climbStairs(int n);
-
-    // 打家劫舍
-    int rob(vector<int>& nums);
 
     // 从中序与后序遍历序列构造二叉树
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder);
@@ -80,8 +71,20 @@ public:
     // 和为s的连续正数序列
     vector<vector<int>> findContinuousSequence(int target);
 
+
+    /********************************************************************/
+    /* Problems that are solved by dynamic programming */
+    // 最大子序和
+    int maxSubArray(vector<int>& nums);
+    // 爬楼梯
+    int climbStairs(int n);
+    // 打家劫舍
+    int rob(vector<int>& nums);
     // 零钱兑换
     int coinChange(vector<int>& coins, int amount);
+    // The Masseuse LCCI
+    int massage(vector<int>& nums);
+    /*******************************************************************/
 
     // Diameter of Binary Tree
     int diameterOfBinaryTree(TreeNode* root);

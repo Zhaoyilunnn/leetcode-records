@@ -7,25 +7,22 @@ include_directories(.)
 
 add_executable(leetcode_record
         buildTree.cpp
-        climbStairs.cpp
         findContentChildren.cpp
         function_defs.h
         getAllElements.cpp
         longestPalindrome.cpp
         main.cpp
-        maxSubArray.cpp
         minimumTotal.cpp
         numTrees.cpp
-        rob.cpp
         uniquePaths.cpp
         zigzagLevelOrder.cpp
         distributeCandies.cpp
         removeDuplicates.cpp
         findContinuousSequence.cpp
-        coinChange.cpp
+        Problems_DP.cpp
         diameterOfBinaryTree.cpp
         canThreePartsEqualSum.cpp
         gcdOfStrings.cpp
         lengthOfLIS.cpp
-        generalBFSAndDFSProblems.cpp
-        luckyNumbers.cpp generalStringProblems.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp generalListProblems.cpp)
+        Problems_DFS_BFS.cpp
+        luckyNumbers.cpp Problems_String.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp Problems_List.cpp)

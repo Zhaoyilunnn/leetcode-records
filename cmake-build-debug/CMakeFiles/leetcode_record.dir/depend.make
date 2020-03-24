@@ -31,6 +31,9 @@ CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../gcdOfStrings.cpp
 CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/generalBFSAndDFSProblems.cpp.o: ../generalBFSAndDFSProblems.cpp
 
+CMakeFiles/leetcode_record.dir/generalListProblems.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/generalListProblems.cpp.o: ../generalListProblems.cpp
+
 CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/generalStringProblems.cpp.o: ../generalStringProblems.cpp
 

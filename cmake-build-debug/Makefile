@@ -636,6 +636,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+massage.o: massage.cpp.o
+
+.PHONY : massage.o
+
+# target to build an object file
+massage.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.o
+.PHONY : massage.cpp.o
+
+massage.i: massage.cpp.i
+
+.PHONY : massage.i
+
+# target to preprocess a source file
+massage.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.i
+.PHONY : massage.cpp.i
+
+massage.s: massage.cpp.s
+
+.PHONY : massage.s
+
+# target to generate assembly for a file
+massage.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/massage.cpp.s
+.PHONY : massage.cpp.s
+
 maxSubArray.o: maxSubArray.cpp.o
 
 .PHONY : maxSubArray.o
@@ -918,6 +945,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... massage.o"
+	@echo "... massage.i"
+	@echo "... massage.s"
 	@echo "... maxSubArray.o"
 	@echo "... maxSubArray.i"
 	@echo "... maxSubArray.s"
