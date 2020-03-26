@@ -231,6 +231,33 @@ Problems_String.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.s
 .PHONY : Problems_String.cpp.s
 
+Problems_TopologySort.o: Problems_TopologySort.cpp.o
+
+.PHONY : Problems_TopologySort.o
+
+# target to build an object file
+Problems_TopologySort.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o
+.PHONY : Problems_TopologySort.cpp.o
+
+Problems_TopologySort.i: Problems_TopologySort.cpp.i
+
+.PHONY : Problems_TopologySort.i
+
+# target to preprocess a source file
+Problems_TopologySort.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.i
+.PHONY : Problems_TopologySort.cpp.i
+
+Problems_TopologySort.s: Problems_TopologySort.cpp.s
+
+.PHONY : Problems_TopologySort.s
+
+# target to generate assembly for a file
+Problems_TopologySort.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.s
+.PHONY : Problems_TopologySort.cpp.s
+
 buildTree.o: buildTree.cpp.o
 
 .PHONY : buildTree.o
@@ -474,6 +501,33 @@ getLeastNumbers.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s
 .PHONY : getLeastNumbers.cpp.s
 
+hasGroupSizeX.o: hasGroupSizeX.cpp.o
+
+.PHONY : hasGroupSizeX.o
+
+# target to build an object file
+hasGroupSizeX.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o
+.PHONY : hasGroupSizeX.cpp.o
+
+hasGroupSizeX.i: hasGroupSizeX.cpp.i
+
+.PHONY : hasGroupSizeX.i
+
+# target to preprocess a source file
+hasGroupSizeX.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.i
+.PHONY : hasGroupSizeX.cpp.i
+
+hasGroupSizeX.s: hasGroupSizeX.cpp.s
+
+.PHONY : hasGroupSizeX.s
+
+# target to generate assembly for a file
+hasGroupSizeX.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.s
+.PHONY : hasGroupSizeX.cpp.s
+
 isRectangleOverlap.o: isRectangleOverlap.cpp.o
 
 .PHONY : isRectangleOverlap.o
@@ -663,6 +717,33 @@ minimumTotal.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.s
 .PHONY : minimumTotal.cpp.s
 
+numRookCaptures.o: numRookCaptures.cpp.o
+
+.PHONY : numRookCaptures.o
+
+# target to build an object file
+numRookCaptures.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o
+.PHONY : numRookCaptures.cpp.o
+
+numRookCaptures.i: numRookCaptures.cpp.i
+
+.PHONY : numRookCaptures.i
+
+# target to preprocess a source file
+numRookCaptures.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.i
+.PHONY : numRookCaptures.cpp.i
+
+numRookCaptures.s: numRookCaptures.cpp.s
+
+.PHONY : numRookCaptures.s
+
+# target to generate assembly for a file
+numRookCaptures.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s
+.PHONY : numRookCaptures.cpp.s
+
 numTrees.o: numTrees.cpp.o
 
 .PHONY : numTrees.o
@@ -819,6 +900,9 @@ help:
 	@echo "... Problems_String.o"
 	@echo "... Problems_String.i"
 	@echo "... Problems_String.s"
+	@echo "... Problems_TopologySort.o"
+	@echo "... Problems_TopologySort.i"
+	@echo "... Problems_TopologySort.s"
 	@echo "... buildTree.o"
 	@echo "... buildTree.i"
 	@echo "... buildTree.s"
@@ -846,6 +930,9 @@ help:
 	@echo "... getLeastNumbers.o"
 	@echo "... getLeastNumbers.i"
 	@echo "... getLeastNumbers.s"
+	@echo "... hasGroupSizeX.o"
+	@echo "... hasGroupSizeX.i"
+	@echo "... hasGroupSizeX.s"
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"
@@ -867,6 +954,9 @@ help:
 	@echo "... minimumTotal.o"
 	@echo "... minimumTotal.i"
 	@echo "... minimumTotal.s"
+	@echo "... numRookCaptures.o"
+	@echo "... numRookCaptures.i"
+	@echo "... numRookCaptures.s"
 	@echo "... numTrees.o"
 	@echo "... numTrees.i"
 	@echo "... numTrees.s"

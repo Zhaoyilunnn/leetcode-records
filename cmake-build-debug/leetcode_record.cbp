@@ -94,6 +94,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_String.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_TopologySort.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/buildTree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -124,6 +127,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/hasGroupSizeX.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -143,6 +149,9 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minimumTotal.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numTrees.cpp">

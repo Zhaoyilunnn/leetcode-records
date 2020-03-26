@@ -11,6 +11,7 @@
 #include <set>
 #include <queue>
 #include <map>
+#include <stack>
 
 using namespace std;
 
@@ -140,6 +141,12 @@ public:
     // Surface Area of 3D Shapes
     int surfaceArea(vector<vector<int>>& grid);
 
+    // Available Captures for Rook
+    int numRookCaptures(vector<vector<char>>& board);
+
+    // X of a Kind in a Deck of Cards
+    bool hasGroupsSizeX(vector<int>& deck);
+
     /******************************************************/
     /* General List problems */
     // Middle of the linked list
@@ -148,6 +155,11 @@ public:
     ListNode* swapPairs(ListNode* head);
     /******************************************************/
 
+    /******************************************************/
+    /* Topology sort */
+    // Course schedule
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
+    /******************************************************/
 };
 
 // 队列的最大值
