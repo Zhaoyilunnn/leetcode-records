@@ -129,8 +129,8 @@ int main(int argc, const char * argv[]) {
     ListNode* new_head = solution.swapPairs(head);
 */
 
-    vector<vector<int>> test = {{1, 2}, {3, 4}};
-    int res = solution.surfaceArea(test);
+    vector<vector<int>> test = {{1, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+    int res = solution.maxDistance(test);
 
     return 0;
 }

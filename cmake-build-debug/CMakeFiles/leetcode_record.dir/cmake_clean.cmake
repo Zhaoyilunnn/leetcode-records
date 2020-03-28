@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/longestPalindrome.cpp.o"
   "CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o"
   "CMakeFiles/leetcode_record.dir/main.cpp.o"
+  "CMakeFiles/leetcode_record.dir/maxDistance.cpp.o"
   "CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o"
   "CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o"
   "CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"

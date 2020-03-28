@@ -343,3 +343,69 @@ bool Solution::canMeasureWater(int x, int y, int z) {
     }
     return true;
 }
+
+
+/**************************************************************************/
+/* Description: Given an N x N grid containing only values 0 and 1,
+ * where 0 represents water and 1 represents land, find a water
+ * cell such that its distance to the nearest land cell is maximized
+ * and return the distance. The distance used in this problem is
+ * the Manhattan distance: the distance between two cells
+ * (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
+ * If no land or water exists in the grid, return -1.
+ *
+ * Solution 1:  BFS,
+ *              1. Find positions that contain 1 and push them into queue
+ *              2. Find four directions, if any unvisited, push them
+ * Solution 2:  How to optimize? */
+/**************************************************************************/
+int Solution::maxDistance(vector<vector<int> > &grid) {
+    queue<pair<int, int>> positions;
+    int N = grid.size();
+    vector<int> init(N, 0);
+    vector<vector<int>> visited(N, init);
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            if (grid[i][j]) {
+                positions.push(make_pair(i, j));
+                visited[i][j] = 1;
+            }
+        }
+    }
+    int res = 0;
+    while (!positions.empty()) {
+        int size = positions.size();
+        bool flag = false;
+        for (int i = 0; i < size; i++) {
+            pair<int, int> position = positions.front();
+            int m = position.first;
+            int n = position.second;
+            if (m > 0 && !visited[m-1][n]) {
+                flag = true;
+                visited[m-1][n] = 1;
+                positions.push(make_pair(m-1, n));
+            }
+            if (m < N-1 && !visited[m+1][n]) {
+                flag = true;
+                visited[m+1][n] = 1;
+                positions.push(make_pair(m+1, n));
+            }
+            if (n > 0 && !visited[m][n-1]) {
+                flag = true;
+                visited[m][n-1] = 1;
+                positions.push(make_pair(m, n-1));
+            }
+            if (n < N-1 && !visited[m][n+1]) {
+                flag = true;
+                visited[m][n+1] = 1;
+                positions.push(make_pair(m, n+1));
+            }
+            positions.pop();
+        }
+        if (flag) res++;
+    }
+    if (!res)
+        return -1;
+    else
+        return res;
+}

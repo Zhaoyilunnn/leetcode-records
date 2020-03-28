@@ -142,6 +142,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/main.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/maxDistance.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>

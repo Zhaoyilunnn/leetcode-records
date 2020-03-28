@@ -109,6 +109,8 @@ public:
     int orangesRotting(vector<vector<int>>& grid);
     // Open the lock
     int openLock(vector<string>& deadends, string target);
+    // As Far from Land as Possible
+    int maxDistance(vector<vector<int>>& grid);
     /************************************************************/
 
 
@@ -148,6 +150,7 @@ public:
 
     // X of a Kind in a Deck of Cards
     bool hasGroupsSizeX(vector<int>& deck);
+
 
     /******************************************************/
     /* General List problems */
