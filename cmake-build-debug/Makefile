@@ -420,33 +420,6 @@ findContinuousSequence.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s
 .PHONY : findContinuousSequence.cpp.s
 
-gcdOfStrings.o: gcdOfStrings.cpp.o
-
-.PHONY : gcdOfStrings.o
-
-# target to build an object file
-gcdOfStrings.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o
-.PHONY : gcdOfStrings.cpp.o
-
-gcdOfStrings.i: gcdOfStrings.cpp.i
-
-.PHONY : gcdOfStrings.i
-
-# target to preprocess a source file
-gcdOfStrings.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.i
-.PHONY : gcdOfStrings.cpp.i
-
-gcdOfStrings.s: gcdOfStrings.cpp.s
-
-.PHONY : gcdOfStrings.s
-
-# target to generate assembly for a file
-gcdOfStrings.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s
-.PHONY : gcdOfStrings.cpp.s
-
 getAllElements.o: getAllElements.cpp.o
 
 .PHONY : getAllElements.o
@@ -921,9 +894,6 @@ help:
 	@echo "... findContinuousSequence.o"
 	@echo "... findContinuousSequence.i"
 	@echo "... findContinuousSequence.s"
-	@echo "... gcdOfStrings.o"
-	@echo "... gcdOfStrings.i"
-	@echo "... gcdOfStrings.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"

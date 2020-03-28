@@ -252,22 +252,9 @@ CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp -o CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s
 
-CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o: ../gcdOfStrings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/gcdOfStrings.cpp
-
-CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/gcdOfStrings.cpp > CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.i
-
-CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/gcdOfStrings.cpp -o CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.s
-
 CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o: ../lengthOfLIS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/lengthOfLIS.cpp
 
 CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o: ../Problems_DFS_BFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/Problems_DFS_BFS.cpp
 
 CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp
 
 CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/Problems_String.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/Problems_String.cpp.o: ../Problems_String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_String.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_String.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/Problems_String.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/Problems_String.cpp
 
 CMakeFiles/leetcode_record.dir/Problems_String.cpp.i: cmake_force
@@ -319,7 +306,7 @@ CMakeFiles/leetcode_record.dir/Problems_String.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../isRectangleOverlap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp
 
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.i: cmake_force
@@ -332,7 +319,7 @@ CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: ../getLeastNumbers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp
 
 CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.i: cmake_force
@@ -345,7 +332,7 @@ CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../minIncrementForUnique.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp
 
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.i: cmake_force
@@ -358,7 +345,7 @@ CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/Problems_List.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/Problems_List.cpp.o: ../Problems_List.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_List.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_List.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/Problems_List.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/Problems_List.cpp
 
 CMakeFiles/leetcode_record.dir/Problems_List.cpp.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/leetcode_record.dir/Problems_List.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: ../surfaceArea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/surfaceArea.cpp
 
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../numRookCaptures.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp
 
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.i: cmake_force
@@ -397,7 +384,7 @@ CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o: ../Problems_TopologySort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/Problems_TopologySort.cpp
 
 CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.i: cmake_force
@@ -410,7 +397,7 @@ CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o: ../hasGroupSizeX.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/hasGroupSizeX.cpp
 
 CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.i: cmake_force
@@ -438,7 +425,6 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/Problems_DP.cpp.o" \
 "CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o" \
 "CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o" \
-"CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o" \
 "CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o" \
 "CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o" \
 "CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o" \
@@ -470,7 +456,6 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/Problems_DP.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/gcdOfStrings.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o
@@ -485,7 +470,7 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

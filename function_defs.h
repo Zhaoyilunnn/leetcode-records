@@ -12,6 +12,7 @@
 #include <queue>
 #include <map>
 #include <stack>
+#include <numeric>
 
 using namespace std;
 
@@ -93,9 +94,6 @@ public:
     // Partition Array Into Three Parts With Equal Sum
     bool canThreePartsEqualSum(vector<int>& A);
 
-    // Greatest Common Divisor of Strings
-    string gcdOfStrings(string str1, string str2);
-
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
 
@@ -116,10 +114,14 @@ public:
 
     /************************************************************/
     /*String problems*/
+    // Greatest Common Divisor of Strings
+    string gcdOfStrings(string str1, string str2);
     // Compress String LCCI
     string compressString(string S);
     // Find Words That Can Be Formed by Characters
     int countCharacters(vector<string>& words, string chars);
+    // Short Encoding of Words
+    int minimumLengthEncoding(vector<string>& words);
     /************************************************************/
 
 
