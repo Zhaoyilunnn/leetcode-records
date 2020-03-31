@@ -171,7 +171,7 @@ int Solution::minimumLengthEncoding(vector<string> &words) {
  *
  * Solution:    naive method, two traverse,
  *              First determine the depth
- *              Then the minimum depth is dermined and split*/
+ *              Then the minimum depth is determined and split */
 /**************************************************************************************/
 vector<int> Solution::maxDepthAfterSplit(string seq) {
     // first traverse, find the depth
