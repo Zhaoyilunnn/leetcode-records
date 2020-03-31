@@ -129,8 +129,8 @@ int main(int argc, const char * argv[]) {
     ListNode* new_head = solution.swapPairs(head);
 */
 
-    vector<vector<int>> test = {{1, 0, 0}, {0, 0, 0}, {0, 0, 0}};
-    int res = solution.maxDistance(test);
+    int res = solution.lastRemaining(56795, 87778);
+//    int res = solution.lastRemaining(5, 3);
 
     return 0;
 }

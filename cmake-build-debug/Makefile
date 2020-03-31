@@ -528,6 +528,33 @@ isRectangleOverlap.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.s
 .PHONY : isRectangleOverlap.cpp.s
 
+lastRemaining.o: lastRemaining.cpp.o
+
+.PHONY : lastRemaining.o
+
+# target to build an object file
+lastRemaining.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o
+.PHONY : lastRemaining.cpp.o
+
+lastRemaining.i: lastRemaining.cpp.i
+
+.PHONY : lastRemaining.i
+
+# target to preprocess a source file
+lastRemaining.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lastRemaining.cpp.i
+.PHONY : lastRemaining.cpp.i
+
+lastRemaining.s: lastRemaining.cpp.s
+
+.PHONY : lastRemaining.s
+
+# target to generate assembly for a file
+lastRemaining.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/lastRemaining.cpp.s
+.PHONY : lastRemaining.cpp.s
+
 lengthOfLIS.o: lengthOfLIS.cpp.o
 
 .PHONY : lengthOfLIS.o
@@ -635,33 +662,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-maxDistance.o: maxDistance.cpp.o
-
-.PHONY : maxDistance.o
-
-# target to build an object file
-maxDistance.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxDistance.cpp.o
-.PHONY : maxDistance.cpp.o
-
-maxDistance.i: maxDistance.cpp.i
-
-.PHONY : maxDistance.i
-
-# target to preprocess a source file
-maxDistance.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxDistance.cpp.i
-.PHONY : maxDistance.cpp.i
-
-maxDistance.s: maxDistance.cpp.s
-
-.PHONY : maxDistance.s
-
-# target to generate assembly for a file
-maxDistance.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maxDistance.cpp.s
-.PHONY : maxDistance.cpp.s
 
 minIncrementForUnique.o: minIncrementForUnique.cpp.o
 
@@ -798,6 +798,33 @@ removeDuplicates.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
 .PHONY : removeDuplicates.cpp.s
 
+sortArray.o: sortArray.cpp.o
+
+.PHONY : sortArray.o
+
+# target to build an object file
+sortArray.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.o
+.PHONY : sortArray.cpp.o
+
+sortArray.i: sortArray.cpp.i
+
+.PHONY : sortArray.i
+
+# target to preprocess a source file
+sortArray.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.i
+.PHONY : sortArray.cpp.i
+
+sortArray.s: sortArray.cpp.s
+
+.PHONY : sortArray.s
+
+# target to generate assembly for a file
+sortArray.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.s
+.PHONY : sortArray.cpp.s
+
 surfaceArea.o: surfaceArea.cpp.o
 
 .PHONY : surfaceArea.o
@@ -933,6 +960,9 @@ help:
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"
+	@echo "... lastRemaining.o"
+	@echo "... lastRemaining.i"
+	@echo "... lastRemaining.s"
 	@echo "... lengthOfLIS.o"
 	@echo "... lengthOfLIS.i"
 	@echo "... lengthOfLIS.s"
@@ -945,9 +975,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... maxDistance.o"
-	@echo "... maxDistance.i"
-	@echo "... maxDistance.s"
 	@echo "... minIncrementForUnique.o"
 	@echo "... minIncrementForUnique.i"
 	@echo "... minIncrementForUnique.s"
@@ -963,6 +990,9 @@ help:
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
+	@echo "... sortArray.o"
+	@echo "... sortArray.i"
+	@echo "... sortArray.s"
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"

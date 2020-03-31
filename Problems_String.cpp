@@ -156,3 +156,53 @@ int Solution::minimumLengthEncoding(vector<string> &words) {
     }
     return length;
 }
+
+
+/**************************************************************************************/
+/* Description: Given a VPS seq, split it into two disjoint subsequences A and B,
+ * such that A and B are VPS's (and A.length + B.length = seq.length).
+ *
+ * Now choose any such A and B such that max(depth(A), depth(B)) is the minimum
+ * possible value.
+ *
+ * Return an answer array (of length seq.length) that encodes such a choice of A and B: 
+ * answer[i] = 0 if seq[i] is part of A, else answer[i] = 1.  Note that even though
+ * multiple answers may exist, you may return any of them.
+ *
+ * Solution:    naive method, two traverse,
+ *              First determine the depth
+ *              Then the minimum depth is dermined and split*/
+/**************************************************************************************/
+vector<int> Solution::maxDepthAfterSplit(string seq) {
+    // first traverse, find the depth
+    int count = 0;
+    int depth = 0;
+    for (auto a : seq) {
+        if (a == '(') {
+            count++;
+            if (count > depth)
+                depth = count;
+        } else
+            count--;
+    }
+    int max_split_depth = depth / 2;
+    vector<int> result;
+    count = 0;
+    // second traverse, when go into depth deeper than max_depth, split it out
+    for (auto a : seq) {
+        if (a == '(') {
+            count++;
+            if (count <= max_split_depth)
+                result.push_back(0);
+            else
+                result.push_back(1);
+        } else {
+            count--;
+            if (count < max_split_depth)
+                result.push_back(0);
+            else
+                result.push_back(1);
+        }
+    }
+    return result;
+}

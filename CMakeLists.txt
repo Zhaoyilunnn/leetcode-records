@@ -24,4 +24,4 @@ add_executable(leetcode_record
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
         Problems_DFS_BFS.cpp
-        luckyNumbers.cpp Problems_String.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp Problems_List.cpp surfaceArea.cpp numRookCaptures.cpp Problems_TopologySort.cpp hasGroupSizeX.cpp)
+        luckyNumbers.cpp Problems_String.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp Problems_List.cpp surfaceArea.cpp numRookCaptures.cpp Problems_TopologySort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp)

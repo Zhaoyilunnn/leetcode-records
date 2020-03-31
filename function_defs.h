@@ -124,6 +124,8 @@ public:
     int countCharacters(vector<string>& words, string chars);
     // Short Encoding of Words
     int minimumLengthEncoding(vector<string>& words);
+    // Maximum Nesting Depth of Two Valid Parentheses Strings
+    vector<int> maxDepthAfterSplit(string seq);
     /************************************************************/
 
 
@@ -150,6 +152,12 @@ public:
 
     // X of a Kind in a Deck of Cards
     bool hasGroupsSizeX(vector<int>& deck);
+
+    // 圈中最后剩下的数字
+    int lastRemaining(int n, int m);
+
+    // Sort an Array
+    vector<int> sortArray(vector<int>& nums);
 
 
     /******************************************************/
