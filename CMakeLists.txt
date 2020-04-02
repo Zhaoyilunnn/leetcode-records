@@ -6,22 +6,16 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(.)
 
 add_executable(leetcode_record
-        buildTree.cpp
+        problems_tree.cpp
         findContentChildren.cpp
         function_defs.h
-        getAllElements.cpp
         longestPalindrome.cpp
         main.cpp
-        minimumTotal.cpp
-        numTrees.cpp
-        uniquePaths.cpp
-        zigzagLevelOrder.cpp
         distributeCandies.cpp
         removeDuplicates.cpp
         findContinuousSequence.cpp
-        Problems_DP.cpp
-        diameterOfBinaryTree.cpp
+        problems_dp.cpp
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
-        Problems_DFS_BFS.cpp
-        luckyNumbers.cpp Problems_String.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp Problems_List.cpp surfaceArea.cpp numRookCaptures.cpp Problems_TopologySort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp)
+        problems_dfs_bfs.cpp
+        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp gameOfLife.cpp)

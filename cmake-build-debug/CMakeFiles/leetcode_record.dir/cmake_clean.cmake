@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
   "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"
+  "CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o"
   "CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
   "CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o"

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/Program_Cpp/leetcode_record/distributeCandies.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/findContentChildren.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o"
+  "/cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/getAllElements.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/hasGroupSizeX.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o"

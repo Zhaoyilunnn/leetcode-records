@@ -35,34 +35,28 @@ public:
     // 分发饼干
     int findContentChildren(vector<int>& g, vector<int>& s);
 
-    // 不同搜索二叉树|
-    int numTrees(int n);
-
-    // 不同搜索二叉树||
-    vector<TreeNode*> generateTrees(int n);
-
-    // 三角形最小路径和
-    int minimumTotal(vector<vector<int>>& triangle);
-
     // 最长回文子串
     string longestPalindrome(string s);
     // Longest Palindrome
     int longestPalindromeII(string s);
 
-    // 不同路径
-    int uniquePaths(int m, int n);
 
-    // 不同路径||
-    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
-
+    /**************************************************************************/
+    /* Problems about tree */
     // 从中序与后序遍历序列构造二叉树
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder);
-
     // 二叉树的锯齿型层次遍历
     vector<vector<int>> zigzagLevelOrder(TreeNode* root);
-
     // 两颗二叉搜索树中的所有元素
     vector<int> getAllElements(TreeNode* root1, TreeNode* root2);
+    // Diameter of Binary Tree
+    int diameterOfBinaryTree(TreeNode* root);
+    // 不同搜索二叉树|
+    int numTrees(int n);
+    // 不同搜索二叉树||
+    vector<TreeNode*> generateTrees(int n);
+    /**************************************************************************/
+
 
     // 分发糖果||
     vector<int> distributeCandies(int candies, int num_people);
@@ -86,10 +80,13 @@ public:
     int coinChange(vector<int>& coins, int amount);
     // The Masseuse LCCI
     int massage(vector<int>& nums);
+    // 不同路径
+    int uniquePaths(int m, int n);
+    // 不同路径||
+    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
+    // 三角形最小路径和
+    int minimumTotal(vector<vector<int>>& triangle);
     /*******************************************************************/
-
-    // Diameter of Binary Tree
-    int diameterOfBinaryTree(TreeNode* root);
 
     // Partition Array Into Three Parts With Equal Sum
     bool canThreePartsEqualSum(vector<int>& A);
@@ -158,6 +155,9 @@ public:
 
     // Sort an Array
     vector<int> sortArray(vector<int>& nums);
+
+    // Game of life
+    void gameOfLife(vector<vector<int>>& board);
 
 
     /******************************************************/

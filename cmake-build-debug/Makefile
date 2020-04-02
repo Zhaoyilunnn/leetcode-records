@@ -420,6 +420,33 @@ findContinuousSequence.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s
 .PHONY : findContinuousSequence.cpp.s
 
+gameOfLife.o: gameOfLife.cpp.o
+
+.PHONY : gameOfLife.o
+
+# target to build an object file
+gameOfLife.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o
+.PHONY : gameOfLife.cpp.o
+
+gameOfLife.i: gameOfLife.cpp.i
+
+.PHONY : gameOfLife.i
+
+# target to preprocess a source file
+gameOfLife.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gameOfLife.cpp.i
+.PHONY : gameOfLife.cpp.i
+
+gameOfLife.s: gameOfLife.cpp.s
+
+.PHONY : gameOfLife.s
+
+# target to generate assembly for a file
+gameOfLife.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s
+.PHONY : gameOfLife.cpp.s
+
 getAllElements.o: getAllElements.cpp.o
 
 .PHONY : getAllElements.o
@@ -948,6 +975,9 @@ help:
 	@echo "... findContinuousSequence.o"
 	@echo "... findContinuousSequence.i"
 	@echo "... findContinuousSequence.s"
+	@echo "... gameOfLife.o"
+	@echo "... gameOfLife.i"
+	@echo "... gameOfLife.s"
 	@echo "... getAllElements.o"
 	@echo "... getAllElements.i"
 	@echo "... getAllElements.s"
