@@ -55,6 +55,8 @@ public:
     int numTrees(int n);
     // 不同搜索二叉树||
     vector<TreeNode*> generateTrees(int n);
+    // The maximum depth of binary tree
+    int maxDepth(TreeNode* root);
     /**************************************************************************/
 
 

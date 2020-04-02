@@ -254,3 +254,32 @@ vector<TreeNode*> Solution::generateTrees(int n) {
     }
     return vctRes[n-1];
 }
+
+
+/*****************************************************************/
+/* Description: Given a binary tree, find its maximum depth
+ * Solution 1:  recurrence
+ * Solution 2:  level traverse
+ * follow up: how to print the route of max depth? */
+/*****************************************************************/
+int Solution::maxDepth(TreeNode *root) {
+    if (!root)
+        return 0;
+    queue<TreeNode*> level_nodes;
+    int depth = 0;
+
+    level_nodes.push(root);
+    while (!level_nodes.empty()) {
+        int size = level_nodes.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* node = level_nodes.front();
+            if (node->left)
+                level_nodes.push(node->left);
+            if (node->right)
+                level_nodes.push(node->right);
+            level_nodes.pop();
+        }
+        depth++;
+    }
+    return depth;
+}
