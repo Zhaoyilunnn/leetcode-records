@@ -123,168 +123,6 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
-Problems_DFS_BFS.o: Problems_DFS_BFS.cpp.o
-
-.PHONY : Problems_DFS_BFS.o
-
-# target to build an object file
-Problems_DFS_BFS.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.o
-.PHONY : Problems_DFS_BFS.cpp.o
-
-Problems_DFS_BFS.i: Problems_DFS_BFS.cpp.i
-
-.PHONY : Problems_DFS_BFS.i
-
-# target to preprocess a source file
-Problems_DFS_BFS.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.i
-.PHONY : Problems_DFS_BFS.cpp.i
-
-Problems_DFS_BFS.s: Problems_DFS_BFS.cpp.s
-
-.PHONY : Problems_DFS_BFS.s
-
-# target to generate assembly for a file
-Problems_DFS_BFS.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DFS_BFS.cpp.s
-.PHONY : Problems_DFS_BFS.cpp.s
-
-Problems_DP.o: Problems_DP.cpp.o
-
-.PHONY : Problems_DP.o
-
-# target to build an object file
-Problems_DP.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.o
-.PHONY : Problems_DP.cpp.o
-
-Problems_DP.i: Problems_DP.cpp.i
-
-.PHONY : Problems_DP.i
-
-# target to preprocess a source file
-Problems_DP.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.i
-.PHONY : Problems_DP.cpp.i
-
-Problems_DP.s: Problems_DP.cpp.s
-
-.PHONY : Problems_DP.s
-
-# target to generate assembly for a file
-Problems_DP.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_DP.cpp.s
-.PHONY : Problems_DP.cpp.s
-
-Problems_List.o: Problems_List.cpp.o
-
-.PHONY : Problems_List.o
-
-# target to build an object file
-Problems_List.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.o
-.PHONY : Problems_List.cpp.o
-
-Problems_List.i: Problems_List.cpp.i
-
-.PHONY : Problems_List.i
-
-# target to preprocess a source file
-Problems_List.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.i
-.PHONY : Problems_List.cpp.i
-
-Problems_List.s: Problems_List.cpp.s
-
-.PHONY : Problems_List.s
-
-# target to generate assembly for a file
-Problems_List.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_List.cpp.s
-.PHONY : Problems_List.cpp.s
-
-Problems_String.o: Problems_String.cpp.o
-
-.PHONY : Problems_String.o
-
-# target to build an object file
-Problems_String.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.o
-.PHONY : Problems_String.cpp.o
-
-Problems_String.i: Problems_String.cpp.i
-
-.PHONY : Problems_String.i
-
-# target to preprocess a source file
-Problems_String.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.i
-.PHONY : Problems_String.cpp.i
-
-Problems_String.s: Problems_String.cpp.s
-
-.PHONY : Problems_String.s
-
-# target to generate assembly for a file
-Problems_String.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_String.cpp.s
-.PHONY : Problems_String.cpp.s
-
-Problems_TopologySort.o: Problems_TopologySort.cpp.o
-
-.PHONY : Problems_TopologySort.o
-
-# target to build an object file
-Problems_TopologySort.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.o
-.PHONY : Problems_TopologySort.cpp.o
-
-Problems_TopologySort.i: Problems_TopologySort.cpp.i
-
-.PHONY : Problems_TopologySort.i
-
-# target to preprocess a source file
-Problems_TopologySort.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.i
-.PHONY : Problems_TopologySort.cpp.i
-
-Problems_TopologySort.s: Problems_TopologySort.cpp.s
-
-.PHONY : Problems_TopologySort.s
-
-# target to generate assembly for a file
-Problems_TopologySort.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/Problems_TopologySort.cpp.s
-.PHONY : Problems_TopologySort.cpp.s
-
-buildTree.o: buildTree.cpp.o
-
-.PHONY : buildTree.o
-
-# target to build an object file
-buildTree.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.o
-.PHONY : buildTree.cpp.o
-
-buildTree.i: buildTree.cpp.i
-
-.PHONY : buildTree.i
-
-# target to preprocess a source file
-buildTree.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.i
-.PHONY : buildTree.cpp.i
-
-buildTree.s: buildTree.cpp.s
-
-.PHONY : buildTree.s
-
-# target to generate assembly for a file
-buildTree.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/buildTree.cpp.s
-.PHONY : buildTree.cpp.s
-
 canThreePartsEqualSum.o: canThreePartsEqualSum.cpp.o
 
 .PHONY : canThreePartsEqualSum.o
@@ -311,33 +149,6 @@ canThreePartsEqualSum.s: canThreePartsEqualSum.cpp.s
 canThreePartsEqualSum.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.s
 .PHONY : canThreePartsEqualSum.cpp.s
-
-diameterOfBinaryTree.o: diameterOfBinaryTree.cpp.o
-
-.PHONY : diameterOfBinaryTree.o
-
-# target to build an object file
-diameterOfBinaryTree.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.o
-.PHONY : diameterOfBinaryTree.cpp.o
-
-diameterOfBinaryTree.i: diameterOfBinaryTree.cpp.i
-
-.PHONY : diameterOfBinaryTree.i
-
-# target to preprocess a source file
-diameterOfBinaryTree.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.i
-.PHONY : diameterOfBinaryTree.cpp.i
-
-diameterOfBinaryTree.s: diameterOfBinaryTree.cpp.s
-
-.PHONY : diameterOfBinaryTree.s
-
-# target to generate assembly for a file
-diameterOfBinaryTree.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/diameterOfBinaryTree.cpp.s
-.PHONY : diameterOfBinaryTree.cpp.s
 
 distributeCandies.o: distributeCandies.cpp.o
 
@@ -446,33 +257,6 @@ gameOfLife.s: gameOfLife.cpp.s
 gameOfLife.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s
 .PHONY : gameOfLife.cpp.s
-
-getAllElements.o: getAllElements.cpp.o
-
-.PHONY : getAllElements.o
-
-# target to build an object file
-getAllElements.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.o
-.PHONY : getAllElements.cpp.o
-
-getAllElements.i: getAllElements.cpp.i
-
-.PHONY : getAllElements.i
-
-# target to preprocess a source file
-getAllElements.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.i
-.PHONY : getAllElements.cpp.i
-
-getAllElements.s: getAllElements.cpp.s
-
-.PHONY : getAllElements.s
-
-# target to generate assembly for a file
-getAllElements.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/getAllElements.cpp.s
-.PHONY : getAllElements.cpp.s
 
 getLeastNumbers.o: getLeastNumbers.cpp.o
 
@@ -717,33 +501,6 @@ minIncrementForUnique.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.s
 .PHONY : minIncrementForUnique.cpp.s
 
-minimumTotal.o: minimumTotal.cpp.o
-
-.PHONY : minimumTotal.o
-
-# target to build an object file
-minimumTotal.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.o
-.PHONY : minimumTotal.cpp.o
-
-minimumTotal.i: minimumTotal.cpp.i
-
-.PHONY : minimumTotal.i
-
-# target to preprocess a source file
-minimumTotal.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.i
-.PHONY : minimumTotal.cpp.i
-
-minimumTotal.s: minimumTotal.cpp.s
-
-.PHONY : minimumTotal.s
-
-# target to generate assembly for a file
-minimumTotal.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minimumTotal.cpp.s
-.PHONY : minimumTotal.cpp.s
-
 numRookCaptures.o: numRookCaptures.cpp.o
 
 .PHONY : numRookCaptures.o
@@ -771,32 +528,167 @@ numRookCaptures.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s
 .PHONY : numRookCaptures.cpp.s
 
-numTrees.o: numTrees.cpp.o
+problems_dfs_bfs.o: problems_dfs_bfs.cpp.o
 
-.PHONY : numTrees.o
+.PHONY : problems_dfs_bfs.o
 
 # target to build an object file
-numTrees.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.o
-.PHONY : numTrees.cpp.o
+problems_dfs_bfs.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o
+.PHONY : problems_dfs_bfs.cpp.o
 
-numTrees.i: numTrees.cpp.i
+problems_dfs_bfs.i: problems_dfs_bfs.cpp.i
 
-.PHONY : numTrees.i
+.PHONY : problems_dfs_bfs.i
 
 # target to preprocess a source file
-numTrees.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.i
-.PHONY : numTrees.cpp.i
+problems_dfs_bfs.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.i
+.PHONY : problems_dfs_bfs.cpp.i
 
-numTrees.s: numTrees.cpp.s
+problems_dfs_bfs.s: problems_dfs_bfs.cpp.s
 
-.PHONY : numTrees.s
+.PHONY : problems_dfs_bfs.s
 
 # target to generate assembly for a file
-numTrees.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numTrees.cpp.s
-.PHONY : numTrees.cpp.s
+problems_dfs_bfs.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.s
+.PHONY : problems_dfs_bfs.cpp.s
+
+problems_dp.o: problems_dp.cpp.o
+
+.PHONY : problems_dp.o
+
+# target to build an object file
+problems_dp.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.o
+.PHONY : problems_dp.cpp.o
+
+problems_dp.i: problems_dp.cpp.i
+
+.PHONY : problems_dp.i
+
+# target to preprocess a source file
+problems_dp.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.i
+.PHONY : problems_dp.cpp.i
+
+problems_dp.s: problems_dp.cpp.s
+
+.PHONY : problems_dp.s
+
+# target to generate assembly for a file
+problems_dp.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.s
+.PHONY : problems_dp.cpp.s
+
+problems_list.o: problems_list.cpp.o
+
+.PHONY : problems_list.o
+
+# target to build an object file
+problems_list.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_list.cpp.o
+.PHONY : problems_list.cpp.o
+
+problems_list.i: problems_list.cpp.i
+
+.PHONY : problems_list.i
+
+# target to preprocess a source file
+problems_list.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_list.cpp.i
+.PHONY : problems_list.cpp.i
+
+problems_list.s: problems_list.cpp.s
+
+.PHONY : problems_list.s
+
+# target to generate assembly for a file
+problems_list.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_list.cpp.s
+.PHONY : problems_list.cpp.s
+
+problems_string.o: problems_string.cpp.o
+
+.PHONY : problems_string.o
+
+# target to build an object file
+problems_string.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_string.cpp.o
+.PHONY : problems_string.cpp.o
+
+problems_string.i: problems_string.cpp.i
+
+.PHONY : problems_string.i
+
+# target to preprocess a source file
+problems_string.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_string.cpp.i
+.PHONY : problems_string.cpp.i
+
+problems_string.s: problems_string.cpp.s
+
+.PHONY : problems_string.s
+
+# target to generate assembly for a file
+problems_string.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_string.cpp.s
+.PHONY : problems_string.cpp.s
+
+problems_topology_sort.o: problems_topology_sort.cpp.o
+
+.PHONY : problems_topology_sort.o
+
+# target to build an object file
+problems_topology_sort.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.o
+.PHONY : problems_topology_sort.cpp.o
+
+problems_topology_sort.i: problems_topology_sort.cpp.i
+
+.PHONY : problems_topology_sort.i
+
+# target to preprocess a source file
+problems_topology_sort.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.i
+.PHONY : problems_topology_sort.cpp.i
+
+problems_topology_sort.s: problems_topology_sort.cpp.s
+
+.PHONY : problems_topology_sort.s
+
+# target to generate assembly for a file
+problems_topology_sort.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.s
+.PHONY : problems_topology_sort.cpp.s
+
+problems_tree.o: problems_tree.cpp.o
+
+.PHONY : problems_tree.o
+
+# target to build an object file
+problems_tree.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_tree.cpp.o
+.PHONY : problems_tree.cpp.o
+
+problems_tree.i: problems_tree.cpp.i
+
+.PHONY : problems_tree.i
+
+# target to preprocess a source file
+problems_tree.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_tree.cpp.i
+.PHONY : problems_tree.cpp.i
+
+problems_tree.s: problems_tree.cpp.s
+
+.PHONY : problems_tree.s
+
+# target to generate assembly for a file
+problems_tree.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_tree.cpp.s
+.PHONY : problems_tree.cpp.s
 
 removeDuplicates.o: removeDuplicates.cpp.o
 
@@ -879,60 +771,6 @@ surfaceArea.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s
 .PHONY : surfaceArea.cpp.s
 
-uniquePaths.o: uniquePaths.cpp.o
-
-.PHONY : uniquePaths.o
-
-# target to build an object file
-uniquePaths.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.o
-.PHONY : uniquePaths.cpp.o
-
-uniquePaths.i: uniquePaths.cpp.i
-
-.PHONY : uniquePaths.i
-
-# target to preprocess a source file
-uniquePaths.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.i
-.PHONY : uniquePaths.cpp.i
-
-uniquePaths.s: uniquePaths.cpp.s
-
-.PHONY : uniquePaths.s
-
-# target to generate assembly for a file
-uniquePaths.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/uniquePaths.cpp.s
-.PHONY : uniquePaths.cpp.s
-
-zigzagLevelOrder.o: zigzagLevelOrder.cpp.o
-
-.PHONY : zigzagLevelOrder.o
-
-# target to build an object file
-zigzagLevelOrder.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.o
-.PHONY : zigzagLevelOrder.cpp.o
-
-zigzagLevelOrder.i: zigzagLevelOrder.cpp.i
-
-.PHONY : zigzagLevelOrder.i
-
-# target to preprocess a source file
-zigzagLevelOrder.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.i
-.PHONY : zigzagLevelOrder.cpp.i
-
-zigzagLevelOrder.s: zigzagLevelOrder.cpp.s
-
-.PHONY : zigzagLevelOrder.s
-
-# target to generate assembly for a file
-zigzagLevelOrder.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/zigzagLevelOrder.cpp.s
-.PHONY : zigzagLevelOrder.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -942,30 +780,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
-	@echo "... Problems_DFS_BFS.o"
-	@echo "... Problems_DFS_BFS.i"
-	@echo "... Problems_DFS_BFS.s"
-	@echo "... Problems_DP.o"
-	@echo "... Problems_DP.i"
-	@echo "... Problems_DP.s"
-	@echo "... Problems_List.o"
-	@echo "... Problems_List.i"
-	@echo "... Problems_List.s"
-	@echo "... Problems_String.o"
-	@echo "... Problems_String.i"
-	@echo "... Problems_String.s"
-	@echo "... Problems_TopologySort.o"
-	@echo "... Problems_TopologySort.i"
-	@echo "... Problems_TopologySort.s"
-	@echo "... buildTree.o"
-	@echo "... buildTree.i"
-	@echo "... buildTree.s"
 	@echo "... canThreePartsEqualSum.o"
 	@echo "... canThreePartsEqualSum.i"
 	@echo "... canThreePartsEqualSum.s"
-	@echo "... diameterOfBinaryTree.o"
-	@echo "... diameterOfBinaryTree.i"
-	@echo "... diameterOfBinaryTree.s"
 	@echo "... distributeCandies.o"
 	@echo "... distributeCandies.i"
 	@echo "... distributeCandies.s"
@@ -978,9 +795,6 @@ help:
 	@echo "... gameOfLife.o"
 	@echo "... gameOfLife.i"
 	@echo "... gameOfLife.s"
-	@echo "... getAllElements.o"
-	@echo "... getAllElements.i"
-	@echo "... getAllElements.s"
 	@echo "... getLeastNumbers.o"
 	@echo "... getLeastNumbers.i"
 	@echo "... getLeastNumbers.s"
@@ -1008,15 +822,27 @@ help:
 	@echo "... minIncrementForUnique.o"
 	@echo "... minIncrementForUnique.i"
 	@echo "... minIncrementForUnique.s"
-	@echo "... minimumTotal.o"
-	@echo "... minimumTotal.i"
-	@echo "... minimumTotal.s"
 	@echo "... numRookCaptures.o"
 	@echo "... numRookCaptures.i"
 	@echo "... numRookCaptures.s"
-	@echo "... numTrees.o"
-	@echo "... numTrees.i"
-	@echo "... numTrees.s"
+	@echo "... problems_dfs_bfs.o"
+	@echo "... problems_dfs_bfs.i"
+	@echo "... problems_dfs_bfs.s"
+	@echo "... problems_dp.o"
+	@echo "... problems_dp.i"
+	@echo "... problems_dp.s"
+	@echo "... problems_list.o"
+	@echo "... problems_list.i"
+	@echo "... problems_list.s"
+	@echo "... problems_string.o"
+	@echo "... problems_string.i"
+	@echo "... problems_string.s"
+	@echo "... problems_topology_sort.o"
+	@echo "... problems_topology_sort.i"
+	@echo "... problems_topology_sort.s"
+	@echo "... problems_tree.o"
+	@echo "... problems_tree.i"
+	@echo "... problems_tree.s"
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
@@ -1026,12 +852,6 @@ help:
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"
-	@echo "... uniquePaths.o"
-	@echo "... uniquePaths.i"
-	@echo "... uniquePaths.s"
-	@echo "... zigzagLevelOrder.o"
-	@echo "... zigzagLevelOrder.i"
-	@echo "... zigzagLevelOrder.s"
 .PHONY : help
 
 

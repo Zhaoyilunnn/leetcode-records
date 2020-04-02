@@ -125,6 +125,8 @@ public:
     int minimumLengthEncoding(vector<string>& words);
     // Maximum Nesting Depth of Two Valid Parentheses Strings
     vector<int> maxDepthAfterSplit(string seq);
+    // String to integer (atoi)
+    int myAtoi(const string& str);
     /************************************************************/
 
 

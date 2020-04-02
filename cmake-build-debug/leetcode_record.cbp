@@ -82,28 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_DFS_BFS.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_DP.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_List.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_String.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/Problems_TopologySort.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/buildTree.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/diameterOfBinaryTree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/distributeCandies.cpp">
@@ -119,9 +98,6 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getAllElements.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp">
@@ -151,13 +127,25 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minimumTotal.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numTrees.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dp.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_list.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_string.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_topology_sort.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_tree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp">
@@ -167,12 +155,6 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/surfaceArea.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/uniquePaths.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/zigzagLevelOrder.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/CMakeLists.txt">

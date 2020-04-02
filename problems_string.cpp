@@ -206,3 +206,63 @@ vector<int> Solution::maxDepthAfterSplit(string seq) {
     }
     return result;
 }
+
+/****************************************************************************************/
+/* Description: Implement atoi which converts a string to an integer.
+ * The function first discards as many whitespace characters as necessary until
+ * the first non-whitespace character is found. Then, starting from this character,
+ * takes an optional initial plus or minus sign followed by as many numerical digits as
+ * possible, and interprets them as a numerical value.
+ *
+ * The string can contain additional characters after those that form the integral number,
+ * which are ignored and have no effect on the behavior of this function.
+ *
+ * If the first sequence of non-whitespace characters in str is not a valid integral
+ * number, or if no such sequence exists because either str is empty or it contains only
+ * whitespace characters, no conversion is performed. If no valid conversion could be
+ * performed, a zero value is returned.*/
+/****************************************************************************************/
+int Solution::myAtoi(const string& str) {
+    int start = 0;
+    while (start < str.size()) {
+        if (str[start] != ' ')
+            break;
+        start++;
+    }
+    bool negative = false;
+    if (str[start] == '-') {
+        negative = true;
+        start++;
+    } else if (str[start] == '+')
+        start++;
+    int end = start;
+    int new_start = -1;
+    long result = 0;
+    while (end < str.size()) {
+        int digit = str[end] - '0';
+        if (new_start < 0 && digit != 0)
+            new_start = end;
+        if (digit < 0 || digit > 9)
+            break;
+        else
+            result = result * 10 + digit;
+        if (new_start >= 0 && end - new_start > 9)
+            return negative ? -2147483648 : 2147483647;
+        end++;
+    }
+    if (result) {
+        if (negative) {
+            if (result <= 2147483648)
+                return 0 - result;
+            else
+                return -2147483648;
+        } else {
+            if (result <= 2147483647)
+                return result;
+            else
+                return 2147483647;
+        }
+    }
+    else
+        return 0;
+}
