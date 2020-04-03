@@ -113,47 +113,40 @@ int Solution::countCharacters(vector<string> &words, string chars) {
  * index until we reach a "#" character.
  * What is the length of the shortest reference string S possible that encodes the given words?
  *
- * Solution: use a vector (size 26) to store the list of words that end of index = end - 'a',
- * then find if current word is covered */
+ * Solution 1:  use a vector (size 26) to store the list of words that end of index = end - 'a',
+ * then find if current word is covered
+ * Solution 2:  Trie (字典树) */
 /***********************************************************************************************/
+
+struct TrieNode {
+    vector<TrieNode*> children;
+    bool isEndOfWord;
+    TrieNode() : isEndOfWord(false), children(26, nullptr) {}
+};
+
 int Solution::minimumLengthEncoding(vector<string> &words) {
-    vector<string> init;
-    vector<vector<string>> results(26, init);
+    auto* root = new TrieNode();
     int length = 0;
-    for (string word : words) {
-        int index = word[word.size() - 1] - 'a';
-        if (results[index].empty()) {
-            results[index].push_back(word);
-            length += word.size() + 1;
-            continue;
-        }
-        bool flag = true;  // whether add current length to total length
-        for (int m = 0; m < results[index].size(); m++) {
-            string a = results[index][m];
-            int i = a.size() - 1;
-            int j = word.size() - 1;
-            flag = false;
-            while (i >= 0 && j >= 0) {
-                if (a[i] != word[j]) {
-                    flag = true;
-                    break;
+    for (auto word : words) {
+        int temp_length = 0;
+        TrieNode* p = root;
+        for (int i = word.size()-1; i >= 0; i--) {
+            temp_length++;
+            int pos = word[i] - 'a';
+            if (!(p->children[pos])) {
+                p->children[pos] = new TrieNode();
+                if (i == 0) {
+                    length += temp_length + 1;
+                    p->isEndOfWord = true;
                 }
-                i--;
-                j--;
+            } else if (p->isEndOfWord && i != 0) {
+                length -= temp_length + 1;
+                p->isEndOfWord = false;
             }
-            if (!flag) {
-                if (word.size() > a.size()) {
-                    length += word.size() - a.size();
-                    results[index][m] = word;
-                }
-                break;
-            }
-        }
-        if (flag) {
-            length += word.size() + 1;
-            results[index].push_back(word);
+            p = p->children[pos];
         }
     }
+    delete root;
     return length;
 }
 

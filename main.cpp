@@ -7,8 +7,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    string test = " -1010023630o4";
-    int res = solution.myAtoi(test);
+    vector<string> test = {"time", "atime", "ttime"};
+    int res = solution.minimumLengthEncoding(test);
 
     return 0;
 }
