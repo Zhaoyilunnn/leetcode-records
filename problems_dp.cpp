@@ -263,3 +263,28 @@ int Solution::minimumTotal(vector<vector<int>>& triangle) {
     return results[length-2][0];
 }
 
+
+/*************************************************************************/
+/* Description: Given n non-negative integers representing an elevation
+ * map where the width of each bar is 1, compute how much water it is
+ * able to trap after raining.*/
+/*************************************************************************/
+int Solution::trap(vector<int> &height) {
+    int result = 0;
+    int start = 0;
+    while (height[start] == 0)
+        start++;
+    for (int i = start+1; i < height.size(); i++) {
+        int high = (height[i] >= height[start]) ? height[start] : height[i];
+        for (int j = i-1; j >= start; j--) {
+            if (height[j] < high) {
+                result += high - height[j];
+                height[j] = high;
+            } else
+                break;
+        }
+        if (height[i] >= height[start]) start = i;
+    }
+    return result;
+}
+

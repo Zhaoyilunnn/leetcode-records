@@ -163,6 +163,9 @@ public:
     // Game of life
     void gameOfLife(vector<vector<int>>& board);
 
+    // Trapping Rain Water
+    int trap(vector<int>& height);
+
 
     /******************************************************/
     /* General List problems */

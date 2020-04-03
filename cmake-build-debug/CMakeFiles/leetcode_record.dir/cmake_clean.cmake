@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o"
   "CMakeFiles/leetcode_record.dir/sortArray.cpp.o"
   "CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o"
+  "CMakeFiles/leetcode_record.dir/trap.cpp.o"
   "leetcode_record.exe"
   "leetcode_record.pdb"
   "libleetcode_record.dll.a"
