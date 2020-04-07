@@ -40,6 +40,9 @@ CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/leetcode_record.dir/minDistance.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/minDistance.cpp.o: ../minDistance.cpp
+
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../minIncrementForUnique.cpp
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(leetcode_record)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
 include_directories(.)
 
@@ -18,4 +18,4 @@ add_executable(leetcode_record
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
         problems_dfs_bfs.cpp
-        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp gameOfLife.cpp)
+        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp gameOfLife.cpp rotate.cpp)

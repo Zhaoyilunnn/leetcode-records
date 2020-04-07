@@ -166,6 +166,9 @@ public:
     // Trapping Rain Water
     int trap(vector<int>& height);
 
+    // Rotate Matrix LCCI
+    void rotate(vector<vector<int>>& matrix);
+
 
     /******************************************************/
     /* General List problems */
@@ -236,4 +239,111 @@ public:
         return res;
     }
 };
+
+/*********************************************************************************/
+/* Description: Design and implement a data structure for Least Frequently Used
+ * (LFU) cache. It should support the following operations: get and put get(key)
+ * - Get the value (will always be positive) of the key if the key exists in the
+ * cache, otherwise return -1. put(key, value) - Set or insert the value if the
+ * key is not already present. When the cache reaches its capacity, it should
+ * invalidate the least frequently used item before inserting a new item.
+ *
+ * For the purpose of this problem, when there is a tie (i.e., two or more
+ * keys that have the same frequency), the least recently used key would be
+ * evicted.Note that the number of times an item is used is the number of
+ * calls to the get and put functions for that item since it was inserted.
+ * This number is set to zero when the item is removed.
+ *
+ * Solution 1: use map<int, vector<int>> to store the frequency and the
+ * corresponding keys */
+/*********************************************************************************/
+// LFU Cache
+class LFUCache {
+    struct keyInfo {
+        int frequency; // record the times of usage
+        int value; // record the value of key
+        int time; // most recently used time
+    };
+    map<int, keyInfo> m_key_info;    // connect key with its information
+    map<int, map<int, int>> m_count_key;       // connect frequency with key (least recently used),
+    // the first element of vector stores the least recently used key
+    int m_current_num = 0;  // record the number of keys currently
+    int m_capacity = 0;  // the capacity of Cache
+    int m_least_count = 0;  // the least count of current keys
+    int m_time = 0;  // store the time of current operation
+public:
+    LFUCache(int capacity) {
+        m_capacity = capacity;
+    }
+
+    void insertCountKey(int key, keyInfo& information) {
+        auto count_pos = m_count_key.find(information.frequency);
+        if (count_pos != m_count_key.end()) count_pos->second.insert(make_pair(information.time, key));
+        else {
+            map<int, int> temp;
+            temp.insert(make_pair(information.time, key));
+            m_count_key.insert(make_pair(information.frequency, temp));
+        }
+    }
+
+    void deleteCountKey(int key, keyInfo& information) {
+        auto count_pos = m_count_key.find(information.frequency);
+        auto time_pos = count_pos->second.find(information.time);
+        count_pos->second.erase(time_pos);
+        if (count_pos->second.empty()) {
+            m_count_key.erase(count_pos);
+            if (information.frequency == m_least_count) m_least_count++;
+        }
+    }
+
+    int get(int key) {
+        auto key_pos = m_key_info.find(key);
+        if (m_key_info.end() != key_pos) {
+            /* 从原来的使用次数对应的数组中删除当前的key */
+            deleteCountKey(key, key_pos->second);
+
+            /* 使用次数加一并更新使用次数-key表的信息 */
+            key_pos->second.frequency++;
+            key_pos->second.time = m_time;
+            insertCountKey(key, key_pos->second);
+            m_time++;
+            return key_pos->second.value;
+        } else return -1;
+    }
+
+    void put(int key, int value) {
+        if (m_capacity == 0)
+            return;
+        auto key_pos = m_key_info.find(key);
+        if (m_key_info.end() == key_pos) {
+            keyInfo temp = {1, value, m_time};
+            if (m_current_num == m_capacity) {
+                m_current_num--;  // 为了和最后的++兼容
+
+                /* remove least recently used key */
+                auto count_pos = m_count_key.find(m_least_count);
+                m_key_info.erase(count_pos->second.begin()->second);
+                count_pos->second.erase(count_pos->second.begin());
+                if (count_pos->second.empty()) m_count_key.erase(count_pos);
+            }
+
+            /* 插入新的key并使当前key数量加一 */
+            m_key_info.insert(make_pair(key, temp));
+            m_current_num++;
+            insertCountKey(key, temp);
+            m_least_count = 1;
+        } else {
+            /* 从原来的使用次数对应的数组中删除当前的key */
+            deleteCountKey(key, key_pos->second);
+
+            /* 使用次数加一，并更新次数-key表中的信息 */
+            key_pos->second.frequency++;
+            key_pos->second.value = value;
+            key_pos->second.time = m_time;
+            insertCountKey(key, key_pos->second);
+        }
+        m_time++;
+    }
+};
+
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

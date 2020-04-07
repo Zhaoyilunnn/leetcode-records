@@ -18,7 +18,7 @@
  * factor? --> use the gcd function from numeric library */
 /***************************************************************/
 bool Solution::hasGroupsSizeX(vector<int> &deck) {
-    vector<int> num_cards(10000, 0);
+    /*vector<int> num_cards(10000, 0);
     vector<int> index_cards;
     for (int i : deck) {
         if (num_cards[i] == 0)
@@ -36,5 +36,7 @@ bool Solution::hasGroupsSizeX(vector<int> &deck) {
                 common = gcd(common, num_cards[i]);
         }
     }
-    return common >= 2;
+    return common >= 2;*/
+
+    return true;
 }

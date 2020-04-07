@@ -717,6 +717,33 @@ removeDuplicates.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
 .PHONY : removeDuplicates.cpp.s
 
+rotate.o: rotate.cpp.o
+
+.PHONY : rotate.o
+
+# target to build an object file
+rotate.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.o
+.PHONY : rotate.cpp.o
+
+rotate.i: rotate.cpp.i
+
+.PHONY : rotate.i
+
+# target to preprocess a source file
+rotate.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.i
+.PHONY : rotate.cpp.i
+
+rotate.s: rotate.cpp.s
+
+.PHONY : rotate.s
+
+# target to generate assembly for a file
+rotate.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.s
+.PHONY : rotate.cpp.s
+
 sortArray.o: sortArray.cpp.o
 
 .PHONY : sortArray.o
@@ -770,33 +797,6 @@ surfaceArea.s: surfaceArea.cpp.s
 surfaceArea.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s
 .PHONY : surfaceArea.cpp.s
-
-trap.o: trap.cpp.o
-
-.PHONY : trap.o
-
-# target to build an object file
-trap.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/trap.cpp.o
-.PHONY : trap.cpp.o
-
-trap.i: trap.cpp.i
-
-.PHONY : trap.i
-
-# target to preprocess a source file
-trap.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/trap.cpp.i
-.PHONY : trap.cpp.i
-
-trap.s: trap.cpp.s
-
-.PHONY : trap.s
-
-# target to generate assembly for a file
-trap.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/trap.cpp.s
-.PHONY : trap.cpp.s
 
 # Help Target
 help:
@@ -873,15 +873,15 @@ help:
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
+	@echo "... rotate.o"
+	@echo "... rotate.i"
+	@echo "... rotate.s"
 	@echo "... sortArray.o"
 	@echo "... sortArray.i"
 	@echo "... sortArray.s"
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"
-	@echo "... trap.o"
-	@echo "... trap.i"
-	@echo "... trap.s"
 .PHONY : help
 
 

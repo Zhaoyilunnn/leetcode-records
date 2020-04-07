@@ -288,3 +288,35 @@ int Solution::trap(vector<int> &height) {
     return result;
 }
 
+
+/*****************************************************************************/
+/* Description: Given two words word1 and word2, find the minimum number of
+ * operations required to convert word1 to word2. You have the following 3
+ * operations permitted on a word: Insert a character Delete a character
+ * Replace a character
+ *
+ * Solution: */
+/*****************************************************************************/
+int Solution::minDistance(const string& word1, const string& word2) {
+    int m = word1.length();
+    int n = word2.length();
+    vector<int> init(n + 1, 0);
+    vector<vector<int>> results(m + 1, init);
+    for (int i = 0; i < m + 1; i++) {
+        for (int j = 0; j < n+1; j++) {
+            if (i == 0) results[i][j] = j;
+            else if (j == 0) results[i][j] = i;
+            else {
+                int r0 = results[i-1][j-1] + (word1[i-1] == word2[j-1] ? 0 : 1);
+                int r1 = results[i-1][j] + 1;
+                int r2 = results[i][j-1] + 1;
+                int temp = r0;
+                if (r1 < temp) temp = r1;
+                if (r2 < temp) temp = r2;
+                results[i][j] = temp;
+            }
+        }
+    }
+    return results[m][n];
+}
+

@@ -7,8 +7,16 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<string> test = {"time", "atime", "ttime"};
-    int res = solution.minimumLengthEncoding(test);
+
+    string test = "赵逸伦";
+    cout << test.length() << endl;
+    cout << test.size() << endl;
+    cout << test.max_size() << endl;
+
+    string str1 = "horse";
+    string str2 = "ros";
+    int res = solution.minDistance(str1, str2);
+
 
     return 0;
 }

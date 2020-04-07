@@ -369,18 +369,18 @@ CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp -o CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s
 
-CMakeFiles/leetcode_record.dir/trap.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/trap.cpp.o: ../trap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/trap.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/trap.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/trap.cpp
+CMakeFiles/leetcode_record.dir/rotate.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/rotate.cpp.o: ../rotate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/rotate.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/rotate.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp
 
-CMakeFiles/leetcode_record.dir/trap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/trap.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/trap.cpp > CMakeFiles/leetcode_record.dir/trap.cpp.i
+CMakeFiles/leetcode_record.dir/rotate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/rotate.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp > CMakeFiles/leetcode_record.dir/rotate.cpp.i
 
-CMakeFiles/leetcode_record.dir/trap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/trap.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/trap.cpp -o CMakeFiles/leetcode_record.dir/trap.cpp.s
+CMakeFiles/leetcode_record.dir/rotate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/rotate.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp -o CMakeFiles/leetcode_record.dir/rotate.cpp.s
 
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
@@ -408,7 +408,7 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o" \
 "CMakeFiles/leetcode_record.dir/sortArray.cpp.o" \
 "CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o" \
-"CMakeFiles/leetcode_record.dir/trap.cpp.o"
+"CMakeFiles/leetcode_record.dir/rotate.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -437,7 +437,7 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/sortArray.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/trap.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/rotate.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable leetcode_record.exe"
