@@ -501,6 +501,33 @@ minIncrementForUnique.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.s
 .PHONY : minIncrementForUnique.cpp.s
 
+movingCount.o: movingCount.cpp.o
+
+.PHONY : movingCount.o
+
+# target to build an object file
+movingCount.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/movingCount.cpp.o
+.PHONY : movingCount.cpp.o
+
+movingCount.i: movingCount.cpp.i
+
+.PHONY : movingCount.i
+
+# target to preprocess a source file
+movingCount.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/movingCount.cpp.i
+.PHONY : movingCount.cpp.i
+
+movingCount.s: movingCount.cpp.s
+
+.PHONY : movingCount.s
+
+# target to generate assembly for a file
+movingCount.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/movingCount.cpp.s
+.PHONY : movingCount.cpp.s
+
 numRookCaptures.o: numRookCaptures.cpp.o
 
 .PHONY : numRookCaptures.o
@@ -527,6 +554,33 @@ numRookCaptures.s: numRookCaptures.cpp.s
 numRookCaptures.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s
 .PHONY : numRookCaptures.cpp.s
+
+problems_backtracking.o: problems_backtracking.cpp.o
+
+.PHONY : problems_backtracking.o
+
+# target to build an object file
+problems_backtracking.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o
+.PHONY : problems_backtracking.cpp.o
+
+problems_backtracking.i: problems_backtracking.cpp.i
+
+.PHONY : problems_backtracking.i
+
+# target to preprocess a source file
+problems_backtracking.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.i
+.PHONY : problems_backtracking.cpp.i
+
+problems_backtracking.s: problems_backtracking.cpp.s
+
+.PHONY : problems_backtracking.s
+
+# target to generate assembly for a file
+problems_backtracking.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s
+.PHONY : problems_backtracking.cpp.s
 
 problems_dfs_bfs.o: problems_dfs_bfs.cpp.o
 
@@ -849,9 +903,15 @@ help:
 	@echo "... minIncrementForUnique.o"
 	@echo "... minIncrementForUnique.i"
 	@echo "... minIncrementForUnique.s"
+	@echo "... movingCount.o"
+	@echo "... movingCount.i"
+	@echo "... movingCount.s"
 	@echo "... numRookCaptures.o"
 	@echo "... numRookCaptures.i"
 	@echo "... numRookCaptures.s"
+	@echo "... problems_backtracking.o"
+	@echo "... problems_backtracking.i"
+	@echo "... problems_backtracking.s"
 	@echo "... problems_dfs_bfs.o"
 	@echo "... problems_dfs_bfs.i"
 	@echo "... problems_dfs_bfs.s"

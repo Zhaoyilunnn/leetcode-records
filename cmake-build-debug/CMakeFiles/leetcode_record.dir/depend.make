@@ -40,14 +40,17 @@ CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../main.cpp
 
-CMakeFiles/leetcode_record.dir/minDistance.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/minDistance.cpp.o: ../minDistance.cpp
-
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../minIncrementForUnique.cpp
 
+CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../movingCount.cpp
+
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../numRookCaptures.cpp
+
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtracking.cpp
 
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../problems_dfs_bfs.cpp
@@ -69,6 +72,9 @@ CMakeFiles/leetcode_record.dir/problems_tree.cpp.o: ../problems_tree.cpp
 
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../removeDuplicates.cpp
+
+CMakeFiles/leetcode_record.dir/rotate.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/rotate.cpp.o: ../rotate.cpp
 
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../sortArray.cpp

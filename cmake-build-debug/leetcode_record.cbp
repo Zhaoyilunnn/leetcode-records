@@ -127,7 +127,13 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp">

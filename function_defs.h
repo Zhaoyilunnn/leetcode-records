@@ -88,6 +88,8 @@ public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
     // 三角形最小路径和
     int minimumTotal(vector<vector<int>>& triangle);
+    // Edit Distance
+    int minDistance(const string& word1, const string& word2);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -129,6 +131,12 @@ public:
     int myAtoi(const string& str);
     /************************************************************/
 
+    /************************************************************/
+    /* Backtracking problems */
+    // Generate Parentheses
+    vector<string> generateParenthesis(int n);
+    /************************************************************/
+
 
     // 矩阵中的幸运数
     vector<int> luckyNumbers(vector<vector<int>>& matrix);
@@ -168,6 +176,9 @@ public:
 
     // Rotate Matrix LCCI
     void rotate(vector<vector<int>>& matrix);
+
+    // 机器人运动的范围
+    int movingCount(int m, int n, int k);
 
 
     /******************************************************/

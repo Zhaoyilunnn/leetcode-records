@@ -382,6 +382,32 @@ CMakeFiles/leetcode_record.dir/rotate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/rotate.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp -o CMakeFiles/leetcode_record.dir/rotate.cpp.s
 
+CMakeFiles/leetcode_record.dir/movingCount.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../movingCount.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/movingCount.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/movingCount.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp
+
+CMakeFiles/leetcode_record.dir/movingCount.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/movingCount.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp > CMakeFiles/leetcode_record.dir/movingCount.cpp.i
+
+CMakeFiles/leetcode_record.dir/movingCount.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/movingCount.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp -o CMakeFiles/leetcode_record.dir/movingCount.cpp.s
+
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtracking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp
+
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp > CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.i
+
+CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp -o CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s
+
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/problems_tree.cpp.o" \
@@ -408,7 +434,9 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o" \
 "CMakeFiles/leetcode_record.dir/sortArray.cpp.o" \
 "CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o" \
-"CMakeFiles/leetcode_record.dir/rotate.cpp.o"
+"CMakeFiles/leetcode_record.dir/rotate.cpp.o" \
+"CMakeFiles/leetcode_record.dir/movingCount.cpp.o" \
+"CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -438,9 +466,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/sortArray.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/rotate.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/movingCount.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

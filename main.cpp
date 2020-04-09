@@ -8,15 +8,7 @@ int main(int argc, const char * argv[]) {
     Solution solution;
 
 
-    string test = "赵逸伦";
-    cout << test.length() << endl;
-    cout << test.size() << endl;
-    cout << test.max_size() << endl;
-
-    string str1 = "horse";
-    string str2 = "ros";
-    int res = solution.minDistance(str1, str2);
-
+    vector<string> res = solution.generateParenthesis(3);
 
     return 0;
 }
