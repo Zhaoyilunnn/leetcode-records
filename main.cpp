@@ -7,8 +7,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-
-    vector<string> res = solution.generateParenthesis(3);
+    string res = solution.reverseWords("   a   b ");
 
     return 0;
 }

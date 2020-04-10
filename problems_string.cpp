@@ -261,3 +261,29 @@ int Solution::myAtoi(const string& str) {
 }
 
 
+/********************************************************************************/
+/* Description: Given an input string, reverse the string word by word. */
+/********************************************************************************/
+string Solution::reverseWords(const string& s) {
+    if (s.empty()) return "";
+    string res;
+    int start = 0;
+    int end = (int)s.size() - 1;
+    while (start <= end) {
+        if (s[start] == ' ') start++;
+        if (s[end] == ' ') end--;
+        if (end < 0) return "";
+        if (s[start] != ' ' && s[end] != ' ') break;
+    }
+    if (start > end) return "";
+    int begin = s.size();
+    for (int i = end; i >= start; i--) {
+        if (s[i] == ' ' && begin > end) {
+            begin = i + 1;
+            res += s.substr(begin, end - begin + 1) + ' ';
+        }
+        if (s[i] != ' ' && begin <= end) end = i;
+        if (i == start) res += s.substr(i, end - i + 1);
+    }
+    return res;
+}

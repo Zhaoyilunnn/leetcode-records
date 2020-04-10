@@ -129,6 +129,8 @@ public:
     vector<int> maxDepthAfterSplit(string seq);
     // String to integer (atoi)
     int myAtoi(const string& str);
+    // Reverse Words in a String
+    string reverseWords(const string& s);
     /************************************************************/
 
     /************************************************************/
