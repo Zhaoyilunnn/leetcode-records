@@ -106,6 +106,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/hasGroupSizeX.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/intersection.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>

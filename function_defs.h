@@ -90,6 +90,8 @@ public:
     int minimumTotal(vector<vector<int>>& triangle);
     // Edit Distance
     int minDistance(const string& word1, const string& word2);
+    // Supper Egg Drop
+    int superEggDrop(const int& K, const int& N);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -181,6 +183,10 @@ public:
 
     // 机器人运动的范围
     int movingCount(int m, int n, int k);
+
+    // Intersection LCCI
+    vector<double> intersection(const vector<int>& start1, const vector<int>& end1, const vector<int>& start2,
+            const vector<int>& end2);
 
 
     /******************************************************/

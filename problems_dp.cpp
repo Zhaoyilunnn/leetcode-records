@@ -320,3 +320,32 @@ int Solution::minDistance(const string& word1, const string& word2) {
     return results[m][n];
 }
 
+
+/***********************************************************************************/
+/* Description: You are given K eggs, and you have access to a building with N
+ * floors from 1 to N. 
+ * Each egg is identical in function, and if an egg breaks,
+ * you cannot drop it again. You know that there exists a floor F with 0 <= F <= N
+ * such that any egg dropped at a floor higher than F will break, and any egg
+ * dropped at or below floor F will not break. Each move, you may take an egg
+ * (if you have an unbroken one) and drop it from any floor X (with 1 <= X <= N). 
+ *
+ * Your goal is to know with certainty what the value of F is. What is the minimum
+ * number of moves that you need to know with certainty what F is, regardless
+ * of the initial value of F?
+*/
+/***********************************************************************************/
+int Solution::superEggDrop(const int& K, const int& N) {
+    int results[K+1][N+1];
+    for (int i = 0; i < K + 1; i++) {
+        for (int j = 0; j < N + 1; j++)
+            results[i][j] = j;
+    }
+    for (int m = 2; m < K+1; m++) {
+        for (int n = 1; n < N+1; n++) {
+            for (int i = 1; i < N+1; i++)
+                results[m][n] = min(results[m][n], max(results[m-1][i-1], results[m][n-i]));
+        }
+    }
+    return results[K][N];
+}
