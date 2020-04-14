@@ -22,6 +22,9 @@ CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o: ../getLeastNumbers.cpp
 CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o: ../hasGroupSizeX.cpp
 
+CMakeFiles/leetcode_record.dir/intersection.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/intersection.cpp.o: ../intersection.cpp
+
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o: ../isRectangleOverlap.cpp
 

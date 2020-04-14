@@ -56,3 +56,80 @@ ListNode* Solution::swapPairs(ListNode *head) {
     }
     return res;
 }
+
+
+/***************************************************************************/
+/* Description: Add two non-empty lists */
+/***************************************************************************/
+void addTwoLists(ListNode* &l1, ListNode* &l2, int& flag) {
+    if (l1->next && l2->next)
+        addTwoLists(l1->next, l2->next, flag);
+    int sum = l1->val + l2->val + flag;
+    if (sum >= 10) {
+        l1->val = sum - 10;
+        flag = 1;
+    } else {
+        l1->val = sum;
+        flag = 0;
+    }
+}
+
+ListNode* Solution::addTwoNumbers(ListNode *l1, ListNode *l2) {
+    ListNode* h1 = l1;
+    ListNode* h2 = l2;
+    while (h1 && h2) {
+        h1 = h1->next;
+        h2 = h2->next;
+    }
+    int delta = 0;
+    while (h1) {
+        h1 = h1->next;
+        delta++;
+    }
+    if (delta) {
+        int flag = 0;
+        ListNode* new_node = nullptr;
+        ListNode* temp = l2;
+        for (int i = 0; i < delta; i++) {
+            new_node = new ListNode(0);
+            new_node->next = temp;
+            temp = new_node;
+        }
+        addTwoLists(l1, new_node, flag);
+        if (flag) {
+            auto node = new ListNode(1);
+            node->next = l1;
+            return node;
+        }
+        return l1;
+    }
+    while (h2) {
+        h2 = h2->next;
+        delta++;
+    }
+    if (delta) {
+        int flag = 0;
+        ListNode* new_node = nullptr;
+        ListNode* temp = l1;
+        for (int i = 0; i < delta; i++) {
+            new_node = new ListNode(0);
+            new_node->next = temp;
+            temp = new_node;
+        }
+        addTwoLists(new_node, l2, flag);
+        if (flag) {
+            auto node = new ListNode(1);
+            node->next = new_node;
+            return node;
+        }
+        return new_node;
+    }
+    int flag = 0;
+    addTwoLists(l1, l2, flag);
+    if (flag) {
+        auto node = new ListNode(1);
+        node->next = l1;
+        return node;
+    }
+    return l1;
+}

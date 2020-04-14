@@ -333,7 +333,9 @@ int Solution::minDistance(const string& word1, const string& word2) {
  * Your goal is to know with certainty what the value of F is. What is the minimum
  * number of moves that you need to know with certainty what F is, regardless
  * of the initial value of F?
-*/
+ *
+ * Solution:    DP:
+ */
 /***********************************************************************************/
 int Solution::superEggDrop(const int& K, const int& N) {
     int results[K+1][N+1];
