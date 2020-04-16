@@ -13,6 +13,7 @@
 #include <map>
 #include <stack>
 #include <numeric>
+#include <algorithm>
 
 using namespace std;
 
@@ -114,6 +115,8 @@ public:
     int openLock(vector<string>& deadends, string target);
     // As Far from Land as Possible
     int maxDistance(vector<vector<int>>& grid);
+    // 0 1 matrix
+    vector<vector<int>> updateMatrix(vector<vector<int>>& matrix);
     /************************************************************/
 
 
@@ -187,6 +190,9 @@ public:
     // Intersection LCCI
     vector<double> intersection(const vector<int>& start1, const vector<int>& end1, const vector<int>& start2,
             const vector<int>& end2);
+
+    // Merge Intervals
+    vector<vector<int>> merge(vector<vector<int>>& intervals);
 
 
     /******************************************************/

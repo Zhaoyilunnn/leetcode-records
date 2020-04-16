@@ -501,6 +501,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mergeIntervals.o: mergeIntervals.cpp.o
+
+.PHONY : mergeIntervals.o
+
+# target to build an object file
+mergeIntervals.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o
+.PHONY : mergeIntervals.cpp.o
+
+mergeIntervals.i: mergeIntervals.cpp.i
+
+.PHONY : mergeIntervals.i
+
+# target to preprocess a source file
+mergeIntervals.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.i
+.PHONY : mergeIntervals.cpp.i
+
+mergeIntervals.s: mergeIntervals.cpp.s
+
+.PHONY : mergeIntervals.s
+
+# target to generate assembly for a file
+mergeIntervals.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.s
+.PHONY : mergeIntervals.cpp.s
+
 minIncrementForUnique.o: minIncrementForUnique.cpp.o
 
 .PHONY : minIncrementForUnique.o
@@ -930,6 +957,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mergeIntervals.o"
+	@echo "... mergeIntervals.i"
+	@echo "... mergeIntervals.s"
 	@echo "... minIncrementForUnique.o"
 	@echo "... minIncrementForUnique.i"
 	@echo "... minIncrementForUnique.s"

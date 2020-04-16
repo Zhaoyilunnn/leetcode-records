@@ -409,3 +409,45 @@ int Solution::maxDistance(vector<vector<int> > &grid) {
     else
         return res;
 }
+
+
+/***********************************************************************************************/
+/* Description: Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each
+ * cell */
+/***********************************************************************************************/
+vector<vector<int>> Solution::updateMatrix(vector<vector<int> > &matrix) {
+    vector<vector<int>> result = matrix;
+    queue<pair<int, int>> distances;
+    vector<vector<int>> direction = {{0, 1}, {1, 0},
+                                     {-1, 0}, {0, -1}};
+    int m = matrix.size();
+    int n = matrix[0].size();
+
+    // find 0 elements and initialize queue
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (!matrix[i][j]) {
+                distances.emplace(i, j);
+                matrix[i][j] = -1;
+            }
+        }
+    }
+
+    // BFS
+    while (!distances.empty()) {
+        auto [a, b] = distances.front();
+        distances.pop();
+        int ref = result[a][b];
+        for (auto direct: direction) {
+            int c = a + direct[0];
+            int d = b + direct[1];
+            if (c >= 0 && c <= m - 1 && d >= 0 && d <= n-1 && matrix[c][d] > 0) {
+                result[c][d] = ref + 1;
+                matrix[c][d] = -1;
+                distances.emplace(c, d);
+            }
+        }
+    }
+
+    return result;
+}
