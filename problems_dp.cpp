@@ -351,3 +351,24 @@ int Solution::superEggDrop(const int& K, const int& N) {
     }
     return results[K][N];
 }
+
+
+/****************************************************************************************/
+/* Description: Given an array of non-negative integers, you are initially positioned
+ * at the first index of the array.
+ * Each element in the array represents your maximum jump length at that position.
+ * Determine if you are able to reach the last index. */
+/****************************************************************************************/
+bool Solution::canJump(vector<int> &nums) {
+    vector<bool> results(nums.size(), false);
+    results[0] = true;
+    for (int i = 1; i < nums.size(); i++) {
+        for (int j = i - 1; j >= 0; j--) {
+            if (results[j] && nums[j] >= i - j) {
+                results[i] = true;
+                break;
+            }
+        }
+    }
+    return results[nums.size() - 1];
+}

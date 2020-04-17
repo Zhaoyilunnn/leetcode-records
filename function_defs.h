@@ -93,6 +93,8 @@ public:
     int minDistance(const string& word1, const string& word2);
     // Supper Egg Drop
     int superEggDrop(const int& K, const int& N);
+    // Jump Game
+    bool canJump(vector<int>& nums);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
