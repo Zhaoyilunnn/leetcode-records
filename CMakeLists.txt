@@ -14,7 +14,7 @@ add_executable(leetcode_record
         distributeCandies.cpp
         removeDuplicates.cpp
         findContinuousSequence.cpp
-        problems_dp.cpp
+        problems_dp_greedy.cpp
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
         problems_dfs_bfs.cpp

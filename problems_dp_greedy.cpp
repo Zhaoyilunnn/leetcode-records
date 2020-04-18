@@ -372,3 +372,26 @@ bool Solution::canJump(vector<int> &nums) {
     }
     return results[nums.size() - 1];
 }
+
+
+/*******************************************************************************************/
+/* Description: Given n non-negative integers a1, a2, ..., an , where each represents a
+ * point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of
+ * line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a
+ * container, such that the container contains the most water.
+ *
+ * Solution: double pointer
+ * */
+/*******************************************************************************************/
+int Solution::maxArea(vector<int> &height) {
+    int start = 0;
+    int end = (int) height.size() - 1;
+    int result = 0;
+    int temp = 0;
+    while (start < end) {
+        temp = min(height[start], height[end]) * (end - start);
+        result = temp > result ? temp : result;
+        height[start] > height[end] ? end-- : start++;
+    }
+    return result;
+}

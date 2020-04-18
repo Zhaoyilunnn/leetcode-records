@@ -95,6 +95,8 @@ public:
     int superEggDrop(const int& K, const int& N);
     // Jump Game
     bool canJump(vector<int>& nums);
+    // Container with Most Water
+    int maxArea(vector<int>& height);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
