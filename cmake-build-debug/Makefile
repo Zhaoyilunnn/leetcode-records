@@ -663,32 +663,32 @@ problems_dfs_bfs.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.s
 .PHONY : problems_dfs_bfs.cpp.s
 
-problems_dp.o: problems_dp.cpp.o
+problems_dp_greedy.o: problems_dp_greedy.cpp.o
 
-.PHONY : problems_dp.o
+.PHONY : problems_dp_greedy.o
 
 # target to build an object file
-problems_dp.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.o
-.PHONY : problems_dp.cpp.o
+problems_dp_greedy.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o
+.PHONY : problems_dp_greedy.cpp.o
 
-problems_dp.i: problems_dp.cpp.i
+problems_dp_greedy.i: problems_dp_greedy.cpp.i
 
-.PHONY : problems_dp.i
+.PHONY : problems_dp_greedy.i
 
 # target to preprocess a source file
-problems_dp.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.i
-.PHONY : problems_dp.cpp.i
+problems_dp_greedy.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.i
+.PHONY : problems_dp_greedy.cpp.i
 
-problems_dp.s: problems_dp.cpp.s
+problems_dp_greedy.s: problems_dp_greedy.cpp.s
 
-.PHONY : problems_dp.s
+.PHONY : problems_dp_greedy.s
 
 # target to generate assembly for a file
-problems_dp.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp.cpp.s
-.PHONY : problems_dp.cpp.s
+problems_dp_greedy.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.s
+.PHONY : problems_dp_greedy.cpp.s
 
 problems_list.o: problems_list.cpp.o
 
@@ -975,9 +975,9 @@ help:
 	@echo "... problems_dfs_bfs.o"
 	@echo "... problems_dfs_bfs.i"
 	@echo "... problems_dfs_bfs.s"
-	@echo "... problems_dp.o"
-	@echo "... problems_dp.i"
-	@echo "... problems_dp.s"
+	@echo "... problems_dp_greedy.o"
+	@echo "... problems_dp_greedy.i"
+	@echo "... problems_dp_greedy.s"
 	@echo "... problems_list.o"
 	@echo "... problems_list.i"
 	@echo "... problems_list.s"

@@ -19,7 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o"
-  "CMakeFiles/leetcode_record.dir/problems_dp.cpp.o"
+  "CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_list.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_string.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.o"

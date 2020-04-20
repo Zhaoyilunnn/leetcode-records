@@ -97,6 +97,8 @@ public:
     bool canJump(vector<int>& nums);
     // Container with Most Water
     int maxArea(vector<int>& height);
+    // Count The Repetitions
+    int getMaxRepetitions(const string& s1, int n1, const string& s2, int n2);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum

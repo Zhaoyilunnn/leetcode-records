@@ -43,6 +43,9 @@ CMakeFiles/leetcode_record.dir/luckyNumbers.cpp.o: ../luckyNumbers.cpp
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o: ../mergeIntervals.cpp
+
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o: ../minIncrementForUnique.cpp
 
@@ -58,8 +61,8 @@ CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtrac
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../problems_dfs_bfs.cpp
 
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.o: ../problems_dp.cpp
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o: ../problems_dp_greedy.cpp
 
 CMakeFiles/leetcode_record.dir/problems_list.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_list.cpp.o: ../problems_list.cpp

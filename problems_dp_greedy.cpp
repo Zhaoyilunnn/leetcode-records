@@ -395,3 +395,36 @@ int Solution::maxArea(vector<int> &height) {
     }
     return result;
 }
+
+
+/********************************************************************************************/
+/* Description: Define S = [s,n] as the string S which consists of n connected strings s.
+ * For example, ["abc", 3] ="abcabcabc".
+ * */
+/********************************************************************************************/
+/* Compute how many s2 can be obtained from s1 */
+int numSecond(const string& s1, const string& s2) {
+    int res = 0;
+    int i = 0, j = 0;
+    while (i < s1.size()) {
+        if (s1[i] == s2[j]) {
+            j++;
+            if (j == s2.size()) {
+                j = 0;
+                res++;
+            }
+        }
+        i++;
+    }
+    return res;
+}
+
+int Solution::getMaxRepetitions(const string& s1, int n1, const string& s2, int n2) {
+    int temp = numSecond(s1, s2);
+    if (temp > 0) return temp * n1 / n2;
+    string s1_plus = s1;
+    int i = 1;
+    while (s1.size() * i % n2 != 0) i++;
+    for (int j = 2; j <= i; j++) s1_plus += s1;
+    return 0;
+}

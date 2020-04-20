@@ -148,18 +148,18 @@ CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp -o CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s
 
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.o: ../problems_dp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/leetcode_record.dir/problems_dp.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_dp.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_dp.cpp
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o: ../problems_dp_greedy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp
 
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_dp.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_dp.cpp > CMakeFiles/leetcode_record.dir/problems_dp.cpp.i
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp > CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.i
 
-CMakeFiles/leetcode_record.dir/problems_dp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_dp.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_dp.cpp -o CMakeFiles/leetcode_record.dir/problems_dp.cpp.s
+CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp -o CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.s
 
 CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o: ../canThreePartsEqualSum.cpp
@@ -443,7 +443,7 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o" \
 "CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o" \
 "CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o" \
-"CMakeFiles/leetcode_record.dir/problems_dp.cpp.o" \
+"CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o" \
 "CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o" \
 "CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o" \
 "CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o" \
@@ -476,7 +476,7 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/main.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/distributeCandies.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_dp.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/canThreePartsEqualSum.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lengthOfLIS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o
