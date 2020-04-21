@@ -428,3 +428,29 @@ int Solution::getMaxRepetitions(const string& s1, int n1, const string& s2, int 
     for (int j = 2; j <= i; j++) s1_plus += s1;
     return 0;
 }
+
+
+/************************************************************************************************/
+/* Description: Given an array of integers nums and an integer k. A subarray is called nice if
+ * there are k odd numbers on it
+ * Solution: Dynamic programming,  Store the positions of odd numbers
+ *           start --> current start position
+ *           result <-- result + positions[start] - positions[start - 1]*/
+/************************************************************************************************/
+int Solution::numberOfSubarrays(vector<int> &nums, int k) {
+    vector<int> positions;
+    int count = 0;
+    int start = -1;
+    int result = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] % 2 == 1) {
+            positions.push_back(i);
+            count < k ? count++ : count;
+        }
+        if (count == k) {
+            nums[i] % 2 == 1 ? start++ : start;
+            result += positions[start] - (start == 0 ? -1 : positions[start - 1]);
+        }
+    }
+    return result;
+}

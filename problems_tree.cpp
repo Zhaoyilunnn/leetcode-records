@@ -283,3 +283,28 @@ int Solution::maxDepth(TreeNode *root) {
     }
     return depth;
 }
+
+
+/*****************************************************************************/
+/* Description: Given a binary tree, imagine yourself standing on the right
+ * side, return the values of the nodes that you can see ordered from top to
+ * bottom
+ * Solution: Level order traverse and store the last value of each layer */
+/*****************************************************************************/
+vector<int> Solution::rightSideView(TreeNode *root) {
+    if (!root) return {};
+    queue<TreeNode*> q;
+    q.push(root);
+    vector<int> result;
+    while (!q.empty()) {
+        int size = q.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* p = q.front();
+            if (p->left) q.push(p->left);
+            if (p->right) q.push(p->right);
+            q.pop();
+            if (i == size - 1) result.push_back(p->val);
+        }
+    }
+    return result;
+}

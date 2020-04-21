@@ -58,6 +58,8 @@ public:
     vector<TreeNode*> generateTrees(int n);
     // The maximum depth of binary tree
     int maxDepth(TreeNode* root);
+    // Binary Tree Right Side View
+    vector<int> rightSideView(TreeNode* root);
     /**************************************************************************/
 
 
@@ -99,6 +101,8 @@ public:
     int maxArea(vector<int>& height);
     // Count The Repetitions
     int getMaxRepetitions(const string& s1, int n1, const string& s2, int n2);
+    // Count Number of Nice Subarrays
+    int numberOfSubarrays(vector<int>& nums, int k);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -127,7 +131,7 @@ public:
 
 
     /************************************************************/
-    /*String problems*/
+    /* String problems */
     // Greatest Common Divisor of Strings
     string gcdOfStrings(string str1, string str2);
     // Compress String LCCI
