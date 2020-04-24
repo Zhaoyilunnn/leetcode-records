@@ -609,6 +609,33 @@ numRookCaptures.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s
 .PHONY : numRookCaptures.cpp.s
 
+permute.o: permute.cpp.o
+
+.PHONY : permute.o
+
+# target to build an object file
+permute.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.o
+.PHONY : permute.cpp.o
+
+permute.i: permute.cpp.i
+
+.PHONY : permute.i
+
+# target to preprocess a source file
+permute.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.i
+.PHONY : permute.cpp.i
+
+permute.s: permute.cpp.s
+
+.PHONY : permute.s
+
+# target to generate assembly for a file
+permute.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.s
+.PHONY : permute.cpp.s
+
 problems_backtracking.o: problems_backtracking.cpp.o
 
 .PHONY : problems_backtracking.o
@@ -969,6 +996,9 @@ help:
 	@echo "... numRookCaptures.o"
 	@echo "... numRookCaptures.i"
 	@echo "... numRookCaptures.s"
+	@echo "... permute.o"
+	@echo "... permute.i"
+	@echo "... permute.s"
 	@echo "... problems_backtracking.o"
 	@echo "... problems_backtracking.i"
 	@echo "... problems_backtracking.s"

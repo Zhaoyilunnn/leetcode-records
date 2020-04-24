@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/movingCount.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"
+  "/cygdrive/d/Program_Cpp/leetcode_record/permute.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/permute.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o"

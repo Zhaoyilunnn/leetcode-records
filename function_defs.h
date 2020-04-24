@@ -103,6 +103,8 @@ public:
     int getMaxRepetitions(const string& s1, int n1, const string& s2, int n2);
     // Count Number of Nice Subarrays
     int numberOfSubarrays(vector<int>& nums, int k);
+    // 数组中的逆序对
+    int reversePairs(vector<int>& nums);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -203,6 +205,9 @@ public:
 
     // Merge Intervals
     vector<vector<int>> merge(vector<vector<int>>& intervals);
+
+    // Permutations
+    vector<vector<int>> permute(vector<int>& nums);
 
 
     /******************************************************/

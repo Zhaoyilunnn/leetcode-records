@@ -1,0 +1,32 @@
+//
+// Created by zyl on 2020/4/25.
+//
+
+#include "function_defs.h"
+
+
+/**********************************************************************************************/
+/* Description: Given a collection of distinct integers, return all possible permutations */
+/**********************************************************************************************/
+vector<vector<int>> permuteIndex(int k) {
+    if (k == 1) return {{0}};
+    vector<vector<int>> result;
+    vector<vector<int>> sub_result = permuteIndex(k - 1);
+    for (const auto& sub_res : sub_result) {
+        for (int i = 0; i < k; i++) {
+            vector<int> temp = sub_res;
+            temp.insert(temp.begin() + i, k - 1);
+            result.push_back(temp);
+        }
+    }
+    return result;
+}
+
+vector<vector<int>> Solution::permute(vector<int> &nums) {
+    if (nums.empty()) return {};
+    vector<vector<int>> result = permuteIndex(nums.size());
+    for (auto & i : result) {
+        for (int & j : i) j = nums[j];
+    }
+    return result;
+}

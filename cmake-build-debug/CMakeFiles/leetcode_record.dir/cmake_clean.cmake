@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/minIncrementForUnique.cpp.o"
   "CMakeFiles/leetcode_record.dir/movingCount.cpp.o"
   "CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o"
+  "CMakeFiles/leetcode_record.dir/permute.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o"
   "CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o"

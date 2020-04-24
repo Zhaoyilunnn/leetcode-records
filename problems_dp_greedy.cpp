@@ -454,3 +454,46 @@ int Solution::numberOfSubarrays(vector<int> &nums, int k) {
     }
     return result;
 }
+
+
+/****************************************************************************************/
+/* Description: 数组中两个数字如果前一个大于后一个就是一个逆序对 */
+/****************************************************************************************/
+int Solution::reversePairs(vector<int> &nums) {
+    if (nums.empty()) return 0;
+    int l = nums.size();
+    int max_num = nums[0];
+    vector<int> results(l, 0);
+    int result = 0;
+    map<int, int> positions;
+    positions.emplace(nums[0], 0);
+    for (int i = 1; i < l; i++) {
+        /* store the maximum number */
+        if (nums[i] > max_num) max_num = nums[i];
+
+        /* store the first position of nums[i] */
+        auto it = positions.find(nums[i]);
+        if (positions.end() == it) positions.emplace(nums[i], i);
+
+        /* find the smallest number that is larger than current number */
+        int pos = -1;
+        for (int j = nums[i] + 1; j <= max_num; j++) {
+            it = positions.find(j);
+            if (positions.end() != it) {
+                pos = it->second;
+                break;
+            }
+        }
+
+        /* calculate current result */
+        if (pos >= 0) {
+            int curr_res = results[pos];
+            for (int j = pos; j < i; j++) {
+                if (nums[j] > nums[i]) curr_res++;
+            }
+            results[i]  = curr_res;
+        } else results[i] = 0;
+        result += results[i];
+    }
+    return result;
+}
