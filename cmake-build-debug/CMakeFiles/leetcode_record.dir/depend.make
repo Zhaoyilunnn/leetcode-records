@@ -55,8 +55,14 @@ CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../movingCount.cpp
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../numRookCaptures.cpp
 
+CMakeFiles/leetcode_record.dir/permute.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/permute.cpp.o: ../permute.cpp
+
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtracking.cpp
+
+CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: ../problems_binary_search.cpp
 
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../problems_dfs_bfs.cpp

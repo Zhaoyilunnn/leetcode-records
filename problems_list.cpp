@@ -133,3 +133,26 @@ ListNode* Solution::addTwoNumbers(ListNode *l1, ListNode *l2) {
     }
     return l1;
 }
+
+
+/*************************************************************************************/
+/* Description: Merge K lists */
+/*************************************************************************************/
+ListNode* Solution::mergeKLists(vector<ListNode *> &lists) {
+
+}
+
+
+/************************************************************************************/
+/* Given a linked list, determine if it has a cycle in it */
+/************************************************************************************/
+bool Solution::hasCycle(ListNode *head) {
+    ListNode* pFast = head;
+    ListNode* pSlow = head;
+    while (pFast && pFast->next && pSlow) {
+        pFast = pFast->next->next;
+        pSlow = pSlow->next;
+        if (pFast == pSlow) return true;
+    }
+    return false;
+}

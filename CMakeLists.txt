@@ -18,4 +18,4 @@ add_executable(leetcode_record
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
         problems_dfs_bfs.cpp
-        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp gameOfLife.cpp rotate.cpp movingCount.cpp problems_backtracking.cpp intersection.cpp mergeIntervals.cpp permute.cpp)
+        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp sortArray.cpp gameOfLife.cpp rotate.cpp movingCount.cpp problems_backtracking.cpp intersection.cpp mergeIntervals.cpp permute.cpp problems_binary_search.cpp problems_bitwise_ops.cpp)

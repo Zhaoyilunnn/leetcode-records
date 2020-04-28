@@ -663,6 +663,33 @@ problems_backtracking.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s
 .PHONY : problems_backtracking.cpp.s
 
+problems_binary_search.o: problems_binary_search.cpp.o
+
+.PHONY : problems_binary_search.o
+
+# target to build an object file
+problems_binary_search.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o
+.PHONY : problems_binary_search.cpp.o
+
+problems_binary_search.i: problems_binary_search.cpp.i
+
+.PHONY : problems_binary_search.i
+
+# target to preprocess a source file
+problems_binary_search.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.i
+.PHONY : problems_binary_search.cpp.i
+
+problems_binary_search.s: problems_binary_search.cpp.s
+
+.PHONY : problems_binary_search.s
+
+# target to generate assembly for a file
+problems_binary_search.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.s
+.PHONY : problems_binary_search.cpp.s
+
 problems_dfs_bfs.o: problems_dfs_bfs.cpp.o
 
 .PHONY : problems_dfs_bfs.o
@@ -879,6 +906,33 @@ rotate.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.s
 .PHONY : rotate.cpp.s
 
+singleNumbers.o: singleNumbers.cpp.o
+
+.PHONY : singleNumbers.o
+
+# target to build an object file
+singleNumbers.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.o
+.PHONY : singleNumbers.cpp.o
+
+singleNumbers.i: singleNumbers.cpp.i
+
+.PHONY : singleNumbers.i
+
+# target to preprocess a source file
+singleNumbers.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.i
+.PHONY : singleNumbers.cpp.i
+
+singleNumbers.s: singleNumbers.cpp.s
+
+.PHONY : singleNumbers.s
+
+# target to generate assembly for a file
+singleNumbers.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.s
+.PHONY : singleNumbers.cpp.s
+
 sortArray.o: sortArray.cpp.o
 
 .PHONY : sortArray.o
@@ -1002,6 +1056,9 @@ help:
 	@echo "... problems_backtracking.o"
 	@echo "... problems_backtracking.i"
 	@echo "... problems_backtracking.s"
+	@echo "... problems_binary_search.o"
+	@echo "... problems_binary_search.i"
+	@echo "... problems_binary_search.s"
 	@echo "... problems_dfs_bfs.o"
 	@echo "... problems_dfs_bfs.i"
 	@echo "... problems_dfs_bfs.s"
@@ -1026,6 +1083,9 @@ help:
 	@echo "... rotate.o"
 	@echo "... rotate.i"
 	@echo "... rotate.s"
+	@echo "... singleNumbers.o"
+	@echo "... singleNumbers.i"
+	@echo "... singleNumbers.s"
 	@echo "... sortArray.o"
 	@echo "... sortArray.i"
 	@echo "... sortArray.s"

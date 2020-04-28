@@ -14,6 +14,7 @@
 #include <stack>
 #include <numeric>
 #include <algorithm>
+#include <unordered_set>
 
 using namespace std;
 
@@ -209,6 +210,14 @@ public:
     // Permutations
     vector<vector<int>> permute(vector<int>& nums);
 
+    // Search in Rotated Sorted Array
+    int search(vector<int>& nums, int target);
+
+    /*************************************************************************/
+    /* bit-wise operation */
+    // 数组中数字出现的次数
+    vector<int> singleNumbers(vector<int>& nums);
+    /*************************************************************************/
 
     /******************************************************/
     /* General List problems */
@@ -218,6 +227,10 @@ public:
     ListNode* swapPairs(ListNode* head);
     // Add two lists II
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+    // Merge K lists
+    ListNode* mergeKLists(vector<ListNode*>& lists);
+    // Linked List Cycle
+    bool hasCycle(ListNode* head);
     /******************************************************/
 
     /******************************************************/
