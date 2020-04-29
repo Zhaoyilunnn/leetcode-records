@@ -339,6 +339,33 @@ intersection.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersection.cpp.s
 .PHONY : intersection.cpp.s
 
+isHappy.o: isHappy.cpp.o
+
+.PHONY : isHappy.o
+
+# target to build an object file
+isHappy.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.o
+.PHONY : isHappy.cpp.o
+
+isHappy.i: isHappy.cpp.i
+
+.PHONY : isHappy.i
+
+# target to preprocess a source file
+isHappy.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.i
+.PHONY : isHappy.cpp.i
+
+isHappy.s: isHappy.cpp.s
+
+.PHONY : isHappy.s
+
+# target to generate assembly for a file
+isHappy.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.s
+.PHONY : isHappy.cpp.s
+
 isRectangleOverlap.o: isRectangleOverlap.cpp.o
 
 .PHONY : isRectangleOverlap.o
@@ -690,6 +717,33 @@ problems_binary_search.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.s
 .PHONY : problems_binary_search.cpp.s
 
+problems_bitwise_ops.o: problems_bitwise_ops.cpp.o
+
+.PHONY : problems_bitwise_ops.o
+
+# target to build an object file
+problems_bitwise_ops.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o
+.PHONY : problems_bitwise_ops.cpp.o
+
+problems_bitwise_ops.i: problems_bitwise_ops.cpp.i
+
+.PHONY : problems_bitwise_ops.i
+
+# target to preprocess a source file
+problems_bitwise_ops.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.i
+.PHONY : problems_bitwise_ops.cpp.i
+
+problems_bitwise_ops.s: problems_bitwise_ops.cpp.s
+
+.PHONY : problems_bitwise_ops.s
+
+# target to generate assembly for a file
+problems_bitwise_ops.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.s
+.PHONY : problems_bitwise_ops.cpp.s
+
 problems_dfs_bfs.o: problems_dfs_bfs.cpp.o
 
 .PHONY : problems_dfs_bfs.o
@@ -906,33 +960,6 @@ rotate.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.s
 .PHONY : rotate.cpp.s
 
-singleNumbers.o: singleNumbers.cpp.o
-
-.PHONY : singleNumbers.o
-
-# target to build an object file
-singleNumbers.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.o
-.PHONY : singleNumbers.cpp.o
-
-singleNumbers.i: singleNumbers.cpp.i
-
-.PHONY : singleNumbers.i
-
-# target to preprocess a source file
-singleNumbers.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.i
-.PHONY : singleNumbers.cpp.i
-
-singleNumbers.s: singleNumbers.cpp.s
-
-.PHONY : singleNumbers.s
-
-# target to generate assembly for a file
-singleNumbers.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/singleNumbers.cpp.s
-.PHONY : singleNumbers.cpp.s
-
 sortArray.o: sortArray.cpp.o
 
 .PHONY : sortArray.o
@@ -1020,6 +1047,9 @@ help:
 	@echo "... intersection.o"
 	@echo "... intersection.i"
 	@echo "... intersection.s"
+	@echo "... isHappy.o"
+	@echo "... isHappy.i"
+	@echo "... isHappy.s"
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"
@@ -1059,6 +1089,9 @@ help:
 	@echo "... problems_binary_search.o"
 	@echo "... problems_binary_search.i"
 	@echo "... problems_binary_search.s"
+	@echo "... problems_bitwise_ops.o"
+	@echo "... problems_bitwise_ops.i"
+	@echo "... problems_bitwise_ops.s"
 	@echo "... problems_dfs_bfs.o"
 	@echo "... problems_dfs_bfs.i"
 	@echo "... problems_dfs_bfs.s"
@@ -1083,9 +1116,6 @@ help:
 	@echo "... rotate.o"
 	@echo "... rotate.i"
 	@echo "... rotate.s"
-	@echo "... singleNumbers.o"
-	@echo "... singleNumbers.i"
-	@echo "... singleNumbers.s"
 	@echo "... sortArray.o"
 	@echo "... sortArray.i"
 	@echo "... sortArray.s"

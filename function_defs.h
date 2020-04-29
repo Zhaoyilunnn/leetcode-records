@@ -194,9 +194,6 @@ public:
     // Trapping Rain Water
     int trap(vector<int>& height);
 
-    // Rotate Matrix LCCI
-    void rotate(vector<vector<int>>& matrix);
-
     // 机器人运动的范围
     int movingCount(int m, int n, int k);
 
@@ -207,11 +204,18 @@ public:
     // Merge Intervals
     vector<vector<int>> merge(vector<vector<int>>& intervals);
 
-    // Permutations
-    vector<vector<int>> permute(vector<int>& nums);
-
     // Search in Rotated Sorted Array
     int search(vector<int>& nums, int target);
+
+    /**********************************************************/
+    /* Math problems */
+    // Rotate Matrix LCCI
+    void rotate(vector<vector<int>>& matrix);
+    // Permutations
+    vector<vector<int>> permute(vector<int>& nums);
+    // Happy Number
+    bool isHappy(int n);
+    /**********************************************************/
 
     /*************************************************************************/
     /* bit-wise operation */

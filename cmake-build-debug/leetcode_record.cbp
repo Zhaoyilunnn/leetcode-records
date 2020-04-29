@@ -109,6 +109,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/intersection.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isHappy.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -148,6 +151,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_binary_search.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_bitwise_ops.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -170,9 +176,6 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/singleNumbers.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp">
