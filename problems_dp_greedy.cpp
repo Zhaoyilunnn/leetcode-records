@@ -497,3 +497,27 @@ int Solution::reversePairs(vector<int> &nums) {
     }
     return result;
 }
+
+
+/********************************************************************************/
+/* Description: candidates without duplicates, and a target number, return all
+ * combinations
+ * Solution 1: recurrence */
+/********************************************************************************/
+vector<vector<int>> Solution::combinationSum(vector<int> &candidates, int target) {
+    vector<vector<int>> results;
+    for (int c : candidates) {
+        int new_target = target - c;
+        if (new_target == 0) results.push_back({c});
+        if (new_target < 0) continue;
+        vector<vector<int>> temp_combination = combinationSum(candidates, new_target);
+        if (temp_combination.empty()) continue;
+        for (vector<int> comb : temp_combination) {
+            if (*(comb.end() - 1) <= c) {
+                comb.push_back(c);
+                results.push_back(comb);
+            }
+        }
+    }
+    return results;
+}

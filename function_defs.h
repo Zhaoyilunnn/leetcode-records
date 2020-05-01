@@ -106,6 +106,8 @@ public:
     int numberOfSubarrays(vector<int>& nums, int k);
     // 数组中的逆序对
     int reversePairs(vector<int>& nums);
+    // Combination Sum
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -235,6 +237,8 @@ public:
     ListNode* mergeKLists(vector<ListNode*>& lists);
     // Linked List Cycle
     bool hasCycle(ListNode* head);
+    // Merge Two Sorted Lists
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
     /******************************************************/
 
     /******************************************************/

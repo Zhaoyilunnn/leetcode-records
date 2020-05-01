@@ -55,15 +55,15 @@ CMakeFiles/leetcode_record.dir/movingCount.cpp.o
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp
-CMakeFiles/leetcode_record.dir/permute.cpp.o
- /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
- /cygdrive/d/Program_Cpp/leetcode_record/permute.cpp
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_binary_search.cpp
+CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/problems_bitwise_ops.cpp
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp
@@ -73,6 +73,9 @@ CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o
 CMakeFiles/leetcode_record.dir/problems_list.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_list.cpp
+CMakeFiles/leetcode_record.dir/problems_math.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/problems_math.cpp
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_string.cpp
@@ -85,9 +88,6 @@ CMakeFiles/leetcode_record.dir/problems_tree.cpp.o
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp
-CMakeFiles/leetcode_record.dir/rotate.cpp.o
- /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
- /cygdrive/d/Program_Cpp/leetcode_record/rotate.cpp
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp

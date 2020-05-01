@@ -339,33 +339,6 @@ intersection.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersection.cpp.s
 .PHONY : intersection.cpp.s
 
-isHappy.o: isHappy.cpp.o
-
-.PHONY : isHappy.o
-
-# target to build an object file
-isHappy.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.o
-.PHONY : isHappy.cpp.o
-
-isHappy.i: isHappy.cpp.i
-
-.PHONY : isHappy.i
-
-# target to preprocess a source file
-isHappy.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.i
-.PHONY : isHappy.cpp.i
-
-isHappy.s: isHappy.cpp.s
-
-.PHONY : isHappy.s
-
-# target to generate assembly for a file
-isHappy.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isHappy.cpp.s
-.PHONY : isHappy.cpp.s
-
 isRectangleOverlap.o: isRectangleOverlap.cpp.o
 
 .PHONY : isRectangleOverlap.o
@@ -636,33 +609,6 @@ numRookCaptures.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.s
 .PHONY : numRookCaptures.cpp.s
 
-permute.o: permute.cpp.o
-
-.PHONY : permute.o
-
-# target to build an object file
-permute.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.o
-.PHONY : permute.cpp.o
-
-permute.i: permute.cpp.i
-
-.PHONY : permute.i
-
-# target to preprocess a source file
-permute.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.i
-.PHONY : permute.cpp.i
-
-permute.s: permute.cpp.s
-
-.PHONY : permute.s
-
-# target to generate assembly for a file
-permute.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/permute.cpp.s
-.PHONY : permute.cpp.s
-
 problems_backtracking.o: problems_backtracking.cpp.o
 
 .PHONY : problems_backtracking.o
@@ -825,6 +771,33 @@ problems_list.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_list.cpp.s
 .PHONY : problems_list.cpp.s
 
+problems_math.o: problems_math.cpp.o
+
+.PHONY : problems_math.o
+
+# target to build an object file
+problems_math.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_math.cpp.o
+.PHONY : problems_math.cpp.o
+
+problems_math.i: problems_math.cpp.i
+
+.PHONY : problems_math.i
+
+# target to preprocess a source file
+problems_math.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_math.cpp.i
+.PHONY : problems_math.cpp.i
+
+problems_math.s: problems_math.cpp.s
+
+.PHONY : problems_math.s
+
+# target to generate assembly for a file
+problems_math.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_math.cpp.s
+.PHONY : problems_math.cpp.s
+
 problems_string.o: problems_string.cpp.o
 
 .PHONY : problems_string.o
@@ -933,33 +906,6 @@ removeDuplicates.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
 .PHONY : removeDuplicates.cpp.s
 
-rotate.o: rotate.cpp.o
-
-.PHONY : rotate.o
-
-# target to build an object file
-rotate.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.o
-.PHONY : rotate.cpp.o
-
-rotate.i: rotate.cpp.i
-
-.PHONY : rotate.i
-
-# target to preprocess a source file
-rotate.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.i
-.PHONY : rotate.cpp.i
-
-rotate.s: rotate.cpp.s
-
-.PHONY : rotate.s
-
-# target to generate assembly for a file
-rotate.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/rotate.cpp.s
-.PHONY : rotate.cpp.s
-
 sortArray.o: sortArray.cpp.o
 
 .PHONY : sortArray.o
@@ -1047,9 +993,6 @@ help:
 	@echo "... intersection.o"
 	@echo "... intersection.i"
 	@echo "... intersection.s"
-	@echo "... isHappy.o"
-	@echo "... isHappy.i"
-	@echo "... isHappy.s"
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"
@@ -1080,9 +1023,6 @@ help:
 	@echo "... numRookCaptures.o"
 	@echo "... numRookCaptures.i"
 	@echo "... numRookCaptures.s"
-	@echo "... permute.o"
-	@echo "... permute.i"
-	@echo "... permute.s"
 	@echo "... problems_backtracking.o"
 	@echo "... problems_backtracking.i"
 	@echo "... problems_backtracking.s"
@@ -1101,6 +1041,9 @@ help:
 	@echo "... problems_list.o"
 	@echo "... problems_list.i"
 	@echo "... problems_list.s"
+	@echo "... problems_math.o"
+	@echo "... problems_math.i"
+	@echo "... problems_math.s"
 	@echo "... problems_string.o"
 	@echo "... problems_string.i"
 	@echo "... problems_string.s"
@@ -1113,9 +1056,6 @@ help:
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
-	@echo "... rotate.o"
-	@echo "... rotate.i"
-	@echo "... rotate.s"
 	@echo "... sortArray.o"
 	@echo "... sortArray.i"
 	@echo "... sortArray.s"

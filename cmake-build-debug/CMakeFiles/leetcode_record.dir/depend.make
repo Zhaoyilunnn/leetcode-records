@@ -55,14 +55,14 @@ CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../movingCount.cpp
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o: ../numRookCaptures.cpp
 
-CMakeFiles/leetcode_record.dir/permute.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/permute.cpp.o: ../permute.cpp
-
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtracking.cpp
 
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: ../problems_binary_search.cpp
+
+CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o: ../problems_bitwise_ops.cpp
 
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../problems_dfs_bfs.cpp
@@ -72,6 +72,9 @@ CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o: ../problems_dp_greedy.c
 
 CMakeFiles/leetcode_record.dir/problems_list.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_list.cpp.o: ../problems_list.cpp
+
+CMakeFiles/leetcode_record.dir/problems_math.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_math.cpp.o: ../problems_math.cpp
 
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../problems_string.cpp
@@ -84,9 +87,6 @@ CMakeFiles/leetcode_record.dir/problems_tree.cpp.o: ../problems_tree.cpp
 
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../removeDuplicates.cpp
-
-CMakeFiles/leetcode_record.dir/rotate.cpp.o: ../function_defs.h
-CMakeFiles/leetcode_record.dir/rotate.cpp.o: ../rotate.cpp
 
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../sortArray.cpp
