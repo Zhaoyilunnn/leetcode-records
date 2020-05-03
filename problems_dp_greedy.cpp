@@ -357,6 +357,24 @@ bool Solution::canJump(vector<int> &nums) {
 }
 
 
+/************************************************************************/
+/* reach the last index in the minumum number of jumps */
+/************************************************************************/
+int Solution::jump(vector<int> &nums) {
+    int res = 0;
+    int max_pos = 0;
+    int step_max = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (i > step_max) {
+            res++;
+            step_max = max_pos;
+        }
+        max_pos = (i + nums[i]) > max_pos ? (i + nums[i]) : max_pos;
+    }
+    return res;
+}
+
+
 /*******************************************************************************************/
 /* Description: Given n non-negative integers a1, a2, ..., an , where each represents a
  * point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of
