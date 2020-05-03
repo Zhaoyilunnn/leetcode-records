@@ -960,6 +960,33 @@ surfaceArea.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s
 .PHONY : surfaceArea.cpp.s
 
+twoSum.o: twoSum.cpp.o
+
+.PHONY : twoSum.o
+
+# target to build an object file
+twoSum.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/twoSum.cpp.o
+.PHONY : twoSum.cpp.o
+
+twoSum.i: twoSum.cpp.i
+
+.PHONY : twoSum.i
+
+# target to preprocess a source file
+twoSum.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/twoSum.cpp.i
+.PHONY : twoSum.cpp.i
+
+twoSum.s: twoSum.cpp.s
+
+.PHONY : twoSum.s
+
+# target to generate assembly for a file
+twoSum.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/twoSum.cpp.s
+.PHONY : twoSum.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1062,6 +1089,9 @@ help:
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"
+	@echo "... twoSum.o"
+	@echo "... twoSum.i"
+	@echo "... twoSum.s"
 .PHONY : help
 
 

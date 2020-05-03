@@ -5,35 +5,18 @@
 #include "function_defs.h"
 
 /****************************************************************/
-/* To do: replace with the optimized solution */
+/* Given an integer array nums, find the contiguous subarray
+ * (containing at least one number) which has the largest sum
+ * and return its sum */
 /****************************************************************/
-int maxNum(int a, int b) {
-    if (a > b)
-        return a;
-    else
-        return b;
-}
-
 int Solution::maxSubArray(vector<int>& nums) {
-    if (nums.size() == 1)
-        return nums[0];
-    int maxSum = nums[0];
-    int tmpSum = nums[0]; // when tmpSum == 0, reset start position
-
-    for (int i = 1; i < nums.size(); i++) {
-        if (nums[i] > 0) {
-            if (tmpSum <= 0)
-                tmpSum = nums[i];
-            else
-                tmpSum += nums[i];
-            maxSum = maxNum(maxSum, tmpSum);
-        }
-        else {
-            tmpSum += nums[i];
-            maxSum = maxNum(maxSum, nums[i]);
-        }
+    int curr_sum = 0, max_sum = nums[0];
+    for (int i : nums) {
+        curr_sum += i;
+        if (curr_sum > max_sum) max_sum = curr_sum;
+        curr_sum = curr_sum <= 0 ? 0 : curr_sum;
     }
-    return maxSum;
+    return max_sum;
 }
 
 
@@ -521,3 +504,33 @@ vector<vector<int>> Solution::combinationSum(vector<int> &candidates, int target
     }
     return results;
 }
+
+
+/*******************************************************************************/
+/* Description: "abcabcbb" --> abc */
+/*******************************************************************************/
+int Solution::lengthOfLongestSubstring(const string& s) {
+    int res = 0, curr_res = 0;
+    unordered_map<char, int> store;
+    for (int i = 0; i < s.size(); i++) {
+        auto it = store.find(s[i]);
+        if (it == store.end()) {
+            store.emplace(s[i], i);
+            curr_res++;
+        } else {
+            if (curr_res >= res) res = curr_res;
+            for (int j = i - curr_res; j < it->second; j++) {
+                store.erase(store.find(s[j]));
+            }
+            curr_res = i - it->second;
+            it->second = i;
+        }
+    }
+    if (curr_res >= res) res = curr_res;
+    return res;
+}
+
+
+/*****************************************************************************/
+/* Description:  */
+/*****************************************************************************/

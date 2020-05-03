@@ -94,3 +94,6 @@ CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../sortArray.cpp
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: ../surfaceArea.cpp
 
+CMakeFiles/leetcode_record.dir/twoSum.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/twoSum.cpp.o: ../twoSum.cpp
+

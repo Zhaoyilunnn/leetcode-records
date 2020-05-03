@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/sortArray.cpp.o"
   "/cygdrive/d/Program_Cpp/leetcode_record/surfaceArea.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o"
+  "/cygdrive/d/Program_Cpp/leetcode_record/twoSum.cpp" "/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles/leetcode_record.dir/twoSum.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

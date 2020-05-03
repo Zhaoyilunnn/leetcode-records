@@ -15,6 +15,7 @@
 #include <numeric>
 #include <algorithm>
 #include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
 
@@ -108,6 +109,8 @@ public:
     int reversePairs(vector<int>& nums);
     // Combination Sum
     vector<vector<int>> combinationSum(vector<int>& candidates, int target);
+    // Longest Substring Without Repeating Characters
+    int lengthOfLongestSubstring(const string& s);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -208,6 +211,9 @@ public:
 
     // Search in Rotated Sorted Array
     int search(vector<int>& nums, int target);
+
+    // Two Sum
+    vector<int> twoSum(vector<int>& nums, int target);
 
     /**********************************************************/
     /* Math problems */
