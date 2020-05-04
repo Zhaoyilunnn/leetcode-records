@@ -417,4 +417,54 @@ public:
     }
 };
 
+
+class MyStack {
+public:
+    queue<int> queue_first;
+    queue<int> queue_second;
+
+    /** Initialize your data structure here. */
+    MyStack() {
+
+    }
+
+    /** Push element x onto stack. */
+    void push(int x) {
+        queue_first.empty() ? queue_second.push(x) : queue_first.push(x);
+    }
+
+    /** Removes the element on top of the stack and returns that element. */
+    int pop() {
+        int res = 0;
+        int size = queue_first.empty() ? queue_second.size() : queue_first.size();
+        if (queue_first.empty()) {
+            for (int i = 0; i < size - 1; i++) {
+                queue_first.push(queue_second.front());
+                queue_second.pop();
+            }
+            res = queue_second.front();
+            queue_second.pop();
+            return res;
+        } else {
+            for (int i = 0; i < size - 1; i++) {
+                queue_second.push(queue_first.front());
+                queue_first.pop();
+            }
+            res = queue_first.front();
+            queue_first.pop();
+            return res;
+        }
+    }
+
+    /** Get the top element. */
+    int top() {
+        return queue_first.empty() ? queue_second.back() : queue_first.back();
+    }
+
+    /** Returns whether the stack is empty. */
+    bool empty() {
+        return queue_first.empty() && queue_second.empty();
+    }
+};
+
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H
