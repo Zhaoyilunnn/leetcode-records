@@ -550,5 +550,39 @@ int Solution::lengthOfLongestSubstring(const string& s) {
 
 
 /*****************************************************************************/
-/* Description:  */
+/* Description: The days that you will travel is given as an array days. Each
+ * day is an integer from 1 to 365
+ * Train tickets are sold in 3 different ways
+ *  1. a 1-day pass is sold for costs[0] dollars
+ *  2. a 7-day pass is sold for costs[1] dollars
+ *  3. a 30-day pass is sold for costs[2] dollars
+ * Return the minimum number of dollars you need to travel every day in the
+ * given list of days */
 /*****************************************************************************/
+int Solution::mincostTickets(vector<int> &days, vector<int> &costs) {
+    int delta_7 = costs[1] / costs[0];
+    int delta_30 = costs[2] / costs[0];
+    vector<int> results(days.size(), 0);
+    results[0] = min(costs[0], min(costs[1], costs[2]));
+    for (int i = 1; i < days.size(); i++) {
+        int i_7 = i - delta_7;
+        int i_30 = i - delta_30;
+        int r1 = -1, r2 = -1, r3 = -1;
+        r1 = results[i - 1] + costs[0];
+        if (i_7 >= 0 && days[i] - days[i_7] < 7) {
+            while (i_7 >= 0 && days[i] - days[i_7] < 7) i_7--;
+            i_7++;
+            r2 = (i_7 > 0 ? results[i_7 - 1] : 0) +  costs[1];
+        }
+        if (i_30 >= 0 && days[i] - days[i_30] < 30) {
+            while (i_30 >= 0 && days[i] - days[i_30] < 30) i_30--;
+            i_30++;
+            r3 = (i_30 > 0 ? results[i_30 - 1] : 0) +  costs[2];
+        }
+        int res = r1;
+        if (r2 > 0 && r2 < res) res = r2;
+        if (r3 > 0 && r3 < res) res = r3;
+        results[i] = res;
+    }
+    return results[days.size() - 1];
+}

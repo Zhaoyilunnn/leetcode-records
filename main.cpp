@@ -7,8 +7,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {7, 0, 9, 6, 9, 6, 1, 7, 9, 0, 1, 2, 9, 0, 3};
-    int res = solution.jump(test);
+    vector<int> days = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31};
+    vector<int> costs = {2, 7, 15};
+    int res = solution.mincostTickets(days, costs);
 
     return 0;
 }

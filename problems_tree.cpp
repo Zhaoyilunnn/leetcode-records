@@ -308,3 +308,38 @@ vector<int> Solution::rightSideView(TreeNode *root) {
     }
     return result;
 }
+
+
+/************************************************************************************/
+/* Description: determine is a tree valid binary search tree */
+/************************************************************************************/
+bool Solution::isValidBST(TreeNode *root) {
+    if (!root) return true;
+    vector<int> val_list;
+
+    /* first inorder traverse */
+    stack<TreeNode*> nodes_store;
+    nodes_store.push(root);
+    TreeNode* curr_node = root;
+    while (curr_node->left) {
+        nodes_store.push(curr_node->left);
+        curr_node = curr_node->left;
+    }
+    while (!nodes_store.empty()) {
+        curr_node = nodes_store.top();
+        if (!val_list.empty() && curr_node->val <= *(val_list.end() - 1))
+            return false;
+        val_list.push_back(curr_node->val);
+        nodes_store.pop();
+        if (curr_node->right) {
+            nodes_store.push(curr_node->right);
+            curr_node = curr_node->right;
+            while (curr_node->left) {
+                nodes_store.push(curr_node->left);
+                curr_node = curr_node->left;
+            }
+        }
+    }
+
+    return true;
+}

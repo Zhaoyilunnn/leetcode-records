@@ -62,6 +62,8 @@ public:
     int maxDepth(TreeNode* root);
     // Binary Tree Right Side View
     vector<int> rightSideView(TreeNode* root);
+    // Validate Binary Search Tree
+    bool isValidBST(TreeNode* root);
     /**************************************************************************/
 
 
@@ -113,6 +115,8 @@ public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target);
     // Longest Substring Without Repeating Characters
     int lengthOfLongestSubstring(const string& s);
+    // Minimum Cost For Tickets
+    int mincostTickets(vector<int>& days, vector<int>& costs);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
