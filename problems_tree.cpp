@@ -343,3 +343,32 @@ bool Solution::isValidBST(TreeNode *root) {
 
     return true;
 }
+
+
+/*************************************************************************/
+/* Description: Given two non-empty tree s and t, check whether t has
+ * exactly the same structure and node values with a subtree of s */
+/*************************************************************************/
+bool isSameTree(TreeNode* s, TreeNode* t) {
+    if (!s && !t) return true;
+    if (!s || !t) return false;
+    if (s->val == t->val)
+        return isSameTree(s->left, t->left) ? isSameTree(s->right, t->right) : false;
+    else return false;
+}
+
+bool Solution::isSubtree(TreeNode *s, TreeNode *t) {
+    queue<TreeNode*> nodes;
+    nodes.push(s);
+    while (!nodes.empty()) {
+        int size = nodes.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* p = nodes.front();
+            if (isSameTree(p, t)) return true;
+            if (p->left) nodes.push(p->left);
+            if (p->right) nodes.push(p->right);
+            nodes.pop();
+        }
+    }
+    return false;
+}

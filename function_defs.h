@@ -64,6 +64,8 @@ public:
     vector<int> rightSideView(TreeNode* root);
     // Validate Binary Search Tree
     bool isValidBST(TreeNode* root);
+    // Subtree of Another Tree
+    bool isSubtree(TreeNode* s, TreeNode* t);
     /**************************************************************************/
 
 
@@ -220,6 +222,9 @@ public:
 
     // Two Sum
     vector<int> twoSum(vector<int>& nums, int target);
+
+    // Maximal Square
+    int maximalSquare(vector<vector<char>>& matrix);
 
     /**********************************************************/
     /* Math problems */

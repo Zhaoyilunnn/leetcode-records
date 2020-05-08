@@ -501,6 +501,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+maximalSquare.o: maximalSquare.cpp.o
+
+.PHONY : maximalSquare.o
+
+# target to build an object file
+maximalSquare.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o
+.PHONY : maximalSquare.cpp.o
+
+maximalSquare.i: maximalSquare.cpp.i
+
+.PHONY : maximalSquare.i
+
+# target to preprocess a source file
+maximalSquare.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maximalSquare.cpp.i
+.PHONY : maximalSquare.cpp.i
+
+maximalSquare.s: maximalSquare.cpp.s
+
+.PHONY : maximalSquare.s
+
+# target to generate assembly for a file
+maximalSquare.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/maximalSquare.cpp.s
+.PHONY : maximalSquare.cpp.s
+
 mergeIntervals.o: mergeIntervals.cpp.o
 
 .PHONY : mergeIntervals.o
@@ -1038,6 +1065,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... maximalSquare.o"
+	@echo "... maximalSquare.i"
+	@echo "... maximalSquare.s"
 	@echo "... mergeIntervals.o"
 	@echo "... mergeIntervals.i"
 	@echo "... mergeIntervals.s"
