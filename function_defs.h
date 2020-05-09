@@ -226,6 +226,9 @@ public:
     // Maximal Square
     int maximalSquare(vector<vector<char>>& matrix);
 
+    // Lowest Common Ancestor of a Binary Tree
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
+
     /**********************************************************/
     /* Math problems */
     // Rotate Matrix LCCI

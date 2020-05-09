@@ -372,3 +372,74 @@ bool Solution::isSubtree(TreeNode *s, TreeNode *t) {
     }
     return false;
 }
+
+
+/*****************************************************************************/
+/*
+ * Description: Given a binary tree, find the lowest common ancestor (LCA) of
+ * two given nodes in the tree.
+ * */
+/*****************************************************************************/
+vector<TreeNode*> inOrder(TreeNode* root) {
+    stack<TreeNode*> nodes;
+    vector<TreeNode*> in_order_vals;
+    TreeNode* p = root;
+    while (p) {
+        nodes.push(p);
+        p = p->left;
+    }
+    while (!nodes.empty()) {
+        p = nodes.top();
+        in_order_vals.push_back(p);
+        nodes.pop();
+        if (p->right) {
+            p = p->right;
+            while (p) {
+                nodes.push(p);
+                p = p->left;
+            }
+        }
+    }
+    return in_order_vals;
+}
+
+vector<TreeNode*> level(TreeNode* root) {
+    queue<TreeNode*> nodes;
+    vector<TreeNode*> level_vals;
+    nodes.push(root);
+    while (!nodes.empty()) {
+        int size = nodes.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* p = nodes.front();
+            if (p->left) nodes.push(p->left);
+            if (p->right) nodes.push(p->right);
+            level_vals.push_back(p);
+            nodes.pop();
+        }
+    }
+    return level_vals;
+}
+
+TreeNode* Solution::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
+    vector<TreeNode*> in_order = inOrder(root);
+    vector<TreeNode*> level_order = level(root);
+    int start = 0;
+    while (start < in_order.size()) {
+        if (in_order[start]->val == p->val || in_order[start]->val == q->val) break;
+        else start++;
+    }
+    unordered_set<TreeNode*> candidates;
+    candidates.insert(in_order[start]);
+    int end = start + 1;
+    while (end < in_order.size()) {
+        if (in_order[end]->val == p->val || in_order[end]->val == q->val) break;
+        else {
+            candidates.insert(in_order[end]);
+            end++;
+        }
+    }
+    candidates.insert(in_order[end]);
+    for (auto* i : level_order)
+        if (candidates.find(i) != candidates.end()) return i;
+    return nullptr;
+}
