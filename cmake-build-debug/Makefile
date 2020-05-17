@@ -960,6 +960,33 @@ sortArray.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.s
 .PHONY : sortArray.cpp.s
 
+subarraySum.o: subarraySum.cpp.o
+
+.PHONY : subarraySum.o
+
+# target to build an object file
+subarraySum.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/subarraySum.cpp.o
+.PHONY : subarraySum.cpp.o
+
+subarraySum.i: subarraySum.cpp.i
+
+.PHONY : subarraySum.i
+
+# target to preprocess a source file
+subarraySum.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/subarraySum.cpp.i
+.PHONY : subarraySum.cpp.i
+
+subarraySum.s: subarraySum.cpp.s
+
+.PHONY : subarraySum.s
+
+# target to generate assembly for a file
+subarraySum.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/subarraySum.cpp.s
+.PHONY : subarraySum.cpp.s
+
 surfaceArea.o: surfaceArea.cpp.o
 
 .PHONY : surfaceArea.o
@@ -1116,6 +1143,9 @@ help:
 	@echo "... sortArray.o"
 	@echo "... sortArray.i"
 	@echo "... sortArray.s"
+	@echo "... subarraySum.o"
+	@echo "... subarraySum.i"
+	@echo "... subarraySum.s"
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"

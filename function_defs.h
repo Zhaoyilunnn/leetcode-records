@@ -16,6 +16,7 @@
 #include <algorithm>
 #include <unordered_set>
 #include <unordered_map>
+#include <cmath>
 
 using namespace std;
 
@@ -229,6 +230,9 @@ public:
     // Lowest Common Ancestor of a Binary Tree
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
 
+    // Subarray Sum Equals K
+    int subarraySum(vector<int>& nums, int k);
+
     /**********************************************************/
     /* Math problems */
     // Rotate Matrix LCCI
@@ -237,6 +241,8 @@ public:
     vector<vector<int>> permute(vector<int>& nums);
     // Happy Number
     bool isHappy(int n);
+    // Pow(x, n)
+    double myPow(double x, int n);
     /**********************************************************/
 
     /*************************************************************************/
@@ -259,12 +265,16 @@ public:
     bool hasCycle(ListNode* head);
     // Merge Two Sorted Lists
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+    // Reverse Nodes in k-Group
+    ListNode* reverseKGroup(ListNode* head, int k);
     /******************************************************/
 
     /******************************************************/
     /* Topology sort */
     // Course schedule
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
+    // Course Schedule ||
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites);
     /******************************************************/
 };
 

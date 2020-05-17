@@ -30,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/problems_tree.cpp.o"
   "CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o"
   "CMakeFiles/leetcode_record.dir/sortArray.cpp.o"
+  "CMakeFiles/leetcode_record.dir/subarraySum.cpp.o"
   "CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o"
   "CMakeFiles/leetcode_record.dir/twoSum.cpp.o"
   "leetcode_record.exe"

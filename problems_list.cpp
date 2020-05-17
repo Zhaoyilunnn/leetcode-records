@@ -182,3 +182,50 @@ ListNode* Solution::mergeTwoLists(ListNode *l1, ListNode *l2) {
 
     return preHead->next;
 }
+
+
+/*******************************************************************************/
+/*
+ * Description: Given a linked list, reverse the nodes of a linked list k at
+ * a time and return its modified list
+ * */
+/*******************************************************************************/
+ListNode* reverseListRecursive(ListNode* head) {
+    ListNode* new_head = nullptr;
+    if (head->next) {
+        new_head = reverseListRecursive(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+    } else new_head = head;
+    return new_head;
+}
+
+ListNode* Solution::reverseKGroup(ListNode *head, int k) {
+    ListNode* p = head;
+    ListNode* new_head = nullptr;
+    ListNode* next_node = nullptr;
+    ListNode* part_head = nullptr;
+    ListNode* prev_part_head = nullptr;
+    ListNode* whole_new_head = nullptr;
+    bool flag = false;  // 是否找到新的整个链表的头结点
+    while (p) {
+        if (part_head) prev_part_head = part_head;
+        part_head = p;
+        for (int i = 0; i < k - 1; i++) {
+            p = p->next;
+            if (!p) break;
+        }
+        if (p) {
+            next_node = p->next;
+            p->next = nullptr;
+            p = next_node;
+            new_head = reverseListRecursive(part_head);
+        } else new_head = part_head;
+        if (!flag) {
+            flag = true;
+            whole_new_head = new_head;
+        }
+        if (prev_part_head) prev_part_head->next = new_head;
+    }
+    return whole_new_head;
+}

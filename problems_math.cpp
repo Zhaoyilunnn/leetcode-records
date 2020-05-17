@@ -69,3 +69,17 @@ bool Solution::isHappy(int n) {
     }
     return n == 1;
 }
+
+
+/*************************************************************************/
+/*
+ * Description: Implement pow(x, n), which calculates x raised to the
+ * power n (x^n)
+ * */
+/*************************************************************************/
+double Solution::myPow(double x, int n) {
+    if (x > 0) return exp(n * log(x));
+    if (x == 0) return 0;
+    if (n % 2) return -exp(n * log(-x));
+    else return exp(n * log(-x));
+}

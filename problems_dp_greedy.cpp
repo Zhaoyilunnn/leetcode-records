@@ -586,3 +586,5 @@ int Solution::mincostTickets(vector<int> &days, vector<int> &costs) {
     }
     return results[days.size() - 1];
 }
+
+

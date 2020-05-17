@@ -94,6 +94,9 @@ CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.o: ../removeDuplicates.cpp
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../sortArray.cpp
 
+CMakeFiles/leetcode_record.dir/subarraySum.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/subarraySum.cpp.o: ../subarraySum.cpp
+
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/surfaceArea.cpp.o: ../surfaceArea.cpp
 
