@@ -13,6 +13,9 @@ CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o
 CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp
@@ -79,6 +82,9 @@ CMakeFiles/leetcode_record.dir/problems_list.cpp.o
 CMakeFiles/leetcode_record.dir/problems_math.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_math.cpp
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_string.cpp

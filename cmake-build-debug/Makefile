@@ -231,6 +231,33 @@ findContinuousSequence.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.s
 .PHONY : findContinuousSequence.cpp.s
 
+findTheLongestSubstring.o: findTheLongestSubstring.cpp.o
+
+.PHONY : findTheLongestSubstring.o
+
+# target to build an object file
+findTheLongestSubstring.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o
+.PHONY : findTheLongestSubstring.cpp.o
+
+findTheLongestSubstring.i: findTheLongestSubstring.cpp.i
+
+.PHONY : findTheLongestSubstring.i
+
+# target to preprocess a source file
+findTheLongestSubstring.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.i
+.PHONY : findTheLongestSubstring.cpp.i
+
+findTheLongestSubstring.s: findTheLongestSubstring.cpp.s
+
+.PHONY : findTheLongestSubstring.s
+
+# target to generate assembly for a file
+findTheLongestSubstring.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s
+.PHONY : findTheLongestSubstring.cpp.s
+
 gameOfLife.o: gameOfLife.cpp.o
 
 .PHONY : gameOfLife.o
@@ -825,6 +852,33 @@ problems_math.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_math.cpp.s
 .PHONY : problems_math.cpp.s
 
+problems_prefix.o: problems_prefix.cpp.o
+
+.PHONY : problems_prefix.o
+
+# target to build an object file
+problems_prefix.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o
+.PHONY : problems_prefix.cpp.o
+
+problems_prefix.i: problems_prefix.cpp.i
+
+.PHONY : problems_prefix.i
+
+# target to preprocess a source file
+problems_prefix.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_prefix.cpp.i
+.PHONY : problems_prefix.cpp.i
+
+problems_prefix.s: problems_prefix.cpp.s
+
+.PHONY : problems_prefix.s
+
+# target to generate assembly for a file
+problems_prefix.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s
+.PHONY : problems_prefix.cpp.s
+
 problems_string.o: problems_string.cpp.o
 
 .PHONY : problems_string.o
@@ -1062,6 +1116,9 @@ help:
 	@echo "... findContinuousSequence.o"
 	@echo "... findContinuousSequence.i"
 	@echo "... findContinuousSequence.s"
+	@echo "... findTheLongestSubstring.o"
+	@echo "... findTheLongestSubstring.i"
+	@echo "... findTheLongestSubstring.s"
 	@echo "... gameOfLife.o"
 	@echo "... gameOfLife.i"
 	@echo "... gameOfLife.s"
@@ -1128,6 +1185,9 @@ help:
 	@echo "... problems_math.o"
 	@echo "... problems_math.i"
 	@echo "... problems_math.s"
+	@echo "... problems_prefix.o"
+	@echo "... problems_prefix.i"
+	@echo "... problems_prefix.s"
 	@echo "... problems_string.o"
 	@echo "... problems_string.i"
 	@echo "... problems_string.s"

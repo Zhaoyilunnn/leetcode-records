@@ -13,6 +13,9 @@ CMakeFiles/leetcode_record.dir/findContentChildren.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../findContinuousSequence.cpp
 CMakeFiles/leetcode_record.dir/findContinuousSequence.cpp.o: ../function_defs.h
 
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: ../findTheLongestSubstring.cpp
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: ../function_defs.h
+
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o: ../gameOfLife.cpp
 
@@ -78,6 +81,9 @@ CMakeFiles/leetcode_record.dir/problems_list.cpp.o: ../problems_list.cpp
 
 CMakeFiles/leetcode_record.dir/problems_math.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_math.cpp.o: ../problems_math.cpp
+
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: ../function_defs.h
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: ../problems_prefix.cpp
 
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../function_defs.h
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../problems_string.cpp

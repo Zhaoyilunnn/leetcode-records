@@ -7,8 +7,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<vector<int>> test = {{1, 0}};
-    vector<int> order = solution.findOrder(2, test);
+    string test = "3[z]2[2[y]pq4[2[jk]e1[f]]]ef";
+    string res = solution.decodeString(test);
 
     return 0;
 }

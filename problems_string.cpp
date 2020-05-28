@@ -287,3 +287,39 @@ string Solution::reverseWords(const string& s) {
     }
     return res;
 }
+
+
+/*****************************************************************************/
+/*
+ * Description
+ * */
+/*****************************************************************************/
+string Solution::decodeString(const string &s) {
+    string num_repeat_str;
+    string str_repeat;
+    string res;
+    stack<pair<int, string>> store;
+    bool flag = true;
+    for (char c : s) {
+        if (c - '0' >= 0 && c - '0' <= 9) num_repeat_str.push_back(c);
+        else if (c == '[') {
+            store.emplace(stoi(num_repeat_str), "");
+            num_repeat_str.clear();
+        } else if (c == ']') {
+            str_repeat = store.top().second;
+            int num_repeat = store.top().first;
+            store.pop();
+            if (store.empty()) {
+                for (int i = 0; i < num_repeat; i++)
+                    res += str_repeat;
+            } else {
+                for (int i = 0; i < num_repeat; i++)
+                    store.top().second += str_repeat;
+            }
+        } else {
+            if (store.empty()) res.push_back(c);
+            else store.top().second.push_back(c);
+        }
+    }
+    return res;
+}

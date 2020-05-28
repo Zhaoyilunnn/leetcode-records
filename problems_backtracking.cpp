@@ -42,3 +42,30 @@ vector<string> Solution::generateParenthesis(int n) {
     generate(result, curr_str, count1, count2, n);
     return result;
 }
+
+
+/****************************************************************/
+/*
+ * Description: Given a non-empty string s, you may delete at
+ * most one character. Judge whether you can make it a palindrome.
+ * */
+/****************************************************************/
+bool flag = false;
+
+bool Solution::validPalindrome(const string& s) {
+    int last_pos = (int)s.size() - 1;
+    int i = 0;
+    while (i < last_pos - i) {
+        if (s[i] != s[last_pos - i]) {
+            if (flag) return false;
+            flag = true;
+            if (s[i + 1] == s[last_pos - i] && validPalindrome(s.substr(i + 1, last_pos - 2 * i)))
+                return true;
+            else if (s[i] == s[last_pos - i - 1]) {
+                return validPalindrome(s.substr(i, last_pos - 2 * i));
+            }
+        }
+        i++;
+    }
+    return true;
+}

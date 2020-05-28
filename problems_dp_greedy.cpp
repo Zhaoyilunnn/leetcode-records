@@ -588,3 +588,27 @@ int Solution::mincostTickets(vector<int> &days, vector<int> &costs) {
 }
 
 
+/************************************************************/
+/*
+ *
+ * */
+/************************************************************/
+int Solution::maxProduct(vector<int> &nums) {
+    int curr_product = 1;
+    int result = INT32_MIN;
+    for (int i : nums) {
+        if (curr_product == 1 || curr_product == 0) curr_product = i;
+        else curr_product *= i;
+        if (curr_product >= result) result = curr_product;
+    }
+    return result;
+}
+
+
+/***********************************************************/
+/*
+ * Description: Given a string s, find the longest
+ * palindromic substring in s. You may assume that the
+ * maximum length of s is 1000.
+ * */
+/***********************************************************/

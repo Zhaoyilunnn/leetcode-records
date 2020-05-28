@@ -499,6 +499,32 @@ CMakeFiles/leetcode_record.dir/subarraySum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/subarraySum.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/subarraySum.cpp -o CMakeFiles/leetcode_record.dir/subarraySum.cpp.s
 
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: ../findTheLongestSubstring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp
+
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp > CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.i
+
+CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp -o CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s
+
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: ../problems_prefix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp
+
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_prefix.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp > CMakeFiles/leetcode_record.dir/problems_prefix.cpp.i
+
+CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp -o CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s
+
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/problems_tree.cpp.o" \
@@ -534,7 +560,9 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/problems_math.cpp.o" \
 "CMakeFiles/leetcode_record.dir/twoSum.cpp.o" \
 "CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o" \
-"CMakeFiles/leetcode_record.dir/subarraySum.cpp.o"
+"CMakeFiles/leetcode_record.dir/subarraySum.cpp.o" \
+"CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o" \
+"CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -573,9 +601,11 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_math.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/twoSum.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/subarraySum.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

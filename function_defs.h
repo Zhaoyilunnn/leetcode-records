@@ -120,6 +120,10 @@ public:
     int lengthOfLongestSubstring(const string& s);
     // Minimum Cost For Tickets
     int mincostTickets(vector<int>& days, vector<int>& costs);
+    // Maximum Product of Subarray
+    int maxProduct(vector<int>& nums);
+    // Longest Palindromic Substring
+    string longestPalindrome(const string& s);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -163,6 +167,8 @@ public:
     int myAtoi(const string& str);
     // Reverse Words in a String
     string reverseWords(const string& s);
+    // Decode string
+    string decodeString(const string& s);
     /************************************************************/
 
     /************************************************************/
@@ -233,6 +239,12 @@ public:
     // Subarray Sum Equals K
     int subarraySum(vector<int>& nums, int k);
 
+    // Valid Palindrome ||
+    bool validPalindrome(const string& s);
+
+    // Find the Longest Substring Containing Vowels in Even Counts
+    int findTheLongestSubstring(const string& s);
+
     /**********************************************************/
     /* Math problems */
     // Rotate Matrix LCCI
@@ -275,6 +287,12 @@ public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
     // Course Schedule ||
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites);
+    /******************************************************/
+
+    /******************************************************/
+    /* Prefix */
+    // Subarray Sums Divisible by K
+    int subarraysDivByK(vector<int>& A, int K);
     /******************************************************/
 };
 
