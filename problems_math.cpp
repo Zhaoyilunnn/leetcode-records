@@ -83,3 +83,66 @@ double Solution::myPow(double x, int n) {
     if (n % 2) return -exp(n * log(-x));
     else return exp(n * log(-x));
 }
+
+
+/***********************************************************************/
+/*
+ * Description: 顺时针打印矩阵元素
+ * */
+/***********************************************************************/
+vector<int> Solution::spiralOrder(vector<vector<int> > &matrix) {
+    if (matrix.empty()) return {};
+    int m = matrix.size();
+    int n = matrix[0].size();
+    vector<vector<int>> passed(m, vector<int> (n, 0));
+    vector<int> res;
+    int i = 0, j = 0;
+    int direct = 0;
+    while (true) {
+        res.push_back(matrix[i][j]);
+        passed[i][j] = 1;
+        if (res.size() == m * n) break;
+        if (i == 0 && j == 0) {
+            if (j < n - 1) {
+                j++;
+                direct = 0;
+            } else if (i < m - 1) {
+                i++;
+                direct = 1;
+            }
+        } else {
+            switch (direct) {
+                case 0:
+                    if (j < n - 1 && !passed[i][j+1]) j++;
+                    else {
+                        i++;
+                        direct = 1;
+                    }
+                    break;
+                case 1:
+                    if (i < m - 1 && !passed[i+1][j]) i++;
+                    else {
+                        j--;
+                        direct = 2;
+                    }
+                    break;
+                case 2:
+                    if (j > 0 && !passed[i][j-1]) j--;
+                    else {
+                        i--;
+                        direct = 3;
+                    }
+                    break;
+                case 3:
+                    if (i > 0 && !passed[i-1][j]) i--;
+                    else {
+                        j++;
+                        direct = 0;
+                    }
+                default:
+                    break;
+            }
+        }
+    }
+    return res;
+}

@@ -299,7 +299,6 @@ string Solution::decodeString(const string &s) {
     string str_repeat;
     string res;
     stack<pair<int, string>> store;
-    bool flag = true;
     for (char c : s) {
         if (c - '0' >= 0 && c - '0' <= 9) num_repeat_str.push_back(c);
         else if (c == '[') {

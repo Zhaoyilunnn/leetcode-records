@@ -27,3 +27,26 @@ int Solution::subarraysDivByK(vector<int>& A, int K) {
     }
     return res;
 }
+
+
+/**********************************************************************/
+/*
+ * Description:
+ * */
+/**********************************************************************/
+vector<int> Solution::dailyTemperatures(vector<int>& T) {
+    vector<int> stores(71, -1);
+    vector<int> res;
+    for (int i = (int)T.size() - 1; i >= 0; i--) {
+        stores[T[i] - 30] = i;
+        int t = 0;
+        int min_T = 30001;
+        for (t = T[i] + 1; t <= 100; t++) {
+            int temp = stores[t - 30];
+            if (temp >= 0 && temp < min_T) min_T = temp;
+        }
+        if (min_T <= 30000) res.insert(res.begin(), min_T - i);
+        else res.insert(res.begin(), 0);
+    }
+    return res;
+}

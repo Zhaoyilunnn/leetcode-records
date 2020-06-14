@@ -50,23 +50,21 @@ int Solution::climbStairs(int n) {
 /*********************************************************************************************/
 
 int Solution::rob(vector<int>& nums) {
-    if (nums.empty())
-        return 0;
-    if (nums.size() == 1)
-        return nums[0];
-    int prev = nums[0];
-    int curr = prev;
-    if (nums[1] > prev)
-        curr = nums[1];
-    for (int i = 2; i < nums.size(); i++) {
-        int temp = nums[i] + prev;
-        if (temp > curr) {
-            prev = curr;
-            curr = temp;
-        } else
-            prev = curr;
+    int res_prev_prev = 0;
+    int res_prev = 0;
+    int res;
+    for (int i = 0; i < nums.size(); i++) {
+        if (i == 0) res = nums[i];
+        else if (i == 1) {
+            res_prev = res;
+            res = nums[i] > nums[i - 1] ? nums[i] : nums[i - 1];
+        } else {
+            res_prev_prev = res_prev;
+            res_prev = res;
+            if (nums[i] + res_prev_prev > res_prev) res = nums[i] + res_prev_prev;
+        }
     }
-    return curr;
+    return res;
 }
 
 
@@ -605,10 +603,91 @@ int Solution::maxProduct(vector<int> &nums) {
 }
 
 
-/***********************************************************/
+/**********************************************************/
 /*
- * Description: Given a string s, find the longest
- * palindromic substring in s. You may assume that the
- * maximum length of s is 1000.
+ * Given non-negative integers representing the histogram's
+ * bar height the width of each bar is 1, find the area of
+ * largest rectangle in the histogram
  * */
-/***********************************************************/
+/**********************************************************/
+int Solution::largestRectangleArea(vector<int> &heights) {
+    vector<pair<int, int>> store_prev;   // a list that stores previous candidates rectangles
+    vector<pair<int, int>> store_curr;
+    int largest;
+    for (int i = 0; i < heights.size(); i++) {
+        if (!store_curr.empty()) store_curr.clear();
+        if (i == 0) {
+            store_curr.emplace_back(heights[i], 1);
+            largest = heights[i] * 1;
+            store_prev = store_curr;
+        } else {
+            bool flag = true;
+            int longest = 0;
+            for (auto pair : store_prev) {
+                if (heights[i] > pair.first) {
+                    pair.second++;
+                    store_curr.push_back(pair);
+                    if (pair.first * pair.second > largest) largest = pair.first * pair.second;
+                } else {
+                    flag = false;
+                    if (++pair.second > longest) longest = pair.second;
+                }
+            }
+            if (flag) {
+                store_curr.emplace_back(heights[i], 1);
+                if (heights[i] > largest) largest = heights[i];
+            }
+            if (longest > 0) {
+                store_curr.emplace_back(heights[i], longest);
+                if (heights[i] * longest > largest) largest = heights[i] * longest;
+            }
+            store_prev = store_curr;
+        }
+    }
+    return largest;
+}
+
+
+/************************************************************************/
+/*
+ * Alice plays the following game, loosely based on the card game "21".
+ * Alice starts with 0 points, and draws numbers while she has less than
+ * K points. 
+ * During each draw, she gains an integer number of points randomly
+ * from the range [1, W], where W is an integer.  Each draw is
+ * independent and the outcomes have equal probabilities. Alice stops
+ * drawing numbers when she gets K or more points. 
+ * What is the probability that she has N or less points?
+ * */
+/***********************************************************************/
+double Solution::new21Game(int N, int K, int W) {
+    return 0.0;
+}
+
+
+/*****************************************************************************/
+/*
+ * 把数字翻译成字符串, 0 --> a, 1 --> b (不超过26)
+ * */
+/*****************************************************************************/
+int Solution::translateNum(int num) {
+    vector<int> digits;
+    int div = 10;
+
+    // First construct a vector that contains each digit
+    while (num > 0) {
+        int digit = num % 10;
+        digits.insert(digits.begin(), digit);
+        num = (num - digit) / 10;
+    }
+    int prev = 1;
+    int res = 1;
+    for (int i = 0; i < digits.size(); i++) {
+        int temp = prev;
+        prev = res;
+        if (i == 0) res = 1;
+        else if (digits[i - 1] > 0 && digits[i - 1] * 10 + digits[i] < 26)
+            res += temp;
+    }
+    return res;
+}

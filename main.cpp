@@ -7,8 +7,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    string test = "3[z]2[2[y]pq4[2[jk]e1[f]]]ef";
-    string res = solution.decodeString(test);
+    vector<int> test = {40091,2502,74024,53101,60555,33732,23467,40560,32693,13013};
+    int res = solution.findBestValue(test, 78666);
 
     return 0;
 }

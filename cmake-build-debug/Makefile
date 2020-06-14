@@ -123,6 +123,33 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
+3Sum.o: 3Sum.cpp.o
+
+.PHONY : 3Sum.o
+
+# target to build an object file
+3Sum.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.o
+.PHONY : 3Sum.cpp.o
+
+3Sum.i: 3Sum.cpp.i
+
+.PHONY : 3Sum.i
+
+# target to preprocess a source file
+3Sum.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.i
+.PHONY : 3Sum.cpp.i
+
+3Sum.s: 3Sum.cpp.s
+
+.PHONY : 3Sum.s
+
+# target to generate assembly for a file
+3Sum.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.s
+.PHONY : 3Sum.cpp.s
+
 canThreePartsEqualSum.o: canThreePartsEqualSum.cpp.o
 
 .PHONY : canThreePartsEqualSum.o
@@ -176,6 +203,60 @@ distributeCandies.s: distributeCandies.cpp.s
 distributeCandies.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/distributeCandies.cpp.s
 .PHONY : distributeCandies.cpp.s
+
+equationPossible.o: equationPossible.cpp.o
+
+.PHONY : equationPossible.o
+
+# target to build an object file
+equationPossible.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/equationPossible.cpp.o
+.PHONY : equationPossible.cpp.o
+
+equationPossible.i: equationPossible.cpp.i
+
+.PHONY : equationPossible.i
+
+# target to preprocess a source file
+equationPossible.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/equationPossible.cpp.i
+.PHONY : equationPossible.cpp.i
+
+equationPossible.s: equationPossible.cpp.s
+
+.PHONY : equationPossible.s
+
+# target to generate assembly for a file
+equationPossible.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/equationPossible.cpp.s
+.PHONY : equationPossible.cpp.s
+
+findBestValue.o: findBestValue.cpp.o
+
+.PHONY : findBestValue.o
+
+# target to build an object file
+findBestValue.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.o
+.PHONY : findBestValue.cpp.o
+
+findBestValue.i: findBestValue.cpp.i
+
+.PHONY : findBestValue.i
+
+# target to preprocess a source file
+findBestValue.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.i
+.PHONY : findBestValue.cpp.i
+
+findBestValue.s: findBestValue.cpp.s
+
+.PHONY : findBestValue.s
+
+# target to generate assembly for a file
+findBestValue.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.s
+.PHONY : findBestValue.cpp.s
 
 findContentChildren.o: findContentChildren.cpp.o
 
@@ -365,6 +446,33 @@ intersection.s: intersection.cpp.s
 intersection.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersection.cpp.s
 .PHONY : intersection.cpp.s
+
+isPalindrome.o: isPalindrome.cpp.o
+
+.PHONY : isPalindrome.o
+
+# target to build an object file
+isPalindrome.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o
+.PHONY : isPalindrome.cpp.o
+
+isPalindrome.i: isPalindrome.cpp.i
+
+.PHONY : isPalindrome.i
+
+# target to preprocess a source file
+isPalindrome.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isPalindrome.cpp.i
+.PHONY : isPalindrome.cpp.i
+
+isPalindrome.s: isPalindrome.cpp.s
+
+.PHONY : isPalindrome.s
+
+# target to generate assembly for a file
+isPalindrome.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/isPalindrome.cpp.s
+.PHONY : isPalindrome.cpp.s
 
 isRectangleOverlap.o: isRectangleOverlap.cpp.o
 
@@ -960,6 +1068,33 @@ problems_tree.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_tree.cpp.s
 .PHONY : problems_tree.cpp.s
 
+productExceptSelf.o: productExceptSelf.cpp.o
+
+.PHONY : productExceptSelf.o
+
+# target to build an object file
+productExceptSelf.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o
+.PHONY : productExceptSelf.cpp.o
+
+productExceptSelf.i: productExceptSelf.cpp.i
+
+.PHONY : productExceptSelf.i
+
+# target to preprocess a source file
+productExceptSelf.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.i
+.PHONY : productExceptSelf.cpp.i
+
+productExceptSelf.s: productExceptSelf.cpp.s
+
+.PHONY : productExceptSelf.s
+
+# target to generate assembly for a file
+productExceptSelf.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.s
+.PHONY : productExceptSelf.cpp.s
+
 removeDuplicates.o: removeDuplicates.cpp.o
 
 .PHONY : removeDuplicates.o
@@ -1104,12 +1239,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
+	@echo "... 3Sum.o"
+	@echo "... 3Sum.i"
+	@echo "... 3Sum.s"
 	@echo "... canThreePartsEqualSum.o"
 	@echo "... canThreePartsEqualSum.i"
 	@echo "... canThreePartsEqualSum.s"
 	@echo "... distributeCandies.o"
 	@echo "... distributeCandies.i"
 	@echo "... distributeCandies.s"
+	@echo "... equationPossible.o"
+	@echo "... equationPossible.i"
+	@echo "... equationPossible.s"
+	@echo "... findBestValue.o"
+	@echo "... findBestValue.i"
+	@echo "... findBestValue.s"
 	@echo "... findContentChildren.o"
 	@echo "... findContentChildren.i"
 	@echo "... findContentChildren.s"
@@ -1131,6 +1275,9 @@ help:
 	@echo "... intersection.o"
 	@echo "... intersection.i"
 	@echo "... intersection.s"
+	@echo "... isPalindrome.o"
+	@echo "... isPalindrome.i"
+	@echo "... isPalindrome.s"
 	@echo "... isRectangleOverlap.o"
 	@echo "... isRectangleOverlap.i"
 	@echo "... isRectangleOverlap.s"
@@ -1197,6 +1344,9 @@ help:
 	@echo "... problems_tree.o"
 	@echo "... problems_tree.i"
 	@echo "... problems_tree.s"
+	@echo "... productExceptSelf.o"
+	@echo "... productExceptSelf.i"
+	@echo "... productExceptSelf.s"
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"

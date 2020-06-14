@@ -67,6 +67,8 @@ public:
     bool isValidBST(TreeNode* root);
     // Subtree of Another Tree
     bool isSubtree(TreeNode* s, TreeNode* t);
+    // Symmetric Tree
+    bool isSymmetric(TreeNode* root);
     /**************************************************************************/
 
 
@@ -122,8 +124,12 @@ public:
     int mincostTickets(vector<int>& days, vector<int>& costs);
     // Maximum Product of Subarray
     int maxProduct(vector<int>& nums);
-    // Longest Palindromic Substring
-    string longestPalindrome(const string& s);
+    // Largest Rectangle in Histogram
+    int largestRectangleArea(vector<int>& heights);
+    // New 21 Game
+    double new21Game(int N, int K, int W);
+    // 把数字翻译成字符串
+    int translateNum(int num);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -131,6 +137,9 @@ public:
 
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
+
+    // Palindrome Number
+    bool isPalindrome(int x);
 
     /************************************************************/
     /*The following problems are general BFS or DFS based*/
@@ -224,8 +233,13 @@ public:
     // Merge Intervals
     vector<vector<int>> merge(vector<vector<int>>& intervals);
 
+    /********************************************************/
+    /* Binary search */
     // Search in Rotated Sorted Array
     int search(vector<int>& nums, int target);
+    // Sum of mutated array closed to target
+    int findBestValue(vector<int>& arr, int target);
+    /********************************************************/
 
     // Two Sum
     vector<int> twoSum(vector<int>& nums, int target);
@@ -245,6 +259,15 @@ public:
     // Find the Longest Substring Containing Vowels in Even Counts
     int findTheLongestSubstring(const string& s);
 
+    // Product of Array Except Self
+    vector<int> productExceptSelf(vector<int>& nums);
+
+    // Satisfiability of Equality Equations
+    bool equationPossible(vector<string>& equations);
+
+    // TODO: 3Sum
+    vector<vector<int>> threeSum(vector<int>& nums);
+
     /**********************************************************/
     /* Math problems */
     // Rotate Matrix LCCI
@@ -255,6 +278,8 @@ public:
     bool isHappy(int n);
     // Pow(x, n)
     double myPow(double x, int n);
+    // 顺时针打印矩阵
+    vector<int> spiralOrder(vector<vector<int>>& matrix);
     /**********************************************************/
 
     /*************************************************************************/
@@ -293,6 +318,8 @@ public:
     /* Prefix */
     // Subarray Sums Divisible by K
     int subarraysDivByK(vector<int>& A, int K);
+    // Daily Temperatures
+    vector<int> dailyTemperatures(vector<int>& T);
     /******************************************************/
 };
 

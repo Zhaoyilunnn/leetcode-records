@@ -443,3 +443,21 @@ TreeNode* Solution::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *
         if (candidates.find(i) != candidates.end()) return i;
     return nullptr;
 }
+
+/***************************************************************************/
+/*
+ * Description: Given a binary tree, check whether it is a mirror of itself
+ * */
+/***************************************************************************/
+bool isTwoTreeSymm(TreeNode* root1, TreeNode* root2) {
+    if ((!root1 && root2) || (root1 && !root2)) return false;
+    if (!root1 && !root2) return true;
+    if (root1->val == root2->val) {
+        return isTwoTreeSymm(root1->left, root2->right) && isTwoTreeSymm(root1->right, root2->left);
+    } else return false;
+}
+
+bool Solution::isSymmetric(TreeNode *root) {
+    if (!root) return true;
+    return isTwoTreeSymm(root->left, root->right);
+}
