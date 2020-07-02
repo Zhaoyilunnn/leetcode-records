@@ -322,3 +322,62 @@ string Solution::decodeString(const string &s) {
     }
     return res;
 }
+
+
+/*****************************************************************/
+/*
+ * Description:
+ * */
+/*****************************************************************/
+bool Solution::isPalindrome(const string& s) {
+    int i = 0, j = s.size() - 1;
+    int first = -1, second = -1;
+    while (i <= j) {
+        if (first < 0) {
+            if (s[i] - 'a' >= 0 && s[i] - 'a' <= 25) first = s[i] - 'a';
+            else if (s[i] - 'A' >= 0 && s[i] - 'A' <= 25) first = s[i] - 'A';
+            else if (s[i] - '0' >= 0 && s[i] - '0' <= 9) first = s[i] - '0' + 100;
+        }
+        if (second < 0) {
+            if (s[j] - 'a' >= 0 && s[j] - 'a' <= 25) second = s[j] - 'a';
+            else if (s[j] - 'A' >= 0 && s[j] - 'A' <= 25) second = s[j] - 'A';
+            else if (s[j] - '0' >= 0 && s[j] - '0' <= 9) second = s[j] - '0' + 100;
+        }
+        if (first < 0) {
+            i++;
+            if (second < 0) j--;
+        } else if (second < 0) j--;
+        else if (first != second) return false;
+        else {
+            i++;
+            j--;
+            first = -1;
+            second = -1;
+        }
+    }
+    return true;
+}
+
+
+/*************************************************************************************************/
+/*
+ * Description: '.' Matches any single character. '*' Matches zero or more of the preceding element
+ * */
+/*************************************************************************************************/
+bool Solution::isMatch(const string& s, const string& p) {
+    string s_r = " " + s;
+    string p_r = " " + p;
+    vector<vector<bool>> dp(s_r.size() + 1, vector<bool>(p_r.size() + 1, false));
+    dp[0][0] = true;
+    for (int i = 1; i <= s_r.size(); i++) {
+        for (int j = 1; j <= p_r.size(); j++) {
+            if (p_r[j - 1] != '*') {
+                if (s_r[i - 1] == p_r[j - 1] || p_r[j - 1] == '.') dp[i][j] = dp[i - 1][j - 1];
+            } else {
+                if (s_r[i - 1] != p_r[j - 2] && p_r[j - 2] != '.') dp[i][j] = dp[i][j - 2];
+                else dp[i][j] = dp[i][j - 1] || dp[i][j - 2] || dp[i - 1][j];
+            }
+        }
+    }
+    return dp[s_r.size()][p_r.size()];
+}

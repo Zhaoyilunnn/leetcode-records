@@ -691,3 +691,58 @@ int Solution::translateNum(int num) {
     }
     return res;
 }
+
+
+/*********************************************************************************/
+/*
+ * Description: Given an array A of positive integers, A[i] represents the value
+ * of the i-th sightseeing spot, and two sightseeing spots i and j have distance
+ * j - i between them.
+ * The score of a pair (i < j) of sightseeing spots is (A[i] + A[j] + i - j) :
+ * the sum of the values of the sightseeing spots, minus the distance between them.
+ * Return the maximum score of a pair of sightseeing spots.
+ * */
+/*********************************************************************************/
+int Solution::maxScoreSightseeingPair(vector<int> &A) {
+    int res = 0;
+    int prev = A[0];
+    int pos = 0;
+    res = A[1] + A[0] - 1;
+    for (int i = 2; i < A.size(); i++) {
+        prev--;
+        if (prev < A[i-1]) {
+            prev = A[i-1];
+            pos = i-1;
+        }
+        if (A[pos] + A[i] + pos - i > res) res = A[pos] + A[i] + pos - i;
+    }
+    return res;
+}
+
+
+/*************************************************************************************/
+/*
+ * Description: Given two integer arrays A and B, return the maximum length of an
+ * subarray that appears in both arrays.
+ * */
+/*************************************************************************************/
+int Solution::findLength(vector<int> &A, vector<int> &B) {
+    int m = A.size();
+    int n = B.size();
+    int res = 0;
+    vector<int> store(n, 0);
+    for (int i = 0; i < m; i++) {
+        vector<int> curr(n, 0);
+        for (int j = 0; j < n; j++) {
+            if ((j == 0 || i == 0) && A[i] == B[j]) {
+                curr[j] = 1;
+                if (curr[j] > res) res = curr[j];
+            } else if (A[i] == B[j]) {
+                curr[j] = store[j - 1] + 1;
+                if (curr[j] > res) res = curr[j];
+            }
+        }
+        store = curr;
+    }
+    return res;
+}

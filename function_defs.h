@@ -69,6 +69,10 @@ public:
     bool isSubtree(TreeNode* s, TreeNode* t);
     // Symmetric Tree
     bool isSymmetric(TreeNode* root);
+    // Recover a Tree From Preorder Traversal
+    TreeNode* recoverFromPreorder(const string& S);
+    // Convert Sorted Array to Binary Search Tree
+    TreeNode* sortedArrayToBST(vector<int>& nums);
     /**************************************************************************/
 
 
@@ -130,6 +134,10 @@ public:
     double new21Game(int N, int K, int W);
     // 把数字翻译成字符串
     int translateNum(int num);
+    // Best Sightseeing Pair
+    int maxScoreSightseeingPair(vector<int>& A);
+    // Maximum Length of Repeated Subarray
+    int findLength(vector<int>& A, vector<int>& B);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -178,6 +186,10 @@ public:
     string reverseWords(const string& s);
     // Decode string
     string decodeString(const string& s);
+    // Valid Palindrome
+    bool isPalindrome(const string& s);
+    // Regular Expression Matching
+    bool isMatch(const string& s_r, const string& p_r);
     /************************************************************/
 
     /************************************************************/
@@ -214,8 +226,17 @@ public:
     // 圈中最后剩下的数字
     int lastRemaining(int n, int m);
 
+
+
+    /****************************************************************************/
+    /* Problems using sorting algorithm */
     // Sort an Array
     vector<int> sortArray(vector<int>& nums);
+    // Kth Largest element in an array
+    int findKthLargest(vector<int>& nums, int k);
+    // Kth smallest element in a sorted matrix
+    int kthSmallest(vector<vector<int>>& matrix, int k);
+    /****************************************************************************/
 
     // Game of life
     void gameOfLife(vector<vector<int>>& board);
@@ -239,6 +260,7 @@ public:
     int search(vector<int>& nums, int target);
     // Sum of mutated array closed to target
     int findBestValue(vector<int>& arr, int target);
+
     /********************************************************/
 
     // Two Sum
@@ -267,6 +289,15 @@ public:
 
     // TODO: 3Sum
     vector<vector<int>> threeSum(vector<int>& nums);
+
+    // TODO: 3Sum Closest
+    int threeSumClosest(vector<int>& nums, int target);
+
+    // TODO: Word Break
+    bool wordBreak(string s, vector<string>& wordDict);
+
+    // First Missing Positive
+    int firstMissingPositive(vector<int>& nums);
 
     /**********************************************************/
     /* Math problems */
@@ -304,6 +335,8 @@ public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
     // Reverse Nodes in k-Group
     ListNode* reverseKGroup(ListNode* head, int k);
+    // Remove duplicate node
+    ListNode* removeDuplicateNodes(ListNode* head);
     /******************************************************/
 
     /******************************************************/
@@ -320,6 +353,8 @@ public:
     int subarraysDivByK(vector<int>& A, int K);
     // Daily Temperatures
     vector<int> dailyTemperatures(vector<int>& T);
+    // Minimum Size Subarray Sum
+    int minSubArrayLen(int s, vector<int>& nums);
     /******************************************************/
 };
 
@@ -533,5 +568,117 @@ public:
         return queue_first.empty() && queue_second.empty();
     }
 };
+
+
+// Serialize and deserialize binary tree
+class Codec {
+public:
+
+    // Encodes a tree to a single string.
+    string serialize(TreeNode* root) {
+        string res = "[";
+        queue<TreeNode*> store;
+        store.push(root);
+        res += to_string(root->val);
+        res += ",";
+        while (!store.empty()) {
+            int size = store.size();
+            string temp;
+            for (int i = 0; i < size; i++) {
+                TreeNode* node = store.front();
+                store.pop();
+                if (node->left) {
+                    store.push(node->left);
+                    temp += to_string(node->left->val);
+                    temp += ",";
+                } else temp += "null,";
+                if (node->right) {
+                    store.push(node->right);
+                    temp += to_string(node->right->val);
+                    temp += ",";
+                } else temp += "null,";
+            }
+            if (!store.empty()) res += temp;
+        }
+        res += "]";
+        return res;
+    }
+
+    // get a string
+    string get_string(string data, int& start) {
+        string res;
+        int i = 0;
+        for (i = start; i < data.size(); i++) {
+            if (data[i] != '[' && data[i] != ',' && data[i] != ']') res.push_back(data[i]);
+            else break;
+        }
+        start = i + 1;
+        return res;
+    }
+
+    // Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) {
+        TreeNode* root = NULL;
+        queue<TreeNode*> store;
+        int i = 1;
+        root = new TreeNode(stoi(get_string(data, i)));
+        store.push(root);
+        while (i < data.size()) {
+            int size = store.size();
+            for (int j = 0; j < size; j++) {
+                TreeNode* node = store.front();
+                string new_val = get_string(data, i);
+                if (new_val != "null" && !new_val.empty()) {
+                    node->left = new TreeNode(stoi(new_val));
+                    store.push(node->left);
+                }
+                new_val = get_string(data, i);
+                if (new_val != "null" && !new_val.empty()) {
+                    node->right = new TreeNode(stoi(new_val));
+                    store.push(node->right);
+                }
+                store.pop();
+            }
+        }
+        return root;
+    }
+};
+
+
+// 用两个栈实现队列
+class CQueue {
+public:
+    stack<int> heads;
+    stack<int> tails;
+
+    CQueue() {
+
+    }
+
+    void appendTail(int value) {
+        if (heads.empty()) tails.push(value);
+        else {
+            while (!heads.empty()) {
+                tails.push(heads.top());
+                heads.pop();
+            }
+            tails.push(value);
+        }
+    }
+
+    int deleteHead() {
+        while (!tails.empty()) {
+            heads.push(tails.top());
+            tails.pop();
+        }
+        int res = -1;
+        if (!heads.empty()) {
+            res = heads.top();
+            heads.pop();
+        }
+        return res;
+    }
+};
+
 
 #endif //LEETCODE_RECORD_FUNCTION_DEFS_H

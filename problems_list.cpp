@@ -229,3 +229,29 @@ ListNode* Solution::reverseKGroup(ListNode *head, int k) {
     }
     return whole_new_head;
 }
+
+
+/*****************************************************************************/
+/*
+ * Write code to remove duplicates from a unsorted linked list
+ * */
+/*****************************************************************************/
+ListNode* Solution::removeDuplicateNodes(ListNode *head) {
+    if (!head) return nullptr;
+    unordered_set<int> store;
+    ListNode* prev  = head;
+    store.insert(prev->val);
+    ListNode* p = head->next;
+    while (p) {
+        if (store.end() != store.find(p->val)) {
+            prev->next = p->next;
+            p->next = nullptr;
+            p = prev->next;
+        } else {
+            store.insert(p->val);
+            prev = p;
+            p = p->next;
+        }
+    }
+    return head;
+}

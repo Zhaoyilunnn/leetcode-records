@@ -343,22 +343,9 @@ CMakeFiles/leetcode_record.dir/lastRemaining.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/lastRemaining.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/lastRemaining.cpp -o CMakeFiles/leetcode_record.dir/lastRemaining.cpp.s
 
-CMakeFiles/leetcode_record.dir/sortArray.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/sortArray.cpp.o: ../sortArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/sortArray.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/sortArray.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp
-
-CMakeFiles/leetcode_record.dir/sortArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/sortArray.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp > CMakeFiles/leetcode_record.dir/sortArray.cpp.i
-
-CMakeFiles/leetcode_record.dir/sortArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/sortArray.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/sortArray.cpp -o CMakeFiles/leetcode_record.dir/sortArray.cpp.s
-
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o: ../gameOfLife.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp
 
 CMakeFiles/leetcode_record.dir/gameOfLife.cpp.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/leetcode_record.dir/gameOfLife.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/movingCount.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/movingCount.cpp.o: ../movingCount.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/movingCount.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/leetcode_record.dir/movingCount.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/movingCount.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp
 
 CMakeFiles/leetcode_record.dir/movingCount.cpp.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/leetcode_record.dir/movingCount.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o: ../problems_backtracking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp
 
 CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.i: cmake_force
@@ -397,7 +384,7 @@ CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/intersection.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/intersection.cpp.o: ../intersection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/leetcode_record.dir/intersection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/leetcode_record.dir/intersection.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/intersection.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/intersection.cpp
 
 CMakeFiles/leetcode_record.dir/intersection.cpp.i: cmake_force
@@ -410,7 +397,7 @@ CMakeFiles/leetcode_record.dir/intersection.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o: ../mergeIntervals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/mergeIntervals.cpp
 
 CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.i: cmake_force
@@ -423,7 +410,7 @@ CMakeFiles/leetcode_record.dir/mergeIntervals.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o: ../problems_binary_search.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_binary_search.cpp
 
 CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.i: cmake_force
@@ -436,7 +423,7 @@ CMakeFiles/leetcode_record.dir/problems_binary_search.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o: ../problems_bitwise_ops.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_bitwise_ops.cpp
 
 CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.i: cmake_force
@@ -449,7 +436,7 @@ CMakeFiles/leetcode_record.dir/problems_bitwise_ops.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/problems_math.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_math.cpp.o: ../problems_math.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/leetcode_record.dir/problems_math.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/leetcode_record.dir/problems_math.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_math.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_math.cpp
 
 CMakeFiles/leetcode_record.dir/problems_math.cpp.i: cmake_force
@@ -462,7 +449,7 @@ CMakeFiles/leetcode_record.dir/problems_math.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/twoSum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/twoSum.cpp.o: ../twoSum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/leetcode_record.dir/twoSum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/leetcode_record.dir/twoSum.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/twoSum.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/twoSum.cpp
 
 CMakeFiles/leetcode_record.dir/twoSum.cpp.i: cmake_force
@@ -475,7 +462,7 @@ CMakeFiles/leetcode_record.dir/twoSum.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o: ../maximalSquare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/maximalSquare.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/maximalSquare.cpp
 
 CMakeFiles/leetcode_record.dir/maximalSquare.cpp.i: cmake_force
@@ -488,7 +475,7 @@ CMakeFiles/leetcode_record.dir/maximalSquare.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/subarraySum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/subarraySum.cpp.o: ../subarraySum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/leetcode_record.dir/subarraySum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/leetcode_record.dir/subarraySum.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/subarraySum.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/subarraySum.cpp
 
 CMakeFiles/leetcode_record.dir/subarraySum.cpp.i: cmake_force
@@ -501,7 +488,7 @@ CMakeFiles/leetcode_record.dir/subarraySum.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o: ../findTheLongestSubstring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp
 
 CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.i: cmake_force
@@ -514,7 +501,7 @@ CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o: ../problems_prefix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp
 
 CMakeFiles/leetcode_record.dir/problems_prefix.cpp.i: cmake_force
@@ -527,7 +514,7 @@ CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o: ../productExceptSelf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/productExceptSelf.cpp
 
 CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.i: cmake_force
@@ -540,7 +527,7 @@ CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/equationPossible.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/equationPossible.cpp.o: ../equationPossible.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/leetcode_record.dir/equationPossible.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/leetcode_record.dir/equationPossible.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/equationPossible.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/equationPossible.cpp
 
 CMakeFiles/leetcode_record.dir/equationPossible.cpp.i: cmake_force
@@ -553,7 +540,7 @@ CMakeFiles/leetcode_record.dir/equationPossible.cpp.s: cmake_force
 
 CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o: ../isPalindrome.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/isPalindrome.cpp
 
 CMakeFiles/leetcode_record.dir/isPalindrome.cpp.i: cmake_force
@@ -564,31 +551,70 @@ CMakeFiles/leetcode_record.dir/isPalindrome.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/isPalindrome.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/isPalindrome.cpp -o CMakeFiles/leetcode_record.dir/isPalindrome.cpp.s
 
-CMakeFiles/leetcode_record.dir/3Sum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/3Sum.cpp.o: ../3Sum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/leetcode_record.dir/3Sum.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/3Sum.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/3Sum.cpp
+CMakeFiles/leetcode_record.dir/threeSum.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/threeSum.cpp.o: ../threeSum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/leetcode_record.dir/threeSum.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/threeSum.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/threeSum.cpp
 
-CMakeFiles/leetcode_record.dir/3Sum.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/3Sum.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/3Sum.cpp > CMakeFiles/leetcode_record.dir/3Sum.cpp.i
+CMakeFiles/leetcode_record.dir/threeSum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/threeSum.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/threeSum.cpp > CMakeFiles/leetcode_record.dir/threeSum.cpp.i
 
-CMakeFiles/leetcode_record.dir/3Sum.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/3Sum.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/3Sum.cpp -o CMakeFiles/leetcode_record.dir/3Sum.cpp.s
+CMakeFiles/leetcode_record.dir/threeSum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/threeSum.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/threeSum.cpp -o CMakeFiles/leetcode_record.dir/threeSum.cpp.s
 
-CMakeFiles/leetcode_record.dir/findBestValue.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/findBestValue.cpp.o: ../findBestValue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/leetcode_record.dir/findBestValue.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/findBestValue.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/findBestValue.cpp
+CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o: ../threeSumClosest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/threeSumClosest.cpp
 
-CMakeFiles/leetcode_record.dir/findBestValue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/findBestValue.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/findBestValue.cpp > CMakeFiles/leetcode_record.dir/findBestValue.cpp.i
+CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/threeSumClosest.cpp > CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.i
 
-CMakeFiles/leetcode_record.dir/findBestValue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/findBestValue.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/findBestValue.cpp -o CMakeFiles/leetcode_record.dir/findBestValue.cpp.s
+CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/threeSumClosest.cpp -o CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.s
+
+CMakeFiles/leetcode_record.dir/wordBreak.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/wordBreak.cpp.o: ../wordBreak.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/leetcode_record.dir/wordBreak.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/wordBreak.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/wordBreak.cpp
+
+CMakeFiles/leetcode_record.dir/wordBreak.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/wordBreak.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/wordBreak.cpp > CMakeFiles/leetcode_record.dir/wordBreak.cpp.i
+
+CMakeFiles/leetcode_record.dir/wordBreak.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/wordBreak.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/wordBreak.cpp -o CMakeFiles/leetcode_record.dir/wordBreak.cpp.s
+
+CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o: ../firstMissingPositive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/firstMissingPositive.cpp
+
+CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/firstMissingPositive.cpp > CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.i
+
+CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/firstMissingPositive.cpp -o CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.s
+
+CMakeFiles/leetcode_record.dir/problems_sort.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/problems_sort.cpp.o: ../problems_sort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/leetcode_record.dir/problems_sort.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_sort.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp
+
+CMakeFiles/leetcode_record.dir/problems_sort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_sort.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp > CMakeFiles/leetcode_record.dir/problems_sort.cpp.i
+
+CMakeFiles/leetcode_record.dir/problems_sort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_sort.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp -o CMakeFiles/leetcode_record.dir/problems_sort.cpp.s
 
 # Object files for target leetcode_record
 leetcode_record_OBJECTS = \
@@ -614,7 +640,6 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.o" \
 "CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o" \
 "CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o" \
-"CMakeFiles/leetcode_record.dir/sortArray.cpp.o" \
 "CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o" \
 "CMakeFiles/leetcode_record.dir/movingCount.cpp.o" \
 "CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o" \
@@ -631,8 +656,11 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o" \
 "CMakeFiles/leetcode_record.dir/equationPossible.cpp.o" \
 "CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o" \
-"CMakeFiles/leetcode_record.dir/3Sum.cpp.o" \
-"CMakeFiles/leetcode_record.dir/findBestValue.cpp.o"
+"CMakeFiles/leetcode_record.dir/threeSum.cpp.o" \
+"CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o" \
+"CMakeFiles/leetcode_record.dir/wordBreak.cpp.o" \
+"CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o" \
+"CMakeFiles/leetcode_record.dir/problems_sort.cpp.o"
 
 # External object files for target leetcode_record
 leetcode_record_EXTERNAL_OBJECTS =
@@ -659,7 +687,6 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/numRookCaptures.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/lastRemaining.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/sortArray.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/movingCount.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_backtracking.cpp.o
@@ -676,11 +703,14 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_prefix.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/productExceptSelf.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/equationPossible.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/3Sum.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/findBestValue.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/threeSum.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/wordBreak.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_sort.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/build.make
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking CXX executable leetcode_record.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable leetcode_record.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_record.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -50,3 +50,34 @@ vector<int> Solution::dailyTemperatures(vector<int>& T) {
     }
     return res;
 }
+
+
+/*******************************************************************************/
+/*
+ * Description: minimum continuous subarray, of which the sum is >= s
+ * */
+/*******************************************************************************/
+int Solution::minSubArrayLen(int s, vector<int> &nums) {
+    if (nums.empty()) return 0;
+    int start = 0;
+    int prefix = 0;
+    int res = 0;
+    vector<int> prefix_list(nums.size(), 0);
+    for (int i = 0; i < nums.size(); i++) {
+        if (i >= 1) prefix += nums[i - 1];
+        prefix_list[i] = prefix;
+        if (prefix_list[i] + nums[i] - prefix_list[start] >= s) {
+            for (int j = start; j <= i; j++) {
+                int temp = prefix_list[i] + nums[i] - prefix_list[j];
+                if (temp >= s) {
+                    res = i - j + 1;
+                    start = j + 2;
+                    if (start >= nums.size()) return res;
+                } else break;
+            }
+        } else {
+            if (res > 0) start++;
+        }
+    }
+    return res;
+}

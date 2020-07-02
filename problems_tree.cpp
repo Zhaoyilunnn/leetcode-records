@@ -461,3 +461,84 @@ bool Solution::isSymmetric(TreeNode *root) {
     if (!root) return true;
     return isTwoTreeSymm(root->left, root->right);
 }
+
+
+/***************************************************************************/
+/*
+ * Description: Input: "1-2--3--4-5--6--7" Output: [1,2,5,3,4,6,7]
+ * If a node has only one child, that child is guaranteed to be the left child.
+ * */
+/***************************************************************************/
+TreeNode* Solution::recoverFromPreorder(const string &S) {
+    stack<pair<TreeNode*, int>> store;
+    int d_prev = 0;
+    int d_curr = 0;
+    int value = 0;
+    int i = 0;
+    while (i < S.size()) {
+        if (S[i] == '-') break;
+        value = value * 10 + S[i] - '0';
+        i++;
+    }
+    auto* root = new TreeNode(value);
+    store.emplace(root, 0);
+    while (i < S.size()) {
+        d_curr = 0;
+        value = 0;
+        TreeNode* node = store.top().first;
+        while (S[i] == '-') {
+            d_curr++;
+            i++;
+        }
+        while (S[i] != '-') {
+            value = value * 10 + S[i] - '0';
+            i++;
+            if (i == S.size())
+                break;
+        }
+        if (d_curr > d_prev) {
+            node->left = new TreeNode(value);
+            store.emplace(node->left, d_curr);
+        } else if (d_curr == d_prev) {
+            store.pop();
+            node = store.top().first;
+            node->right = new TreeNode(value);
+            store.pop();
+            store.emplace(node->right, d_curr);
+        } else {
+            while (store.top().second >= d_curr) {
+                store.pop();
+            }
+            node = store.top().first;
+            node->right = new TreeNode(value);
+            store.pop();
+            store.emplace(node->right, d_curr);
+        }
+        d_prev = d_curr;
+    }
+    return root;
+}
+
+
+/********************************************************************************/
+/*
+ * Description: Given an array where elements are sorted in ascending order,
+ * convert it to a height balanced BST. For this problem, a height-balanced
+ * binary tree is defined as a binary tree in which the depth of the two
+ * subtrees of every node never differ by more than 1.
+ * */
+/********************************************************************************/
+TreeNode* toBST(vector<int>& nums, int l, int r) {
+    if (l > r) return nullptr;
+    int mid = (l + r) / 2;
+    auto* node = new TreeNode(nums[mid]);
+    node->left = toBST(nums, l, mid - 1);
+    node->right = toBST(nums, mid + 1, r);
+    return node;
+}
+
+TreeNode* Solution::sortedArrayToBST(vector<int> &nums) {
+    if (nums.empty()) return nullptr;
+    int l = 0, r = nums.size() - 1;
+    return toBST(nums, l, r);
+}

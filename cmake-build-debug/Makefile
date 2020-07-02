@@ -123,33 +123,6 @@ leetcode_record/fast:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/build
 .PHONY : leetcode_record/fast
 
-3Sum.o: 3Sum.cpp.o
-
-.PHONY : 3Sum.o
-
-# target to build an object file
-3Sum.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.o
-.PHONY : 3Sum.cpp.o
-
-3Sum.i: 3Sum.cpp.i
-
-.PHONY : 3Sum.i
-
-# target to preprocess a source file
-3Sum.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.i
-.PHONY : 3Sum.cpp.i
-
-3Sum.s: 3Sum.cpp.s
-
-.PHONY : 3Sum.s
-
-# target to generate assembly for a file
-3Sum.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/3Sum.cpp.s
-.PHONY : 3Sum.cpp.s
-
 canThreePartsEqualSum.o: canThreePartsEqualSum.cpp.o
 
 .PHONY : canThreePartsEqualSum.o
@@ -231,33 +204,6 @@ equationPossible.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/equationPossible.cpp.s
 .PHONY : equationPossible.cpp.s
 
-findBestValue.o: findBestValue.cpp.o
-
-.PHONY : findBestValue.o
-
-# target to build an object file
-findBestValue.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.o
-.PHONY : findBestValue.cpp.o
-
-findBestValue.i: findBestValue.cpp.i
-
-.PHONY : findBestValue.i
-
-# target to preprocess a source file
-findBestValue.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.i
-.PHONY : findBestValue.cpp.i
-
-findBestValue.s: findBestValue.cpp.s
-
-.PHONY : findBestValue.s
-
-# target to generate assembly for a file
-findBestValue.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findBestValue.cpp.s
-.PHONY : findBestValue.cpp.s
-
 findContentChildren.o: findContentChildren.cpp.o
 
 .PHONY : findContentChildren.o
@@ -338,6 +284,33 @@ findTheLongestSubstring.s: findTheLongestSubstring.cpp.s
 findTheLongestSubstring.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/findTheLongestSubstring.cpp.s
 .PHONY : findTheLongestSubstring.cpp.s
+
+firstMissingPositive.o: firstMissingPositive.cpp.o
+
+.PHONY : firstMissingPositive.o
+
+# target to build an object file
+firstMissingPositive.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.o
+.PHONY : firstMissingPositive.cpp.o
+
+firstMissingPositive.i: firstMissingPositive.cpp.i
+
+.PHONY : firstMissingPositive.i
+
+# target to preprocess a source file
+firstMissingPositive.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.i
+.PHONY : firstMissingPositive.cpp.i
+
+firstMissingPositive.s: firstMissingPositive.cpp.s
+
+.PHONY : firstMissingPositive.s
+
+# target to generate assembly for a file
+firstMissingPositive.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/firstMissingPositive.cpp.s
+.PHONY : firstMissingPositive.cpp.s
 
 gameOfLife.o: gameOfLife.cpp.o
 
@@ -987,6 +960,33 @@ problems_prefix.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_prefix.cpp.s
 .PHONY : problems_prefix.cpp.s
 
+problems_sort.o: problems_sort.cpp.o
+
+.PHONY : problems_sort.o
+
+# target to build an object file
+problems_sort.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_sort.cpp.o
+.PHONY : problems_sort.cpp.o
+
+problems_sort.i: problems_sort.cpp.i
+
+.PHONY : problems_sort.i
+
+# target to preprocess a source file
+problems_sort.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_sort.cpp.i
+.PHONY : problems_sort.cpp.i
+
+problems_sort.s: problems_sort.cpp.s
+
+.PHONY : problems_sort.s
+
+# target to generate assembly for a file
+problems_sort.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_sort.cpp.s
+.PHONY : problems_sort.cpp.s
+
 problems_string.o: problems_string.cpp.o
 
 .PHONY : problems_string.o
@@ -1122,33 +1122,6 @@ removeDuplicates.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/removeDuplicates.cpp.s
 .PHONY : removeDuplicates.cpp.s
 
-sortArray.o: sortArray.cpp.o
-
-.PHONY : sortArray.o
-
-# target to build an object file
-sortArray.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.o
-.PHONY : sortArray.cpp.o
-
-sortArray.i: sortArray.cpp.i
-
-.PHONY : sortArray.i
-
-# target to preprocess a source file
-sortArray.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.i
-.PHONY : sortArray.cpp.i
-
-sortArray.s: sortArray.cpp.s
-
-.PHONY : sortArray.s
-
-# target to generate assembly for a file
-sortArray.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/sortArray.cpp.s
-.PHONY : sortArray.cpp.s
-
 subarraySum.o: subarraySum.cpp.o
 
 .PHONY : subarraySum.o
@@ -1203,6 +1176,60 @@ surfaceArea.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/surfaceArea.cpp.s
 .PHONY : surfaceArea.cpp.s
 
+threeSum.o: threeSum.cpp.o
+
+.PHONY : threeSum.o
+
+# target to build an object file
+threeSum.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSum.cpp.o
+.PHONY : threeSum.cpp.o
+
+threeSum.i: threeSum.cpp.i
+
+.PHONY : threeSum.i
+
+# target to preprocess a source file
+threeSum.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSum.cpp.i
+.PHONY : threeSum.cpp.i
+
+threeSum.s: threeSum.cpp.s
+
+.PHONY : threeSum.s
+
+# target to generate assembly for a file
+threeSum.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSum.cpp.s
+.PHONY : threeSum.cpp.s
+
+threeSumClosest.o: threeSumClosest.cpp.o
+
+.PHONY : threeSumClosest.o
+
+# target to build an object file
+threeSumClosest.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.o
+.PHONY : threeSumClosest.cpp.o
+
+threeSumClosest.i: threeSumClosest.cpp.i
+
+.PHONY : threeSumClosest.i
+
+# target to preprocess a source file
+threeSumClosest.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.i
+.PHONY : threeSumClosest.cpp.i
+
+threeSumClosest.s: threeSumClosest.cpp.s
+
+.PHONY : threeSumClosest.s
+
+# target to generate assembly for a file
+threeSumClosest.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/threeSumClosest.cpp.s
+.PHONY : threeSumClosest.cpp.s
+
 twoSum.o: twoSum.cpp.o
 
 .PHONY : twoSum.o
@@ -1230,6 +1257,33 @@ twoSum.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/twoSum.cpp.s
 .PHONY : twoSum.cpp.s
 
+wordBreak.o: wordBreak.cpp.o
+
+.PHONY : wordBreak.o
+
+# target to build an object file
+wordBreak.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/wordBreak.cpp.o
+.PHONY : wordBreak.cpp.o
+
+wordBreak.i: wordBreak.cpp.i
+
+.PHONY : wordBreak.i
+
+# target to preprocess a source file
+wordBreak.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/wordBreak.cpp.i
+.PHONY : wordBreak.cpp.i
+
+wordBreak.s: wordBreak.cpp.s
+
+.PHONY : wordBreak.s
+
+# target to generate assembly for a file
+wordBreak.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/wordBreak.cpp.s
+.PHONY : wordBreak.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1239,9 +1293,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leetcode_record"
 	@echo "... edit_cache"
-	@echo "... 3Sum.o"
-	@echo "... 3Sum.i"
-	@echo "... 3Sum.s"
 	@echo "... canThreePartsEqualSum.o"
 	@echo "... canThreePartsEqualSum.i"
 	@echo "... canThreePartsEqualSum.s"
@@ -1251,9 +1302,6 @@ help:
 	@echo "... equationPossible.o"
 	@echo "... equationPossible.i"
 	@echo "... equationPossible.s"
-	@echo "... findBestValue.o"
-	@echo "... findBestValue.i"
-	@echo "... findBestValue.s"
 	@echo "... findContentChildren.o"
 	@echo "... findContentChildren.i"
 	@echo "... findContentChildren.s"
@@ -1263,6 +1311,9 @@ help:
 	@echo "... findTheLongestSubstring.o"
 	@echo "... findTheLongestSubstring.i"
 	@echo "... findTheLongestSubstring.s"
+	@echo "... firstMissingPositive.o"
+	@echo "... firstMissingPositive.i"
+	@echo "... firstMissingPositive.s"
 	@echo "... gameOfLife.o"
 	@echo "... gameOfLife.i"
 	@echo "... gameOfLife.s"
@@ -1335,6 +1386,9 @@ help:
 	@echo "... problems_prefix.o"
 	@echo "... problems_prefix.i"
 	@echo "... problems_prefix.s"
+	@echo "... problems_sort.o"
+	@echo "... problems_sort.i"
+	@echo "... problems_sort.s"
 	@echo "... problems_string.o"
 	@echo "... problems_string.i"
 	@echo "... problems_string.s"
@@ -1350,18 +1404,24 @@ help:
 	@echo "... removeDuplicates.o"
 	@echo "... removeDuplicates.i"
 	@echo "... removeDuplicates.s"
-	@echo "... sortArray.o"
-	@echo "... sortArray.i"
-	@echo "... sortArray.s"
 	@echo "... subarraySum.o"
 	@echo "... subarraySum.i"
 	@echo "... subarraySum.s"
 	@echo "... surfaceArea.o"
 	@echo "... surfaceArea.i"
 	@echo "... surfaceArea.s"
+	@echo "... threeSum.o"
+	@echo "... threeSum.i"
+	@echo "... threeSum.s"
+	@echo "... threeSumClosest.o"
+	@echo "... threeSumClosest.i"
+	@echo "... threeSumClosest.s"
 	@echo "... twoSum.o"
 	@echo "... twoSum.i"
 	@echo "... twoSum.s"
+	@echo "... wordBreak.o"
+	@echo "... wordBreak.i"
+	@echo "... wordBreak.s"
 .PHONY : help
 
 
