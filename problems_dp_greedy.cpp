@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/8.
 //
 
-#include "function_defs.h"
+#include "algorithms_data_structures.h"
 
 /****************************************************************/
 /* Given an integer array nums, find the contiguous subarray
@@ -155,93 +155,48 @@ int Solution::uniquePaths(int m, int n) {
     return res[m-1][n-1];
 }
 
+/**
+ * A robot is located at the top-left corner of a m x n grid
+ * the robot can only move either down or right at any point in time
+ * Consider if some obstacles added to the grids. How many unique paths would there be
+ * @param obstacleGrid
+ * @return
+ */
 int Solution::uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-    if (obstacleGrid.empty())
-        return 0;
-    if (obstacleGrid[0][0] == 1)
-        return 0;
     int m = obstacleGrid.size();
     int n = obstacleGrid[0].size();
-    long res = 0;
-    vector<int> temp;
-    vector<int> temp_temp;
-    bool stop_row = false;
-    bool stop_col = false;
+    vector<int> last(n, 0);
+    vector<int> now(n, 0);
     for (int i = 0; i < m; i++) {
-        temp.clear();
-        res = 0;
+        now = vector<int>(n, 0);
         for (int j = 0; j < n; j++) {
-            if (i == 0) {
-                if (stop_row) {
-                    temp.push_back(0);
-                    res = 0;
-                }
-                else if (obstacleGrid[i][j] == 1){
-                    temp.push_back(0);
-                    res = 0;
-                    stop_row = true;
-                }
-                else {
-                    temp.push_back(1);
-                    res = 1;
-                }
-            }
-            else if (j == 0) {
-                if (stop_col) {
-                    temp.push_back(0);
-                    res = 0;
-                }
-                else if (obstacleGrid[i][j] == 1){
-                    temp.push_back(0);
-                    res = 0;
-                    stop_col = true;
-                }
-                else {
-                    temp.push_back(1);
-                    res = 1;
-                }
-            }
-            else if (obstacleGrid[i][j] == 0){
-                res += temp_temp[j];
-                temp.push_back(res);
-            }
-            else {
-                res = 0;
-                temp.push_back(0);
-            }
+            if (i == 0 && j != 0) now[j] = obstacleGrid[i][j] ? 0 : now[j - 1];
+            else if (j == 0 && i != 0) now[j] = obstacleGrid[i][j] ? 0 : last[0];
+            else if (j == 0 && i == 0) now[j] = obstacleGrid[i][j] ? 0 : 1;
+            else now[j] = obstacleGrid[i][j] ? 0 : now[j - 1] + last[j];
         }
-        temp_temp = temp;
+        last = now;
     }
-    return int(res);
+    return now[n - 1];
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/triangle/
+ * TODO: Using only O(n) extra space, n is the total number of rows in the triangle
+ * @param triangle
+ * @return
+ */
 int Solution::minimumTotal(vector<vector<int>>& triangle) {
-    vector<vector<int>> results;
-    vector<int> temp;
-    int length = triangle.size();
-    if (length == 1)
-        return triangle[0][0];
-    for (int i = 0; i < length-1; i++) {
-        if (!temp.empty())
-            temp.clear();
-        for (int j = 0; j < length-1-i; j++) {
-            if (i == 0) {
-                if (triangle[length-1-i][j] < triangle[length-1-i][j+1])
-                    temp.push_back(triangle[length-1-i][j] + triangle[length-2-i][j]);
-                else
-                    temp.push_back(triangle[length-1-i][j+1] + triangle[length-2-i][j]);
-            }
-            else {
-                if (results[i - 1][j] < results[i - 1][j + 1])
-                    temp.push_back(results[i - 1][j] + triangle[length - 2 - i][j]);
-                else
-                    temp.push_back(results[i - 1][j + 1] + triangle[length - 2 - i][j]);
-            }
+    vector<vector<int>> store = triangle;
+    int m = triangle.size();
+    for (int i = m - 1; i >= 0; i--) {
+        for (int j = 0; j <= i; j++) {
+            if (i == m - 1) store[i][j] = triangle[i][j];
+            else store[i][j] = triangle[i][j] + min(store[i + 1][j], store[i + 1][j + 1]);
         }
-        results.push_back(temp);
     }
-    return results[length-2][0];
+    return store[0][0];
 }
 
 
@@ -745,4 +700,155 @@ int Solution::findLength(vector<int> &A, vector<int> &B) {
         store = curr;
     }
     return res;
+}
+
+
+/***********************************************************************************/
+/*
+ * Description: Given a string containing just the characters '(' and ')', find the
+ * length of the longest valid (well-formed) parentheses substring.
+ *
+ * */
+/***********************************************************************************/
+int Solution::longestValidParentheses(const string& s) {
+    int res = 0;
+    vector<int> dp(s.size() + 1, 0);
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '(') dp[i + 1] = 0;
+        else if (i - 1 >= 0 && s[i - 1] == '(') dp[i + 1] = dp[i - 1] + 2;
+        else if (i - 1 - dp[i] >= 0 && s[i - 1 - dp[i]] == '(')
+                dp[i + 1] = dp[i] + 2 + dp[i - dp[i] - 1];
+        res = dp[i + 1] > res ? dp[i + 1] : res;
+    }
+    return res;
+}
+
+
+/**
+ * Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?'
+ * and '*'
+ * '?' matches any single character
+ * '*' matches any sequence of characters
+ * @param s
+ * @param p
+ * @return
+ */
+bool Solution::isMatchPro(const string &s, const string &p) {
+    if (s.empty() && (p == "*" || p.empty())) return true;
+    else if (s.empty()) return false;
+    int m = s.size(), n = p.size();
+    vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
+
+    // initialize
+    dp[0][0] = true;
+    int start = 0;
+    for (start = 0; start < n; start++) if (p[start] != '*') break;
+    for (int j = 0; j < start; j++) {
+        for (int i = 0; i < m + 1; i++) {
+            dp[i][j + 1] = true;
+        }
+    }
+    if (s[0] == p[0] || p[0] == '?') dp[1][1] = true;
+
+    for (int i = 1; i < m + 1; i++) {
+        for (int j = start + 1; j < n + 1; j++) {
+            if (p[j - 1] == '*') dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
+            else if (p[j - 1] == '?' || p[j - 1] == s[i - 1]) dp[i][j] = dp[i - 1][j - 1];
+        }
+    }
+    return dp[m][n];
+}
+
+
+/*************************************************************************************************/
+/*
+ * Description: '.' Matches any single character. '*' Matches zero or more of the preceding element
+ * */
+/*************************************************************************************************/
+bool Solution::isMatch(const string& s, const string& p) {
+    string s_r = " " + s;
+    string p_r = " " + p;
+    vector<vector<bool>> dp(s_r.size() + 1, vector<bool>(p_r.size() + 1, false));
+    dp[0][0] = true;
+    for (int i = 1; i <= s_r.size(); i++) {
+        for (int j = 1; j <= p_r.size(); j++) {
+            if (p_r[j - 1] != '*') {
+                if (s_r[i - 1] == p_r[j - 1] || p_r[j - 1] == '.') dp[i][j] = dp[i - 1][j - 1];
+            } else {
+                if (s_r[i - 1] != p_r[j - 2] && p_r[j - 2] != '.') dp[i][j] = dp[i][j - 2];
+                else dp[i][j] = dp[i][j - 1] || dp[i][j - 2] || dp[i - 1][j];
+            }
+        }
+    }
+    return dp[s_r.size()][p_r.size()];
+}
+
+
+/**
+ * ith element is the price of a given stock on day i
+ * After you sell your stock, you cannot buy stock on next day. (i.e. cooldown 1 day)
+ * TODO: Optimize pre_pre and pre, pre_pre is the last valid sell before last valid sell before assumed cooldown,
+ *       and pre is the last valid sell before assumed cooldown
+ * @param prices
+ * @return
+ */
+int Solution::maxProfit(vector<int> &prices) {
+    if (prices.empty()) return 0;
+    int n = prices.size();
+    int sell = -1;
+    int res = 0, pre = 0, pre_pre = 0;
+    for (int i = 1; i < n; i++) {
+        if (sell == i - 1) {
+            if (prices[i] > prices[i - 1]) {
+                pre = res;
+                res += prices[i] - prices[i - 1];
+                sell = i;
+            } else {
+                pre_pre = pre;
+                pre = res;
+            }
+        } else if (sell == i - 2 && prices[i] > prices[i - 1]) {
+            int temp = 0;
+            if (i == 1) {
+                res += prices[i] - prices[i - 1];
+                sell = i;
+            }
+            else {
+                temp = pre_pre + prices[i] - prices[i - 1] > prices[i] + res - prices[sell] ?
+                        pre_pre + prices[i] - prices[i - 1] : prices[i] + res - prices[sell];
+                if (temp > pre) {
+                    res = temp;
+                    sell = i;
+                }
+            }
+        } else if (prices[i] > prices[i - 1]) {
+            res += prices[i] - prices[i - 1];
+            sell = i;
+        }
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/dungeon-game/
+ * dp from right bottom to left top !!
+ * @param dungeon
+ * @return
+ */
+int Solution::calculateMinimumHP(vector<vector<int> > &dungeon) {
+     int m = dungeon.size(), n = dungeon[0].size();
+     vector<int> dp_curr(n, 1), dp_pre(n, 1);
+     for (int i = m - 1; i >= 0; i--) {
+         for (int j = n - 1; j >= 0; j--) {
+             if (j == n - 1) dp_curr[j] = dp_pre[j] - dungeon[i][j] > 0 ? dp_pre[j] - dungeon[i][j] : 1;
+             else if (i == m - 1) dp_curr[j] = dp_curr[j + 1] - dungeon[i][j] > 0 ? dp_curr[j + 1] - dungeon[i][j] : 1;
+             else {
+                 int temp = min(dp_pre[j], dp_curr[j + 1]);
+                 dp_curr[j] = temp - dungeon[i][j] > 0 ? temp - dungeon[i][j] : 1;
+             }
+         }
+         dp_pre = dp_curr;
+     }
+    return dp_curr[0];
 }

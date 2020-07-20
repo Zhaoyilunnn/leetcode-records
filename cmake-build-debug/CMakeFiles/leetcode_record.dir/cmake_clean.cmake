@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/gameOfLife.cpp.o"
   "CMakeFiles/leetcode_record.dir/getLeastNumbers.cpp.o"
   "CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.o"
+  "CMakeFiles/leetcode_record.dir/intersect.cpp.o"
   "CMakeFiles/leetcode_record.dir/intersection.cpp.o"
   "CMakeFiles/leetcode_record.dir/isPalindrome.cpp.o"
   "CMakeFiles/leetcode_record.dir/isRectangleOverlap.cpp.o"

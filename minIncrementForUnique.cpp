@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/22.
 //
 
-#include "function_defs.h"
+#include "algorithms_data_structures.h"
 
 void fastSort(vector<int>& A) {
     if (A.size() == 1 || A.empty())

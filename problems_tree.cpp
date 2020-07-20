@@ -1,7 +1,7 @@
 //
 // Created by zyl on 2020/2/22.
 //
-#include "function_defs.h"
+#include "algorithms_data_structures.h"
 
 
 TreeNode* Solution::buildTree(vector<int>& inOrder, vector<int>& postOrder) {
@@ -163,33 +163,21 @@ int Solution::diameterOfBinaryTree(TreeNode* root) {
 
 
 
-// 不同搜索二叉树|
+/**
+ * https://leetcode-cn.com/problems/unique-binary-search-trees/
+ * TODO: Optimize 不同搜索二叉树II (generateTrees)
+ * @param n
+ * @return
+ */
 int Solution::numTrees(int n) {
-    vector<int> vctRes;
-    int j = 0;
-    int k = 0;
-    int iTemp = 0;
-    for (int i = 0; i < n; i++) {
-        if (i == 0)
-            vctRes.push_back(1);
-        else {
-            j = 1;
-            k = i+1;
-            iTemp = 0;
-            while (j <= k) {
-                if (j == 1)
-                    iTemp += 2 * vctRes[i-1];
-                else if (j == k)
-                    iTemp += vctRes[j-1-1] * vctRes[i-j];
-                else
-                    iTemp += 2 * vctRes[j-1-1] * vctRes[i-j-1];
-                j++;
-                k--;
-            }
-            vctRes.push_back(iTemp);
+    vector<int> dp(n + 1, 0);
+    dp[0] = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < i; j++) {
+            dp[i] += dp[j] * dp[i - j - 1];
         }
     }
-    return vctRes[n-1];
+    return dp[n];
 }
 
 
@@ -541,4 +529,18 @@ TreeNode* Solution::sortedArrayToBST(vector<int> &nums) {
     if (nums.empty()) return nullptr;
     int l = 0, r = nums.size() - 1;
     return toBST(nums, l, r);
+}
+
+
+/**
+ * Given a binary tree and a sum, determine if the tree has a path, that the sum equals the sum
+ * @param root: the tree's root
+ * @param sum: the target sum
+ * @return
+ */
+bool Solution::hasPathSum(TreeNode *root, int sum) {
+    if (!root) return false;
+    int sub_sum = sum - root->val;
+    if (sub_sum == 0 && !root->left && !root->right) return true;
+    return hasPathSum(root->left, sub_sum) || hasPathSum(root->right, sub_sum);
 }

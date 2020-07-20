@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/algorithms_data_structures.h
+common_libs.h
+/cygdrive/d/Program_Cpp/leetcode_record/common_libs.h
+
+/cygdrive/d/Program_Cpp/leetcode_record/common_libs.h
 iostream
 -
 vector
@@ -32,7 +36,13 @@ unordered_map
 cmath
 -
 
-/cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp
-function_defs.h
-/cygdrive/d/Program_Cpp/leetcode_record/function_defs.h
+/cygdrive/d/Program_Cpp/leetcode_record/main.cpp
+algorithms_data_structures.h
+/cygdrive/d/Program_Cpp/leetcode_record/algorithms_data_structures.h
+objects_oriented.h
+/cygdrive/d/Program_Cpp/leetcode_record/objects_oriented.h
+
+/cygdrive/d/Program_Cpp/leetcode_record/objects_oriented.h
+common_libs.h
+/cygdrive/d/Program_Cpp/leetcode_record/common_libs.h
 

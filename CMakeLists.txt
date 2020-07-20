@@ -8,7 +8,7 @@ include_directories(.)
 add_executable(leetcode_record
         problems_tree.cpp
         findContentChildren.cpp
-        function_defs.h
+        algorithms_data_structures.h
         longestPalindrome.cpp
         main.cpp
         distributeCandies.cpp
@@ -18,4 +18,4 @@ add_executable(leetcode_record
         canThreePartsEqualSum.cpp
         lengthOfLIS.cpp
         problems_dfs_bfs.cpp
-        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp gameOfLife.cpp movingCount.cpp problems_backtracking.cpp intersection.cpp mergeIntervals.cpp problems_binary_search.cpp problems_bitwise_ops.cpp problems_math.cpp twoSum.cpp maximalSquare.cpp subarraySum.cpp findTheLongestSubstring.cpp problems_prefix.cpp productExceptSelf.cpp equationPossible.cpp isPalindrome.cpp threeSum.cpp threeSumClosest.cpp wordBreak.cpp firstMissingPositive.cpp problems_sort.cpp)
+        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp gameOfLife.cpp movingCount.cpp problems_backtracking.cpp intersection.cpp mergeIntervals.cpp problems_binary_search.cpp problems_bitwise_ops.cpp problems_math.cpp twoSum.cpp maximalSquare.cpp subarraySum.cpp findTheLongestSubstring.cpp problems_prefix.cpp productExceptSelf.cpp equationPossible.cpp isPalindrome.cpp threeSum.cpp threeSumClosest.cpp wordBreak.cpp firstMissingPositive.cpp problems_sort.cpp intersect.cpp objects_oriented.h common_libs.h)

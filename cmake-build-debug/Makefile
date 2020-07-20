@@ -393,6 +393,33 @@ hasGroupSizeX.cpp.s:
 	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/hasGroupSizeX.cpp.s
 .PHONY : hasGroupSizeX.cpp.s
 
+intersect.o: intersect.cpp.o
+
+.PHONY : intersect.o
+
+# target to build an object file
+intersect.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersect.cpp.o
+.PHONY : intersect.cpp.o
+
+intersect.i: intersect.cpp.i
+
+.PHONY : intersect.i
+
+# target to preprocess a source file
+intersect.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersect.cpp.i
+.PHONY : intersect.cpp.i
+
+intersect.s: intersect.cpp.s
+
+.PHONY : intersect.s
+
+# target to generate assembly for a file
+intersect.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/intersect.cpp.s
+.PHONY : intersect.cpp.s
+
 intersection.o: intersection.cpp.o
 
 .PHONY : intersection.o
@@ -1323,6 +1350,9 @@ help:
 	@echo "... hasGroupSizeX.o"
 	@echo "... hasGroupSizeX.i"
 	@echo "... hasGroupSizeX.s"
+	@echo "... intersect.o"
+	@echo "... intersect.i"
+	@echo "... intersect.s"
 	@echo "... intersection.o"
 	@echo "... intersection.i"
 	@echo "... intersection.s"

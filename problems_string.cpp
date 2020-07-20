@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/16.
 //
 
-#include "function_defs.h"
+#include "algorithms_data_structures.h"
 
 
 /******************************************************************************************/
@@ -359,25 +359,3 @@ bool Solution::isPalindrome(const string& s) {
 }
 
 
-/*************************************************************************************************/
-/*
- * Description: '.' Matches any single character. '*' Matches zero or more of the preceding element
- * */
-/*************************************************************************************************/
-bool Solution::isMatch(const string& s, const string& p) {
-    string s_r = " " + s;
-    string p_r = " " + p;
-    vector<vector<bool>> dp(s_r.size() + 1, vector<bool>(p_r.size() + 1, false));
-    dp[0][0] = true;
-    for (int i = 1; i <= s_r.size(); i++) {
-        for (int j = 1; j <= p_r.size(); j++) {
-            if (p_r[j - 1] != '*') {
-                if (s_r[i - 1] == p_r[j - 1] || p_r[j - 1] == '.') dp[i][j] = dp[i - 1][j - 1];
-            } else {
-                if (s_r[i - 1] != p_r[j - 2] && p_r[j - 2] != '.') dp[i][j] = dp[i][j - 2];
-                else dp[i][j] = dp[i][j - 1] || dp[i][j - 2] || dp[i - 1][j];
-            }
-        }
-    }
-    return dp[s_r.size()][p_r.size()];
-}

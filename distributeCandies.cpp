@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/5.
 //
 
-#include "function_defs.h"
+#include "algorithms_data_structures.h"
 
 vector<int> Solution::distributeCandies(int candies, int num_people) {
     vector<int> vctRes(num_people, 0);
