@@ -51,6 +51,8 @@ public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
     // Path Sum
     bool hasPathSum(TreeNode* root, int sum);
+    // Recover Binary Search Tree
+    void recoverTree(TreeNode* root);
     /**************************************************************************/
 
 
@@ -126,6 +128,12 @@ public:
     int maxProfit(vector<int>& prices);
     // Dungeon Game
     int calculateMinimumHP(vector<vector<int>>& dungeon);
+    // Split Array Largest Sum
+    int splitArray(vector<int>& nums, int m);
+    // Is Subsequence
+    bool isSubsequence(const string& s, const string& t);
+    // Burst Balloon
+    int maxCoins(vector<int>& nums);
     /*******************************************************************/
 
     // Partition Array Into Three Parts With Equal Sum
@@ -179,6 +187,8 @@ public:
     string decodeString(const string& s);
     // Valid Palindrome
     bool isPalindrome(const string& s);
+    // Add string
+    string addString(const string& num1, const string& num2);
 
     /************************************************************/
 
@@ -254,6 +264,8 @@ public:
     int searchInsert(vector<int>& nums, int target);
     // Two Sum || - Input Array is sorted
     vector<int> twoSumPro(vector<int>& numbers, int target);
+    // 旋转数组的最小数字
+    int minArray(vector<int>& numbers);
     /********************************************************/
 
     // Two Sum

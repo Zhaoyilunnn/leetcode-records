@@ -359,3 +359,24 @@ bool Solution::isPalindrome(const string& s) {
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/add-strings/
+ */
+string Solution::addString(const string &num1, const string &num2) {
+    int i = num1.size() - 1, j = num2.size() - 1;
+    int flag = 0;
+    string res;
+    while (i >= 0 || j >= 0) {
+        int digit1 = 0, digit2 = 0;
+        if (i >= 0) digit1 = num1[i] - '0';
+        if (j >= 0) digit2 = num2[j] - '0';
+        int cur_sum = digit1 + digit2 + flag;
+        flag = cur_sum / 10;
+        res.insert(res.begin(), cur_sum % 10 + '0');
+        i--;
+        j--;
+    }
+    if (flag) res.insert(res.begin(), flag + '0');
+    return res;
+}
+

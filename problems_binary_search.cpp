@@ -133,3 +133,23 @@ vector<int> Solution::twoSumPro(vector<int> &numbers, int target) {
     }
     return {0, 0};
 }
+
+
+/**
+ *
+ * @param numbers
+ * @return
+ */
+int Solution::minArray(vector<int> &numbers) {
+    int l = 0, r = numbers.size() - 1;
+    while (l <= r) {
+        int mid = (l + r) / 2;
+        if (numbers[mid] > numbers[r]) {
+            l = mid + 1;
+        } else {
+            r = mid - 1;
+            if (r >= 0 && numbers[r] > numbers[mid]) return numbers[mid];
+        }
+    }
+    return numbers[l];
+}

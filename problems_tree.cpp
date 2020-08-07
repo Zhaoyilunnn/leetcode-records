@@ -181,66 +181,14 @@ int Solution::numTrees(int n) {
 }
 
 
-TreeNode* addTreeValue(int m, TreeNode* treeNode) {
-    TreeNode* pRes = nullptr;
-    if (nullptr != treeNode) {
-        pRes = new TreeNode(treeNode->val + m);
-        if (treeNode->left)
-            pRes->left = addTreeValue(m, treeNode->left);
-        if (treeNode->right)
-            pRes->right = addTreeValue(m, treeNode->right);
-    }
-    return pRes;
-}
-
 // 不同搜索二叉树||
+/**
+ * https://leetcode-cn.com/problems/unique-binary-search-trees-ii/
+ * @param n
+ * @return
+ */
 vector<TreeNode*> Solution::generateTrees(int n) {
-    vector<vector<TreeNode*> > vctRes;
-    vector<TreeNode*> vctTmpRes;
-    if (n == 1) {
-        auto* pNode = new TreeNode(1);
-        vctTmpRes.push_back(pNode);
-        return vctTmpRes;
-    }
-    TreeNode* pNode = nullptr;
-    for (int i = 0; i < n; i++) {
-        if (!vctTmpRes.empty())
-            vctTmpRes.clear();
-        if (i == 0) {
-            pNode = new TreeNode(1);
-            vctTmpRes.push_back(pNode);
-        }
-        else {
-            for (int j = 1; j <= i+1; j++) {
-                if (j == 1) {
-                    for (int k = 0; k < vctRes[i-j].size(); k++) {
-                        pNode = new TreeNode(j);
-                        pNode->right = addTreeValue(j, vctRes[i-j][k]);
-                        vctTmpRes.push_back(pNode);
-                    }
-                }
-                else if (j == i+1) {
-                    for (auto & k : vctRes[i-1]) {
-                        pNode = new TreeNode(j);
-                        pNode->left = addTreeValue(0, k);
-                        vctTmpRes.push_back(pNode);
-                    }
-                }
-                else {
-                    for (int k = 0; k < vctRes[j-1-1].size(); k++) {
-                        for (int m = 0; m < vctRes[i-j].size(); m++) {
-                            pNode = new TreeNode(j);
-                            pNode->left = addTreeValue(0, vctRes[j-1-1][k]);
-                            pNode->right = addTreeValue(j, vctRes[i-j][m]);
-                            vctTmpRes.push_back(pNode);
-                        }
-                    }
-                }
-            }
-        }
-        vctRes.push_back(vctTmpRes);
-    }
-    return vctRes[n-1];
+
 }
 
 
@@ -543,4 +491,51 @@ bool Solution::hasPathSum(TreeNode *root, int sum) {
     int sub_sum = sum - root->val;
     if (sub_sum == 0 && !root->left && !root->right) return true;
     return hasPathSum(root->left, sub_sum) || hasPathSum(root->right, sub_sum);
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/recover-binary-search-tree/
+ * TODO: optimize the space complexity, O(N) -> O(1)
+ * @param root
+ */
+void Solution::recoverTree(TreeNode *root) {
+    /* First inorder traverse and get a vector than contains nodes in increasing order of value */
+    vector<TreeNode*> inorder;
+    stack<TreeNode*> store;
+    store.push(root);
+    TreeNode* node = root;
+    while (node->left) {
+        store.push(node->left);
+        node = node->left;
+    }
+    while (!store.empty()) {
+        node = store.top();
+        inorder.push_back(node);
+        store.pop();
+        if (node->right) {
+            store.push(node->right);
+            node = node->right;
+            while (node->left) {
+                store.push(node->left);
+                node = node->left;
+            }
+        }
+    }
+
+    // Then swap the wrong value
+    for (int i = (int) inorder.size() - 1; i > 0; i--) {
+        int target = 0;
+        if (inorder[i]->val < inorder[i - 1]->val) {
+            target = inorder[i]->val;
+            for (int j = 0; j < i; j++) {
+                if (inorder[j]->val > target) {
+                    inorder[i]->val = inorder[j]->val;
+                    inorder[j]->val = target;
+                    break;
+                }
+            }
+            break;
+        }
+    }
 }

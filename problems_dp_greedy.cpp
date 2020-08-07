@@ -852,3 +852,114 @@ int Solution::calculateMinimumHP(vector<vector<int> > &dungeon) {
      }
     return dp_curr[0];
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/split-array-largest-sum/
+ * @param nums
+ * @param m
+ * @return
+ */
+int Solution::splitArray(vector<int> &nums, int m) {
+    // The state transition equation is as follows
+    // Consider that dp(i, j) denote the result of dividing i elements to j segments
+    // Then dp(i, j) = min ( max(dp(k, j - 1), sub(k+1, i)) ) for k in range(i)
+    int n = nums.size();
+    vector<vector<int>> dp(n, vector<int>(m + 1, 0));
+    vector<int> prefix(n, 0);
+    int curr_sum = 0;
+    for (int i = 0; i < n; i++) {
+        curr_sum += nums[i];
+        prefix[i] = curr_sum;
+        dp[i][1] = prefix[i];
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = 2; j < m + 1 && j <= i + 1; j++) {
+            int min_k = INT32_MAX;
+            for (int k = 0; k < i; k++) {
+                min_k = min(min_k, max(dp[k][j - 1], prefix[i] - prefix[k]));
+            }
+            dp[i][j] = min_k;
+        }
+    }
+    return dp[n - 1][m];
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/is-subsequence/
+ * Optimization: double pointer
+ * @param s
+ * @param t
+ * @return
+ */
+bool Solution::isSubsequence(const string &s, const string &t) {
+/*    if (s.empty()) return true;
+    else if (!s.empty() && t.empty()) return false;
+
+    int m = s.size(), n = t.size();
+    vector<vector<bool>> dp(m, vector<bool>(n, false));
+
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == 0 && j == 0) dp[i][j] = s[i] == t[j];
+            else if (i == 0) dp[i][j] = dp[i][j - 1] || s[i] == t[j];
+            else if (j == 0) dp[i][j] = false;
+            else {
+                if (s[i] == t[j]) dp[i][j] = dp[i - 1][j - 1];
+                else dp[i][j] = dp[i][j - 1];
+            }
+        }
+    }
+    return dp[m - 1][n - 1];*/
+    int i = 0, j = 0;
+    while (i < s.size() && j < t.size()) {
+        if (s[i] == t[j]) {
+            i++;
+            j++;
+        } else j++;
+    }
+    return i == s.size();
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/burst-balloons/
+ * @param nums
+ * @return
+ */
+int Solution::maxCoins(vector<int> &nums) {
+    // 暴力方法
+    /*if (nums.empty()) return 0;
+    if (nums.size() == 1) return nums[0];
+    vector<int> sub_nums;
+    int curr_res = 0;
+    int curr_product = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (i == 0) curr_product = nums[i] * nums[i + 1];
+        else if (i == nums.size() - 1) curr_product = nums[i - 1] * nums[i];
+        else curr_product = nums[i - 1] * nums[i] * nums[i + 1];
+        sub_nums.clear();
+        sub_nums.insert(sub_nums.begin(), nums.begin(), nums.begin() + i);
+        sub_nums.insert(sub_nums.end(), nums.begin() + i + 1, nums.end());
+        curr_res = max(curr_res, maxCoins(sub_nums) + curr_product);
+    }
+    return curr_res;*/
+
+    // dp
+    // dp(i, j) 把位置i, j全部填满能得到的最大的硬币数量
+    //
+    nums.insert(nums.begin(), 1);
+    nums.insert(nums.end(), 1);
+    int n = (int) nums.size() - 2;
+    vector<vector<int>> dp(n + 2, vector<int>(n + 2, 0));
+    for (int i = n - 1; i >= 0; i--) {
+        for (int j = i + 2; j <= n + 1; j++) {
+            for (int k = i + 1; k < j; k++) {
+                int sum = nums[i] * nums[j] * nums[k] + dp[i][k] + dp[j][k];
+                dp[i][j] = max(sum, dp[i][j]);
+            }
+        }
+    }
+    return dp[0][n + 1];
+}
