@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/16.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 
 /******************************************************************************************/
@@ -380,3 +380,247 @@ string Solution::addString(const string &num1, const string &num2) {
     return res;
 }
 
+
+/**
+ * https://leetcode-cn.com/problems/restore-ip-addresses/
+ * Current solution is dfs
+ * TODO: Any optimization??
+ */
+
+vector<string> restoreIpPart(const string& s, int start, int k) {
+    if (k == 0) return {};
+    vector<string> res;
+    int curr_digit = 0;
+    string curr_res;
+    for (int i = start; i < start + 3 && i < s.size(); i++) {
+        curr_digit = s[i] - '0' + 10 * curr_digit;
+        if (curr_digit >= 0 && curr_digit <= 255) curr_res.push_back(s[i]);
+        else break;
+        if (s[start] == '0' && i > start) break;
+        if (s.size() - i - 1 >= (k - 1) * 1 && s.size() - i - 1 <= (k - 1) * 3) {
+            vector<string> curr_res_part = restoreIpPart(s, i + 1, k - 1);
+            if (!curr_res_part.empty()) {
+                for (const auto &rem : curr_res_part) {
+                    string temp = curr_res;
+                    if (!rem.empty()) {
+                        temp.push_back('.');
+                        temp += rem;
+                    }
+                    if (temp.size() == s.size() - start + k - 1) res.push_back(temp);
+                }
+            } else if (curr_res.size() == s.size() - start + k - 1) res.push_back(curr_res);
+        }
+    }
+    return res;
+}
+
+vector<string> Solution::restoreIpAddress(const string& s) {
+    vector<string> res;
+    int curr_digit = 0;
+    string curr_res;
+    for (int i = 0; i < 3 && i < s.size(); i++) {
+        curr_digit = s[i] - '0' + 10 * curr_digit;
+        if (curr_digit >= 0 && curr_digit <= 255) curr_res.push_back(s[i]);
+        else break;
+        if (s[0] == '0' && i > 0) break;
+        if (s.size() - i - 1 >= 3 && s.size() - i - 1 <= 9) {
+            vector<string> curr_res_part = restoreIpPart(s, i + 1, 3);
+            for (const auto& rem : curr_res_part) {
+                string temp = curr_res;
+                if (!rem.empty()) {
+                    temp.push_back('.');
+                    temp += rem;
+                }
+                if (temp.size() == s.size() + 3) res.push_back(temp);
+            }
+        }
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/multiply-strings/
+ * Solution 1: 从右向左遍历num2，对于num2的每一位，都需要和num1的每一位计算乘积
+ *             addStr --> 字符串相加
+ *             multiplyOne --> num2中的某一位和num1相乘的结果
+ * Solution 2: 用一个数组存储结果，最后再处理进位，相比于方法1，省去了字符串相加的过程，方法1中有n次字符串相加，而方法二只会在最后遍历一次
+ * Solution 3: 方法二实际上可以看成卷积，可以用fft加速
+ *             fft_naive --> O(n^2)版本的dft
+ * @param num1
+ * @param num2
+ * @return
+ */
+vector<CP> dsp::dftNaive(vector<CP>& x) {
+    // ref: https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm
+    int N = (int) x.size();  // N should be power of two
+    vector<CP> X(N, 0);
+    for (int k = 0; k < N; k++) {
+        for (int n = 0; n < N; n++) {
+            X[k] += x[n] * CP(cos(2*PI*n*k/N), sin(-2*PI*n*k/N));
+        }
+    }
+    return X;
+}
+
+/**
+ * ref: https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm
+ * @param x --> input sequence of time domain signal
+ * @param N --> length of x, should be power of two
+ * @param s --> step
+ * @param X --> output sequence of frequency domain signal
+ * @return
+ */
+int dsp::reverseBit(int num, int count) {
+    // ref: https://www.youtube.com/watch?v=KE5Axm7uzok
+    //      https://www.geeksforgeeks.org/write-an-efficient-c-program-to-reverse-bits-of-a-number/
+    int reverse_num = 0;
+    for (int i = 0; i < count; i++) {
+        reverse_num <<= 1;
+        reverse_num |= num & 1;
+        num >>= 1;
+    }
+    return reverse_num;
+}
+
+void dsp::bitReverseCopy(vector<CP>& x, vector<CP>& X) {
+    // ref: Introduction to Algorithm - third edition
+    int n = x.size();  // n should be the power of two
+    int m = log2(n);
+    for (int i = 0; i < n; i++) {
+        X[this->reverseBit(i, m)] = x[i];
+    }
+}
+
+vector<CP> dsp::fftCooleyTukey(vector<CP> &x) {
+    vector<CP> X(x.size(), 0);
+    bitReverseCopy(x, X);
+    int n = x.size();
+    for (int s = 1; s <= (int) log2(n); s++) {
+        int m = pow(2, s);
+        CP w_m = CP(cos(-2 * PI / m), sin(-2 * PI / m));
+        for (int k = 0; k < n; k += m) {
+            CP w = 1;
+            for (int j = 0; j < m / 2; j++) {
+                CP t = w * X[k + j + m / 2];
+                CP u = X[k + j];
+                X[k + j] = u + t;
+                X[k + j + m / 2] = u - t;
+                w = w * w_m;
+            }
+        }
+    }
+    return X;
+}
+
+string addStr(const string& num1, const string& num2) {
+    if (num1.empty()) return num2;
+    else if (num2.empty()) return num1;
+    int i = (int) num1.size() - 1;
+    int j = (int) num2.size() - 1;
+    string res;
+    int flag = 0, d1 = 0, d2 = 0;
+    while (i >= 0 || j >= 0) {
+        d1 = 0;
+        d2 = 0;
+        if (i >= 0) d1 = num1[i] - '0';
+        if (j >= 0) d2 = num2[j] - '0';
+        int s = d1 + d2 + flag;
+        flag = s / 10;
+        res.insert(res.begin(), '0' + s % 10);
+        i--;
+        j--;
+    }
+    if (flag) res.insert(res.begin(), '1');
+    return res;
+}
+
+string multiplyOne(const string& num1, const char& num2) {
+    int i = (int) num1.size() - 1, d2 = num2 - '0', d1 = 0, flag = 0;
+    string res;
+    while (i >= 0) {
+        d1 = num1[i] - '0';
+        int s = d1 * d2 + flag;
+        flag = s / 10;
+        res.insert(res.begin(), s % 10 + '0');
+        i--;
+    }
+    if (flag) res.insert(res.begin(), flag + '0');
+    return res;
+}
+
+string Solution::multiply(const string &num1, const string &num2) {
+    // Solution 1
+    /*if (num1 == "0" || num2 == "0") return "0";
+    int i = (int) num2.size() - 1;
+    string zeros;
+    string last_res, cur_res;
+    while (i >= 0) {
+        char d2 = num2[i];
+        cur_res = multiplyOne(num1, d2);
+        cur_res.insert(cur_res.end(), zeros.begin(), zeros.end());
+        cur_res = addStr(cur_res, last_res);
+        last_res = cur_res;
+        i--;
+        zeros += '0';
+    }
+    return cur_res;*/
+
+    // Solution 2
+    /*if (num1 == "0" || num2 == "0") return "0";
+    int m = num1.size(), n = num2.size();
+    vector<int> store(m + n, 0);
+    for (int i = 0; i < m; i++) {
+        int x = num1[i] - '0';
+        for (int j = 0; j < n; j++) {
+            int y = num2[j] - '0';
+            int temp_product = x * y;
+            store[i + j + 1] += temp_product;
+        }
+    }
+    for (int i = m + n - 1; i > 0; i--) {
+        store[i - 1] += store[i] / 10;
+        store[i] %= 10;
+    }
+    string res;
+    for (int i = 0; i < m + n; i++) {
+        if (i == 0 && store[i] == 0) continue;
+        else res.push_back(store[i] + '0');
+    }
+    return res;*/
+
+    // Solution 3
+
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/valid-parentheses/
+ * @param s
+ * @return
+ */
+bool Solution::isValid(const string &s) {
+    stack<char> store;
+    for (auto c : s) {
+        if (!store.empty()) {
+            switch (c) {
+                case '}':
+                    if (store.top() != '{') return false;
+                    else store.pop();
+                    break;
+                case ']':
+                    if (store.top() != '[') return false;
+                    else store.pop();
+                    break;
+                case ')':
+                    if (store.top() != '(') return false;
+                    else store.pop();
+                    break;
+                default:
+                    store.push(c);
+            }
+        } else store.push(c);
+    }
+    if (!store.empty()) return false;
+    else return true;
+}

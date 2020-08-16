@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/8.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 /****************************************************************/
 /* Given an integer array nums, find the contiguous subarray
@@ -963,3 +963,5 @@ int Solution::maxCoins(vector<int> &nums) {
     }
     return dp[0][n + 1];
 }
+
+

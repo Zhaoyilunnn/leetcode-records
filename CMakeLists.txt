@@ -7,15 +7,15 @@ include_directories(.)
 
 add_executable(leetcode_record
         problems_tree.cpp
-        findContentChildren.cpp
-        algorithms_data_structures.h
-        longestPalindrome.cpp
+        unassorted/findContentChildren.cpp
+        include/algorithms_data_structures.h
+        unassorted/longestPalindrome.cpp
         main.cpp
-        distributeCandies.cpp
-        removeDuplicates.cpp
-        findContinuousSequence.cpp
+        unassorted/distributeCandies.cpp
+        unassorted/removeDuplicates.cpp
+        unassorted/findContinuousSequence.cpp
         problems_dp_greedy.cpp
-        canThreePartsEqualSum.cpp
-        lengthOfLIS.cpp
+        unassorted/canThreePartsEqualSum.cpp
+        unassorted/lengthOfLIS.cpp
         problems_dfs_bfs.cpp
-        luckyNumbers.cpp problems_string.cpp isRectangleOverlap.cpp getLeastNumbers.cpp minIncrementForUnique.cpp problems_list.cpp surfaceArea.cpp numRookCaptures.cpp problems_topology_sort.cpp hasGroupSizeX.cpp lastRemaining.cpp gameOfLife.cpp movingCount.cpp problems_backtracking.cpp intersection.cpp mergeIntervals.cpp problems_binary_search.cpp problems_bitwise_ops.cpp problems_math.cpp twoSum.cpp maximalSquare.cpp subarraySum.cpp findTheLongestSubstring.cpp problems_prefix.cpp productExceptSelf.cpp equationPossible.cpp isPalindrome.cpp threeSum.cpp threeSumClosest.cpp wordBreak.cpp firstMissingPositive.cpp problems_sort.cpp intersect.cpp objects_oriented.h common_libs.h)
+        unassorted/luckyNumbers.cpp problems_string.cpp unassorted/isRectangleOverlap.cpp unassorted/getLeastNumbers.cpp unassorted/minIncrementForUnique.cpp problems_list.cpp unassorted/surfaceArea.cpp unassorted/numRookCaptures.cpp problems_topology_sort.cpp unassorted/hasGroupSizeX.cpp unassorted/lastRemaining.cpp unassorted/gameOfLife.cpp unassorted/movingCount.cpp problems_backtracking.cpp unassorted/intersection.cpp unassorted/mergeIntervals.cpp problems_binary_search.cpp problems_bitwise_ops.cpp problems_math.cpp unassorted/twoSum.cpp unassorted/maximalSquare.cpp unassorted/subarraySum.cpp unassorted/findTheLongestSubstring.cpp problems_prefix.cpp unassorted/productExceptSelf.cpp unassorted/equationPossible.cpp unassorted/isPalindrome.cpp unassorted/threeSum.cpp unassorted/threeSumClosest.cpp unassorted/wordBreak.cpp unassorted/firstMissingPositive.cpp problems_sort.cpp unassorted/intersect.cpp include/objects_oriented.h include/common_libs.h)

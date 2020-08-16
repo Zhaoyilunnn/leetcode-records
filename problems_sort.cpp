@@ -2,7 +2,7 @@
 // Created by zyl on 2020/6/29.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 void fastSort(vector<int>& nums, int low, int high) {
     if (low >= high)

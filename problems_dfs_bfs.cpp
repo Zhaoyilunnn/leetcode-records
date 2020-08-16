@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/14.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 void BFS(vector<vector<char>>& grid, int m, int n) {
     int nr = grid.size();
@@ -432,4 +432,160 @@ vector<vector<int>> Solution::updateMatrix(vector<vector<int> > &matrix) {
     }
 
     return result;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/surrounded-regions/
+ * TODO: optimization
+ *       1. find the 'O' that is on the border
+ *       2. dfs/bfs the 'O' in the border and denote the path you traverse as "cannot be transformed to 'X' "
+ *       3. traverse the matrix, change 'O' to 'X'
+ * @param board
+ */
+void Solution::solve(vector<vector<char>> &board) {
+    int m = board.size();
+    int n = board[0].size();
+    queue<pair<int, int>> store;
+    vector<pair<int, int>> temp;
+    vector<vector<int>> direct = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    vector<vector<int>> visited(m, vector<int>(n, 0));
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (board[i][j] == 'O' && !visited[i][j]) {
+                temp.clear();
+                store.emplace(i, j);
+                visited[i][j] = 1;
+                bool flag = false;
+                while (!store.empty()) {
+                    int size = store.size();
+                    for (int k = 0; k < size; k++) {
+                        int p = store.front().first;
+                        int q = store.front().second;
+                        if (p == 0 || p == m - 1 || q == 0 || q == n - 1) flag = true;
+                        temp.emplace_back(p, q);
+                        for (auto d : direct) {
+                            int x = p + d[0], y = q + d[1];
+                            if (x >= 0 && x < m && y >= 0 && y < n && board[x][y] == 'O' && !visited[x][y]) {
+                                store.emplace(x, y);
+                                visited[x][y] = 1;
+                            }
+                        }
+                        store.pop();
+                    }
+                }
+                if (!flag) {
+                    for (auto t : temp) {
+                        board[t.first][t.second] = 'X';
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/clone-graph/
+ * TODO: implement DFS
+ * @param node
+ * @return
+ */
+Node* Solution::cloneGraph(Node *node) {
+    if (!node) return nullptr;
+    // BFS
+    Node* new_node = new Node(node->val);
+    queue<Node*> org_store;
+    queue<Node*> new_store;
+    org_store.push(node);
+    unordered_map<Node*, Node*> correspond;
+    new_store.push(new_node);
+    correspond.emplace(node, new_node);
+    while (!org_store.empty()) {
+        int size = org_store.size();
+        for (int i = 0; i < size; i++) {
+            Node* org_node = org_store.front();
+            Node* cur_node = new_store.front();
+            for (int j = 0; j < org_node->neighbors.size(); j++) {
+                auto it = correspond.find(org_node->neighbors[j]);
+                if (it == correspond.end()) {
+                    cur_node->neighbors.push_back(new Node(org_node->neighbors[j]->val));
+                    org_store.push(org_node->neighbors[j]);
+                    new_store.push(cur_node->neighbors[j]);
+                    correspond.emplace(org_node->neighbors[j], cur_node->neighbors[j]);
+                } else cur_node->neighbors.push_back(it->second);
+            }
+            org_store.pop();
+            new_store.pop();
+        }
+    }
+    return new_node;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/remove-boxes/
+ * TODO: Implement
+ * @param boxes
+ * @return
+ */
+int Solution::removeBoxes(vector<int> &boxes) {
+
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/flood-fill/
+ * @param image
+ * @param sr
+ * @param sc
+ * @param newColor
+ * @return
+ */
+
+void dfs(vector<vector<int>>& image, int x, int y, int cur_color, int new_color) {
+    vector<vector<int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    int m = image.size(), n = image[0].size();
+    for (auto d : directions) {
+        int xx = x + d[0], yy = y + d[1];
+        if (xx >= 0 && xx < m && yy >= 0 && yy < n && image[xx][yy] == cur_color) {
+            image[xx][yy] = new_color;
+            dfs(image, xx, yy, cur_color, new_color);
+        }
+    }
+}
+
+vector<vector<int>> Solution::floodFill(vector<vector<int>> &image, int sr, int sc, int newColor) {
+    // BFS
+    /*int init_pixel = image[sr][sc];
+    if (init_pixel == newColor) return image;
+    queue<pair<int, int>> store;
+    store.emplace(sr, sc);
+    vector<vector<int>> directs = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    int m = image.size(), n = image[0].size();
+    vector<vector<int>> visited(m, vector<int>(n, 0));
+    image[sr][sc] = newColor;
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            int x = store.front().first, y = store.front().second;
+            for (auto direct : directs) {
+                int x_ = x + direct[0];
+                int y_ = y + direct[1];
+                if (x_ >= 0 && x_ < m && y_ >= 0 && y_ < n && image[x_][y_] == init_pixel) {
+                    store.emplace(x_, y_);
+                    image[x_][y_] = newColor;
+                }
+            }
+            store.pop();
+        }
+    }
+    return image;*/
+
+    // DFS
+    int cur_color = image[sr][sc];
+    if (cur_color == newColor) return image;
+    image[sr][sc] = newColor;
+    dfs(image, sr, sc, cur_color, newColor);
+    return image;
 }

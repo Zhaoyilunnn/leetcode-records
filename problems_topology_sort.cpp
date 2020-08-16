@@ -2,7 +2,7 @@
 // Created by zyl on 2020/3/26.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 /************************************************/
 /* Given the total number of course lists and

@@ -2,28 +2,30 @@
 // Created by zyl on 2020/5/27.
 //
 
-#include "algorithms_data_structures.h"
+#include "include/algorithms_data_structures.h"
 
 
-/********************************************************************/
-/*
- * Description: Given an array A of integers, return the number of
- * (contiguous, non-empty) subarrays that have a sum divisible by K.
- * */
-
-/********************************************************************/
+/**
+ * https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/
+ * Solution: let subarray(i, j) denote A[i:j], if subarray(i, j) could be divided by K
+ *           Then it means: (k1 * K + r1) - (k2 * K + r2) could be divided by K
+ *           Then (k1 - k2) * K + (r1 - r2) could be divided by K
+ *           Since that (k1 - k2) * K is times of K, r1 should equal r2
+ * @param A
+ * @param K
+ * @return
+ */
 int Solution::subarraysDivByK(vector<int>& A, int K) {
-    vector<int> remainders(2 * K - 1, 0);
-    remainders[K - 1] = 1;
-    int prefix = 0;
-    int res = 0;
+    vector<int> remainders(K, 0);
+    int prefix = 0;  // current prefix while traversing
+    int res = 0;  // result
     for (int i : A) {
         prefix += i;
         int rem = prefix % K;
-        res += remainders[rem + K - 1];
-        if (rem > 0) res += remainders[rem - 1];
-        else if (rem < 0) res += remainders[rem + 2 * K - 1];
-        remainders[rem + K - 1]++;
+        if (rem < 0) rem += K;  // revise the remainder to positive
+        res += remainders[rem];
+        if (rem == 0) res++;
+        remainders[rem]++;
     }
     return res;
 }
@@ -78,6 +80,30 @@ int Solution::minSubArrayLen(int s, vector<int> &nums) {
         } else {
             if (res > 0) start++;
         }
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/count-binary-substrings/
+ * @param s
+ * @return
+ */
+int Solution::countBinarySubstrings(const string &s) {
+    vector<int> prefix(s.size() + 1, 1);
+    prefix[0] = 0;
+    int res = 0;
+    int count = 1;
+    for (int i = 1; i < s.size(); i++) {
+        if (s[i] == s[i - 1]) {
+            count++;
+            if (prefix[i - prefix[i]] >= count) res++;
+        } else {
+            count = 1;
+            res++;
+        }
+        prefix[i + 1] = count;
     }
     return res;
 }

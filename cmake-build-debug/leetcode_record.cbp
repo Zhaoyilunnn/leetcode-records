@@ -82,85 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/algorithms_data_structures.h">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/canThreePartsEqualSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/common_libs.h">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/distributeCandies.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/equationPossible.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/findContentChildren.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/findContinuousSequence.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/findTheLongestSubstring.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/firstMissingPositive.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/gameOfLife.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/getLeastNumbers.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/hasGroupSizeX.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/intersect.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/intersection.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isPalindrome.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/isRectangleOverlap.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/lastRemaining.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/lengthOfLIS.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/longestPalindrome.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/luckyNumbers.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/objects_oriented.h">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/main.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/maximalSquare.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/mergeIntervals.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/minIncrementForUnique.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/movingCount.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/numRookCaptures.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/objects_oriented.h">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp">
@@ -199,28 +130,97 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_tree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/productExceptSelf.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/canThreePartsEqualSum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/removeDuplicates.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/distributeCandies.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/subarraySum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/equationPossible.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/surfaceArea.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContentChildren.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/threeSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContinuousSequence.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/threeSumClosest.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findTheLongestSubstring.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/twoSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/firstMissingPositive.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/wordBreak.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/gameOfLife.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/getLeastNumbers.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/hasGroupSizeX.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/intersect.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/intersection.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/isPalindrome.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/isRectangleOverlap.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/lastRemaining.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/longestPalindrome.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/luckyNumbers.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/maximalSquare.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/mergeIntervals.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/minIncrementForUnique.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/movingCount.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/numRookCaptures.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/productExceptSelf.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/removeDuplicates.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/subarraySum.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/surfaceArea.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/threeSum.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/threeSumClosest.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/twoSum.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/wordBreak.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/CMakeLists.txt">
