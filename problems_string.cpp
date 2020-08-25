@@ -624,3 +624,66 @@ bool Solution::isValid(const string &s) {
     if (!store.empty()) return false;
     else return true;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/palindromic-substrings/
+ * @param s
+ * @return
+ */
+int Solution::countSubstrings(const string &s) {
+    if (s.empty()) return 0;
+    int res = 1;
+    vector<int> indexes;
+    indexes.push_back(0);
+    vector<int> pre = indexes;
+    for (int i = 1; i < s.size(); i++) {
+        indexes.clear();
+        for (int j : pre) {
+            if (j > 0 && s[i] == s[j - 1]) {
+                indexes.push_back(j - 1);
+                res++;
+            }
+        }
+        if (s[i] == s[i - 1]) {
+            indexes.push_back(i - 1);
+            res++;
+        }
+        indexes.push_back(i);
+        res++;
+        pre = indexes;
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/repeated-substring-pattern/
+ * @param s
+ * @return
+ */
+bool Solution::repeatedSubstring(const string &s) {
+    if (s.size() == 1 || s.empty()) return false;
+    vector<string> subs;
+    for (int i = 1; i < s.size(); i++) {
+        if (s[i] == s[0]) {
+            if (s.substr(0, i) == s.substr(i, i)) {
+                string sub = s.substr(0, i);
+                subs.push_back(sub);
+            }
+        }
+    }
+    if (subs.empty()) return false;
+    bool res = true;
+    for (const auto& sub : subs) {
+        res = true;
+        for (int i = 2 * sub.size(); i < s.size(); i += sub.size()) {
+            if (s.substr(i, sub.size()) != sub) {
+                res = false;
+                break;
+            }
+        }
+        if (res) return res;
+    }
+    return res;
+}

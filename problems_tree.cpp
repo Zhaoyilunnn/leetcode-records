@@ -126,6 +126,7 @@ vector<int> Solution::getAllElements(TreeNode *root1, TreeNode *root2) {
 
 int depth(TreeNode* root) {
     if (root) {
+        cout << root->val << " ";
         int depth_left = depth(root->left);
         int depth_right = depth(root->right);
         if (depth_left >= depth_right)
@@ -538,4 +539,143 @@ void Solution::recoverTree(TreeNode *root) {
             break;
         }
     }
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/balanced-binary-tree/
+ * Solution: 1. 自顶向下递归
+ *           2. 自底向上递归
+ * @param root
+ * @return
+ */
+int Depth(TreeNode* root) {
+    if (!root) return 0;
+    int depth = 0;
+    queue<TreeNode*> store;
+    store.push(root);
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* p = store.front();
+            cout << p->val << " ";
+            if (p->left) store.push(p->left);
+            if (p->right) store.push(p->right);
+            store.pop();
+        }
+        depth++;
+    }
+    return depth;
+}
+
+int Height(TreeNode* root) {
+    if (!root) return 0;
+    int h_l = 0, h_r = 0;
+    if (root->left) h_l = Height(root->left);
+    if (root->right) h_r = Height(root->right);
+    if (abs(h_l - h_r) > 1 || h_l == -1 || h_r == -1) return -1;
+    else return max(h_r, h_l);
+}
+
+bool Solution::isBalanced(TreeNode *root) {
+    // O(n^2) 方法
+    /*if (!root) return true;
+    int delta = Depth(root->left) - Depth(root->right);
+    if (abs(delta) > 1) return false;
+    else return isBalanced(root->left) && isBalanced(root->right);*/
+
+    // O(n) 方法
+    return Height(root) >= 0;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/
+ * @param head
+ * @return
+ */
+TreeNode* sortedListToBSTLength(ListNode* head, int length) {
+    if (length == 0) return nullptr;
+    if (length == 1) return new TreeNode(head->val);
+    if (length == 2) {
+        auto root = new TreeNode(head->val);
+        root->right = new TreeNode(head->next->val);
+        return root;
+    }
+    int mid = length / 2;
+    ListNode* p = head;
+    for (int i = 0; i < mid; i++) {
+        p = p->next;
+    }
+    auto* root = new TreeNode(p->val);
+    root->left = sortedListToBSTLength(head, mid);
+    root->right = sortedListToBSTLength(p->next, length - mid - 1);
+    return root;
+}
+
+// 通过快慢指针来找到链表中间的节点，并把中间节点前的节点的下一下节点指向null
+ListNode* middle(ListNode* head) {
+    ListNode* fast = head, *slow = head;
+    ListNode* pre = nullptr;
+    while (fast && fast->next) {
+        fast = fast->next->next;
+        pre = slow;
+        slow = slow->next;
+    }
+    if (pre) pre->next = nullptr;
+    return slow;
+}
+
+TreeNode* Solution::sortedListToBST(ListNode *head) {
+    ListNode* p1 = head;
+    ListNode* p2 = head;
+    TreeNode* root;
+    int length = 0, l = 0;
+    while (p2) {
+        if (p2->next) {
+            p2 = p2->next->next;
+            length += 2;
+        } else {
+            length++;
+            break;
+        }
+        p1 = p1->next;
+        l++;
+    }
+    l++;
+    root = new TreeNode(p1->val);
+    root->left = sortedListToBSTLength(head, l - 1);
+    root->right = sortedListToBSTLength(p1->next, length - l);
+    return root;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/
+ * @param root
+ * @return
+ */
+int Solution::minDepth(TreeNode *root) {
+    queue<TreeNode*> store;
+    store.push(root);
+    int depth = 1;
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode* p = store.front();
+            bool flag = true;
+            if (p->left) {
+                store.push(p->left);
+                flag = false;
+            }
+            if (p->right) {
+                store.push(p->right);
+                flag = false;
+            }
+            if (flag) return depth;
+            store.pop();
+        }
+        depth++;
+    }
+    return depth;
 }

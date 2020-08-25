@@ -53,6 +53,12 @@ public:
     bool hasPathSum(TreeNode* root, int sum);
     // Recover Binary Search Tree
     void recoverTree(TreeNode* root);
+    // Balanced Binary Tree
+    bool isBalanced(TreeNode* root);
+    // Convert Sorted List to Binary Search Tree
+    TreeNode* sortedListToBST(ListNode* head);
+    // Minimum Depth of Binary Tree
+    int minDepth(TreeNode* root);
     /**************************************************************************/
 
 
@@ -134,7 +140,13 @@ public:
     bool isSubsequence(const string& s, const string& t);
     // Burst Balloon
     int maxCoins(vector<int>& nums);
+    // 寻宝
+    int minimalSteps(vector<string>& maze);
+    // Increasing Subsequences
+    vector<vector<int>> findSubsequences(vector<int>& nums);
     /*******************************************************************/
+    // 24 Game
+    bool judgePoint24(vector<int>& nums);
 
     // Partition Array Into Three Parts With Equal Sum
     bool canThreePartsEqualSum(vector<int>& A);
@@ -172,6 +184,8 @@ public:
     int removeBoxes(vector<int>& boxes);
     // Flood Fill
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor);
+    // Minesweeper
+    vector<vector<char>> updateBoard(vector<vector<char>>& board, vector<int>& click);
     /************************************************************/
 
 
@@ -203,6 +217,10 @@ public:
     string multiply(const string& num1, const string& num2);
     // Valid Parentheses
     bool isValid(const string& s);
+    // Palindromic Substrings
+    int countSubstrings(const string& s);
+    // Repeated substring
+    bool repeatedSubstring(const string &s);
     /************************************************************/
 
     /************************************************************/
@@ -334,6 +352,8 @@ public:
     /* bit-wise operation */
     // 数组中数字出现的次数
     vector<int> singleNumbers(vector<int>& nums);
+    // Bitwise AND of Numbers Range
+    int rangeBitwiseAnd(int m, int n);
     /*************************************************************************/
 
     /******************************************************/

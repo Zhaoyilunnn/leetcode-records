@@ -965,3 +965,55 @@ int Solution::maxCoins(vector<int> &nums) {
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/xun-bao/
+ * Solution: d(i, j)表示第i个M到第j个M经过某一个O的最短距离，n表示机关的数量，不大于16，因此可以使用一个16位的二进制数表示状态
+ *           这个二进制数的第i位为1表示第i个M已经触发，为0表示第i个M还未被触发，记这个二进制数为mask。
+ *           f(mask, i)表示当前在第i个M处，触发状态为mask的最小步数，如果当前mask代表已触发集合为T，未触发集合为U-T，则我们可以推出这样的
+ *           动态规划转移方程：
+ *           f(mask, i) = min_{j in T && j != i} (f(mask xor 2^i, j) + d(j, i))
+ *           TODO: Finish this problem
+ *           Note: 本题是一个非常经典的状态压缩动态规划模型
+ * @param maze
+ * @return
+ */
+int Solution::minimalSteps(vector<string> &maze) {
+
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/increasing-subsequences/
+ * @param nums
+ * @return
+ */
+vector<vector<int>> Solution::findSubsequences(vector<int> &nums) {
+//    set<vector<int>> store;
+    set<vector<int>> store;
+    vector<vector<int>> res;
+    for (int i = 0; i < nums.size(); i++) {
+        if (!res.empty()) {
+            int size = res.size(), c = 0;
+            for (int k = 0; k < size; k++) {
+                if (nums[i] >= res[k][res[k].size() - 1]) {
+                    vector<int> temp = res[k];
+                    temp.push_back(nums[i]);
+                    if (store.find(temp) == store.end()) {
+                        store.insert(temp);
+                        res.push_back(temp);
+                    }
+                }
+            }
+        }
+        for (int j = 0; j < i; j++) {
+            if (nums[i] >= nums[j]) {
+                vector<int> temp = {nums[j], nums[i]};
+                if (store.find(temp) == store.end()) {
+                    store.insert(temp);
+                    res.push_back(temp);
+                }
+            }
+        }
+    }
+    return res;
+}

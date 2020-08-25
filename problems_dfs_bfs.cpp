@@ -589,3 +589,49 @@ vector<vector<int>> Solution::floodFill(vector<vector<int>> &image, int sr, int 
     dfs(image, sr, sc, cur_color, newColor);
     return image;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/minesweeper/
+ * @param board
+ * @param click
+ * @return
+ */
+vector<vector<char>> Solution::updateBoard(vector<vector<char>> &board, vector<int> &click) {
+    if (board[click[0]][click[1]] == 'M') {
+        board[click[0]][click[1]] = 'X';
+        return board;
+    }
+    queue<pair<int, int>> store;
+    store.emplace(click[0], click[1]);
+    vector<vector<int>> directs = {{1, 1}, {1, -1}, {-1, 1}, {-1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int m = board.size(), n = board[0].size();
+    board[click[0]][click[1]] = '-';
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            int a = store.front().first, b = store.front().second;
+            int num_mines = 0;
+            vector<pair<int, int>> temp;
+            for (auto d : directs) {
+                int x = a + d[0], y = b + d[1];
+                if (x >= 0 && x < m && y >= 0 && y < n) {
+                    if (board[x][y] == 'M') {
+                        num_mines++;
+                    }
+                    else if (board[x][y] == 'E' && num_mines == 0) temp.emplace_back(x, y);
+                }
+            }
+            if (num_mines == 0) {
+                board[a][b] = 'B';
+                for (auto e : temp) {
+                    store.emplace(e.first, e.second);
+                    board[e.first][e.second] = '-';
+                }
+            } else board[a][b] = num_mines + '0';
+            store.pop();
+            temp.clear();
+        }
+    }
+    return board;
+}
