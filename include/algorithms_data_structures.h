@@ -186,6 +186,8 @@ public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor);
     // Minesweeper
     vector<vector<char>> updateBoard(vector<vector<char>>& board, vector<int>& click);
+    // Keys and Rooms
+    bool canVisitAllRooms(vector<vector<int>>& rooms);
     /************************************************************/
 
 
@@ -221,6 +223,12 @@ public:
     int countSubstrings(const string& s);
     // Repeated substring
     bool repeatedSubstring(const string &s);
+    // Letter Combinations of a Phone Number
+    vector<string> letterCombinations(const string& digits);
+    // Reverse Words in a String |||
+    string reverseWordsIII(const string& s);
+    // Shortest Palindrome
+    string shortestPalindrome(const string& s);
     /************************************************************/
 
     /************************************************************/
@@ -377,11 +385,12 @@ public:
     /******************************************************/
 
     /******************************************************/
-    /* Topology sort */
+    /* Graph Algorithms */
     // Course schedule
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
     // Course Schedule ||
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites);
+
     /******************************************************/
 
     /******************************************************/

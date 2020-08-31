@@ -15,13 +15,18 @@ int numMagic(int N, int T, int M, vector<int>& H) {
     return -1;
 }
 
+class A {
+public:
+    int a = 0;
+    int b = 0;
+};
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {4, 6, 7, 7};
-    vector<vector<int>> res = solution.findSubsequences(test);
+    string test = "Let's take leetcode contest";
+    string res = solution.reverseWordsIII(test);
 
     return 0;
 }

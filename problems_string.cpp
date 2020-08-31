@@ -687,3 +687,98 @@ bool Solution::repeatedSubstring(const string &s) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+ * @param digits
+ * @return
+ * TODO: submit this problem
+ */
+void dfs(int idx, const string& digits, string& cur, vector<string>& res) {
+    if (idx >= digits.size()) return;
+    int d = digits[idx] - '0';
+    int start = (d - 2) * 3;
+    int num = 3;
+    if (d == 8 || d == 9) start++;
+    if (d == 7 || d == 9) num++;
+    for (int i = 0; i < num; i++) {
+        string temp = cur;
+        char c = 'a' + start + i;
+        temp.push_back(c);
+        if (idx == digits.size() - 1) {
+            res.push_back(temp);
+        }
+        dfs(idx + 1, digits, temp, res);
+    }
+}
+
+vector<string> Solution::letterCombinations(const string &digits) {
+    vector<string> res;
+    string temp;
+    dfs(0, digits, temp, res);
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/
+ * @param s
+ * @return
+ */
+string Solution::reverseWordsIII(const string &s) {
+    if (s.empty()) return s;
+    string res;
+    int pos = 0;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == ' ') {
+            res.push_back(' ');
+            pos = i + 1;
+        } else {
+            res.insert(res.begin() + pos, s[i]);
+        }
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/shortest-palindrome/
+ * @param s
+ * @return
+ */
+/*bool checkPalindrome(const string& s, int p) {
+    int i = 0, j = p;
+    while (i < j) {
+        if (s[i] != s[j]) return false;
+        i++;
+        j--;
+    }
+    return true;
+}*/
+
+string Solution::shortestPalindrome(const string &s) {
+    int n = s.size();
+    vector<int> fail(n, -1);
+    for (int i = 1; i < n; ++i) {
+        int j = fail[i - 1];
+        while (j != -1 && s[j + 1] != s[i]) {
+            j = fail[j];
+        }
+        if (s[j + 1] == s[i]) {
+            fail[i] = j + 1;
+        }
+    }
+    int best = -1;
+    for (int i = n - 1; i >= 0; --i) {
+        while (best != -1 && s[best + 1] != s[i]) {
+            best = fail[best];
+        }
+        if (s[best + 1] == s[i]) {
+            ++best;
+        }
+    }
+    string add = (best == n - 1 ? "" : s.substr(best + 1, n));
+    reverse(add.begin(), add.end());
+    return add + s;
+}

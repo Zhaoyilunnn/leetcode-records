@@ -635,3 +635,33 @@ vector<vector<char>> Solution::updateBoard(vector<vector<char>> &board, vector<i
     }
     return board;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/keys-and-rooms/
+ * @param rooms
+ * @return
+ */
+bool Solution::canVisitAllRooms(vector<vector<int>> &rooms) {
+    queue<int> store;
+    store.push(0);
+    int N = rooms.size();
+    vector<int> visited(N, 0);
+    visited[0] = 1;
+    int count = 1;
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            int cur = store.front();
+            for (int next : rooms[cur]) {
+                if (!visited[next]) {
+                    visited[next] = 1;
+                    store.push(next);
+                    count++;
+                }
+            }
+            store.pop();
+        }
+    }
+    return count == N;
+}
