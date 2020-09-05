@@ -679,3 +679,37 @@ int Solution::minDepth(TreeNode *root) {
     }
     return depth;
 }
+
+void dfs(TreeNode* root, string& curr_path, vector<string>& paths) {
+    if (!root->right && !root->left) {
+        paths.push_back(curr_path);
+        return;
+    }
+    string next_path;
+    if (root->right) {
+        next_path = curr_path;
+        next_path += "->";
+        next_path += to_string(root->right->val);
+        dfs(root->right, next_path, paths);
+    }
+    if (root->left) {
+        next_path = curr_path;
+        next_path += "->";
+        next_path += to_string(root->left->val);
+        dfs(root->left, next_path, paths);
+    }
+}
+
+/**
+ * https://leetcode-cn.com/problems/binary-tree-paths/
+ * @param root
+ * @return
+ */
+vector<string> Solution::binaryTreePaths(TreeNode *root) {
+    if (!root) return {};
+    vector<string> paths;
+    string curr_path;
+    curr_path += to_string(root->val);
+    dfs(root, curr_path, paths);
+    return paths;
+}

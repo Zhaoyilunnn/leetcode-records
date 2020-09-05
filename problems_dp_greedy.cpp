@@ -1017,3 +1017,13 @@ vector<vector<int>> Solution::findSubsequences(vector<int> &nums) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/predict-the-winner/
+ * @param nums
+ * @return
+ */
+bool Solution::PredictTheWinner(vector<int> &nums) {
+
+}

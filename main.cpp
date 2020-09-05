@@ -5,28 +5,11 @@
 #include "include/objects_oriented.h"
 
 
-
-
-
-
-int numMagic(int N, int T, int M, vector<int>& H) {
-
-
-    return -1;
-}
-
-class A {
-public:
-    int a = 0;
-    int b = 0;
-};
-
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    string test = "Let's take leetcode contest";
-    string res = solution.reverseWordsIII(test);
+    string res = solution.getPermutation(4, 9);
 
     return 0;
 }

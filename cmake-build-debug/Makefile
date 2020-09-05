@@ -305,6 +305,33 @@ problems_dp_greedy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.s
 .PHONY : problems_dp_greedy.cpp.s
 
+problems_graph.o: problems_graph.cpp.o
+
+.PHONY : problems_graph.o
+
+# target to build an object file
+problems_graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_graph.cpp.o
+.PHONY : problems_graph.cpp.o
+
+problems_graph.i: problems_graph.cpp.i
+
+.PHONY : problems_graph.i
+
+# target to preprocess a source file
+problems_graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_graph.cpp.i
+.PHONY : problems_graph.cpp.i
+
+problems_graph.s: problems_graph.cpp.s
+
+.PHONY : problems_graph.s
+
+# target to generate assembly for a file
+problems_graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_graph.cpp.s
+.PHONY : problems_graph.cpp.s
+
 problems_list.o: problems_list.cpp.o
 
 .PHONY : problems_list.o
@@ -439,33 +466,6 @@ problems_string.s: problems_string.cpp.s
 problems_string.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_string.cpp.s
 .PHONY : problems_string.cpp.s
-
-problems_topology_sort.o: problems_topology_sort.cpp.o
-
-.PHONY : problems_topology_sort.o
-
-# target to build an object file
-problems_topology_sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.o
-.PHONY : problems_topology_sort.cpp.o
-
-problems_topology_sort.i: problems_topology_sort.cpp.i
-
-.PHONY : problems_topology_sort.i
-
-# target to preprocess a source file
-problems_topology_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.i
-.PHONY : problems_topology_sort.cpp.i
-
-problems_topology_sort.s: problems_topology_sort.cpp.s
-
-.PHONY : problems_topology_sort.s
-
-# target to generate assembly for a file
-problems_topology_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_topology_sort.cpp.s
-.PHONY : problems_topology_sort.cpp.s
 
 problems_tree.o: problems_tree.cpp.o
 
@@ -1358,6 +1358,9 @@ help:
 	@echo "... problems_dp_greedy.o"
 	@echo "... problems_dp_greedy.i"
 	@echo "... problems_dp_greedy.s"
+	@echo "... problems_graph.o"
+	@echo "... problems_graph.i"
+	@echo "... problems_graph.s"
 	@echo "... problems_list.o"
 	@echo "... problems_list.i"
 	@echo "... problems_list.s"
@@ -1373,9 +1376,6 @@ help:
 	@echo "... problems_string.o"
 	@echo "... problems_string.i"
 	@echo "... problems_string.s"
-	@echo "... problems_topology_sort.o"
-	@echo "... problems_topology_sort.i"
-	@echo "... problems_topology_sort.s"
 	@echo "... problems_tree.o"
 	@echo "... problems_tree.i"
 	@echo "... problems_tree.s"

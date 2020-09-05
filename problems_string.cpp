@@ -384,57 +384,38 @@ string Solution::addString(const string &num1, const string &num2) {
 /**
  * https://leetcode-cn.com/problems/restore-ip-addresses/
  * Current solution is dfs
- * TODO: Any optimization??
+ *
  */
 
-vector<string> restoreIpPart(const string& s, int start, int k) {
-    if (k == 0) return {};
-    vector<string> res;
-    int curr_digit = 0;
-    string curr_res;
-    for (int i = start; i < start + 3 && i < s.size(); i++) {
-        curr_digit = s[i] - '0' + 10 * curr_digit;
-        if (curr_digit >= 0 && curr_digit <= 255) curr_res.push_back(s[i]);
-        else break;
-        if (s[start] == '0' && i > start) break;
-        if (s.size() - i - 1 >= (k - 1) * 1 && s.size() - i - 1 <= (k - 1) * 3) {
-            vector<string> curr_res_part = restoreIpPart(s, i + 1, k - 1);
-            if (!curr_res_part.empty()) {
-                for (const auto &rem : curr_res_part) {
-                    string temp = curr_res;
-                    if (!rem.empty()) {
-                        temp.push_back('.');
-                        temp += rem;
-                    }
-                    if (temp.size() == s.size() - start + k - 1) res.push_back(temp);
-                }
-            } else if (curr_res.size() == s.size() - start + k - 1) res.push_back(curr_res);
+void dfs(const string& s, int start, int count, string temp, vector<string>& res) {
+    if (count == 4) {
+        if (start <= s.size() - 1) return;
+        else res.push_back(temp);
+    } else if (count >= 1) temp.push_back('.');
+
+    int cur_num = 0;
+    count++;
+
+    if (s[start] == '0') {
+        temp.push_back('0');
+        dfs(s, start + 1, count, temp, res);
+        return;
+    }
+
+    for (int i = start; i < 3 + start && i < s.size(); i++) {
+        cur_num = cur_num * 10 + s[i] - '0';
+        if (cur_num >= 0 && cur_num <= 255) {
+            temp.push_back(s[i]);
+            dfs(s, i + 1, count, temp, res);
         }
     }
-    return res;
 }
 
 vector<string> Solution::restoreIpAddress(const string& s) {
     vector<string> res;
-    int curr_digit = 0;
-    string curr_res;
-    for (int i = 0; i < 3 && i < s.size(); i++) {
-        curr_digit = s[i] - '0' + 10 * curr_digit;
-        if (curr_digit >= 0 && curr_digit <= 255) curr_res.push_back(s[i]);
-        else break;
-        if (s[0] == '0' && i > 0) break;
-        if (s.size() - i - 1 >= 3 && s.size() - i - 1 <= 9) {
-            vector<string> curr_res_part = restoreIpPart(s, i + 1, 3);
-            for (const auto& rem : curr_res_part) {
-                string temp = curr_res;
-                if (!rem.empty()) {
-                    temp.push_back('.');
-                    temp += rem;
-                }
-                if (temp.size() == s.size() + 3) res.push_back(temp);
-            }
-        }
-    }
+    string temp;
+    int count = 0;
+    dfs(s, 0, count, temp, res);
     return res;
 }
 
@@ -781,4 +762,30 @@ string Solution::shortestPalindrome(const string &s) {
     string add = (best == n - 1 ? "" : s.substr(best + 1, n));
     reverse(add.begin(), add.end());
     return add + s;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/permutation-sequence/
+ * @param n
+ * @param k
+ * @return
+ */
+string Solution::getPermutation(int n, int k) {
+    int multiple = 1;
+    vector<int> nums(n, 0);
+    for (int i = 1; i <= n; i++) {
+        multiple *= i;
+        nums[i - 1] = i;
+    }
+    string res;
+    while (n > 0) {
+        multiple /= n;
+        int idx = k % multiple > 0 ? k / multiple : k / multiple - 1;
+        res.push_back(nums[idx] + '0');
+        k = k % multiple > 0 ? k % multiple : multiple;
+        nums.erase(nums.begin() + idx);
+        n--;
+    }
+    return res;
 }

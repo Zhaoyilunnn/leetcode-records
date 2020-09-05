@@ -59,6 +59,8 @@ public:
     TreeNode* sortedListToBST(ListNode* head);
     // Minimum Depth of Binary Tree
     int minDepth(TreeNode* root);
+    // Binary Tree Paths
+    vector<string> binaryTreePaths(TreeNode* root);
     /**************************************************************************/
 
 
@@ -144,6 +146,8 @@ public:
     int minimalSteps(vector<string>& maze);
     // Increasing Subsequences
     vector<vector<int>> findSubsequences(vector<int>& nums);
+    // Predict the Winner
+    bool PredictTheWinner(vector<int>& nums);
     /*******************************************************************/
     // 24 Game
     bool judgePoint24(vector<int>& nums);
@@ -229,6 +233,8 @@ public:
     string reverseWordsIII(const string& s);
     // Shortest Palindrome
     string shortestPalindrome(const string& s);
+    // Permutation Sequence
+    string getPermutation(int n, int k);
     /************************************************************/
 
     /************************************************************/
