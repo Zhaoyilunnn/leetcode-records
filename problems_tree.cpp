@@ -713,3 +713,30 @@ vector<string> Solution::binaryTreePaths(TreeNode *root) {
     dfs(root, curr_path, paths);
     return paths;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/
+ * @param root
+ * @return
+ */
+vector<vector<int>> Solution::levelOrderBottom(TreeNode *root) {
+    queue<TreeNode*> store;
+    if (!root) return {};
+    store.push(root);
+    vector<vector<int>> res;
+    while (!store.empty()) {
+        int size = store.size();
+        vector<int> temp;
+        for (int i = 0; i < size; i++) {
+            auto cur = store.front();
+            temp.push_back(cur->val);
+            if (cur->left) store.push(cur->left);
+            if (cur->right) store.push(cur->right);
+            store.pop();
+        }
+        res.push_back(temp);
+    }
+    reverse(res.begin(), res.end());
+    return res;
+}
