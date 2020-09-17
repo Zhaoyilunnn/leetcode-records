@@ -1027,3 +1027,38 @@ vector<vector<int>> Solution::findSubsequences(vector<int> &nums) {
 bool Solution::PredictTheWinner(vector<int> &nums) {
 
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/
+ * Remark: Can use bits to encode status!!
+ * @param s
+ * @return
+ */
+int getPermIndex(vector<int>& count) {
+    int idx = 0;
+    for (int i : count) {
+        if (i % 2 == 0) idx += 1;
+        idx *= 2;
+    }
+    return idx / 2;
+}
+
+int Solution::findTheLongestSubstring(const string &s) {
+    vector<int> vowel_count(5, 0);
+    vector<int> store(32, -1);   // store each first kind of permutation of even and odd
+    store[31] = 0;
+    int res = 0;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == 'a') vowel_count[0]++;
+        else if (s[i] == 'e') vowel_count[1]++;
+        else if (s[i] == 'i') vowel_count[2]++;
+        else if (s[i] == 'o') vowel_count[3]++;
+        else if (s[i] == 'u') vowel_count[4]++;
+        int idx = getPermIndex(vowel_count);
+        if (store[idx] < 0) store[idx] = i + 1;
+        int cur_res = i + 1 - store[idx];
+        res = max(cur_res, res);
+    }
+    return res;
+}

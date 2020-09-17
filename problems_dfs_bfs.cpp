@@ -665,3 +665,90 @@ bool Solution::canVisitAllRooms(vector<vector<int>> &rooms) {
     }
     return count == N;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/combination-sum-iii/
+ * @param k
+ * @param n
+ * @return
+ */
+void dfs(int num, int count, int cur_sum, vector<int> cur_comb, int k, int n, vector<vector<int>>& res) {
+    if (count == k) {
+        if (cur_sum == n) {
+            res.push_back(cur_comb);
+        }
+        return;
+    }
+    for (int i = num + 1; i <= 9; i++) {
+        int next_sum = cur_sum + i;
+        cur_comb[count] = i;
+        dfs(i, count + 1, next_sum, cur_comb, k, n, res);
+        cur_comb[count] = 0;
+    }
+}
+
+vector<vector<int>> Solution::combinationSum3(int k, int n) {
+    vector<int> cur_comb(k, 0);
+    vector<vector<int>> res;
+    cur_comb[0] = 1;
+    int count = 0;
+    for (int i = 1; i <= 9; i++) {
+        cur_comb[0] = i;
+        dfs(i, count + 1, i, cur_comb, k, n, res);
+        cur_comb[0] = 0;
+    }
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/word-search/
+ * @param board
+ * @param word
+ * @return
+ */
+vector<vector<int>> directions = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+
+void dfsWord(int x, int y, const string& word, string& cur_res, bool& res, vector<vector<int>>& visited,
+             vector<vector<char>>& board) {
+    if (cur_res == word) {
+        res = true;
+        return;
+    }
+    if (cur_res.size() >= word.size()) return;
+    int p = (int) cur_res.size() - 1;
+    if (cur_res[p] != word[p]) return;
+    int m = visited.size(), n = visited[0].size();
+    for (auto d : directions) {
+        int a = x + d[0], b = y + d[1];
+        if (a >= 0 && a < m && b >= 0 && b < n && !visited[a][b]) {
+            visited[a][b] = 1;
+            cur_res.push_back(board[a][b]);
+            dfsWord(a, b, word, cur_res, res, visited, board);
+            if (res) return;
+            visited[a][b] = 0;
+            cur_res.pop_back();
+        }
+    }
+}
+
+bool Solution::exist(vector<vector<char>> &board, const string& word) {
+    int m = board.size(), n = board[0].size();
+    vector<vector<int>> visited(m, vector<int>(n, 0));
+    bool res = false;
+    string cur_res;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (board[i][j] == word[0]) {
+                visited[i][j] = 1;
+                cur_res.push_back(board[i][j]);
+                dfsWord(i, j, word, cur_res, res, visited, board);
+                visited[i][j] = 0;
+                cur_res.pop_back();
+                if (res) return res;
+            }
+        }
+    }
+    return res;
+}

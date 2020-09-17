@@ -119,3 +119,35 @@ int Solution::kthSmallest(vector<vector<int> > &matrix, int k) {
     }
     return que.top().val;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/top-k-frequent-elements/
+ * TODO: review priority queue
+ * @param nums
+ * @return
+ */
+class mycompare {
+public:
+    bool operator() (const pair<int, int>& lhs, const pair<int, int>& rhs) const {
+        return lhs.second < rhs.second;
+    }
+};
+
+
+vector<int> Solution::topKFrequent(vector<int> &nums, int k) {
+    priority_queue<pair<int, int>, vector<pair<int, int>>, mycompare> store;
+    unordered_map<int, int> occurrence;
+    for (int i : nums) {
+        occurrence[i]++;
+    }
+    for (auto o : occurrence) {
+        store.emplace(o.first, o.second);
+    }
+    vector<int> res;
+    for (int i = 0; i < k; i++) {
+        res.push_back(store.top().first);
+        store.pop();
+    }
+    return res;
+}

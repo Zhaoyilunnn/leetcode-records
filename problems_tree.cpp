@@ -740,3 +740,28 @@ vector<vector<int>> Solution::levelOrderBottom(TreeNode *root) {
     reverse(res.begin(), res.end());
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/
+ * @param root
+ * @return
+ */
+vector<double> Solution::averageOfLevels(TreeNode *root) {
+    if (!root) return {};
+    queue<TreeNode*> store;
+    store.push(root);
+    vector<double> res;
+    while (!store.empty()) {
+        int size = store.size();
+        double cur_sum = 0;
+        for (int i = 0; i < size; i++) {
+            cur_sum += store.front()->val;
+            if (store.front()->left) store.push(store.front()->left);
+            if (store.front()->right) store.push(store.front()->right);
+            store.pop();
+        }
+        res.push_back(cur_sum / size);
+    }
+    return res;
+}

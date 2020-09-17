@@ -63,6 +63,8 @@ public:
     vector<string> binaryTreePaths(TreeNode* root);
     // Binary Tree Level Order Traversal ||
     vector<vector<int>> levelOrderBottom(TreeNode* root);
+    // Average of Levels in Binary Tree
+    vector<double> averageOfLevels(TreeNode* root);
     /**************************************************************************/
 
 
@@ -150,7 +152,11 @@ public:
     vector<vector<int>> findSubsequences(vector<int>& nums);
     // Predict the Winner
     bool PredictTheWinner(vector<int>& nums);
+    // Find the Longest Substring Containing Vowels in Even Counts
+    int findTheLongestSubstring(const string& s);
     /*******************************************************************/
+
+
     // 24 Game
     bool judgePoint24(vector<int>& nums);
 
@@ -194,6 +200,10 @@ public:
     vector<vector<char>> updateBoard(vector<vector<char>>& board, vector<int>& click);
     // Keys and Rooms
     bool canVisitAllRooms(vector<vector<int>>& rooms);
+    // Combination Sum III
+    vector<vector<int>> combinationSum3(int k, int n);
+    // Word Search
+    bool exist(vector<vector<char>>& board, const string& word);
     /************************************************************/
 
 
@@ -243,6 +253,8 @@ public:
     /* Backtracking problems */
     // Generate Parentheses
     vector<string> generateParenthesis(int n);
+    // N-Queens
+    vector<vector<string>> solveNQueens(int n);
     /************************************************************/
 
 
@@ -283,6 +295,8 @@ public:
     int findKthLargest(vector<int>& nums, int k);
     // Kth smallest element in a sorted matrix
     int kthSmallest(vector<vector<int>>& matrix, int k);
+    // Top K Frequent Elements
+    vector<int> topKFrequent(vector<int>& nums, int k);
     /****************************************************************************/
 
     // Game of life
@@ -328,9 +342,6 @@ public:
 
     // Valid Palindrome ||
     bool validPalindrome(const string& s);
-
-    // Find the Longest Substring Containing Vowels in Even Counts
-    int findTheLongestSubstring(const string& s);
 
     // Product of Array Except Self
     vector<int> productExceptSelf(vector<int>& nums);
