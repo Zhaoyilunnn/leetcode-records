@@ -765,3 +765,28 @@ vector<double> Solution::averageOfLevels(TreeNode *root) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/sum-of-left-leaves/
+ * @param root
+ * @return
+ */
+void dfs(TreeNode* root, int& res) {
+    if (!root) return;
+    if (root->left) {
+        if (!root->left->left && !root->left->right) {
+            res += root->left->val;
+        } else dfs(root->left, res);
+    }
+    if (root->right) {
+        dfs(root->right, res);
+    }
+}
+
+int Solution::sumOfLeftLeaves(TreeNode *root) {
+    if (!root) return 0;
+    int res = 0;
+    dfs(root, res);
+    return res;
+}

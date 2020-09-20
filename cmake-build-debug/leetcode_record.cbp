@@ -145,9 +145,6 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContinuousSequence.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findTheLongestSubstring.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/firstMissingPositive.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>

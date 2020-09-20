@@ -752,3 +752,51 @@ bool Solution::exist(vector<vector<char>> &board, const string& word) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/permutations-ii/
+ * @param nums
+ * @return
+ */
+void dfs(vector<int>& cur, vector<vector<int>>& res, vector<int>& nums,
+         vector<int>& visited, int& id, unordered_set<int>& store) {
+    int n = nums.size();
+    if (cur.size() == n && store.find(id) == store.end()) {
+        store.insert(id);
+        res.push_back(cur);
+        return;
+    }
+    for (int i = 0; i < n; i++) {
+        if (!visited[i]) {
+            cur.push_back(nums[i]);
+            visited[i] = 1;
+            id = id * 10 + nums[i];
+            dfs(cur, res, nums, visited, id, store);
+            visited[i] = 0;
+            id = (id - nums[i]) / 10;
+            cur.pop_back();
+        }
+    }
+}
+
+vector<vector<int>> Solution::permuteUnique(vector<int> &nums) {
+    int n = nums.size();
+    unordered_set<int> store;
+    vector<int> visited(n, 0);
+    vector<int> cur;
+    vector<vector<int>> res;
+    int id = 0;
+    for (int i = 0; i < n; i++) {
+        if (!visited[i]) {
+            cur.push_back(nums[i]);
+            visited[i] = 1;
+            id = id * 10 + nums[i];
+            dfs(cur, res, nums, visited, id, store);
+            visited[i] = 0;
+            id = (id - nums[i]) / 10;
+            cur.pop_back();
+        }
+    }
+    return res;
+}

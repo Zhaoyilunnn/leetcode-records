@@ -9,8 +9,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> nums = {1, 1, 1, 2, 2, 3};
-    vector<int> res = solution.topKFrequent(nums, 2);
+    vector<int> nums = {1, 1, 2};
+    vector<vector<int>> res = solution.permuteUnique(nums);
 
     return 0;
 }

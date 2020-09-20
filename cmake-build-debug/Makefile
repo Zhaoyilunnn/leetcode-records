@@ -629,33 +629,6 @@ unassorted/findContinuousSequence.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/findContinuousSequence.cpp.s
 .PHONY : unassorted/findContinuousSequence.cpp.s
 
-unassorted/findTheLongestSubstring.o: unassorted/findTheLongestSubstring.cpp.o
-
-.PHONY : unassorted/findTheLongestSubstring.o
-
-# target to build an object file
-unassorted/findTheLongestSubstring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/findTheLongestSubstring.cpp.o
-.PHONY : unassorted/findTheLongestSubstring.cpp.o
-
-unassorted/findTheLongestSubstring.i: unassorted/findTheLongestSubstring.cpp.i
-
-.PHONY : unassorted/findTheLongestSubstring.i
-
-# target to preprocess a source file
-unassorted/findTheLongestSubstring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/findTheLongestSubstring.cpp.i
-.PHONY : unassorted/findTheLongestSubstring.cpp.i
-
-unassorted/findTheLongestSubstring.s: unassorted/findTheLongestSubstring.cpp.s
-
-.PHONY : unassorted/findTheLongestSubstring.s
-
-# target to generate assembly for a file
-unassorted/findTheLongestSubstring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/findTheLongestSubstring.cpp.s
-.PHONY : unassorted/findTheLongestSubstring.cpp.s
-
 unassorted/firstMissingPositive.o: unassorted/firstMissingPositive.cpp.o
 
 .PHONY : unassorted/firstMissingPositive.o
@@ -1394,9 +1367,6 @@ help:
 	@echo "... unassorted/findContinuousSequence.o"
 	@echo "... unassorted/findContinuousSequence.i"
 	@echo "... unassorted/findContinuousSequence.s"
-	@echo "... unassorted/findTheLongestSubstring.o"
-	@echo "... unassorted/findTheLongestSubstring.i"
-	@echo "... unassorted/findTheLongestSubstring.s"
 	@echo "... unassorted/firstMissingPositive.o"
 	@echo "... unassorted/firstMissingPositive.i"
 	@echo "... unassorted/firstMissingPositive.s"

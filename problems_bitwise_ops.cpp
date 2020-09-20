@@ -44,3 +44,25 @@ int Solution::rangeBitwiseAnd(int m, int n) {
     }
     return m << shift;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/subsets/
+ * @param nums
+ * @return
+ */
+vector<vector<int>> Solution::subsets(vector<int> &nums) {
+    vector<vector<int>> res;
+    int n = nums.size();
+    for (int i = 0; i < (int) pow(2, n); i++) {
+        vector<int> temp;
+        int comp = 1;
+        for (int j = 1; j <= n; j++) {
+            int flag = comp & i;
+            if (flag) temp.push_back(nums[j - 1]);
+            comp *= 2;
+        }
+        res.push_back(temp);
+    }
+    return res;
+}

@@ -75,10 +75,6 @@ CMakeFiles/leetcode_record.dir/unassorted/findContinuousSequence.cpp.o
  ../include/algorithms_data_structures.h
  ../include/common_libs.h
  /cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContinuousSequence.cpp
-CMakeFiles/leetcode_record.dir/unassorted/findTheLongestSubstring.cpp.o
- ../include/algorithms_data_structures.h
- ../include/common_libs.h
- /cygdrive/d/Program_Cpp/leetcode_record/unassorted/findTheLongestSubstring.cpp
 CMakeFiles/leetcode_record.dir/unassorted/firstMissingPositive.cpp.o
  ../include/algorithms_data_structures.h
  ../include/common_libs.h

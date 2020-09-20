@@ -65,6 +65,8 @@ public:
     vector<vector<int>> levelOrderBottom(TreeNode* root);
     // Average of Levels in Binary Tree
     vector<double> averageOfLevels(TreeNode* root);
+    // Sum of Left Leaves
+    int sumOfLeftLeaves(TreeNode* root);
     /**************************************************************************/
 
 
@@ -204,6 +206,8 @@ public:
     vector<vector<int>> combinationSum3(int k, int n);
     // Word Search
     bool exist(vector<vector<char>>& board, const string& word);
+    // Permutations II
+    vector<vector<int>> permuteUnique(vector<int>& nums);
     /************************************************************/
 
 
@@ -381,6 +385,8 @@ public:
     vector<int> singleNumbers(vector<int>& nums);
     // Bitwise AND of Numbers Range
     int rangeBitwiseAnd(int m, int n);
+    // Subsets
+    vector<vector<int>> subsets(vector<int>& nums);
     /*************************************************************************/
 
     /******************************************************/

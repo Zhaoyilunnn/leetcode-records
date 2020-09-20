@@ -17,7 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/unassorted/equationPossible.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/findContentChildren.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/findContinuousSequence.cpp.o"
-  "CMakeFiles/leetcode_record.dir/unassorted/findTheLongestSubstring.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/firstMissingPositive.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/gameOfLife.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/getLeastNumbers.cpp.o"
