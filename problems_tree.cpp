@@ -790,3 +790,96 @@ int Solution::sumOfLeftLeaves(TreeNode *root) {
     dfs(root, res);
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/convert-bst-to-greater-tree/
+ */
+TreeNode* Solution::convertBST(TreeNode *root) {
+    if (!root) return nullptr;
+    stack<TreeNode*> store;
+    auto p = root;
+    while (p) {
+        store.push(p);
+        p = p->right;
+    }
+    int sum = 0;
+    while (!store.empty()) {
+        p = store.top();
+        sum += p->val;
+        p->val = sum;
+        store.pop();
+        if (p->left) {
+            p = p->left;
+            while (p) {
+                store.push(p);
+                p = p->right;
+            }
+        }
+    }
+    return root;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/path-sum-ii/
+ * @param root
+ * @param sum
+ * @return
+ */
+void traverse(TreeNode* node, int cur_sum, int sum, vector<int>& cur_res, vector<vector<int>>& res) {
+    if (cur_sum == sum && !node->left && !node->right) {
+        res.push_back(cur_res);
+        return;
+    }
+    if (node->left) {
+        cur_sum += node->left->val;
+        cur_res.push_back(node->left->val);
+        traverse(node->left, cur_sum, sum, cur_res, res);
+        cur_res.pop_back();
+        cur_sum -= node->left->val;
+    }
+    if (node->right) {
+        cur_sum += node->right->val;
+        cur_res.push_back(node->right->val);
+        traverse(node->right, cur_sum, sum, cur_res, res);
+        cur_res.pop_back();
+        cur_sum -= node->right->val;
+    }
+
+}
+
+vector<vector<int>> Solution::pathSum(TreeNode *root, int sum) {
+    if (!root) return {};
+    int cur_sum = root->val;
+    vector<int> cur_res = {root->val};
+    vector<vector<int>> res;
+    traverse(root, cur_sum, sum, cur_res, res);
+    return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+ * @param root
+ * @param p
+ * @param q
+ * @return
+ */
+TreeNode* Solution::lowestCommonAncestorBST(TreeNode *root, TreeNode *p, TreeNode *q) {
+    auto cur = root;
+    TreeNode* small = nullptr, *large = nullptr;
+    if (p->val > q->val) {
+        small = q;
+        large = p;
+    } else {
+        large = q;
+        small = p;
+    }
+    while (cur) {
+        if (cur->val >= small->val && cur->val <= large->val) return cur;
+        if (cur->val > large->val) cur = cur->left;
+        else if (cur->val < small->val) cur = cur->right;
+    }
+    return nullptr;
+}

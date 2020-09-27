@@ -67,6 +67,12 @@ public:
     vector<double> averageOfLevels(TreeNode* root);
     // Sum of Left Leaves
     int sumOfLeftLeaves(TreeNode* root);
+    // Path Sum ||
+    vector<vector<int>> pathSum(TreeNode* root, int sum);
+    // Convert BST to Greater Tree
+    TreeNode* convertBST(TreeNode* root);
+    // Lowest Common Ancestor of a Binary Search Tree
+    TreeNode* lowestCommonAncestorBST(TreeNode* root, TreeNode* p, TreeNode* q);
     /**************************************************************************/
 
 
