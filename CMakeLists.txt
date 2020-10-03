@@ -16,6 +16,5 @@ add_executable(leetcode_record
         unassorted/findContinuousSequence.cpp
         problems_dp_greedy.cpp
         unassorted/canThreePartsEqualSum.cpp
-        unassorted/lengthOfLIS.cpp
         problems_dfs_bfs.cpp
         unassorted/luckyNumbers.cpp problems_string.cpp unassorted/isRectangleOverlap.cpp unassorted/getLeastNumbers.cpp unassorted/minIncrementForUnique.cpp problems_list.cpp unassorted/surfaceArea.cpp unassorted/numRookCaptures.cpp problems_graph.cpp unassorted/hasGroupSizeX.cpp unassorted/lastRemaining.cpp unassorted/gameOfLife.cpp unassorted/movingCount.cpp problems_backtracking.cpp unassorted/intersection.cpp unassorted/mergeIntervals.cpp problems_binary_search.cpp problems_bitwise_ops.cpp problems_math.cpp unassorted/twoSum.cpp unassorted/maximalSquare.cpp unassorted/subarraySum.cpp problems_prefix.cpp unassorted/productExceptSelf.cpp unassorted/equationPossible.cpp unassorted/isPalindrome.cpp unassorted/threeSum.cpp unassorted/threeSumClosest.cpp unassorted/wordBreak.cpp unassorted/firstMissingPositive.cpp problems_sort.cpp unassorted/intersect.cpp include/objects_oriented.h include/common_libs.h)

@@ -9,8 +9,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> nums = {1, 1, 2};
-    vector<vector<int>> res = solution.permuteUnique(nums);
+    vector<vector<int>> test = {{4, 2}, {1, 5}, {5, 2}, {5, 3}, {2, 4}};
+    vector<int> res = solution.findRedundantDirectedConnection(test);
 
     return 0;
 }

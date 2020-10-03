@@ -76,3 +76,46 @@ vector<int> Solution::findOrder(int numCourses, vector<vector<int> > &prerequisi
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/redundant-connection-ii/
+ * rooted tree -> 一个顶点入度为0，其余为1
+ * @param edges
+ * @return
+ */
+vector<int> Solution::findRedundantDirectedConnection(vector<vector<int>> &edges) {
+    int nodesCount = edges.size();
+    UnionFind uf = UnionFind(nodesCount + 1);
+    auto parent = vector<int>(nodesCount + 1);
+    for (int i = 1; i <= nodesCount; ++i) {
+        parent[i] = i;
+    }
+    int conflict = -1;
+    int cycle = -1;
+    for (int i = 0; i < nodesCount; ++i) {
+        auto edge = edges[i];
+        int node1 = edge[0], node2 = edge[1];
+        if (parent[node2] != node2) {
+            conflict = i;
+        } else {
+            parent[node2] = node1;
+            if (uf.find(node1) == uf.find(node2)) {
+                cycle = i;
+            } else {
+                uf.merge(node1, node2);
+            }
+        }
+    }
+    if (conflict < 0) {
+        auto redundant = vector<int> {edges[cycle][0], edges[cycle][1]};
+        return redundant;
+    } else {
+        auto conflictEdge = edges[conflict];
+        if (cycle >= 0) {
+            auto redundant = vector<int> {parent[conflictEdge[1]], conflictEdge[1]};
+            return redundant;
+        } else {
+            auto redundant = vector<int> {conflictEdge[0], conflictEdge[1]};
+            return redundant;
+        }
+    }
+}

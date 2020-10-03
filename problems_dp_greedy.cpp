@@ -1062,3 +1062,59 @@ int Solution::findTheLongestSubstring(const string &s) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/longest-increasing-subsequence/
+ * TODO: 数学上证明O(nlog(n))可以找到最优解，思考如何通过O(nlog(n))得到子序列？
+ * @param nums
+ * @return
+ */
+int binarySearch(int target, vector<int>& nums) {
+    int l = 0, r = nums.size() - 1;
+    while (l < r) {
+        int mid = l + (r - l) / 2;
+        if (nums[mid] == target) return mid;
+        else if (nums[mid] > target) {
+            r = mid - 1;
+            if (r == l) return nums[r] > target ? r : mid;
+        }
+        else {
+            l = mid + 1;
+            if (l == r) return nums[l] > target ? l : l + 1;
+        }
+    }
+    return l;
+}
+
+int Solution::lengthOfLIS(vector<int> &nums) {
+    /* O(n^2) method dp[i] = arg_max(dp[j] + 1) */
+    /*if (nums.empty()) return 0;
+    int n = nums.size();
+    vector<int> dp(n, 1);
+    int res = 1;
+    for (int i = 1; i < n; i++) {
+        int temp = 0;
+        for (int j = 0; j < i; j++) {
+            if (nums[i] > nums[j]) temp = max(temp, dp[j]);
+        }
+        dp[i] = max(temp + 1, dp[i]);
+        res = max(res, dp[i]);
+    }
+    return res;*/
+
+    /* O(nlog(n)) method, greedy with binary search */
+    if (nums.empty()) return 0;
+    vector<int> seq;
+    int res = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (i == 0 || nums[i] > seq[seq.size() - 1]) {
+            seq.push_back(nums[i]);
+            res++;
+        } else {
+            int idx = binarySearch(nums[i], seq);
+            seq[idx] = nums[i];
+        }
+    }
+    return res;
+}

@@ -38,6 +38,27 @@ struct ListNode {
     explicit ListNode(int x) : val(x), next(nullptr) {}
 };
 
+
+struct UnionFind {
+    vector<int> ancestor;
+
+    UnionFind(int n) {
+        ancestor.resize(n);
+        for (int i = 0; i < n; ++i) {
+            ancestor[i] = i;
+        }
+    }
+
+    int find(int index) {
+        return index == ancestor[index] ? index : ancestor[index] = find(ancestor[index]);
+    }
+
+    void merge(int u, int v) {
+        ancestor[find(u)] = find(v);
+    }
+};
+
+
 class Node {
 public:
     int val;

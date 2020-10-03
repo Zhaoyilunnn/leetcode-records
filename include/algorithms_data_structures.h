@@ -162,6 +162,8 @@ public:
     bool PredictTheWinner(vector<int>& nums);
     // Find the Longest Substring Containing Vowels in Even Counts
     int findTheLongestSubstring(const string& s);
+    // Longest Increasing Subsequence
+    int lengthOfLIS(vector<int>& nums);
     /*******************************************************************/
 
 
@@ -170,9 +172,6 @@ public:
 
     // Partition Array Into Three Parts With Equal Sum
     bool canThreePartsEqualSum(vector<int>& A);
-
-    // Longest Increasing Subsequence
-    int lengthOfLIS(vector<int>& nums);
 
     // Palindrome Number
     bool isPalindrome(int x);
@@ -421,7 +420,8 @@ public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
     // Course Schedule ||
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites);
-
+    // Redundant Connection ||
+    vector<int> findRedundantDirectedConnection(vector<vector<int>>& edges);
     /******************************************************/
 
     /******************************************************/
