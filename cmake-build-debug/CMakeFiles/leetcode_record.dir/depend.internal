@@ -47,6 +47,10 @@ CMakeFiles/leetcode_record.dir/problems_sort.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h
  /cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h
  /cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o
+ /cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h
+ /cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h
+ /cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o
  /cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h
  /cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h
@@ -111,10 +115,6 @@ CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o
  ../include/algorithms_data_structures.h
  ../include/common_libs.h
  /cygdrive/d/Program_Cpp/leetcode_record/unassorted/lastRemaining.cpp
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o
- ../include/algorithms_data_structures.h
- ../include/common_libs.h
- /cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp
 CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o
  ../include/algorithms_data_structures.h
  ../include/common_libs.h

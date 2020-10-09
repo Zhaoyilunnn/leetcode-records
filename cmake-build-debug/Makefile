@@ -440,6 +440,33 @@ problems_sort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_sort.cpp.s
 .PHONY : problems_sort.cpp.s
 
+problems_stack.o: problems_stack.cpp.o
+
+.PHONY : problems_stack.o
+
+# target to build an object file
+problems_stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_stack.cpp.o
+.PHONY : problems_stack.cpp.o
+
+problems_stack.i: problems_stack.cpp.i
+
+.PHONY : problems_stack.i
+
+# target to preprocess a source file
+problems_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_stack.cpp.i
+.PHONY : problems_stack.cpp.i
+
+problems_stack.s: problems_stack.cpp.s
+
+.PHONY : problems_stack.s
+
+# target to generate assembly for a file
+problems_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/problems_stack.cpp.s
+.PHONY : problems_stack.cpp.s
+
 problems_string.o: problems_string.cpp.o
 
 .PHONY : problems_string.o
@@ -871,33 +898,6 @@ unassorted/lastRemaining.s: unassorted/lastRemaining.cpp.s
 unassorted/lastRemaining.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.s
 .PHONY : unassorted/lastRemaining.cpp.s
-
-unassorted/lengthOfLIS.o: unassorted/lengthOfLIS.cpp.o
-
-.PHONY : unassorted/lengthOfLIS.o
-
-# target to build an object file
-unassorted/lengthOfLIS.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o
-.PHONY : unassorted/lengthOfLIS.cpp.o
-
-unassorted/lengthOfLIS.i: unassorted/lengthOfLIS.cpp.i
-
-.PHONY : unassorted/lengthOfLIS.i
-
-# target to preprocess a source file
-unassorted/lengthOfLIS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.i
-.PHONY : unassorted/lengthOfLIS.cpp.i
-
-unassorted/lengthOfLIS.s: unassorted/lengthOfLIS.cpp.s
-
-.PHONY : unassorted/lengthOfLIS.s
-
-# target to generate assembly for a file
-unassorted/lengthOfLIS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.s
-.PHONY : unassorted/lengthOfLIS.cpp.s
 
 unassorted/longestPalindrome.o: unassorted/longestPalindrome.cpp.o
 
@@ -1346,6 +1346,9 @@ help:
 	@echo "... problems_sort.o"
 	@echo "... problems_sort.i"
 	@echo "... problems_sort.s"
+	@echo "... problems_stack.o"
+	@echo "... problems_stack.i"
+	@echo "... problems_stack.s"
 	@echo "... problems_string.o"
 	@echo "... problems_string.i"
 	@echo "... problems_string.s"
@@ -1394,9 +1397,6 @@ help:
 	@echo "... unassorted/lastRemaining.o"
 	@echo "... unassorted/lastRemaining.i"
 	@echo "... unassorted/lastRemaining.s"
-	@echo "... unassorted/lengthOfLIS.o"
-	@echo "... unassorted/lengthOfLIS.i"
-	@echo "... unassorted/lengthOfLIS.s"
 	@echo "... unassorted/longestPalindrome.o"
 	@echo "... unassorted/longestPalindrome.i"
 	@echo "... unassorted/longestPalindrome.s"

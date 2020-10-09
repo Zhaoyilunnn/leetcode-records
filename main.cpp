@@ -9,8 +9,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<vector<int>> test = {{4, 2}, {1, 5}, {5, 2}, {5, 3}, {2, 4}};
-    vector<int> res = solution.findRedundantDirectedConnection(test);
+    int a = 0;
+    string test = "rrryyyrryyyrr";
+    int res = solution.minimumOperations(test);
 
     return 0;
 }

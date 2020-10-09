@@ -73,6 +73,8 @@ public:
     TreeNode* convertBST(TreeNode* root);
     // Lowest Common Ancestor of a Binary Search Tree
     TreeNode* lowestCommonAncestorBST(TreeNode* root, TreeNode* p, TreeNode* q);
+    // Binary Tree Maximum Path Sum
+    int maxPathSum(TreeNode* root);
     /**************************************************************************/
 
 
@@ -164,6 +166,10 @@ public:
     int findTheLongestSubstring(const string& s);
     // Longest Increasing Subsequence
     int lengthOfLIS(vector<int>& nums);
+    // Longest Common Subsequence
+    int longestCommonSubsequence(const string& text1, const string& text2);
+    // 秋叶收藏集
+    int minimumOperations(const string& leaves);
     /*******************************************************************/
 
 
@@ -306,13 +312,22 @@ public:
     int kthSmallest(vector<vector<int>>& matrix, int k);
     // Top K Frequent Elements
     vector<int> topKFrequent(vector<int>& nums, int k);
+    // 4 Sum
+    vector<vector<int>> fourSum(vector<int>& nums, int target);
+    // Sort Colors
+    void sortColors(vector<int>& nums);
+    /****************************************************************************/
+
+    /****************************************************************************/
+    /* problems using stack */
+    // Trapping Rain Water
+    int trap(vector<int>& height);
+    // Daily Temperatures
+    vector<int> dailyTemperatures(vector<int>& T);
     /****************************************************************************/
 
     // Game of life
     void gameOfLife(vector<vector<int>>& board);
-
-    // Trapping Rain Water
-    int trap(vector<int>& height);
 
     // 机器人运动的范围
     int movingCount(int m, int n, int k);
@@ -412,6 +427,8 @@ public:
     ListNode* reverseKGroup(ListNode* head, int k);
     // Remove duplicate node
     ListNode* removeDuplicateNodes(ListNode* head);
+    // Add Two Numbers
+    ListNode* addTwoNumbersII(ListNode* l1, ListNode* l2);
     /******************************************************/
 
     /******************************************************/
@@ -428,8 +445,6 @@ public:
     /* Prefix */
     // Subarray Sums Divisible by K
     int subarraysDivByK(vector<int>& A, int K);
-    // Daily Temperatures
-    vector<int> dailyTemperatures(vector<int>& T);
     // Minimum Size Subarray Sum
     int minSubArrayLen(int s, vector<int>& nums);
     // Count Binary Substrings

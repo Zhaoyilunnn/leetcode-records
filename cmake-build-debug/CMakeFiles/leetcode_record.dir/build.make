@@ -194,22 +194,9 @@ CMakeFiles/leetcode_record.dir/unassorted/canThreePartsEqualSum.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/unassorted/canThreePartsEqualSum.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/unassorted/canThreePartsEqualSum.cpp -o CMakeFiles/leetcode_record.dir/unassorted/canThreePartsEqualSum.cpp.s
 
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o: ../unassorted/lengthOfLIS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp
-
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp > CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.i
-
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp -o CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.s
-
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o: ../problems_dfs_bfs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp
 
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.i: cmake_force
@@ -219,6 +206,19 @@ CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.i: cmake_force
 CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp -o CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.s
+
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o: ../problems_stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/leetcode_record.dir/problems_stack.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode_record.dir/problems_stack.cpp.o -c /cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp
+
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode_record.dir/problems_stack.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp > CMakeFiles/leetcode_record.dir/problems_stack.cpp.i
+
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode_record.dir/problems_stack.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp -o CMakeFiles/leetcode_record.dir/problems_stack.cpp.s
 
 CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o: CMakeFiles/leetcode_record.dir/flags.make
 CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o: ../unassorted/luckyNumbers.cpp
@@ -647,8 +647,8 @@ leetcode_record_OBJECTS = \
 "CMakeFiles/leetcode_record.dir/unassorted/findContinuousSequence.cpp.o" \
 "CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o" \
 "CMakeFiles/leetcode_record.dir/unassorted/canThreePartsEqualSum.cpp.o" \
-"CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o" \
 "CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o" \
+"CMakeFiles/leetcode_record.dir/problems_stack.cpp.o" \
 "CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o" \
 "CMakeFiles/leetcode_record.dir/problems_string.cpp.o" \
 "CMakeFiles/leetcode_record.dir/unassorted/isRectangleOverlap.cpp.o" \
@@ -694,8 +694,8 @@ leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/removeDuplicates.
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/findContinuousSequence.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_dp_greedy.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/canThreePartsEqualSum.cpp.o
-leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_dfs_bfs.cpp.o
+leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_stack.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/problems_string.cpp.o
 leetcode_record.exe: CMakeFiles/leetcode_record.dir/unassorted/isRectangleOverlap.cpp.o

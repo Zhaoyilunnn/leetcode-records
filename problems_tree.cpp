@@ -883,3 +883,24 @@ TreeNode* Solution::lowestCommonAncestorBST(TreeNode *root, TreeNode *p, TreeNod
     }
     return nullptr;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
+ * @param root
+ * @return
+ */
+int maxGain(TreeNode* node, int& res) {
+    if (!node) return 0;
+    int left_gain = max(maxGain(node->left, res), 0);
+    int right_gain = max(maxGain(node->right, res), 0);
+    int price_new_path = node->val + left_gain + right_gain;
+    res = max(res, price_new_path);
+    return node->val + max(left_gain, right_gain);
+}
+
+int Solution::maxPathSum(TreeNode *root) {
+    int res = INT32_MIN;
+    maxGain(root, res);
+    return res;
+}

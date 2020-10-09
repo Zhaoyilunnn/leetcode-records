@@ -165,19 +165,16 @@ int Solution::uniquePaths(int m, int n) {
 int Solution::uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     int m = obstacleGrid.size();
     int n = obstacleGrid[0].size();
-    vector<int> last(n, 0);
-    vector<int> now(n, 0);
+    vector<int> row(n, 0);
     for (int i = 0; i < m; i++) {
-        now = vector<int>(n, 0);
         for (int j = 0; j < n; j++) {
-            if (i == 0 && j != 0) now[j] = obstacleGrid[i][j] ? 0 : now[j - 1];
-            else if (j == 0 && i != 0) now[j] = obstacleGrid[i][j] ? 0 : last[0];
-            else if (j == 0 && i == 0) now[j] = obstacleGrid[i][j] ? 0 : 1;
-            else now[j] = obstacleGrid[i][j] ? 0 : now[j - 1] + last[j];
+            if (i == 0 && j != 0) row[j] = obstacleGrid[i][j] ? 0 : row[j - 1];
+            else if (j == 0 && i != 0) row[j] = obstacleGrid[i][j] ? 0 : row[0];
+            else if (j == 0 && i == 0) row[j] = obstacleGrid[i][j] ? 0 : 1;
+            else row[j] = obstacleGrid[i][j] ? 0 : row[j - 1] + row[j];
         }
-        last = now;
     }
-    return now[n - 1];
+    return row[n - 1];
 }
 
 
@@ -197,31 +194,6 @@ int Solution::minimumTotal(vector<vector<int>>& triangle) {
         }
     }
     return store[0][0];
-}
-
-
-/*************************************************************************/
-/* Description: Given n non-negative integers representing an elevation
- * map where the width of each bar is 1, compute how much water it is
- * able to trap after raining.*/
-/*************************************************************************/
-int Solution::trap(vector<int> &height) {
-    int result = 0;
-    int start = 0;
-    while (height[start] == 0)
-        start++;
-    for (int i = start+1; i < height.size(); i++) {
-        int high = (height[i] >= height[start]) ? height[start] : height[i];
-        for (int j = i-1; j >= start; j--) {
-            if (height[j] < high) {
-                result += high - height[j];
-                height[j] = high;
-            } else
-                break;
-        }
-        if (height[i] >= height[start]) start = i;
-    }
-    return result;
 }
 
 
@@ -603,18 +575,13 @@ int Solution::largestRectangleArea(vector<int> &heights) {
 }
 
 
-/************************************************************************/
-/*
- * Alice plays the following game, loosely based on the card game "21".
- * Alice starts with 0 points, and draws numbers while she has less than
- * K points. 
- * During each draw, she gains an integer number of points randomly
- * from the range [1, W], where W is an integer.  Each draw is
- * independent and the outcomes have equal probabilities. Alice stops
- * drawing numbers when she gets K or more points. 
- * What is the probability that she has N or less points?
- * */
-/***********************************************************************/
+/**
+ * https://leetcode-cn.com/problems/new-21-game/
+ * @param N
+ * @param K
+ * @param W
+ * @return
+ */
 double Solution::new21Game(int N, int K, int W) {
     return 0.0;
 }
@@ -1117,4 +1084,50 @@ int Solution::lengthOfLIS(vector<int> &nums) {
         }
     }
     return res;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/longest-common-subsequence/
+ * @param text1
+ * @param text2
+ * @return
+ */
+int Solution::longestCommonSubsequence(const string &text1, const string &text2) {
+    int m = text1.size(), n = text2.size();
+    int dp[m + 1][n + 1];
+    for (int i = 0; i < m + 1; i++) {
+        for (int j = 0; j < n + 1; j++) {
+            if (i == 0 || j == 0) {
+                dp[i][j] = 0;
+                continue;
+            }
+            if (text1[i - 1] == text2[j - 1]) dp[i][j] = dp[i - 1][j - 1] + 1;
+            else dp[i][j] = max(dp[i][j - 1], dp[i - 1][j]);
+        }
+    }
+    return dp[m][n];
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/UlBDOe/
+ * @param leaves
+ * @return
+ */
+int Solution::minimumOperations(const string &leaves) {
+    int n = leaves.size();
+    vector<vector<int>> dp(n, vector<int>(3, INT32_MAX));
+    for (int i = 0; i < n; i++) {
+        int is_red = leaves[i] == 'r';
+        int is_yellow = leaves[i] == 'y';
+        if (i == 0) {
+            dp[i][0] = leaves[0] == 'r' ? 0 : 1;
+        } else {
+            dp[i][0] = dp[i - 1][0] + is_yellow;
+            dp[i][1] = min(dp[i - 1][0], dp[i - 1][1]) + is_red;
+            if (i >= 2) dp[i][2] = min(dp[i - 1][1], dp[i - 1][2]) + is_yellow;
+        }
+    }
+    return dp[n - 1][2];
 }

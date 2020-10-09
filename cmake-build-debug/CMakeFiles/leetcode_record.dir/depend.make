@@ -47,6 +47,10 @@ CMakeFiles/leetcode_record.dir/problems_sort.cpp.o: ../include/algorithms_data_s
 CMakeFiles/leetcode_record.dir/problems_sort.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/problems_sort.cpp.o: ../problems_sort.cpp
 
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o: ../include/algorithms_data_structures.h
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o: ../include/common_libs.h
+CMakeFiles/leetcode_record.dir/problems_stack.cpp.o: ../problems_stack.cpp
+
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/problems_string.cpp.o: ../problems_string.cpp
@@ -110,10 +114,6 @@ CMakeFiles/leetcode_record.dir/unassorted/isRectangleOverlap.cpp.o: ../unassorte
 CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../unassorted/lastRemaining.cpp
-
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o: ../include/algorithms_data_structures.h
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o: ../include/common_libs.h
-CMakeFiles/leetcode_record.dir/unassorted/lengthOfLIS.cpp.o: ../unassorted/lengthOfLIS.cpp
 
 CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o: ../include/common_libs.h

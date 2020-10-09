@@ -124,6 +124,9 @@
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp">
+			<Option target="leetcode_record"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_string.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
@@ -170,9 +173,6 @@
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/lastRemaining.cpp">
-			<Option target="leetcode_record"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/lengthOfLIS.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/longestPalindrome.cpp">

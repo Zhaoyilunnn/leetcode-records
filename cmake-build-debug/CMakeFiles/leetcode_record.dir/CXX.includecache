@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/common_libs.h
-iostream
--
-utility
--
-vector
--
-string
--
-set
--
-queue
--
-map
--
-stack
--
-numeric
--
-algorithm
--
-unordered_set
--
-unordered_map
--
-cmath
--
-complex
--
-
 /cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h
 common_libs.h
 /cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h
@@ -70,13 +40,7 @@ cmath
 complex
 -
 
-/cygdrive/d/Program_Cpp/leetcode_record/include/objects_oriented.h
-include/common_libs.h
-/cygdrive/d/Program_Cpp/leetcode_record/include/include/common_libs.h
-
-/cygdrive/d/Program_Cpp/leetcode_record/main.cpp
+/cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp
 include/algorithms_data_structures.h
 /cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h
-include/objects_oriented.h
-/cygdrive/d/Program_Cpp/leetcode_record/include/objects_oriented.h
 

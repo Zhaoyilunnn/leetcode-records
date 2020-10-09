@@ -151,3 +151,103 @@ vector<int> Solution::topKFrequent(vector<int> &nums, int k) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/4sum/
+ * @param nums
+ * @param target
+ * @return
+ */
+vector<vector<int>> Solution::fourSum(vector<int> &nums, int target) {
+    if(nums.size() < 4)
+        return {};
+    vector<vector<int>> ans;
+    sort(nums.begin(), nums.end());
+    for(int first = 0; first < nums.size()-3; first++){
+        if(first > 0 && nums[first] == nums[first-1])
+            continue;
+        for(int second = first+1; second < nums.size() - 2; second++){
+            if(second > first+1 && nums[second] == nums[second-1])
+                continue;
+            int third = second+1;
+            int forth = nums.size()-1;
+            while(third<forth){
+                int temp = nums[first] + nums[second] + nums[third] + nums[forth];
+                if(temp == target){
+                    ans.push_back({nums[first], nums[second], nums[third], nums[forth]});
+                    while(third+1<forth && nums[third] == nums[third+1])
+                        third++;
+                    while(forth-1>third && nums[forth] == nums[forth-1])
+                        forth--;
+                    third++;
+                    forth--;
+                }
+                else if(temp<target)
+                    third++;
+                else
+                    forth--;
+            }
+        }
+    }
+    return ans;
+}
+
+
+/**
+ * https://leetcode-cn.com/problems/sort-colors/
+ * Solution: 1. Sort
+ *           2. double pointer
+ * @param nums
+ */
+void sortColorFast(vector<int>& nums, int l, int r) {
+    if (l >= r) return;
+    int i = l, j = r, key = nums[l];
+    while (i < j) {
+        while (nums[j] > key && i < j) {
+            j--;
+        }
+        if (i < j) {
+            nums[i] = nums[j];
+            i++;
+        }
+        while (nums[i] <= key && i < j) {
+            i++;
+        }
+        if (i < j) {
+            nums[j] = nums[i];
+            j--;
+        }
+    }
+    nums[i] = key;
+    sortColorFast(nums, l, i - 1);
+    sortColorFast(nums, i + 1, r);
+}
+
+void Solution::sortColors(vector<int> &nums) {
+    /* Fast sort */
+    /*int l = 0, r = (int) nums.size() - 1;
+    sortColorFast(nums, l, r);*/
+
+    /* double pointers */
+    int i = 0, j = (int) nums.size() - 1;
+    while (i < j) {
+        while (nums[j] == 2 && i < j) j--;
+        while (nums[i] != 2 && i < j) i++;
+        if (i < j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+    }
+    i = 0, j = (int) nums.size() - 1;
+    while (i < j) {
+        while (nums[j] >= 1 && i < j) j--;
+        while (nums[i] != 1 && i < j) i++;
+        if (i < j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+    }
+}
