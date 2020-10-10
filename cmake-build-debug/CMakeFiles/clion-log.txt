@@ -1,4 +1,4 @@
-C:\Users\zyl\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Program_Cpp/leetcode_record
+C:\Users\zyl\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Program_Cpp/leetcode-records
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug
+-- Build files have been written to: /cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug

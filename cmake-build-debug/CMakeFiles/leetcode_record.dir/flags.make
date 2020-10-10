@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/cygdrive/d/Program_Cpp/leetcode_record/. 
+CXX_INCLUDES = -I/cygdrive/d/Program_Cpp/leetcode-records/. 
 

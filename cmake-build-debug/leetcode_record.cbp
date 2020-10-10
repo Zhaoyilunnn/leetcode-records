@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leetcode_record">
-				<Option output="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/leetcode_record.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug"/>
+				<Option output="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/leetcode_record.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/Program_Cpp/leetcode_record/."/>
+					<Add directory="/cygdrive/d/Program_Cpp/leetcode-records/."/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
@@ -43,20 +43,20 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode_record"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode_record"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leetcode_record/fast">
-				<Option output="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/leetcode_record.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug"/>
+				<Option output="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/leetcode_record.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/Program_Cpp/leetcode_record/."/>
+					<Add directory="/cygdrive/d/Program_Cpp/leetcode-records/."/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
@@ -65,162 +65,162 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode_record/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode_record/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode_record/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Program_Cpp/leetcode-records/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/algorithms_data_structures.h">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/include/algorithms_data_structures.h">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/common_libs.h">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/include/common_libs.h">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/include/objects_oriented.h">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/include/objects_oriented.h">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/main.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/main.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_backtracking.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_backtracking.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_binary_search.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_binary_search.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_bitwise_ops.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_bitwise_ops.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dfs_bfs.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_dfs_bfs.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_dp_greedy.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_dp_greedy.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_graph.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_graph.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_list.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_list.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_math.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_math.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_prefix.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_prefix.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_sort.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_sort.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_stack.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_stack.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_string.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_string.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/problems_tree.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/problems_tree.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/canThreePartsEqualSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/canThreePartsEqualSum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/distributeCandies.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/distributeCandies.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/equationPossible.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/equationPossible.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContentChildren.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/findContentChildren.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/findContinuousSequence.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/findContinuousSequence.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/firstMissingPositive.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/firstMissingPositive.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/gameOfLife.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/gameOfLife.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/getLeastNumbers.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/getLeastNumbers.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/hasGroupSizeX.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/hasGroupSizeX.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/intersect.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/intersect.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/intersection.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/intersection.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/isPalindrome.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/isPalindrome.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/isRectangleOverlap.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/isRectangleOverlap.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/lastRemaining.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/lastRemaining.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/longestPalindrome.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/longestPalindrome.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/luckyNumbers.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/luckyNumbers.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/maximalSquare.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/maximalSquare.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/mergeIntervals.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/mergeIntervals.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/minIncrementForUnique.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/minIncrementForUnique.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/movingCount.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/movingCount.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/numRookCaptures.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/numRookCaptures.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/productExceptSelf.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/productExceptSelf.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/removeDuplicates.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/removeDuplicates.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/subarraySum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/subarraySum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/surfaceArea.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/surfaceArea.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/threeSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/threeSum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/threeSumClosest.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/threeSumClosest.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/twoSum.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/twoSum.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/unassorted/wordBreak.cpp">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/unassorted/wordBreak.cpp">
 			<Option target="leetcode_record"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Program_Cpp/leetcode_record/CMakeLists.txt">
+		<Unit filename="/cygdrive/d/Program_Cpp/leetcode-records/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
