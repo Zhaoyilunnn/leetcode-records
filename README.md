@@ -1,2 +1,2 @@
-# leetcode_record
+# leetcode-recors
 Some selected problems in leetcode
