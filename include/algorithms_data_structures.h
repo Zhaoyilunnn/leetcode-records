@@ -146,6 +146,8 @@ public:
     bool isMatchPro(const string& s, const string& p);
     // Regular Expression Matching
     bool isMatch(const string& s_r, const string& p_r);
+    // Best Time to Buy and Sell Stock I
+    int maxProfitI(vector<int>& prices);
     // Best Time to Buy and Sell Stock with Cooldown
     int maxProfit(vector<int>& prices);
     // Dungeon Game
@@ -421,6 +423,8 @@ public:
     ListNode* mergeKLists(vector<ListNode*>& lists);
     // Linked List Cycle
     bool hasCycle(ListNode* head);
+    // Linked List Cycle II
+    ListNode* detectCycle(ListNode* head);
     // Merge Two Sorted Lists
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
     // Reverse Nodes in k-Group

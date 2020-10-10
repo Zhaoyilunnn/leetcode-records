@@ -752,48 +752,69 @@ bool Solution::isMatch(const string& s, const string& p) {
 
 
 /**
+ * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+ * @param prices
+ * @return
+ */
+int Solution::maxProfitI(vector<int> &prices) {
+    int inf = 1e9;
+    int min_price = inf, max_profit = 0;
+    for (int price: prices) {
+        max_profit = max(max_profit, price - min_price);
+        min_price = min(price, min_price);
+    }
+    return max_profit;
+}
+
+
+/**
  * ith element is the price of a given stock on day i
  * After you sell your stock, you cannot buy stock on next day. (i.e. cooldown 1 day)
- * TODO: Optimize pre_pre and pre, pre_pre is the last valid sell before last valid sell before assumed cooldown,
- *       and pre is the last valid sell before assumed cooldown
+ *
  * @param prices
  * @return
  */
 int Solution::maxProfit(vector<int> &prices) {
-    if (prices.empty()) return 0;
-    int n = prices.size();
-    int sell = -1;
-    int res = 0, pre = 0, pre_pre = 0;
-    for (int i = 1; i < n; i++) {
-        if (sell == i - 1) {
-            if (prices[i] > prices[i - 1]) {
-                pre = res;
-                res += prices[i] - prices[i - 1];
-                sell = i;
-            } else {
-                pre_pre = pre;
-                pre = res;
-            }
-        } else if (sell == i - 2 && prices[i] > prices[i - 1]) {
-            int temp = 0;
-            if (i == 1) {
-                res += prices[i] - prices[i - 1];
-                sell = i;
-            }
-            else {
-                temp = pre_pre + prices[i] - prices[i - 1] > prices[i] + res - prices[sell] ?
-                        pre_pre + prices[i] - prices[i - 1] : prices[i] + res - prices[sell];
-                if (temp > pre) {
-                    res = temp;
-                    sell = i;
-                }
-            }
-        } else if (prices[i] > prices[i - 1]) {
-            res += prices[i] - prices[i - 1];
-            sell = i;
-        }
+    /* DP */
+    /*if (prices.empty()) {
+        return 0;
     }
-    return res;
+
+    int n = prices.size();
+    // f[i][0]: 手上持有股票的最大收益
+    // f[i][1]: 手上不持有股票，并且处于冷冻期中的累计最大收益
+    // f[i][2]: 手上不持有股票，并且不在冷冻期中的累计最大收益
+    vector<vector<int>> f(n, vector<int>(3));
+    f[0][0] = -prices[0];
+    for (int i = 1; i < n; ++i) {
+        f[i][0] = max(f[i - 1][0], f[i - 1][2] - prices[i]);
+        f[i][1] = f[i - 1][0] + prices[i];
+        f[i][2] = max(f[i - 1][1], f[i - 1][2]);
+    }
+    return max(f[n - 1][1], f[n - 1][2]);*/
+
+    /* Optimize space */
+    if (prices.empty()) {
+        return 0;
+    }
+
+    int n = prices.size();
+    int f0 = -prices[0];
+    int f1 = 0;
+    int f2 = 0;
+    for (int i = 1; i < n; ++i) {
+        int new_f0 = max(f0, f2 - prices[i]);
+        int new_f1 = f0 + prices[i];
+        int new_f2 = max(f1, f2);
+        f0 = new_f0;
+        f1 = new_f1;
+        f2 = new_f2;
+
+        // Optimized code for C++11
+        /*tie(f0, f1, f2) = make_tuple(max(f0, f2 - prices[i]), f0 + prices[i], max(f1, f2));*/
+    }
+
+    return max(f1, f2);
 }
 
 

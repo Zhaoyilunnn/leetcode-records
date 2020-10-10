@@ -158,6 +158,50 @@ bool Solution::hasCycle(ListNode *head) {
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/linked-list-cycle-ii/
+ * 1. HashSet
+ * 2. O(1) space complexity
+ *    Also double pointer
+ *    f(2n - m) = f(n)
+ *    --> m = n
+ *    --> m is the length from cycle start to cycle end
+ * @param head
+ * @return
+ */
+ListNode* Solution::detectCycle(ListNode *head) {
+    if (!head) return nullptr;
+
+    /* Hash Set */
+    /*unordered_set<ListNode*> visited;
+    auto p = head;
+    while (p) {
+        if (visited.find(p) != visited.end()) return p;
+        visited.insert(p);
+        p = p->next;
+    }*/
+
+    /* Double Pointer */
+    ListNode *slow = head, *fast = head;
+    while (fast != nullptr) {
+        slow = slow->next;
+        if (fast->next == nullptr) {
+            return nullptr;
+        }
+        fast = fast->next->next;
+        if (fast == slow) {
+            ListNode *ptr = head;
+            while (ptr != slow) {
+                ptr = ptr->next;
+                slow = slow->next;
+            }
+            return ptr;
+        }
+    }
+    return nullptr;
+}
+
+
 /********************************************************************************/
 /* Description: Merge two sorted lists
  * Trick: use a previous node*/
