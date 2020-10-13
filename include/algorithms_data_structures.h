@@ -75,6 +75,8 @@ public:
     TreeNode* lowestCommonAncestorBST(TreeNode* root, TreeNode* p, TreeNode* q);
     // Binary Tree Maximum Path Sum
     int maxPathSum(TreeNode* root);
+    // Minimum Absolute Difference BST
+    int getMinimumDifference(TreeNode* root);
     /**************************************************************************/
 
 

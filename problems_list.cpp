@@ -21,18 +21,13 @@ ListNode* Solution::middleNode(ListNode *head) {
 }
 
 
-/*********************************************************/
-/* Solution 1:  递归
- *      Steps:  temp <-- 下下个节点
- *              new head <-- 下个节点
- *              下个节点指向头结点
- *              头节点指向 F(temp)
- * Solution 2:  迭代
- *              first 指向 second->next->next
- *              second 指向 first*/
-/*********************************************************/
+/**
+ * https://leetcode-cn.com/problems/swap-nodes-in-pairs/solution/liang-liang-jiao-huan-lian-biao-zhong-de-jie-di-91/
+ * @param head
+ * @return
+ */
 ListNode* Solution::swapPairs(ListNode *head) {
-    if (!head)
+    /*if (!head)
         return nullptr;
     if (!head->next)
         return head;
@@ -54,7 +49,14 @@ ListNode* Solution::swapPairs(ListNode *head) {
         second->next = first;
         first->next = nullptr;
     }
-    return res;
+    return res;*/
+
+    /* recurrent */
+    if (!head || !head->next) return head;
+    auto new_head = head->next;
+    head->next = swapPairs(head->next->next);
+    new_head->next = head;
+    return new_head;
 }
 
 

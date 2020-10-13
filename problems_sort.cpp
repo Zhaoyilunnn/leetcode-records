@@ -197,7 +197,8 @@ vector<vector<int>> Solution::fourSum(vector<int> &nums, int target) {
 /**
  * https://leetcode-cn.com/problems/sort-colors/
  * Solution: 1. Sort
- *           2. double pointer
+ *           2. single pointer
+ *           3. double pointer
  * @param nums
  */
 void sortColorFast(vector<int>& nums, int l, int r) {
@@ -229,8 +230,8 @@ void Solution::sortColors(vector<int> &nums) {
     /*int l = 0, r = (int) nums.size() - 1;
     sortColorFast(nums, l, r);*/
 
-    /* double pointers */
-    int i = 0, j = (int) nums.size() - 1;
+    /* single pointers */
+    /*int i = 0, j = (int) nums.size() - 1;
     while (i < j) {
         while (nums[j] == 2 && i < j) j--;
         while (nums[i] != 2 && i < j) i++;
@@ -249,5 +250,18 @@ void Solution::sortColors(vector<int> &nums) {
             nums[i] = nums[j];
             nums[j] = temp;
         }
+    }*/
+
+    /* double pointer (three-way partition) */
+    int i = 0, j = 0, k = (int) nums.size() - 1;
+    while (j < k + 1) {
+        if (nums[j] < 1) {
+            swap(nums[j], nums[i]);
+            i++;
+            j++;
+        } else if (nums[j] > 1) {
+            swap(nums[j], nums[k]);
+            k--;
+        } else j++;
     }
 }

@@ -904,3 +904,36 @@ int Solution::maxPathSum(TreeNode *root) {
     maxGain(root, res);
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/
+ * @param root
+ * @return
+ */
+int Solution::getMinimumDifference(TreeNode *root) {
+    stack<TreeNode*> store;
+    auto p = root;
+    while (p) {
+        store.push(p);
+        p = p->left;
+    }
+    int res = INT32_MAX;
+    int temp = -1;
+    while (!store.empty()) {
+        p = store.top();
+        if (temp >= 0) {
+            res = min(p->val - temp, res);
+        }
+        temp = p->val;
+        store.pop();
+        if (p->right) {
+            p = p->right;
+            while (p) {
+                store.push(p);
+                p = p->left;
+            }
+        }
+    }
+    return res;
+}
