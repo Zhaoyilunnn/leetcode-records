@@ -320,6 +320,8 @@ public:
     vector<vector<int>> fourSum(vector<int>& nums, int target);
     // Sort Colors
     void sortColors(vector<int>& nums);
+    // Squares of a Sorted Array
+    vector<int> sortedSquares(vector<int>& A);
     /****************************************************************************/
 
     /****************************************************************************/

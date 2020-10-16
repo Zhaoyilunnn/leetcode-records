@@ -8,10 +8,8 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
-
-    int a = 0;
-    string test = "rrryyyrryyyrr";
-    int res = solution.minimumOperations(test);
+    vector<int> test = {-1};
+    vector<int> res = solution.sortedSquares(test);
 
     return 0;
 }
