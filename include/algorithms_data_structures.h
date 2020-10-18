@@ -13,11 +13,6 @@ public:
     // 分发饼干
     int findContentChildren(vector<int>& g, vector<int>& s);
 
-    // 最长回文子串
-    string longestPalindrome(string s);
-    // Longest Palindrome
-    int longestPalindromeII(string s);
-
 
     /**************************************************************************/
     /* Problems about tree */
@@ -174,6 +169,8 @@ public:
     int longestCommonSubsequence(const string& text1, const string& text2);
     // 秋叶收藏集
     int minimumOperations(const string& leaves);
+    // 最长回文子串
+    string longestPalindrome(string s);
     /*******************************************************************/
 
 
@@ -266,6 +263,8 @@ public:
     string shortestPalindrome(const string& s);
     // Permutation Sequence
     string getPermutation(int n, int k);
+    // Longest Palindrome
+    int longestPalindromeII(string s);
     /************************************************************/
 
     /************************************************************/
@@ -274,6 +273,8 @@ public:
     vector<string> generateParenthesis(int n);
     // N-Queens
     vector<vector<string>> solveNQueens(int n);
+    // N-Queens II
+    int totalQueens(int n);
     /************************************************************/
 
 
@@ -437,6 +438,8 @@ public:
     ListNode* removeDuplicateNodes(ListNode* head);
     // Add Two Numbers
     ListNode* addTwoNumbersII(ListNode* l1, ListNode* l2);
+    // Remove Nth Node From End of List
+    ListNode* removeNthFromEnd(ListNode* head, int n);
     /******************************************************/
 
     /******************************************************/

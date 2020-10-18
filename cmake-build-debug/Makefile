@@ -899,33 +899,6 @@ unassorted/lastRemaining.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.s
 .PHONY : unassorted/lastRemaining.cpp.s
 
-unassorted/longestPalindrome.o: unassorted/longestPalindrome.cpp.o
-
-.PHONY : unassorted/longestPalindrome.o
-
-# target to build an object file
-unassorted/longestPalindrome.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o
-.PHONY : unassorted/longestPalindrome.cpp.o
-
-unassorted/longestPalindrome.i: unassorted/longestPalindrome.cpp.i
-
-.PHONY : unassorted/longestPalindrome.i
-
-# target to preprocess a source file
-unassorted/longestPalindrome.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.i
-.PHONY : unassorted/longestPalindrome.cpp.i
-
-unassorted/longestPalindrome.s: unassorted/longestPalindrome.cpp.s
-
-.PHONY : unassorted/longestPalindrome.s
-
-# target to generate assembly for a file
-unassorted/longestPalindrome.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.s
-.PHONY : unassorted/longestPalindrome.cpp.s
-
 unassorted/luckyNumbers.o: unassorted/luckyNumbers.cpp.o
 
 .PHONY : unassorted/luckyNumbers.o
@@ -1397,9 +1370,6 @@ help:
 	@echo "... unassorted/lastRemaining.o"
 	@echo "... unassorted/lastRemaining.i"
 	@echo "... unassorted/lastRemaining.s"
-	@echo "... unassorted/longestPalindrome.o"
-	@echo "... unassorted/longestPalindrome.i"
-	@echo "... unassorted/longestPalindrome.s"
 	@echo "... unassorted/luckyNumbers.o"
 	@echo "... unassorted/luckyNumbers.i"
 	@echo "... unassorted/luckyNumbers.s"

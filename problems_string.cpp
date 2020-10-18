@@ -789,3 +789,31 @@ string Solution::getPermutation(int n, int k) {
     }
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/longest-palindrome/
+ * @param s
+ * @return
+ */
+int Solution::longestPalindromeII(string s) {
+    vector<int> chars(52, 0);
+    for (char & i : s) {
+        if (i-'a' >= 0)
+            chars[i-'a']++;
+        else
+            chars[i-'A'+26]++;
+    }
+    int res = 0;
+    for (auto num : chars) {
+        if (num <= 0)
+            continue;
+        if (num % 2 == 0)
+            res += num;
+        else
+            res += --num;
+    }
+    if (res < s.size())
+        res++;
+    return res;
+}

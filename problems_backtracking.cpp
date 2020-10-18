@@ -73,6 +73,7 @@ bool Solution::validPalindrome(const string& s) {
 
 /**
  * https://leetcode-cn.com/problems/n-queens/
+ * TODO: bit-wise method
  * @param n
  * @return
  */
@@ -111,3 +112,29 @@ vector<vector<string>> Solution::solveNQueens(int n) {
     return res;
 }
 
+
+/**
+ * https://leetcode-cn.com/problems/n-queens-ii/
+ * @param n
+ * @return
+ */
+void helperII(int n, int rowIndex, vector<string>& cur_res, int& res) {
+    if (rowIndex == n) {
+        res++;
+        return;
+    }
+    for (int i = 0; i < n; i++) {
+        if (isValid(n, rowIndex, i, cur_res)) {
+            cur_res[rowIndex][i] = 'Q';
+            helperII(n, rowIndex + 1, cur_res, res);
+            cur_res[rowIndex][i] = '.';
+        }
+    }
+}
+
+int Solution::totalQueens(int n) {
+    int res = 0;
+    vector<string> cur_res(n, string(n, '.'));
+    helperII(n, 0, cur_res, res);
+    return res;
+}

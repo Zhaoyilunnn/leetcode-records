@@ -332,3 +332,26 @@ ListNode* Solution::addTwoNumbersII(ListNode *l1, ListNode *l2) {
     }
     return vHead.next;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
+ * @param head
+ * @param n
+ * @return
+ */
+ListNode* Solution::removeNthFromEnd(ListNode *head, int n) {
+    if (!head) return nullptr;
+    auto fast = head, slow = head;
+    int i = 0;
+    while (fast->next) {
+        if (i >= n) slow = slow->next;
+        fast = fast->next;
+        i++;
+    }
+    if (i == n - 1) return head->next;
+    else {
+        slow->next = slow->next->next;
+        return head;
+    }
+}

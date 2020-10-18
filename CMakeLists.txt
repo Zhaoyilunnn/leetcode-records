@@ -9,7 +9,6 @@ add_executable(leetcode_record
         problems_tree.cpp
         unassorted/findContentChildren.cpp
         include/algorithms_data_structures.h
-        unassorted/longestPalindrome.cpp
         main.cpp
         unassorted/distributeCandies.cpp
         unassorted/removeDuplicates.cpp

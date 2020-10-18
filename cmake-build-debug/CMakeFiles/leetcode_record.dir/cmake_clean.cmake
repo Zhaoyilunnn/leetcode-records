@@ -27,7 +27,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/unassorted/isPalindrome.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/isRectangleOverlap.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o"
-  "CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/maximalSquare.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/mergeIntervals.cpp.o"
