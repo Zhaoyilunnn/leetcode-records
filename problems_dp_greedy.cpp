@@ -1196,4 +1196,32 @@ string Solution::longestPalindrome(string s) {
 }
 
 
-
+/**
+ * https://leetcode-cn.com/problems/video-stitching/
+ * @param clips
+ * @param T
+ * @return
+ */
+int Solution::videoStitching(vector<vector<int>> &clips, int T) {
+    unordered_map<int, int> map_clips;
+    for (auto c : clips) {
+        auto it = map_clips.find(c[0]);
+        if (it != map_clips.end()) {
+            if (it->second < c[1]) it->second = c[1];
+        } else map_clips[c[0]] = c[1];
+    }
+    int res = 0;
+    int cur = 0, prev = 0, next = 0;
+    if (map_clips.find(0) == map_clips.end()) return -1;
+    cur = map_clips[0];
+    while (cur < T) {
+        for (int j = prev; j <= cur; j++) {
+            next = max(next, map_clips[j]);
+        }
+        if (cur == next) return -1;
+        prev = cur;
+        cur = next;
+        res += 1;
+    }
+    return res;
+}

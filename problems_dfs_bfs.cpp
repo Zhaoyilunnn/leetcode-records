@@ -133,59 +133,17 @@ int Solution::maxAreaOfIsland(vector<vector<int> > &grid) {
 
 
 int Solution::islandPerimeter(vector<vector<int> > &grid) {
-    queue<pair<int, int>> q;
-    vector<int> zeros(grid[0].size(), 0);
-    vector<vector<int>> visited(grid.size(), zeros);
-    pair<int, int> p;
-    int result = 4;
-    if (findNewNodePro(grid, visited, p))
-        q.push(p);
-    while (!q.empty()) {
-        int size = q.size();
-        for (int i = 0; i < size; i++) {
-            int m = q.front().first;
-            int n = q.front().second;
-            if (m > 0) {
-                if (grid[m-1][n] == 1 && visited[m-1][n] == 0) {
-                    p = make_pair(m-1, n);
-                    q.push(p);
-                    visited[m-1][n] = 1;
-                    result += 2;
-                } else if (visited[m-1][n] == 1)
-                    result -= 2;
+    int res = 0, m = grid.size(), n = grid[0].size();
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (grid[i][j]) {
+                res += 4;
+                if (i > 0 && grid[i - 1][j]) res -= 2;
+                if (j > 0 && grid[i][j - 1]) res -= 2;
             }
-            if (m < grid.size()-1) {
-                if (grid[m+1][n] == 1 && visited[m+1][n] == 0) {
-                    p = make_pair(m+1, n);
-                    q.push(p);
-                    visited[m+1][n] = 1;
-                    result += 2;
-                } else if (visited[m+1][n] == 1)
-                    result -= 2;
-            }
-            if (n > 0) {
-                if (grid[m][n-1] == 1 && visited[m][n-1] == 0) {
-                    p = make_pair(m, n-1);
-                    q.push(p);
-                    visited[m][n-1] = 1;
-                    result += 2;
-                } else if (visited[m][n-1] == 1)
-                    result -= 2;
-            }
-            if (n < grid[0].size()-1) {
-                if (grid[m][n+1] == 1 && visited[m][n+1] == 0) {
-                    p = make_pair(m, n+1);
-                    q.push(p);
-                    visited[m][n+1] = 1;
-                    result += 2;
-                } else if (visited[m][n+1] == 1)
-                    result -= 2;
-            }
-            q.pop();
-            visited[m][n] = -1;
         }
     }
-    return result;
+    return res;
 }
 
 

@@ -171,6 +171,8 @@ public:
     int minimumOperations(const string& leaves);
     // 最长回文子串
     string longestPalindrome(string s);
+    // Video Stitching
+    int videoStitching(vector<vector<int>>& clips, int T);
     /*******************************************************************/
 
 
