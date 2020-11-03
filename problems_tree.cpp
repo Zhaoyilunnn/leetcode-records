@@ -311,12 +311,6 @@ bool Solution::isSubtree(TreeNode *s, TreeNode *t) {
 }
 
 
-/*****************************************************************************/
-/*
- * Description: Given a binary tree, find the lowest common ancestor (LCA) of
- * two given nodes in the tree.
- * */
-/*****************************************************************************/
 vector<TreeNode*> inOrder(TreeNode* root) {
     stack<TreeNode*> nodes;
     vector<TreeNode*> in_order_vals;
@@ -357,8 +351,28 @@ vector<TreeNode*> level(TreeNode* root) {
     return level_vals;
 }
 
+
+bool isNodeChildren(TreeNode* root, TreeNode* p, TreeNode* q, TreeNode** res) {
+    if (!root) return false;
+    bool is_cur = root == p || root == q;
+    bool is_r = isNodeChildren(root->right, p, q, res);
+    bool is_l = isNodeChildren(root->left, p, q, res);
+    if ((is_r && is_l) || (is_r && is_cur) || (is_l && is_cur)) {
+        *res = root;
+    }
+    return is_r || is_l || is_cur;
+}
+
+/**
+ * https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/
+ * TODO: Any optimization?
+ * @param root
+ * @param p
+ * @param q
+ * @return
+ */
 TreeNode* Solution::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
-    vector<TreeNode*> in_order = inOrder(root);
+    /*vector<TreeNode*> in_order = inOrder(root);
     vector<TreeNode*> level_order = level(root);
     int start = 0;
     while (start < in_order.size()) {
@@ -378,7 +392,10 @@ TreeNode* Solution::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *
     candidates.insert(in_order[end]);
     for (auto* i : level_order)
         if (candidates.find(i) != candidates.end()) return i;
-    return nullptr;
+    return nullptr;*/
+    TreeNode* res = nullptr;
+    isNodeChildren(root, p, q, &res);
+    return res;
 }
 
 /***************************************************************************/
@@ -937,3 +954,5 @@ int Solution::getMinimumDifference(TreeNode *root) {
     }
     return res;
 }
+
+

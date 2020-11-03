@@ -115,10 +115,6 @@ CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../include/algori
 CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/unassorted/lastRemaining.cpp.o: ../unassorted/lastRemaining.cpp
 
-CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o: ../include/algorithms_data_structures.h
-CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o: ../include/common_libs.h
-CMakeFiles/leetcode_record.dir/unassorted/longestPalindrome.cpp.o: ../unassorted/longestPalindrome.cpp
-
 CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/unassorted/luckyNumbers.cpp.o: ../unassorted/luckyNumbers.cpp
@@ -170,6 +166,10 @@ CMakeFiles/leetcode_record.dir/unassorted/threeSumClosest.cpp.o: ../unassorted/t
 CMakeFiles/leetcode_record.dir/unassorted/twoSum.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/unassorted/twoSum.cpp.o: ../include/common_libs.h
 CMakeFiles/leetcode_record.dir/unassorted/twoSum.cpp.o: ../unassorted/twoSum.cpp
+
+CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.o: ../include/algorithms_data_structures.h
+CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.o: ../include/common_libs.h
+CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.o: ../unassorted/validMountainArray.cpp
 
 CMakeFiles/leetcode_record.dir/unassorted/wordBreak.cpp.o: ../include/algorithms_data_structures.h
 CMakeFiles/leetcode_record.dir/unassorted/wordBreak.cpp.o: ../include/common_libs.h

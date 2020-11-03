@@ -1250,6 +1250,33 @@ unassorted/twoSum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/twoSum.cpp.s
 .PHONY : unassorted/twoSum.cpp.s
 
+unassorted/validMountainArray.o: unassorted/validMountainArray.cpp.o
+
+.PHONY : unassorted/validMountainArray.o
+
+# target to build an object file
+unassorted/validMountainArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.o
+.PHONY : unassorted/validMountainArray.cpp.o
+
+unassorted/validMountainArray.i: unassorted/validMountainArray.cpp.i
+
+.PHONY : unassorted/validMountainArray.i
+
+# target to preprocess a source file
+unassorted/validMountainArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.i
+.PHONY : unassorted/validMountainArray.cpp.i
+
+unassorted/validMountainArray.s: unassorted/validMountainArray.cpp.s
+
+.PHONY : unassorted/validMountainArray.s
+
+# target to generate assembly for a file
+unassorted/validMountainArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_record.dir/build.make CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.s
+.PHONY : unassorted/validMountainArray.cpp.s
+
 unassorted/wordBreak.o: unassorted/wordBreak.cpp.o
 
 .PHONY : unassorted/wordBreak.o
@@ -1409,6 +1436,9 @@ help:
 	@echo "... unassorted/twoSum.o"
 	@echo "... unassorted/twoSum.i"
 	@echo "... unassorted/twoSum.s"
+	@echo "... unassorted/validMountainArray.o"
+	@echo "... unassorted/validMountainArray.i"
+	@echo "... unassorted/validMountainArray.s"
 	@echo "... unassorted/wordBreak.o"
 	@echo "... unassorted/wordBreak.i"
 	@echo "... unassorted/wordBreak.s"

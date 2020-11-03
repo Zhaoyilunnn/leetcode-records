@@ -176,6 +176,9 @@ public:
     /*******************************************************************/
 
 
+    // Valid Mountain Array
+    bool validMountainArray(vector<int>& A);
+
     // 24 Game
     bool judgePoint24(vector<int>& nums);
 

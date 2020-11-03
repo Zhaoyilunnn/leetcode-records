@@ -40,6 +40,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_record.dir/unassorted/threeSum.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/threeSumClosest.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/twoSum.cpp.o"
+  "CMakeFiles/leetcode_record.dir/unassorted/validMountainArray.cpp.o"
   "CMakeFiles/leetcode_record.dir/unassorted/wordBreak.cpp.o"
   "leetcode_record.exe"
   "leetcode_record.pdb"
