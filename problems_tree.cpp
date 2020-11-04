@@ -365,7 +365,6 @@ bool isNodeChildren(TreeNode* root, TreeNode* p, TreeNode* q, TreeNode** res) {
 
 /**
  * https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/
- * TODO: Any optimization?
  * @param root
  * @param p
  * @param q
