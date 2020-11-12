@@ -1231,32 +1231,19 @@ int Solution::videoStitching(vector<vector<int>> &clips, int T) {
  * @param nums
  */
 void Solution::nextPermutation(vector<int> &nums) {
-    int n = nums.size();
-    int start = -1, end = -1;
-    for (int i = n - 1; i >= 0; --i) {
-        if (start >= i) {
-            break;
-        }
-        for (int j = i - 1; j >= 0; --j) {
-            if (nums[j] < nums[i]) {
-                if (start < 0 || j >= start) {
-                    if (j == start) {
-                        if (nums[i] < nums[end]) {
-                            end = i;
-                        }
-                    } else {
-                        end = i;
-                    }
-                    start = j;
+    int i = nums.size() - 2, j = nums.size() - 1;
+    while (i >= 0) {
+        if (nums[i] < nums[i + 1]) {
+            while (j >= 0) {
+                if (nums[j] > nums[i]) {
+                    swap(nums[i], nums[j]);
+                    reverse(nums.begin() + i + 1, nums.end());
+                    return;
                 }
-                break;
+                j--;
             }
         }
+        i--;
     }
-    if (start >= 0 && end >= 0) {
-        swap(nums[start], nums[end]);
-        sort(nums.begin()+start+1, nums.end());
-    } else {
-        reverse(nums.begin(), nums.end());
-    }
+    reverse(nums.begin(), nums.end());
 }
