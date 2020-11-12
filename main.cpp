@@ -9,7 +9,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {0, 1, 3, 1};
+    vector<int> test = {4, 2, 0, 2, 3, 2, 0};
+    solution.nextPermutation(test);
 
     bool res = solution.validMountainArray(test);
 

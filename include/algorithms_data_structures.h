@@ -72,6 +72,8 @@ public:
     int maxPathSum(TreeNode* root);
     // Minimum Absolute Difference BST
     int getMinimumDifference(TreeNode* root);
+    // Insert Interval
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval);
     /**************************************************************************/
 
 
@@ -173,6 +175,8 @@ public:
     string longestPalindrome(string s);
     // Video Stitching
     int videoStitching(vector<vector<int>>& clips, int T);
+    // Next Permutation
+    void nextPermutation(vector<int>& nums);
     /*******************************************************************/
 
 
@@ -328,6 +332,8 @@ public:
     void sortColors(vector<int>& nums);
     // Squares of a Sorted Array
     vector<int> sortedSquares(vector<int>& A);
+    // Sort Array By Parity II
+    vector<int> sortArrayByParityII(vector<int>& A);
     /****************************************************************************/
 
     /****************************************************************************/

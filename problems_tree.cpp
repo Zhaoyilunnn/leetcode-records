@@ -955,3 +955,51 @@ int Solution::getMinimumDifference(TreeNode *root) {
 }
 
 
+/**
+ * https://leetcode-cn.com/problems/insert-interval/
+ * TODO: segment tree
+ * @param intervals
+ * @param newInterval
+ * @return
+ */
+vector<vector<int>> Solution::insert(vector<vector<int>> &intervals, vector<int> &newInterval) {
+    if (intervals.empty()) {
+        return {newInterval};
+    }
+    vector<vector<int>> res;
+    int start = 0, end = 0, n = intervals.size();
+    int first = newInterval[0], second = newInterval[1];
+    for (int i = 0; i < n; i++) {
+        int a = intervals[i][0], b = intervals[i][1];
+        if (first >= a && first <= b) {
+            start = a;
+        }
+        if (second >= a && second <= b) {
+            end = b;
+        }
+        if ((i > 0 && first > intervals[i - 1][1] && first < a)
+            || (i == 0 && first < a)
+            || (i == n - 1 && first > b)) {
+            start = first;
+        }
+        if ((i == 0 && second < a)
+            || (i > 0 && second > intervals[i - 1][1] && second < a)
+            || (i == n - 1 && second > b)) {
+            end = second;
+        }
+    }
+    int i = 0;
+    while (i < n && intervals[i][1] < start) {
+        res.push_back(intervals[i]);
+        i++;
+    }
+    res.push_back({start, end});
+    while (i < n && intervals[i][1] <= end) {
+        i++;
+    }
+    while (i < n) {
+        res.push_back(intervals[i]);
+        i++;
+    }
+    return res;
+}

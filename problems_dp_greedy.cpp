@@ -1225,3 +1225,38 @@ int Solution::videoStitching(vector<vector<int>> &clips, int T) {
     }
     return res;
 }
+
+/**
+ * https://leetcode-cn.com/problems/next-permutation/
+ * @param nums
+ */
+void Solution::nextPermutation(vector<int> &nums) {
+    int n = nums.size();
+    int start = -1, end = -1;
+    for (int i = n - 1; i >= 0; --i) {
+        if (start >= i) {
+            break;
+        }
+        for (int j = i - 1; j >= 0; --j) {
+            if (nums[j] < nums[i]) {
+                if (start < 0 || j >= start) {
+                    if (j == start) {
+                        if (nums[i] < nums[end]) {
+                            end = i;
+                        }
+                    } else {
+                        end = i;
+                    }
+                    start = j;
+                }
+                break;
+            }
+        }
+    }
+    if (start >= 0 && end >= 0) {
+        swap(nums[start], nums[end]);
+        sort(nums.begin()+start+1, nums.end());
+    } else {
+        reverse(nums.begin(), nums.end());
+    }
+}
