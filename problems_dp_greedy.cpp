@@ -1231,7 +1231,7 @@ int Solution::videoStitching(vector<vector<int>> &clips, int T) {
  * @param nums
  */
 void Solution::nextPermutation(vector<int> &nums) {
-    int i = nums.size() - 2, j = nums.size() - 1;
+    int i = (int) nums.size() - 2, j = (int) nums.size() - 1;
     while (i >= 0) {
         if (nums[i] < nums[i + 1]) {
             while (j >= 0) {
@@ -1246,4 +1246,47 @@ void Solution::nextPermutation(vector<int> &nums) {
         i--;
     }
     reverse(nums.begin(), nums.end());
+}
+
+/**
+ * https://leetcode-cn.com/problems/remove-k-digits/
+ * @param num
+ * @param k
+ * @return
+ */
+string Solution::removeKDigits(const string &num, int k) {
+    vector<char> single_stack;
+    int n = num.size(), i = 0, count = 0;
+    while (i < n) {
+        if (single_stack.empty()) {
+            single_stack.push_back(num[i]);
+            i++;
+        } else {
+            char top = single_stack[single_stack.size() - 1];
+            int num_i = num[i] - '0';
+            int top_d = top - '0';
+            if (num_i >= top_d) {
+                single_stack.push_back(num[i]);
+                i++;
+            } else {
+                if (count < k) {
+                    single_stack.pop_back();
+                    ++count;
+                } else {
+                    single_stack.push_back(num[i]);
+                    i++;
+                }
+            }
+        }
+    }
+    string res;
+    int j = 0;
+    while (j < single_stack.size() && single_stack[j] == '0') {
+        j++;
+    }
+    for (; j < n - k; j++) {
+        res.push_back(single_stack[j]);
+    }
+    if (res.empty()) return "0";
+    return res;
 }

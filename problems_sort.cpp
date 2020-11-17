@@ -307,3 +307,37 @@ vector<int> Solution::sortArrayByParityII(vector<int> &A) {
     }
     return A;
 }
+
+/**
+ * https://leetcode-cn.com/problems/matrix-cells-in-distance-order/
+ * TODO: Bucket sort
+ * @param R
+ * @param C
+ * @param r0
+ * @param c0
+ * @return
+ */
+vector<vector<int>> Solution::allCellsDistOrder(int R, int C, int r0, int c0) {
+    queue<pair<int, int>> store;
+    vector<vector<int>> direct = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    vector<vector<int>> visited(R, vector<int>(C, 0));
+    vector<vector<int>> res;
+    store.emplace(r0, c0);
+    visited[r0][c0] = 1;
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; ++i) {
+            int x = store.front().first, y = store.front().second;
+            res.push_back({x, y});
+            for (auto d : direct) {
+                int a = x + d[0], b = y + d[1];
+                if (a >= 0 && a < R && b >= 0 && b < C && !visited[a][b]) {
+                    store.emplace(a, b);
+                    visited[a][b] = 1;
+                }
+            }
+            store.pop();
+        }
+    }
+    return res;
+}

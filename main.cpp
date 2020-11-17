@@ -9,12 +9,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {4, 2, 0, 2, 3, 2, 0};
-    solution.nextPermutation(test);
-
-    bool res = solution.validMountainArray(test);
-
-
+    string test = "10";
+    string res = solution.removeKDigits(test, 2);
 
     return 0;
 }

@@ -177,6 +177,8 @@ public:
     int videoStitching(vector<vector<int>>& clips, int T);
     // Next Permutation
     void nextPermutation(vector<int>& nums);
+    // Remove K Digits
+    string removeKDigits(const string& num, int k);
     /*******************************************************************/
 
 
@@ -334,6 +336,8 @@ public:
     vector<int> sortedSquares(vector<int>& A);
     // Sort Array By Parity II
     vector<int> sortArrayByParityII(vector<int>& A);
+    // Matrix Cells in Distance Order
+    vector<vector<int>> allCellsDistOrder(int R, int C, int r0, int c0);
     /****************************************************************************/
 
     /****************************************************************************/
