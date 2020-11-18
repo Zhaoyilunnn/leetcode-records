@@ -9,8 +9,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    string test = "10";
-    string res = solution.removeKDigits(test, 2);
+    vector<int> test = {3, 3, 4}, cost  ={3, 4, 4};
+    int res = solution.canCompleteCircuit(test, cost);
 
     return 0;
 }

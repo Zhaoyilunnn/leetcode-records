@@ -316,6 +316,9 @@ public:
     // 圈中最后剩下的数字
     int lastRemaining(int n, int m);
 
+    // Gas Station
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
+
 
 
     /****************************************************************************/
