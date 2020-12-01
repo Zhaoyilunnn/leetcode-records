@@ -341,3 +341,51 @@ vector<vector<int>> Solution::allCellsDistOrder(int R, int C, int r0, int c0) {
     }
     return res;
 }
+
+/**
+ * https://leetcode-cn.com/problems/sort-list/
+ * TODO: O(1) space
+ * @param head
+ * @return
+ */
+ListNode* mergeTwoList(ListNode* head1, ListNode* head2) {
+    ListNode new_head(0);
+    ListNode* p = &new_head;
+    while (head1 || head2) {
+        if (head1 && head2) {
+            if (head1->val < head2->val) {
+                p->next = head1;
+                head1 = head1->next;
+            } else {
+                p->next = head2;
+                head2 = head2->next;
+            }
+        } else if (head1) {
+            p->next = head1;
+            head1 = head1->next;
+        } else {
+            p->next = head2;
+            head2 = head2->next;
+        }
+        p = p->next;
+    }
+    return new_head.next;
+}
+
+ListNode* Solution::sortList(ListNode *head) {
+    if (!head->next) {
+        return head;
+    }
+    ListNode* mid = head, *fast = head, *pre = head;
+    while (fast && fast->next) {
+        pre = mid;
+        mid = mid->next;
+        fast = fast->next->next;
+    }
+    mid = pre->next;
+    pre->next = nullptr;
+    head = sortList(head);
+    mid = sortList(mid);
+    head = mergeTwoList(head, mid);
+    return head;
+}

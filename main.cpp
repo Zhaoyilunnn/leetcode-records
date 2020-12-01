@@ -4,13 +4,22 @@
 #include "include/algorithms_data_structures.h"
 #include "include/objects_oriented.h"
 
+extern ListNode* mergeTwoList(ListNode* head1, ListNode* head2);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {3, 3, 4}, cost  ={3, 4, 4};
-    int res = solution.canCompleteCircuit(test, cost);
+    ListNode a(1);
+    ListNode b(2);
+    ListNode c(3);
+    ListNode d(4);
+    ListNode e(5);
+    a.next = &c;
+    c.next = &b;
+    b.next = &e;
+    e.next = &d;
+    auto res = solution.sortList(&a);
 
     return 0;
 }

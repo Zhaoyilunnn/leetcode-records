@@ -341,6 +341,8 @@ public:
     vector<int> sortArrayByParityII(vector<int>& A);
     // Matrix Cells in Distance Order
     vector<vector<int>> allCellsDistOrder(int R, int C, int r0, int c0);
+    // Sort List
+    ListNode* sortList(ListNode* head);
     /****************************************************************************/
 
     /****************************************************************************/
@@ -376,6 +378,8 @@ public:
     vector<int> twoSumPro(vector<int>& numbers, int target);
     // 旋转数组的最小数字
     int minArray(vector<int>& numbers);
+    // Find First and Last Position of Element in Sorted Array
+    vector<int> searchRange(vector<int>& nums, int target);
     /********************************************************/
 
     // Two Sum

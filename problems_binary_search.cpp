@@ -153,3 +153,49 @@ int Solution::minArray(vector<int> &numbers) {
     }
     return numbers[l];
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * @param nums
+ * @param target
+ * @return
+ */
+vector<int> Solution::searchRange(vector<int> &nums, int target) {
+    int n = nums.size();
+    int l = 0, r = n - 1;
+    int start = -1, end = -1;
+    while (l <= r) {
+        int mid = l + (r - l) / 2;
+        if (nums[mid] > target) {
+            r = mid - 1;
+        } else if (nums[mid] < target) {
+            l = mid + 1;
+        } else {
+            if (mid > 0 && nums[mid] == nums[mid - 1]) {
+                r = mid - 1;
+            } else {
+                start = mid;
+                break;
+            }
+        }
+    }
+    if (start < 0) return {-1, -1};
+    l = start, r = n - 1;
+    while (l <= r) {
+        int mid = l + (r - l) / 2;
+        if (nums[mid] > target) {
+            r = mid - 1;
+        } else if (nums[mid] < target) {
+            l = mid + 1;
+        } else {
+            if (mid < nums.size() - 1 && nums[mid] == nums[mid + 1]) {
+                l = mid + 1;
+            } else {
+                end = mid;
+                break;
+            }
+        }
+    }
+    return {start, end};
+}
