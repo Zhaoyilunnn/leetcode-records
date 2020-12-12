@@ -10,16 +10,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    ListNode a(1);
-    ListNode b(2);
-    ListNode c(3);
-    ListNode d(4);
-    ListNode e(5);
-    a.next = &c;
-    c.next = &b;
-    b.next = &e;
-    e.next = &d;
-    auto res = solution.sortList(&a);
+    vector<int> test = {1,4,5,55,6,7,2,2,3,1};
+    int res = solution.wiggleMaxLength(test);
 
     return 0;
 }

@@ -179,6 +179,10 @@ public:
     void nextPermutation(vector<int>& nums);
     // Remove K Digits
     string removeKDigits(const string& num, int k);
+    // Task Scheduler
+    int leastInterval(vector<char>& tasks, int n);
+    // Wiggle Subsequence
+    int wiggleMaxLength(vector<int>& nums);
     /*******************************************************************/
 
 

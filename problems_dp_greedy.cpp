@@ -1290,3 +1290,82 @@ string Solution::removeKDigits(const string &num, int k) {
     if (res.empty()) return "0";
     return res;
 }
+
+
+/**
+ * https://leetcode-cn.com/problems/task-scheduler/
+ * TODO: Understand and implementation
+ * @param tasks
+ * @param n
+ * @return
+ */
+int Solution::leastInterval(vector<char> &tasks, int n) {
+    unordered_map<char, int> freq;
+    for (char ch: tasks) {
+        ++freq[ch];
+    }
+
+    // 任务总数
+    int m = freq.size();
+    vector<int> nextValid, rest;
+    for (auto [_, v]: freq) {
+        nextValid.push_back(1);
+        rest.push_back(v);
+    }
+
+    int time = 0;
+    for (int i = 0; i < tasks.size(); ++i) {
+        ++time;
+        int minNextValid = INT32_MAX;
+        for (int j = 0; j < m; ++j) {
+            if (rest[j]) {
+                minNextValid = min(minNextValid, nextValid[j]);
+            }
+        }
+        time = max(time, minNextValid);
+        int best = -1;
+        for (int j = 0; j < m; ++j) {
+            if (rest[j] && nextValid[j] <= time) {
+                if (best == -1 || rest[j] > rest[best]) {
+                    best = j;
+                }
+            }
+        }
+        nextValid[best] = time + n + 1;
+        --rest[best];
+    }
+
+    return time;
+}
+
+/**
+ * https://leetcode-cn.com/problems/wiggle-subsequence/
+ * @param nums
+ * @return
+ */
+int Solution::wiggleMaxLength(vector<int> &nums) {
+    if (nums.empty()) {
+        return 0;
+    }
+    int n = nums.size();
+    if (n < 2) {
+        return 1;
+    }
+    int count_peak = 0;
+    bool flag = false;
+    bool flag_flag = false;
+    int peak_id = 0;
+    for (int i = 1; i < n - 1; i++) {
+        if (nums[i] != nums[i - 1] || nums[i] != nums[i + 1]) {
+            flag_flag = true;
+        }
+        int a = nums[i] - nums[peak_id];
+        int b = nums[i + 1] - nums[i];
+        if (min(a, b) < a + b && a + b < max(a, b)) {
+            peak_id = i;
+            count_peak++;
+            flag = true;
+        }
+    }
+    return flag ? count_peak + 2 : (flag_flag ? 2 : 1);
+}
