@@ -183,6 +183,8 @@ public:
     int leastInterval(vector<char>& tasks, int n);
     // Wiggle Subsequence
     int wiggleMaxLength(vector<int>& nums);
+    // Remove Duplicate Letters
+    string removeDuplicateLetters(const string& s);
     /*******************************************************************/
 
 
