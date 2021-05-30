@@ -343,14 +343,14 @@ vector<TreeNode*> level(TreeNode* root) {
  * @param q
  * @return
  */
-bool isNodeChild(TreeNode* node, TreeNode* p, TreeNode* q, TreeNode** ans) {
+bool isNodeChild(TreeNode* node, TreeNode* p, TreeNode* q, TreeNode** res) {
   if (node == nullptr) {
     return false;
   }
-  bool in_left = isNodeChild(node->left, p, q, ans);
-  bool in_right = isNodeChild(node->right, p, q, ans);
+  bool in_left = isNodeChild(node->left, p, q, res);
+  bool in_right = isNodeChild(node->right, p, q, res);
   if ((in_left && in_right) || ((node == p || node == q) && (in_left || in_right))) {
-    *ans = node;
+    *res = node;
   }
   return in_left || in_right || (node == p || node == q);
 }
