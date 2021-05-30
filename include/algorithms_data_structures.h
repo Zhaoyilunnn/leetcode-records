@@ -237,6 +237,8 @@ public:
     bool exist(vector<vector<char>>& board, const string& word);
     // Permutations II
     vector<vector<int>> permuteUnique(vector<int>& nums);
+    // Bricks Falling When Hit
+    vector<int> hitBricks(vector<vector<int>>& grid, vector<vector<int>>& hits);
     /************************************************************/
 
 
