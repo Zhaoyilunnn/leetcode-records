@@ -336,17 +336,6 @@ vector<TreeNode*> level(TreeNode* root) {
 }
 
 
-bool isNodeChildren(TreeNode* root, TreeNode* p, TreeNode* q, TreeNode** res) {
-    if (!root) return false;
-    bool is_cur = root == p || root == q;
-    bool is_r = isNodeChildren(root->right, p, q, res);
-    bool is_l = isNodeChildren(root->left, p, q, res);
-    if ((is_r && is_l) || (is_r && is_cur) || (is_l && is_cur)) {
-        *res = root;
-    }
-    return is_r || is_l || is_cur;
-}
-
 /**
  * https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/
  * @param root
@@ -354,31 +343,22 @@ bool isNodeChildren(TreeNode* root, TreeNode* p, TreeNode* q, TreeNode** res) {
  * @param q
  * @return
  */
+bool isNodeChild(TreeNode* node, TreeNode* p, TreeNode* q, TreeNode** ans) {
+  if (node == nullptr) {
+    return false;
+  }
+  bool in_left = isNodeChild(node->left, p, q, ans);
+  bool in_right = isNodeChild(node->right, p, q, ans);
+  if ((in_left && in_right) || ((node == p || node == q) && (in_left || in_right))) {
+    *ans = node;
+  }
+  return in_left || in_right || (node == p || node == q);
+}
+
 TreeNode* Solution::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
-    /*vector<TreeNode*> in_order = inOrder(root);
-    vector<TreeNode*> level_order = level(root);
-    int start = 0;
-    while (start < in_order.size()) {
-        if (in_order[start]->val == p->val || in_order[start]->val == q->val) break;
-        else start++;
-    }
-    unordered_set<TreeNode*> candidates;
-    candidates.insert(in_order[start]);
-    int end = start + 1;
-    while (end < in_order.size()) {
-        if (in_order[end]->val == p->val || in_order[end]->val == q->val) break;
-        else {
-            candidates.insert(in_order[end]);
-            end++;
-        }
-    }
-    candidates.insert(in_order[end]);
-    for (auto* i : level_order)
-        if (candidates.find(i) != candidates.end()) return i;
-    return nullptr;*/
-    TreeNode* res = nullptr;
-    isNodeChildren(root, p, q, &res);
-    return res;
+  TreeNode* ans;
+  isNodeChild(root, p, q, &ans);
+  return ans;
 }
 
 /***************************************************************************/

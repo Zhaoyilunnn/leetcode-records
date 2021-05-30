@@ -760,4 +760,88 @@ vector<vector<int>> Solution::permuteUnique(vector<int> &nums) {
     return res;
 }
 
+/**
+ * https://leetcode-cn.com/problems/bricks-falling-when-hit/
+ * @param grid
+ * @param hits
+ * @return
+ */
+void BFSWithoutFirstLine(vector<vector<int>>& grid, vector<vector<int>>& visited,
+                         vector<vector<vector<pair<int,int>>>> &dependencies,
+                         int a, int b, bool flag, int& drop) {
+    if (flag) {
+        if (grid[a][b] <= 1) {
+            return;
+        }
+    }
+    int m = grid.size(), n = grid[0].size();
+    vector<vector<int>> directs = {{1,0},{0,1},{-1,0},{0,-1}};
+    queue<pair<int, int>> store;
+    if (flag) {
+        grid[a][b]--;
+    } else {
+        grid[a][b]++;
+    }
+    store.emplace(a, b);
+    visited[a][b] = 1;
+    while (!store.empty()) {
+        int size = store.size();
+        for (int i = 0; i < size; i++) {
+            pair<int, int> front = store.front();
+            int x = front.first, y = front.second;
+            if (!flag) {
+                for (auto d : directs) {
+                    int p = x + d[0], q = y + d[1];
+                    if (p > 0 && p < m && q >= 0 && q < n && !visited[p][q]) {
+                        if (grid[p][q]) {
+                            visited[p][q] = 1;
+                            dependencies[x][y].emplace_back(p, q);
+                            grid[p][q]++;
+                            store.emplace(p, q);
+                        }
+                    }
+                }
+            } else {
+                for (auto d : dependencies[x][y]) {
+                    int p = d.first, q = d.second;
+                    if (!visited[p][q]) {
+                        if (grid[p][q] > 1) {
+                            grid[p][q]--;
+                            visited[p][q] = 1;
+                            if (grid[p][q] == 1) {
+                                drop++;
+                            }
+                            store.emplace(p, q);
+                        }
+                    }
+                }
+            }
+            store.pop();
+        }
+    }
+}
 
+vector<int> Solution::hitBricks(vector<vector<int>> &grid, vector<vector<int>> &hits) {
+    // 1. indexing
+    int m = grid.size(), n = grid[0].size();
+    vector<vector<int>> visited(m, vector<int>(n, 0));
+    vector<vector<int>> vis = visited;
+    vector<vector<vector<pair<int,int>>>>
+    dependencies(m, vector<vector<pair<int, int>>>(n, vector<pair<int, int>>()));
+    int drop = 0;
+    for (int i = 0; i < n; i++) {
+        if (grid[0][i]) {
+            vis = visited;
+            BFSWithoutFirstLine(grid, vis, dependencies, 0, i, false, drop);
+        }
+    }
+    // 2. Calculate drops
+    vector<int> res;
+    for (auto hit : hits) {
+        drop = 0;
+        vis = visited;
+        BFSWithoutFirstLine(grid, vis, dependencies, hit[0], hit[1], true, drop);
+        res.push_back(drop);
+    }
+    return res;
+}

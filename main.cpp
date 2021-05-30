@@ -10,8 +10,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
 
-    vector<int> test = {1,4,5,55,6,7,2,2,3,1};
-    int res = solution.wiggleMaxLength(test);
+    vector<vector<int>> grid = {{1,0,1}, {1,1,1}};
+    vector<vector<int>> hits = {{0,0},{0,2},{1,1}};
+    vector<int> res = solution.hitBricks(grid, hits);
 
     return 0;
 }
